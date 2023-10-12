@@ -1,5 +1,9 @@
 async function create_category_selection (framework, level, value){
 
+    if (document.getElementById("a1") != null){
+        document.getElementById("a1").remove();
+    }
+
     if(framework != "def"){
 
         var config = await get_config_processor(framework);
@@ -187,10 +191,13 @@ function write_json() {
     xhr.send();
 
     var link_for_download = document.createElement('a');
+    link_for_download.id = "a1";
     link_for_download.textContent = "If download does not start automatically, click this link.";
     link_for_download.href = "http://localhost:5000/write_json";
+    if (document.getElementById("a1") != null){
+        document.getElementById("a1").remove();
+    }
     document.body.appendChild(link_for_download);
-
 }
 
 function get_config_processor(framework) {
