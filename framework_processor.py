@@ -72,9 +72,9 @@ class Framework_processor:
             value = None
 
         if framework == "ISCED-F":
-            path = "frameworks/ESCO 1.1.1.csv"
+            path = "C:/Users/JAPri/Documents/openHPI/Dingsprojekt/metadata_generator/frameworks/ESCO 1.1.1.csv"
         else:
-            path = "frameworks/" + framework + ".csv"
+            path = "C:/Users/JAPri/Documents/openHPI/Dingsprojekt/metadata_generator/frameworks/" + framework + ".csv"
 
         config_framework = config_handler.get_config_processor_by_framework(framework)
         framework_type = config_framework.FRAMEWORK_PURPOSE
@@ -151,6 +151,9 @@ class Data_storage:
         entries = {entry for entry in entries if entry.get_name() != value}
 
         self._stored_values[framework] = entries
+        
+    def reset_dict(self):
+        self._stored_values = dict()
 
 class Entry:
 
@@ -171,9 +174,9 @@ class Entry:
         level = config.NUMBER_OF_LEVELS
 
         if framework == "ISCED-F":
-            path = "frameworks/ESCO 1.1.1.csv"
+            path = "C:/Users/JAPri/Documents/openHPI/Dingsprojekt/metadata_generator/frameworks/ESCO 1.1.1.csv"
         else:
-            path = "frameworks/" + framework + ".csv"
+            path = "C:/Users/JAPri/Documents/openHPI/Dingsprojekt/metadata_generator/frameworks/" + framework + ".csv"
 
         data = pd.read_csv(path, sep=config.SEPARATOR, dtype=str)
 

@@ -200,6 +200,21 @@ function write_json() {
     document.body.appendChild(link_for_download);
 }
 
+function reset(){
+    if (document.getElementById("ESCO 1.1.1") != null){
+        document.getElementById("ESCO 1.1.1").remove();
+    }
+    if (document.getElementById("ISCED-F") != null){
+        document.getElementById("ISCED-F").remove();
+    }
+    if (document.getElementById("oefos") != null){
+        document.getElementById("oefos").remove();
+    }
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/reset');
+    xhr.send();
+}
+
 function get_config_processor(framework) {
 
     return new Promise(function (resolve, reject) {
