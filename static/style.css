@@ -1,0 +1,18 @@
+* {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#SelectBox {
+    padding: 10px;
+}
+
+#SelectBox select {
+    padding: 5px;
+}

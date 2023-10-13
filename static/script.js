@@ -25,7 +25,8 @@ async function create_category_selection (framework, level, value){
 
         div.appendChild(dropdown);
 
-        document.body.appendChild(div);
+        var divF = document.getElementById("SelectBox");
+        divF.appendChild(div);
         dropdown.onchange = function (){
             if(level < config["NUMBER_OF_LEVELS"]){
                 create_category_selection(framework, level + 1, dropdown.value);
@@ -209,6 +210,9 @@ function reset(){
     }
     if (document.getElementById("oefos") != null){
         document.getElementById("oefos").remove();
+    }
+    if (document.getElementById("a1") != null){
+        document.getElementById("a1").remove();
     }
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/reset');

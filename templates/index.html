@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>JSON Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="\static\style.css">
 </head>
-<body>
-        <label for="select-framework">Select a Framework</label>
-        <select id="select-framework" name="framework" onchange="create_category_selection(this.value, 1, 'None')">
-            <option value="def"> -- Select Framework -- </option>
-            <option value="ISCED-F">ISCED-F</option>
-            {% for file in files %}
-                <option value="{{ file }}">{{ file }}</option>
-            {% endfor %}
-        </select>
+<body class="flex-container">
+        <div id="SelectBox">
+            <label for="select-framework">Select a Framework</label>
+            <select id="select-framework" name="framework" onchange="create_category_selection(this.value, 1, 'None')">
+                <option value="def"> -- Select Framework -- </option>
+                <option value="ISCED-F">ISCED-F</option>
+                {% for file in files %}
+                    <option value="{{ file }}">{{ file }}</option>
+                {% endfor %}
+            </select>
 
-        <button id="add_field_button" onclick="add_field()">Add Field of Study</button>
-        <button id="write_json_button" onclick="write_json()">Write JSON</button>
-        <button id="reset_button" onclick="reset()">Reset</button>
+            <div id="list-selected-values-container">
 
-        <div id="list-selected-values-container">
-
+            </div>
         </div>
+
+    <div id="ButtonBox">
+            <button id="add_field_button" onclick="add_field()">Add Field of Study</button>
+            <button id="write_json_button" onclick="write_json()">Write JSON</button>
+            <button id="reset_button" onclick="reset()">Reset</button>
     
         <script src="../static/script.js"></script>
+    </div>
 </body>
 </html>
