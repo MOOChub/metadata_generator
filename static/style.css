@@ -1,11 +1,10 @@
 * {
-    max-width: 1000px;
     margin: auto;
+    flex-direction: column;
 }
 
 .flex-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -15,4 +14,21 @@
 
 #SelectBox select {
     padding: 5px;
+}
+
+#big {
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.DelButton {
+    margin-left: 1%;
+}
+
+.liEl {
+    margin: 2%;
+}
+
+.category_selection {
+    margin-top: 1%;
 }

@@ -176,6 +176,8 @@ function add_list_entry(list, value, forgoing_value) {
 
     var list_entry = document.createElement('li');
     var delete_button = document.createElement('button');
+    delete_button.className = "DelButton";
+    list_entry.className = "liEl";
     list_entry.textContent = value;
     delete_button.textContent = "Delete field";
     delete_button.onclick = function () {
