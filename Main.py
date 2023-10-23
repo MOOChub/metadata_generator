@@ -1,22 +1,22 @@
 from flask import Flask, request, send_file, render_template, jsonify
-from framework_processor import Framework_processor, Data_storage
+from frameworkprocessor import FrameworkProcessor, DataStorage
 import config_handler
 
 app = Flask(__name__)
 
-stored_values = Data_storage()
+stored_values = DataStorage()
 
 
 @app.route('/')
 def index():
-    files = Framework_processor.find_framework_files()
+    files = FrameworkProcessor.find_framework_files()
     return render_template('index.html', files=files)
 
 
 @app.route('/load_fields')
 def load_fields():
     args = request.args
-    return Framework_processor.find_fields(args)
+    return FrameworkProcessor.find_fields(args)
 
 
 @app.route('/add_field', methods=['POST'])
@@ -47,7 +47,7 @@ def reset():
 
 @app.route('/write_json')
 def write_json():
-    buffer = Framework_processor.write_json(stored_values)
+    buffer = FrameworkProcessor.write_json(stored_values)
     response = send_file(buffer, mimetype='application/json')
     response.headers['Content-Disposition'] = 'attachment; filename=download.zip'
 
