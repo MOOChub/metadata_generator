@@ -1,0 +1,3 @@
+<!-- this is a html formated text describing the tool. It should be shown on the web page to give some guidance to the user how to use the tool.-->
+
+  <p>This tool was developed to support course creators and admins to generate metadata for their courses. It generates data fragments according to the MOOChub meta data format.</p>
