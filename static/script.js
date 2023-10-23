@@ -1,5 +1,9 @@
 async function create_category_selection (framework, level, value){
 
+    if (document.getElementById("a1") != null){
+        document.getElementById("a1").remove();
+    }
+
     if(framework != "def"){
 
         var config = await get_config_processor(framework);
@@ -21,7 +25,8 @@ async function create_category_selection (framework, level, value){
 
         div.appendChild(dropdown);
 
-        document.body.appendChild(div);
+        var divF = document.getElementById("SelectBox");
+        divF.appendChild(div);
         dropdown.onchange = function (){
             if(level < config["NUMBER_OF_LEVELS"]){
                 create_category_selection(framework, level + 1, dropdown.value);
@@ -171,6 +176,8 @@ function add_list_entry(list, value, forgoing_value) {
 
     var list_entry = document.createElement('li');
     var delete_button = document.createElement('button');
+    delete_button.className = "DelButton";
+    list_entry.className = "liEl";
     list_entry.textContent = value;
     delete_button.textContent = "Delete field";
     delete_button.onclick = function () {
@@ -187,10 +194,31 @@ function write_json() {
     xhr.send();
 
     var link_for_download = document.createElement('a');
+    link_for_download.id = "a1";
     link_for_download.textContent = "If download does not start automatically, click this link.";
     link_for_download.href = "http://localhost:5000/write_json";
+    if (document.getElementById("a1") != null){
+        document.getElementById("a1").remove();
+    }
     document.body.appendChild(link_for_download);
+}
 
+function reset(){
+    if (document.getElementById("ESCO 1.1.1") != null){
+        document.getElementById("ESCO 1.1.1").remove();
+    }
+    if (document.getElementById("ISCED-F") != null){
+        document.getElementById("ISCED-F").remove();
+    }
+    if (document.getElementById("oefos") != null){
+        document.getElementById("oefos").remove();
+    }
+    if (document.getElementById("a1") != null){
+        document.getElementById("a1").remove();
+    }
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/reset');
+    xhr.send();
 }
 
 function get_config_processor(framework) {

@@ -39,6 +39,11 @@ def delete_field():
 
     return "Value: " + value + " from framework: " + framework + " removed!"
 
+@app.route('/reset')
+def reset():
+    stored_values.reset_dict()
+    return "true"
+
 
 @app.route('/write_json')
 def write_json():
