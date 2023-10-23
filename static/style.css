@@ -1,0 +1,34 @@
+* {
+    margin: auto;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+#SelectBox {
+    padding: 10px;
+}
+
+#SelectBox select {
+    padding: 5px;
+}
+
+#big {
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.DelButton {
+    margin-left: 1%;
+}
+
+.liEl {
+    margin: 2%;
+}
+
+.category_selection {
+    margin-top: 1%;
+}
