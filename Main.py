@@ -34,10 +34,10 @@ def get_all_stored_values():
 def delete_field():
     framework = request.args.get('framework')
     value = request.args.get('value')
-    value_category = request.args.get('value_category')
-    stored_values.delete_value(framework, value, value_category)
+    stored_values.delete_value(framework, value)
 
     return "Value: " + value + " from framework: " + framework + " removed!"
+
 
 @app.route('/reset')
 def reset():
