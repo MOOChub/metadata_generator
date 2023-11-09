@@ -36,7 +36,7 @@ def delete_field():
     value = request.args.get('value')
     stored_values.delete_value(framework, value)
 
-    return "Value: " + value + " from framework: " + framework + " removed!"
+    return jsonify({"response": f"Value: {value} from framework {framework} removed!"})
 
 
 @app.route('/reset')

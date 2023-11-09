@@ -38,7 +38,7 @@ async function create_category_selection (framework, level, value){
 function build_dropdown(id_dropdown, framework, level, value){
     const url = "load_fields?framework=" + encodeURIComponent(framework) +
         "&level=" + encodeURIComponent(level) +
-        "&value=" + encodeURIComponent(value)
+        "&value=" + encodeURIComponent(value);
 
     fetch(url)
         .then(response => {
@@ -121,13 +121,24 @@ async function add_field(){
 }
 
 function remove_field(framework, field_to_remove, field_category) {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', "/delete_field?framework=" + encodeURIComponent(framework) +
-        "&value=" + encodeURIComponent(field_to_remove) + "&value_category=" +
-        encodeURIComponent(field_category), true);
-    xhr.send();
+    const url = "/delete_field?framework=" + encodeURIComponent(framework) +
+        "&value=" + encodeURIComponent(field_to_remove) +
+        "&value_category=" + encodeURIComponent(field_category);
 
-    show_all_selected_fields();
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            show_all_selected_fields();
+        })
+        .catch(error => {
+            console.error('Fetched error: ' + error);
+        })
 }
 
 function show_all_selected_fields() {
