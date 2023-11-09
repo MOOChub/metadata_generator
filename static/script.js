@@ -1,3 +1,5 @@
+let config = null;
+
 async function create_category_selection (framework, level, value){
 
     if (document.getElementById("a1") != null){
@@ -6,7 +8,7 @@ async function create_category_selection (framework, level, value){
 
     if(framework !== "def"){
 
-        const config = await get_config_processor(framework);
+        await  get_config_processor(framework);
 
         remove_unneeded_selections(level);
 
@@ -82,7 +84,7 @@ function remove_unneeded_selections (level){
 async function add_field(){
     const framework = document.getElementById("select-framework").value;
 
-    const config = await get_config_processor(framework);
+    await get_config_processor(framework);
     const level = config["NUMBER_OF_LEVELS"];
 
     const field = document.getElementById(framework + "-level" + level).value;
@@ -245,22 +247,19 @@ function reset(){
 }
 
 function get_config_processor(framework) {
+    const url = '/get_config?framework=' + encodeURIComponent(framework);
 
-    return new Promise(function (resolve, reject) {
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-
-                    const config = JSON.parse(xhr.responseText);
-                    resolve(config);
-
-                } else {
-                    reject("Error: " + xhr.status);
-                }
+    fetch(url)
+        .then(response => {
+            if (!response.ok){
+                throw new Error('Error');
             }
-        };
-        xhr.open('GET', '/get_config?framework=' + encodeURIComponent(framework), true);
-        xhr.send();
-    });
+            return response.json();
+        })
+        .then(data => {
+            config = data;
+        })
+        .catch(error => {
+            console.error('Fetched error: ' + error);
+        })
 }
