@@ -150,33 +150,33 @@ function show_all_selected_fields() {
         });
     }
 
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE){
-            if (xhr.status === 200){
-                const data = JSON.parse(xhr.responseText);
-                const keys = Object.keys(data);
-                keys.sort();
-                keys.forEach(function (key) {
-                    const list = document.createElement('ol');
-                    list.id = key;
-                    const list_title = document.createElement('h2');
-                    list_title.textContent = key;
-                    list.appendChild(list_title);
+    const url = '/get_all_stored_values';
 
-                    const values = data[key];
-                    values.sort();
-                    values.forEach(function(entry){
-                        add_list_entry(list, entry);
-                    });
-                    div.appendChild(list);
-                });
+    fetch(url)
+        .then(response => {
+            if (!response.ok){
+                throw new Error('Error');
             }
-        }
-    };
+            return response.json();
+        })
+        .then(data => {
+            const keys = Object.keys(data);
+            keys.sort();
+            keys.forEach(function (key) {
+                const list = document.createElement('ol');
+                list.id = key;
+                const list_title = document.createElement('h2');
+                list_title.textContent = key;
+                list.appendChild(list_title);
 
-    xhr.open('GET', '/get_all_stored_values', true);
-    xhr.send();
+                const values = data[key];
+                values.sort();
+                values.forEach(function(entry){
+                    add_list_entry(list, entry);
+                });
+                div.appendChild(list);
+            });
+        })
 }
 
 function add_list_entry(list, value, forgoing_value) {
