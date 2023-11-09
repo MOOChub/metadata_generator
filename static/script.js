@@ -79,13 +79,7 @@ function remove_unneeded_selections (level){
     }
 }
 
-async function add_field() {
-
-    await post_data();
-    show_all_selected_fields();
-}
-
-async function post_data(){
+async function add_field(){
     const framework = document.getElementById("select-framework").value;
 
     const config = await get_config_processor(framework);
