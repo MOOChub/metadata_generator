@@ -36,28 +36,27 @@ async function create_category_selection (framework, level, value){
 }
 
 function build_dropdown(id_dropdown, framework, level, value){
+    const url = "load_fields?framework=" + encodeURIComponent(framework) +
+        "&level=" + encodeURIComponent(level) +
+        "&value=" + encodeURIComponent(value)
 
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                const def_opt = document.createElement('option');
-                def_opt.text = " -- Select a value -- ";
-                def_opt.value = "def";
-                document.getElementById(id_dropdown).add(def_opt);
-
-                const fields = JSON.parse(xhr.responseText);
-
-                fields.forEach(function (entry) {
-                    add_option(id_dropdown, entry);
-                });
-            } else {
-                console.error("Error loading options: " + xhr.status);
+    fetch(url)
+        .then(response => {
+            if (!response.ok){
+                throw new Error("Error");
             }
-        }
-    };
-    xhr.open("GET", "load_fields?framework=" + encodeURIComponent(framework) + "&level=" + encodeURIComponent(level) + "&value=" + encodeURIComponent(value), true);
-    xhr.send();
+            return response.json();
+        })
+        .then(data => {
+            const def_opt = document.createElement('option');
+            def_opt.text = " -- Select a value -- ";
+            def_opt.value = "def";
+            document.getElementById(id_dropdown).add(def_opt);
+
+            data.forEach(function (entry) {
+                add_option(id_dropdown, entry);
+            });
+        })
 }
 
 function add_option(id_dropdown, value){
