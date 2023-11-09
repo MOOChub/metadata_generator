@@ -177,6 +177,9 @@ function show_all_selected_fields() {
                 div.appendChild(list);
             });
         })
+        .catch(error => {
+            console.error('Fetched error: ' + error);
+        });
 }
 
 function add_list_entry(list, value, forgoing_value) {
@@ -223,9 +226,22 @@ function reset(){
     if (document.getElementById("a1") != null){
         document.getElementById("a1").remove();
     }
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', '/reset');
-    xhr.send();
+
+    const url = '/reset';
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok){
+                throw new Error('Error');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Fetched error: ' + error);
+        });
 }
 
 function get_config_processor(framework) {

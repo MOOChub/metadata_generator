@@ -42,7 +42,7 @@ def delete_field():
 @app.route('/reset')
 def reset():
     stored_values.reset_dict()
-    return "true"
+    return jsonify({"reset": "true"})
 
 
 @app.route('/write_json')
