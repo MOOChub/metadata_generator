@@ -101,24 +101,30 @@ async function post_data(){
         "foregoing": forgoing,
     };
 
-    return new Promise(function (resolve, reject){
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", "/add_field", true);
-        xhr.setRequestHeader("Content-Type", "application/json");
+    console.log(JSON.stringify(value));
+    const url = "/add_field";
+    const value_str = JSON.stringify(value);
 
-        xhr.onreadystatechange = function () {
-            if(xhr.readyState === XMLHttpRequest.DONE) {
-                if(xhr.status === 200){
-                    resolve("Field sent successfully!!");
-                } else {
-                    reject("Error: " + xhr.status);
-                }
+    fetch(url, {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: value_str,
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error: ' + response.status);
             }
-        };
-
-        xhr.send(JSON.stringify(value));
-    });
-
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            show_all_selected_fields();
+        })
+        .catch(error => {
+            console.error('Fetched error: ' + error);
+        });
 }
 
 function remove_field(framework, field_to_remove, field_category) {

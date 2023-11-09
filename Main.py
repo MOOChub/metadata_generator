@@ -22,7 +22,7 @@ def load_fields():
 @app.route('/add_field', methods=['POST'])
 def add_field():
     stored_values.add_field(request.get_json())
-    return "Value received!"
+    return jsonify({"response": "Value received!"})
 
 
 @app.route('/get_all_stored_values')
