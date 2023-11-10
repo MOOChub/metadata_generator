@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import json
 
 error_log = []
 
@@ -71,4 +70,6 @@ for i in range(len(frameworks)):
                 error_log.append(input_data)
 
 print(error_log)
-#print(requests.post(url, json=input_data, headers=headers))
+with open("error.log", 'w') as f:
+    for error in error_log:
+        f.write(str(error))
