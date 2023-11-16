@@ -32,3 +32,15 @@
 .category_selection {
     margin-top: 1%;
 }
+
+#guidanceContainer {
+    border-color: lightslategrey;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    width:50%;
+    height: 50%;
+    margin-top: 2%;
+    margin: 1%;
+    padding: 1%;
+}

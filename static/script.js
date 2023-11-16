@@ -1,5 +1,16 @@
 let config = null;
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Direkter Aufruf der Funktion beim Laden der Seite
+//     fetch('http://localhost:5000/documentation')
+//             .then(response => response.text())
+//             .then(data => {
+//                 // Füge den HTML-Inhalt zum Element mit der ID 'guidanceContainer' hinzu
+//                 document.getElementById('guidanceContainer').innerHTML = data;
+//             })
+//             .catch(error => console.error('Fehler beim Laden der Datei:', error));
+// });
+
 async function create_category_selection (framework, level, value){
 
     if (document.getElementById("a1") != null){
