@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file, render_template, jsonify
+from flask import Flask, request, send_file, render_template, jsonify, Markup
 from frameworkprocessor import FrameworkProcessor, DataStorage
 import config_handler
 
@@ -10,8 +10,14 @@ stored_values = DataStorage()
 @app.route('/')
 def index():
     files = FrameworkProcessor.find_framework_files()
-    return render_template('index.html', files=files)
-
+    docs = []
+    with open("documentation/documentation.html", "r") as file:
+        data = file.read().split("<p>")
+        for i in range(1, len(data)):
+            docs.append(Markup(data[i].split("</p>")[0]))
+            
+    return render_template('index.html', files=files, documentation=docs)
+           
 
 @app.route('/load_fields')
 def load_fields():
