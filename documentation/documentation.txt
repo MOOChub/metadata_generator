@@ -1,6 +1,7 @@
 <!-- this is a html formatted text describing the tool. It should be shown on the web page to give some guidance to the
 user how to use the tool.-->
 
+<h2>How to</h2>
   <p>This tool was developed to support course creators and admins to generate metadata for their courses. It generates
   data fragments according to the MOOChub metadata format.</p>
 
@@ -14,3 +15,21 @@ user how to use the tool.-->
 
   <p>Single entries from the list can be deleted by pressing the "Delete Entry" button. The list can be completely
   cleared by pressing the "Reset" button.</p>
+
+<h2>Credits</h2>
+  <p>This tool uses the following frameworks:</p>
+
+  <ul>
+    <li>
+        ISCED-F<br>
+        ISCED-F is published by the UNESCO under the Attribution-ShareAlike 3.0 IGO (CC-BY-SA 3.0 IGO) license.
+    </li>
+    <li>
+        ESCO<br>
+        ESCO is published by the European Commission. DISCLAIMER: This service uses the ESCO classification of the European Commission.
+    </li>
+    <li>
+        OEFOS<br>
+        OEFOS is published by Statistik Austria under the Attribution 4.0 International (CC BY 4.0) license.
+    </li>
+  </ul>

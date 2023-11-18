@@ -1,0 +1,29 @@
+CC BY-SA 4.0 LICENSE
+
+Copyright (c) 2023
+
+The MOOChub Metadata Generator (in the following "software") can be
+
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+The metadata tool is based upon other work not owned or created by the creators of this program.
+Therefor, special licensing aspects apply to the metadata tool.
+
+ISCED-F:
+The data of the ISCED-F classification is available under the Attribution-ShareAlike 3.0 IGO (CC-BY-SA 3.0 IGO) license
+(http://creativecommons.org/licenses/by-sa/3.0/igo/).
+
+The original document itself is available free of charge under:
+https://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-fields-of-
+education-and-training-2013-detailed-field-descriptions-2015-en.pdf
+
+DISCLAIMER: "The present work is not an official UNESCO publication and shall not be considered as such".
+
+ESCO:
+DISCLAIMER: "This service uses the ESCO classification of the European Commission."
+
