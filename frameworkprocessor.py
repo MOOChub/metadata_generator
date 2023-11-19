@@ -199,7 +199,8 @@ class Entry:
             temp = temp[(temp[config.COLUMN_NAME] == forgoing_value) &
                         (temp[config.COLUMN_LEVEL] == str(level - 1))][config.COLUMN_CODE].item()
             data = data.loc[(data[config.COLUMN_NAME] == value) &
-                            (data[config.COLUMN_CODE].str.startswith(temp))]
+                            (data[config.COLUMN_CODE].str.startswith(temp)) &
+                            (data[config.COLUMN_LEVEL] == str(level))].iloc[[-1]]
 
         if framework == "ISCED-F":
             short_code = data['Level ' + str(level) + ' URI'].iloc[0].split("/")[-1]
