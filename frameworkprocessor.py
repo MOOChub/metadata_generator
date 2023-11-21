@@ -52,12 +52,16 @@ class FrameworkProcessor:
 
         framework_type = config.FRAMEWORK_LABEL
 
-        data = framework_data.loc[framework_data["Level 0 preferred term"] == framework_type]
+        if config.__name__ == "ConfigEscoSkills":
+            data = framework_data.loc[framework_data["Level 0 preferred term"] == framework_type]
+        else:
+            data = list(framework_data[config.COLUMN_NAME])
 
         if value is not None:
             data = data.loc[data["Level " + str(level - 1) + " preferred term"] == value]
 
-        data = data["Level " + str(level) + " preferred term"].unique()
+        if config.__name__ == "ConfigEscoSkills":
+            data = data["Level " + str(level) + " preferred term"].unique()
 
         for i in data:
             if type(i) == str:
@@ -191,9 +195,11 @@ class Entry:
 
         data = pd.read_csv(path, sep=config.SEPARATOR, dtype=str)
 
-        if config.FRAMEWORK_PURPOSE == "ESCO":
+        if config.FRAMEWORK_PURPOSE == "ESCO" and config.NUMBER_OF_LEVELS > 1:
             data = data.loc[(data["Level " + str(level) + " preferred term"] == value) &
                             (data["Level " + str(level - 1) + " preferred term"] == forgoing_value)]
+        elif config.FRAMEWORK_PURPOSE == "ESCO":
+            data = data.loc[data[config.COLUMN_NAME] == value]
         else:
             temp = data.copy()
             temp = temp[(temp[config.COLUMN_NAME] == forgoing_value) &
@@ -204,14 +210,19 @@ class Entry:
 
         if framework == "ISCED-F":
             short_code = data['Level ' + str(level) + ' URI'].iloc[0].split("/")[-1]
-        elif config.FRAMEWORK_PURPOSE == "ESCO":
+        elif config.FRAMEWORK_PURPOSE == "ESCO" and config.NUMBER_OF_LEVELS > 1:
             short_code = data['Level ' + str(level) + ' code'].iloc[0]
+        elif config.FRAMEWORK_PURPOSE == "ESCO":
+            short_code = None
         else:
             short_code = data[config.COLUMN_CODE].item()
 
-        if config.FRAMEWORK_PURPOSE == "ESCO":
+        if config.FRAMEWORK_PURPOSE == "ESCO" and config.NUMBER_OF_LEVELS > 1:
             target_url = data['Level ' + str(level) + ' URI'].iloc[0]
             description = str(data['Description'].iloc[0]) + "\n" + str(data['Scope note'].iloc[0])
+        elif config.FRAMEWORK_PURPOSE == "ESCO":
+            target_url = data['conceptUri'].iloc[0]
+            description = str(data['description'].iloc[0])
         else:
             target_url = None
             description = None
@@ -226,7 +237,7 @@ class Entry:
             "description": description,
         }
 
-        if "ESCO" in framework:
+        if config.FRAMEWORK_LABEL == "skills":
             data_block["type"] = "Skill"
         else:
             data_block["type"] = "EducationalAlignment"

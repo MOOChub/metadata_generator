@@ -88,7 +88,11 @@ async function add_field(){
     const level = config["NUMBER_OF_LEVELS"];
 
     const field = document.getElementById(framework + "-level" + level).value;
-    const forgoing = document.getElementById(framework + "-level" + (level - 1)).value;
+
+    let forgoing = null;
+    if(level > 1) {
+        forgoing = document.getElementById(framework + "-level" + (level - 1)).value;
+    }
 
     const value = {
         "framework": framework,
