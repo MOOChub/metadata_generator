@@ -22,10 +22,7 @@ class ESCO:
 
 
 class ISCEDF:
-    URL = """
-    http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-fields-of-
-    education-and-training-2013-detailed-field-descriptions-2015-en.pdf
-    """
+    URL = "http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-fields-of-education-and-training-2013-detailed-field-descriptions-2015-en.pdf"""
     NUMBER_OF_LEVELS = 3
     CHARACTERS_PER_LEVEL = None
     SEPARATOR = ";"
@@ -36,9 +33,7 @@ class ISCEDF:
 
 
 class DigComp:
-    URL = """
-    https://publications.jrc.ec.europa.eu/repository/handle/JRC128415
-    """
+    URL = "https://publications.jrc.ec.europa.eu/repository/handle/JRC128415"
     NUMBER_OF_LEVELS = 2
     CHARACTERS_PER_LEVEL = None
     SEPARATOR = ";"
@@ -49,9 +44,7 @@ class DigComp:
 
 
 class GRETA:
-    URL = """
-    https://publications.jrc.ec.europa.eu/repository/handle/JRC128415
-    """
+    URL = "https://publications.jrc.ec.europa.eu/repository/handle/JRC128415"
     NUMBER_OF_LEVELS = 3
     CHARACTERS_PER_LEVEL = None
     SEPARATOR = ";"
