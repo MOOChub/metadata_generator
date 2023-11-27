@@ -26,7 +26,7 @@ for file in os.listdir("frameworks"):
         input_data = {
             "framework": framework,
             "field": row["Name"],
-            "forgoing": row["BroaderConcept"],
+            "foregoing": row["BroaderConcept"],
         }
 
         try:
