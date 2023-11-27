@@ -1,0 +1,27 @@
+Level;Name;ShortCode;Description;Uri;BroaderConcept
+1;INFORMATION AND DATA LITERACY;1.0;;;
+2;BROWSING, SEARCHING AND FILTERING DATA, INFORMATION AND DIGITAL CONTENT;1.1;To articulate information needs , to search for data, information and content in digital environments, to access them and to navigate between them. To create and update personal search strategies.;;INFORMATION AND DATA LITERACY
+2;EVALUATING DATA, INFORMATION AND DIGITAL CONTENT;1.2;To analyse, compare and critically evaluate the credibility and reliability of sources of data, information and digital content. To analyse, interpret and critically evaluate the data, information and digital content.;;INFORMATION AND DATA LITERACY
+2;MANAGING DATA, INFORMATION AND DIGITAL CONTENT;1.3;To organise, store and retrieve data, information, and content in digital environments. To organise and process them in a structured environment.;;INFORMATION AND DATA LITERACY
+1;COMMUNICATION AND COLLABORATION;2.0;;;
+2;INTERACTING THROUGH DIGITAL TECHNOLOGIES;2.1;To interact through a variety of digital technologies and to understand appropriate digital communication means for a given context.;;COMMUNICATION AND COLLABORATION
+2;SHARING THROUGH DIGITAL TECHNOLOGIES;2.2;To share data, information and digital content with others through appropriate digital technologies. To act as an intermediary, to know about referencing and attribution practices.;;COMMUNICATION AND COLLABORATION
+2;ENGAGING CITIZENSHIP THROUGH DIGITAL TECHNOLOGIES;2.3;To participate in society through the use of public and private digital services. To seek opportunities for self-empowerment and for participatory citizenship through appropriate digital technologies.;;COMMUNICATION AND COLLABORATION
+2;COLLABORATING THROUGH DIGITAL TECHNOLOGIES;2.4;To use digital tools and technologies for collaborative processes, and for co-construction and co-creation of data, resources and knowledge.;;COMMUNICATION AND COLLABORATION
+2;NETIQUETTE;2.5;To be aware of behavioural norms and know-how while using digital technologies and interacting in digital environments. To adapt communication strategies to the specific audience and to be aware of cultural and generational diversity in digital environments.;;COMMUNICATION AND COLLABORATION
+2;MANAGING DIGITAL IDENTITY;2.6;To create, and manage one or multiple digital identities, to be able to protect one’s own reputation, to deal with the data that one produces through several digital tools, environments and services.;;COMMUNICATION AND COLLABORATION
+1;DIGITAL CONTENT CREATION;3.0;;;
+2;DEVELOPING DIGITAL CONTENT;3.1;To create and edit digital content in different formats, to express oneself through digital means.;;DIGITAL CONTENT CREATION
+2;INTEGRATING AND RE-ELABORATING DIGITAL CONTENT;3.2;To modify, refine and integrate new information and content into an existing body of knowledge and resources to create new, original and relevant content and knowledge.;;DIGITAL CONTENT CREATION
+2;COPYRIGHT AND LICENCES;3.3;To understand how copyright and licences apply to digital information and content.;;DIGITAL CONTENT CREATION
+2;PROGRAMMING;3.4;To plan and develop a sequence of understandable instructions for a computing system to solve a given problem or to perform a specific task.;;DIGITAL CONTENT CREATION
+1;SAFETY;4.0;;;
+2;PROTECTING DEVICES;4.1;To protect devices and digital content, and to understand risks and threats in digital environments. To know about safety and security measures and to have a due regard to reliability and privacy.;;SAFETY
+2;PROTECTING PERSONAL DATA AND PRIVACY;4.2;To protect personal data and privacy in digital environments. To understand how to use and share personally identifiable information while being able to protect oneself and others from damages. To understand that digital services use a “Privacy policy” to inform how personal data is used.;;SAFETY
+2;PROTECTING HEALTH AND WELL-BEING;4.3;To be able to avoid health-risks and threats to physical and psychological well-being while using digital technologies. To be able to protect oneself and others from possible dangers in digital environments (e.g. cyber bullying). To be aware of digital technologies for social well-being and social inclusion.;;SAFETY
+2;PROTECTING THE ENVIRONMENT;4.4;To be aware of the environmental impact of digital technologies and their use.;;SAFETY
+1;PROBLEM SOLVING;5.0;;;
+2;SOLVING TECHNICAL PROBLEMS;5.1;To identify technical problems when operating devices and using digital environments, and to solve them (from trouble-shooting to solving more complex problems).;;PROBLEM SOLVING
+2;IDENTIFYING NEEDS AND TECHNOLOGICAL RESPONSES;5.2;To assess needs and to identify, evaluate, select and use digital tools and possible technological responses and to solve them. To adjust and customise digital environments to personal needs (e.g. accessibility).;;PROBLEM SOLVING
+2;CREATIVELY USING DIGITAL TECHNOLOGY;5.3;To use digital tools and technologies to create knowledge and to innovate processes and products. To engage individually and collectively in cognitive processing to understand and resolve conceptual problems and problem situations in digital environments.;;PROBLEM SOLVING
+2;IDENTIFYING DIGITAL COMPETENCE GAPS;5.4;To understand where one’s own digital competence needs to be improved or updated. To be able to support others with their digital competence development. To seek opportunities for self-development and to keep up-to-date with the digital evolution.;;PROBLEM SOLVING

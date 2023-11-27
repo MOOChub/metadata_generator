@@ -1,0 +1,1570 @@
+Level;Name;ShortCode;Description;Uri;BroaderConcept
+1;generic programmes and qualifications;00;"Generic programmes and qualifications are those providing fundamental and personal skills education which cover a broad range of subjects and do not emphasise or specialise in a particular broad or narrow field.
+This broad field should not be used as a residual category. Programmes and qualifications with a specific subject emphasis should be classified in broad fields 01 to 10. In particular, education at the tertiary level should only by way of exception be classified here.
+nan";http://data.europa.eu/esco/isced-f/00;
+2;generic programmes and qualifications not further defined;000;"nan
+nan";http://data.europa.eu/esco/isced-f/000;generic programmes and qualifications
+3;generic programmes and qualifications not further defined;0000;"nan
+nan";http://data.europa.eu/esco/isced-f/0000;generic programmes and qualifications not further defined
+2;basic programmes and qualifications;001;"nan
+nan";http://data.europa.eu/esco/isced-f/001;generic programmes and qualifications
+3;basic programmes and qualifications;0011;"Basic programmes and qualifications are designed to provide participants with fundamental skills in reading, writing and arithmetic along with an elementary understanding of other subjects such as history, geography, natural science, social science, art and music, and in some cases religious instruction. These programmes and qualifications are normally offered at primary and lower secondary levels. Broad, non-specialised programmes at upper secondary level are also classified here even if there is some concentration on, for example, humanities, social science, natural science etc. Vocational programmes and qualifications are included here only by way of exception.
+Programmes and qualifications with the following main subject content are classified here:
+Basic programmes and qualifications
+Broad, generic (non-specialised) programmes and qualifications
+General programmes and qualifications with no specific subject emphasis
+Programmes and qualifications at primary level
+
+=== Inclusions
+Basic programmes and qualifications at upper secondary level (in some countries at lower secondary level) with some emphasis on e.g. humanities, social sciences or natural sciences but still covering other fields of knowledge are included in this detailed field. In some countries such programmes or qualifications are offered on a modular basis and should also be classified here.
+
+=== Exclusions
+Programmes that are considered as general in the programme orientation sense (non-vocational) but have a clear emphasis on a detailed, narrow or broad field are excluded from this detailed field and included in one of the broad fields 01-10, depending on the subject covered.
+nan";http://data.europa.eu/esco/isced-f/0011;basic programmes and qualifications
+2;literacy and numeracy;002;"nan
+nan";http://data.europa.eu/esco/isced-f/002;generic programmes and qualifications
+3;literacy and numeracy;0021;"Literacy and numeracy are programmes or qualifications arranged mainly for adults, designed to teach fundamental skills in reading, writing and arithmetic. The typical age range of participants can be used to distinguish between detailed field 0011 'Basic programmes and qualifications' and this detailed field.
+Programmes and qualifications with the following main content are classified here:
+Basic remedial programmes for youth or adults
+Literacy
+Numeracy
+nan";http://data.europa.eu/esco/isced-f/0021;literacy and numeracy
+2;personal skills and development;003;"nan
+nan";http://data.europa.eu/esco/isced-f/003;generic programmes and qualifications
+3;personal skills and development;0031;"Personal skills are defined by reference to the effects on the individual's capacity (mental, social etc.). This detailed field covers personal skills programmes not included in 0011 'Basic programmes and qualifications' or 0021 'Literacy and numeracy', giving key competencies and transferable skills.
+Programmes and qualifications with the following main content are classified here:
+Argumentation and presentation
+Assertiveness training
+Communication skills
+Co-operation
+Development of behavioural capacities
+Development of mental skills
+Job-seeking programmes
+Parenting courses
+Public speaking
+Self-esteem skills
+Social competence
+Time management
+
+=== Inclusions
+Education and training in leadership in the context of personal development is included here.
+Education and training related to the work place or to work assignments is included in this detailed field if it has more to do with personal development than work development. Personal skills courses can be taught at the workplace, but still be classified here based on their content.
+Programmes for people with special needs on how to cope with their daily life are included here
+
+=== Exclusions
+Study of leadership in the context of management is excluded from this group and included in detailed field 0413 'Management and administration'.
+nan";http://data.europa.eu/esco/isced-f/0031;personal skills and development
+2;generic programmes and qualifications not elsewhere classified;009;"nan
+nan";http://data.europa.eu/esco/isced-f/009;generic programmes and qualifications
+3;generic programmes and qualifications not elsewhere classified;0099;"nan
+nan";http://data.europa.eu/esco/isced-f/0099;generic programmes and qualifications not elsewhere classified
+1;education;01;"nan
+nan";http://data.europa.eu/esco/isced-f/01;
+2;education;011;"nan
+nan";http://data.europa.eu/esco/isced-f/011;education
+3;education not further defined;0110;"nan
+nan";http://data.europa.eu/esco/isced-f/0110;education
+3;education science;0111;"Education science is the study of the learning process and the theories, methods and techniques of imparting knowledge to others.
+Programmes and qualifications with the following main content are classified here:
+Curriculum studies
+Didactics
+Educational assessment, testing and measurement
+Educational evaluation and research
+Paedagogical sciences
+
+=== Exclusions
+Teacher training programmes which combine education science with the practice of teaching are excluded from this detailed field and included in one of the detailed fields for teacher training (0112-0114).
+nan";http://data.europa.eu/esco/isced-f/0111;education
+3;training for pre-school teachers;0112;"Training for pre-school teachers is the study of the theories, methods and practice of teaching very young children up to 7 years of age within formal school settings at pre-primary or early childhood educational development levels.
+Programmes and qualifications with the following main content are classified here:
+Early childhood teaching (within formal school settings)
+Pre-primary teacher training
+
+=== Exclusions
+Training in caring for children outside formal school settings is excluded from this detailed field and included in detailed field 0922 'Child care and youth services'.
+nan";http://data.europa.eu/esco/isced-f/0112;education
+3;teacher training without subject specialisation;0113;"Training for teachers without subject specialisation is the study of the theories, methods and practice of providing children between approximately 5 and 15 years of age with the fundamental skills in reading, writing and mathematics along with an elementary understanding of other subjects such as history, geography, social science etc. and laying the foundation for lifelong learning. Subject specialisation is stressed less than in detailed field 0114 'Teacher training with subject specialisation'. The study of teaching children with special needs is included in this detailed field, likewise the study of teaching adults fundamental reading and writing skills and teaching immigrants these types of skills in their home or first language.
+Programmes and qualifications with the following main content are classified here:
+Class teacher training
+Indigenous teacher training
+Primary teaching
+Teacher training for children with special needs
+
+=== Inclusions
+The study of teaching adults basic literacy and numeracy skills is included here. Teacher's aide (teaching assistant) is also included here.
+
+=== Exclusions
+Teacher training with subject specialisation even if intended for the teaching of children in primary or lower secondary education is excluded from this detailed field and included in detailed field 0114 'Teacher training with subject specialisation'.
+nan";http://data.europa.eu/esco/isced-f/0113;education
+3;teacher training with subject specialisation;0114;"Teacher training with subject specialisation is the study of the theories, methods and practice of teaching a specific subject, mostly at secondary or higher levels of education. Programmes and qualifications included in this detailed field often comprise both studies as well as the subject/subjects that are going to be taught.
+Programmes and qualifications with the following main content are classified here:
+Teacher training - arts and crafts
+Teacher training - commercial subjects
+Teacher training - music
+Teacher training - nursing
+Teacher training - physical training
+Teacher training - second languages
+Teacher training - specific theoretical subjects, e.g. English, mathematics, history
+Teacher training - technical subjects
+Teacher training - vocational subjects
+Training of driving instructors
+Training of trainers
+
+=== Inclusions
+Teacher training courses for university teachers, instructors of work place and working life skills and in practical and artistic subjects are included here.
+
+=== Exclusions
+Training of sports trainers is excluded from this detailed field and included in detailed field 1014 'Sports'.
+nan";http://data.europa.eu/esco/isced-f/0114;education
+3;education not elsewhere classified;0119;"nan
+nan";http://data.europa.eu/esco/isced-f/0119;education
+2;inter-disciplinary programmes and qualifications involving education;018;"nan
+nan";http://data.europa.eu/esco/isced-f/018;education
+3;inter-disciplinary programmes and qualifications involving education;0188;"Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to education are classified here.
+nan";http://data.europa.eu/esco/isced-f/0188;inter-disciplinary programmes and qualifications involving education
+1;arts and humanities;02;"nan
+nan";http://data.europa.eu/esco/isced-f/02;
+2;arts and humanities not further defined;020;"nan
+nan";http://data.europa.eu/esco/isced-f/020;arts and humanities
+3;arts and humanities not further defined;0200;"nan
+nan";http://data.europa.eu/esco/isced-f/0200;arts and humanities not further defined
+2;arts;021;"nan
+nan";http://data.europa.eu/esco/isced-f/021;arts and humanities
+3;arts not further defined;0210;"nan
+nan";http://data.europa.eu/esco/isced-f/0210;arts
+3;audio-visual techniques and media production;0211;"Audio-visual techniques and media production is the study of techniques and skills to produce books or newspapers, radio or TV production, film or video production, recorded music production and graphic reproduction. It includes programmes and qualifications in methods of colour reproduction, photography and computer graphics. Study of combining pictures, words and decorations in the production of books, magazines, posters, adverts etc. is also included.
+Programmes and qualifications with the following main content are classified here:
+Animation
+Bookbinding
+Camera operating
+Compositing (printing)
+Computer game production
+Computer type-setting
+Film and video production
+Graphic design
+Graphic reproduction
+Illustration
+Interactive media design
+Media techniques
+Multimedia production
+Photography
+Pre-press operations
+Print finishing and binding
+Printing
+Publishing design, lay-out
+Radio and TV production
+Recorded music production
+Sound techniques
+Type-setting
+
+=== Inclusions
+Desktop publishing and lay-out are included here.
+
+=== Exclusions
+Programmes and qualifications in the use of specific software applications for desktop publishing and website development are excluded from this detailed field and included in detailed field 0611 'Computer use'.
+Study of journalism (wording and content of messages) is excluded from this detailed field and included in detailed field 0321 'Journalism and reporting'.
+nan";http://data.europa.eu/esco/isced-f/0211;arts
+3;fashion, interior and industrial design;0212;"Fashion, interior and industrial design is the study of creatively combining line, form and fabric in designing and constructing e.g. fashion garments, industrial products and interiors.
+Programmes and qualifications with the following main content are classified here:
+Costume design
+Design of industrial products
+Fashion design
+Interior architecture
+Interior design
+Stage designing
+Window dressing
+
+=== Exclusions
+Study of Building design is excluded from this detailed field and included in detailed field 0731 'Architecture and town planning'.
+Study of Industrial design is excluded from this detailed field if emphasis is given to technical subjects and not to artistic design, and included in the appropriate detailed field under 071 'Engineering and engineering trades'.
+Publishing design and graphic design are excluded from this detailed field and included in detailed field 0211 'Audio-visual techniques and media production'.
+nan";http://data.europa.eu/esco/isced-f/0212;arts
+3;fine arts;0213;"Fine arts is the study of visual forms of creative expression, dealing with theory, history, techniques, performance and production in fine arts.
+Programmes and qualifications with the following main content are classified here:
+Art theory
+Calligraphy
+Etching
+Fine art printmaking
+History of art
+Painting
+Philosophy of art
+Sculpture
+
+=== Exclusions
+Training in ceramics, pottery etc is excluded from this detailed field and included in detailed field 0214 'Handicrafts'.
+Study of architecture is excluded from this detailed field and included in detailed field 0731 'Architecture and town planning'.
+Teacher training in arts is excluded from this detailed field and included in detailed field 0114 'Teacher training with subject specialisation'.
+nan";http://data.europa.eu/esco/isced-f/0213;arts
+3;handicrafts;0214;"Handicrafts is the study of techniques and skills in a chosen craft, such as jewellery, pottery, weaving, woodcarving etc.
+Programmes and qualifications with the following main content are classified here:
+Ceramics
+Crafts, folk arts and artisan
+Decorative metal crafts
+Indigenous crafts
+Embroidery
+Floristry (flower arranging)
+Glass arts and craft
+Goldsmithing
+Jewellery
+Making of musical instruments (not industrial)
+Musical instruments (repairing and tuning)
+Silversmithing
+Stone carving (craft)
+Weaving (craft)
+Woodcarving
+
+=== Exclusions
+Study of industrial (large scaled mechanised) production of pottery, woven materials, embroidery etc. is excluded from this field and included in one of the detailed fields under broad field 07 'Engineering, manufacturing and construction'.
+nan";http://data.europa.eu/esco/isced-f/0214;arts
+3;music and performing arts;0215;"Music and performing arts is the study of the principles and techniques associated with performance involving music, speech, movement, mime, characterisation, improvisation and stage craft.
+Programmes and qualifications with the following main content are classified here:
+Acting and directing
+Ballet
+Choreography
+Circus
+Composition (music)
+Conducting (music)
+Creative and performance art
+Dance
+Drama
+History of film and theatre
+History of music
+Music
+Music conducting
+Musicology
+Theatre/Theatre sciences
+
+=== Inclusions
+Study of music and performing arts history and theory is included here.
+
+=== Exclusions
+Teacher training in music and other performing arts is excluded from this detailed field and included in detailed field 0114 'Teacher training with subject specialisation'.
+022 Humanities (except languages)
+nan";http://data.europa.eu/esco/isced-f/0215;arts
+3;arts not elsewhere classified;0219;"nan
+nan";http://data.europa.eu/esco/isced-f/0219;arts
+2;humanities (except languages);022;"nan
+nan";http://data.europa.eu/esco/isced-f/022;arts and humanities
+3;humanities (except languages) not further defined;0220;"nan
+nan";http://data.europa.eu/esco/isced-f/0220;humanities (except languages)
+3;religion and theology;0221;"Religion and theology is the study of religious beliefs, concepts, symbols, expressions and texts of spirituality.
+Programmes and qualifications with the following main content are classified here:
+Religious history
+Study of sacred books
+Study of different religions
+Theology
+
+=== Inclusions
+Included in this detailed field are programmes for children and young people, usually given in religious schools or seminars, in monasteries etc., aiming to develop an interest in the tenets of their religion and sufficient familiarity with its philosophy to assist in the propagation of their faith.
+
+=== Exclusions
+Basic programmes given in religious schools, seminars etc. containing religious instruction but not emphasising it or leading to a religious vocation, are excluded from this detailed field and included in 0011 'Basic programmes and qualifications'. Islamic sharia programmes and qualifications are excluded from this detailed field and included in detailed field 0421 'Law'.
+nan";http://data.europa.eu/esco/isced-f/0221;humanities (except languages)
+3;history and archaeology;0222;"History is the study of past events, especially the political, social and economic development of a country, a continent or the world. History of medicine is classified here, likewise the study of history of science and ideas. Archaeology is the study of ancient civilisations by scientific analysis of what is found in the ground.
+Programmes and qualifications with the following main content are classified here:
+Archaeology
+Cultural history
+Folklore studies
+History
+History of literature
+History of medicine
+History of science and ideas
+History of technology
+
+=== Inclusions
+Restoration and preservation of artistic heritage are included here.
+
+=== Exclusions
+Study of literature combined with study of a specific language is excluded from this detailed field and included in detailed field 0232 'Literature and linguistics'.
+Study of classical languages (Latin etc.) is excluded from this detailed field and included in detailed field 0231 'Language acquisition'.
+Study of History of art is excluded from this detailed field and included in detailed field 0213 'Fine arts'.
+Study of Music and performing arts history is excluded from this detailed field and included in detailed field 0215 'Music and performing arts'.
+Study of Economic history/history of economics is excluded from this detailed field and included in detailed field 0311 'Economics'.
+nan";http://data.europa.eu/esco/isced-f/0222;humanities (except languages)
+3;philosophy and ethics;0223;"Philosophy and ethics is the study of philosophy, ethics and related subjects dealing with the conception of life.
+Programmes and qualifications with the following main content are classified here:
+Ethics
+Logic
+Morals
+Philosophy
+
+=== Exclusions
+Study of religion is excluded from this detailed field and included in detailed field 0221 'Religion'.
+Study of Philosophy of arts is excluded from this detailed field and is included in detailed field 0213 'Fine arts'
+nan";http://data.europa.eu/esco/isced-f/0223;humanities (except languages)
+3;inter-disciplinary programmes and qualifications involving humanities;0228;"nan
+nan";http://data.europa.eu/esco/isced-f/0228;humanities (except languages)
+3;humanities (except languages) not elsewhere classified;0229;"nan
+nan";http://data.europa.eu/esco/isced-f/0229;humanities (except languages)
+2;languages;023;"nan
+nan";http://data.europa.eu/esco/isced-f/023;arts and humanities
+3;languages not further defined;0230;"nan
+nan";http://data.europa.eu/esco/isced-f/0230;languages
+3;language acquisition;0231;"Language acquisition is the study of the structure and composition of languages taught as second or foreign languages (i.e. that are intended for non-native or non-fluent speakers of the language). It includes the study of related cultures, literature, linguistics and phonetics if related to the specific language being acquired and forms part of the same programme or qualification. Classical or dead languages are included here as it is assumed there are no native speakers of the language and hence the manner of teaching and the content of the curriculum are more similar to the teaching of foreign languages.
+Programmes and qualifications with the following main content are classified here:
+Classical languages
+Exogenous languages
+Foreign languages
+Interpretation
+Phonetics
+Second languages, for example English as a second language
+Sign language
+Sign language interpreting
+Translation
+
+=== Inclusions:
+Language and linguistics studies are included here if the linguistics are related to a specific language or languages being acquired and forming part of the same programme or qualification. Translation and interpretation are included here.
+
+=== Exclusions:
+The study of the mother tongue or first language (i.e. that are intended for native, fluent or competent speakers of the language), even if this language is not a national language of the country of study (e.g. programmes for immigrants learning their mother tongue) are excluded from this detailed field and included in detailed field 0232 'Literature and linguistics'.
+nan";http://data.europa.eu/esco/isced-f/0231;languages
+3;literature and linguistics;0232;"Literature and linguistics is here defined as the study of language(s) intended for native, fluent or competent speakers of the language. It includes the study of related literature and linguistics and may or may not include the structure and composition of the language.
+Programmes and qualifications with the following main content are classified here:
+Creative writing
+First language
+Indigenous languages
+Linguistics
+Literature
+'Mother tongue' languages
+Native first languages
+
+=== Inclusions
+Languages taught as the first language ('mother tongue'), even if the language is not the national language of the country of study (e.g. programmes for immigrants in their home or first language) are included here. Local and regional languages are included here if they are first languages spoken by a significant minority in the country and are intended for at least competent speakers of the language.
+Study of comparative literature is included here. Study of general linguistics (not related to the study of a particular language) is included here. Study of literature in general (not combined with study of a special language) is included here.
+
+=== Exclusions
+Language programmes are excluded from this detailed field if the language is taught as a foreign or a second language, and are then included in 0231 'Language acquisition'.
+Programmes in literacy and numeracy are excluded from this detailed field and included in detailed field 0021 'Literacy and numeracy'.
+Sign language programmes are excluded from this detailed field and included in detailed field 0231 'Language acquisition'.
+nan";http://data.europa.eu/esco/isced-f/0232;languages
+3;languages not elsewhere classified;0239;"nan
+nan";http://data.europa.eu/esco/isced-f/0239;languages
+2;inter-disciplinary programmes and qualifications involving arts and humanities;028;"nan
+nan";http://data.europa.eu/esco/isced-f/028;arts and humanities
+3;inter-disciplinary programmes and qualifications involving arts and humanities;0288;"Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to arts and humanities are classified here.
+nan";http://data.europa.eu/esco/isced-f/0288;inter-disciplinary programmes and qualifications involving arts and humanities
+2;arts and humanities not elsewhere classified;029;"nan
+nan";http://data.europa.eu/esco/isced-f/029;arts and humanities
+3;arts and humanities not elsewhere classified;0299;"nan
+nan";http://data.europa.eu/esco/isced-f/0299;arts and humanities not elsewhere classified
+1;social sciences, journalism and information;03;"nan
+nan";http://data.europa.eu/esco/isced-f/03;
+2;social sciences, journalism and information not further defined;030;"nan
+nan";http://data.europa.eu/esco/isced-f/030;social sciences, journalism and information
+3;social sciences, journalism and information not further defined;0300;"nan
+nan";http://data.europa.eu/esco/isced-f/0300;social sciences, journalism and information not further defined
+2;social and behavioural sciences;031;"nan
+nan";http://data.europa.eu/esco/isced-f/031;social sciences, journalism and information
+3;social and behavioural sciences not further defined;0310;"nan
+nan";http://data.europa.eu/esco/isced-f/0310;social and behavioural sciences
+3;economics;0311;"Economics is the study of economic policy, economic theory and economic decisionmaking.
+Programmes and qualifications with the following main content are classified here:
+Econometrics
+Economic history
+Economics
+Political economics
+
+=== Exclusions
+Study of economics where emphasis is given to business studies is excluded from this detailed field and classified under 041 'Business and administration'. Study of home economics is excluded from this detailed field and included in the detailed field 1011 'Domestic services'.
+nan";http://data.europa.eu/esco/isced-f/0311;social and behavioural sciences
+3;political sciences and civics;0312;"Political sciences and civics is the study of government and political principles or practice. The study of the rights and duties of the citizens are included here.
+Programmes and qualifications with the following main content are classified here:
+Civics
+Human rights
+International relations
+Peace and conflict studies
+Political history
+Political science
+Public policy studies
+
+=== Exclusions
+Study of political economics is excluded from this detailed field and included in the detailed field 0311 'Economics'.
+nan";http://data.europa.eu/esco/isced-f/0312;social and behavioural sciences
+3;psychology;0313;"Psychology is the study of the human mind and behaviour as a result of individual differences, experience and environment.
+Programmes and qualifications with the following main content are classified here:
+Cognitive science
+Psychoanalysis
+Psychology
+Psychotherapy
+nan";http://data.europa.eu/esco/isced-f/0313;social and behavioural sciences
+3;sociology and cultural studies;0314;"Sociology and cultural studies is the study of human beings and the way they behave in groups and in relation to society. The study of ethnology and social anthropology are included here, likewise the study of human and social geography.
+Programmes and qualifications with the following main content are classified here:
+Criminology
+Cultural geography
+Cultural studies
+Demography/population studies
+Ethnology
+Gender studies
+Social anthropology
+Sociology
+
+=== Exclusions
+Social welfare where emphasis is given to practical social work is excluded from this detailed field and included in detailed field 0923 'Social work and counselling'.
+Physical geography is excluded from this detailed field and included in detailed field 0532 'Earth science'.
+nan";http://data.europa.eu/esco/isced-f/0314;social and behavioural sciences
+3;social and behavioural sciences not elsewhere classified;0319;"nan
+nan";http://data.europa.eu/esco/isced-f/0319;social and behavioural sciences
+2;journalism and information;032;"nan
+nan";http://data.europa.eu/esco/isced-f/032;social sciences, journalism and information
+3;journalism and information not further defined;0320;"nan
+nan";http://data.europa.eu/esco/isced-f/0320;journalism and information
+3;journalism and reporting;0321;"Journalism and reporting is the study of the theory and practices of journalism/reporting as part of the field of mass communication. Journalism and reporting is about the wording and content of messages. It comprises news reporting, writing commentaries and feature stories of public interest etc.
+Programmes and qualifications with the following main content are classified here:
+Broadcast journalism
+Editing
+Information (wording and content)
+Journalism
+Mass communication (wording and content)
+News reporting
+
+=== Exclusions
+Study of techniques for mass communication (e.g. printing and radio/TV production) is excluded from this detailed field and included in detailed field 0211 'Audio-visual techniques and media production'.
+Study of lay-out and publishing design is excluded from this detailed field and included in detailed field 0211 'Audio-visual techniques and media production'.
+Study of public relations is excluded from this detailed field and included in detailed field 0414 'Marketing and advertising'.
+nan";http://data.europa.eu/esco/isced-f/0321;journalism and information
+3;library, information and archival studies;0322;"Library, information and archival studies is the study of the methods of selecting, acquiring, organizing and storing collections of information, and facilitating the use of information. Museum and library studies are included here.
+Programmes and qualifications with the following main content are classified here:
+Archival sciences
+Curatorial studies
+Documentation
+Information science
+Library studies
+Museum documentation
+Museum studies
+Museology
+
+=== Exclusions
+Restoration and preservation of artistic heritage are excluded from this field and included in field 0222 'History and archaeology'.
+nan";http://data.europa.eu/esco/isced-f/0322;journalism and information
+3;journalism and information not elsewhere classified;0329;"nan
+nan";http://data.europa.eu/esco/isced-f/0329;journalism and information
+2;inter-disciplinary programmes and qualifications involving social sciences, journalism and information;038;"nan
+nan";http://data.europa.eu/esco/isced-f/038;social sciences, journalism and information
+3;inter-disciplinary programmes and qualifications involving social sciences, journalism and information;0388;"Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to social sciences, journalism and information are classified here.
+nan";http://data.europa.eu/esco/isced-f/0388;inter-disciplinary programmes and qualifications involving social sciences, journalism and information
+2;social sciences, journalism and information not elsewhere classified;039;"nan
+nan";http://data.europa.eu/esco/isced-f/039;social sciences, journalism and information
+3;social sciences, journalism and information not elsewhere classified;0399;"nan
+nan";http://data.europa.eu/esco/isced-f/0399;social sciences, journalism and information not elsewhere classified
+1;business, administration and law;04;"nan
+nan";http://data.europa.eu/esco/isced-f/04;
+2;business, administration and law not further defined;040;"nan
+nan";http://data.europa.eu/esco/isced-f/040;business, administration and law
+3;business, administration and law not further defined;0400;"nan
+nan";http://data.europa.eu/esco/isced-f/0400;business, administration and law not further defined
+2;business and administration;041;"nan
+nan";http://data.europa.eu/esco/isced-f/041;business, administration and law
+3;business and administration not further defined;0410;"nan
+nan";http://data.europa.eu/esco/isced-f/0410;business and administration
+3;accounting and taxation;0411;"Accounting and taxation is the study of maintaining, auditing and recording financial transactions.
+Programmes and qualifications with the following main content are classified here:
+Accounting
+Auditing
+Bookkeeping
+Tax accounting
+Tax management
+
+=== Exclusions
+Study of tax laws is excluded from this detailed field and included in detailed field 0421 'Law'.
+nan";http://data.europa.eu/esco/isced-f/0411;business and administration
+3;finance, banking and insurance;0412;"Finance, banking and insurance is the study of planning, directing, organizing and controlling financial activities and services. It includes the control and monitoring of the financial resources of organizations, institutions and individuals, and the provision of financial services at the corporate and individual level.
+Programmes and qualifications with the following main content are classified here:
+Bank teller studies
+Banking and finance
+Finance theory
+Insurance
+Investment analysis
+Investments and securities
+Pension insurance
+Social insurance
+Stock-broking
+
+=== Exclusions
+Study of actuarial science is excluded from this detailed field and included in detailed field 0542 'Statistics'.
+nan";http://data.europa.eu/esco/isced-f/0412;business and administration
+3;management and administration;0413;"Management and administration is the study of planning, directing and operating the functions and activities of organizations and institutions. Programmes in management also including administration, economics, finance etc. are included here if emphasis is given to management and administration.
+Programmes and qualifications with the following main content are classified here:
+Administration
+Educational management
+Employment management
+Entrepreneurship
+Health administration
+Logistic management
+Management science
+Office management
+Organizational theory and behaviour
+Personnel administration
+Personnel management
+'Start your own business' courses
+Supply change management
+Training management
+
+=== Inclusions:
+Study of leadership in the context of management is included here.
+
+=== Exclusions:
+Training in leadership in the context of personal development is excluded from this detailed field and included in detailed field 0031 'Personal skills'.
+Study of administration in the meaning of office work is excluded from this detailed field and included in detailed field 0415 'Secretarial and office work'.
+nan";http://data.europa.eu/esco/isced-f/0413;business and administration
+3;marketing and advertising;0414;"Marketing and advertising is the study of promoting the exchange processes of goods and services between organizations and/or individuals, and the study of consumer behaviour and requirements. It includes the study of the role of product development, pricing, distribution, promotion and sales in order to maximise business performance.
+Programmes and qualifications with the following main content are classified here:
+Advertising
+Consumer behaviour
+Market research
+Marketing
+Merchandising
+Public relations
+nan";http://data.europa.eu/esco/isced-f/0414;business and administration
+3;secretarial and office work;0415;"Secretarial and office work is the study of administrative procedures and practices, office technology and clerical, shorthand and keyboard skills. Specialised secretarial programmes (bilingual, medical, law, accounting etc) are included if the programme has secretarial work as its objective, rather than work as specialised assistants.
+Programmes and qualifications with the following main content are classified here:
+Administrative and secretarial services
+Clerical programmes
+Data entry
+Foreign language secretary programmes
+Keyboard skills
+Legal secretary programmes
+Medical secretary programmes
+Operation of office equipment
+Receptionist training
+Secretarial programmes
+Shorthand
+Switchboard operating
+Typing
+
+=== Inclusions
+Broad secretarial programmes comprising among other things computer courses are included here.
+
+=== Exclusions
+Separate programmes or qualifications in using a specific computer software are excluded from this detailed field and included under detailed field 0611 'Computer use'.
+Office management is excluded from this detailed field and included in detailed field 0413 'Management and administration'.
+Hotel receptionist programmes are excluded from this detailed field and included in detailed field 1013 'Hotel, restaurant and catering'.
+nan";http://data.europa.eu/esco/isced-f/0415;business and administration
+3;wholesale and retail sales;0416;"Wholesale and retail sales is the study of buying and selling goods and services, including stock management, pricing practices, loss prevention, sales systems and procedures. It includes the study of the workings and current trends of the wholesale and retail industries. Selling of buildings and properties is also included.
+Programmes and qualifications with the following main content are classified here:
+Auctioneering
+Consumer services
+Demonstration techniques
+Purchasing
+Real-estate business
+Retailing
+Stock-keeping
+Ware-housing
+Wholesaling
+
+=== Inclusions
+Study of buying and selling buildings and properties is included here.
+nan";http://data.europa.eu/esco/isced-f/0416;business and administration
+3;work skills;0417;"Work skills is the study of the structure and function of working life. It comprises programmes, mainly given as staff training, related to the working place and to work assignments.
+Programmes and qualifications with the following main content are classified here:
+Clients' needs
+Company knowledge
+Customer service training
+'Introduction to work' courses
+Organization at work
+Quality assurance
+Trade union courses (general)
+Work development
+
+=== Inclusions
+Staff training related to the work place or work assignments is included here.
+
+=== Exclusions
+Training related to the work place or work assignments is excluded from this detailed field if it has more to do with personal development than work development and is included in detailed field 0031 'Personal skills'.
+Staff training which can be classified to any other field is excluded from this detailed field and included in the appropriate field (e.g. quality courses should, if technical, be included in the detailed fields under 071 'Engineering and engineering trades'.)
+Programmes in work environment should be included in detailed field 1022 'Occupational health and safety'.
+Programmes, mostly at tertiary level, dealing with working life in general in terms of the labour market, the social partners, industrial psychology etc. are excluded from this detailed field and included in the detailed fields under 031 'Social and behaviour sciences'.
+nan";http://data.europa.eu/esco/isced-f/0417;business and administration
+3;business and administration not elsewhere classified;0419;"nan
+nan";http://data.europa.eu/esco/isced-f/0419;business and administration
+2;law;042;"nan
+nan";http://data.europa.eu/esco/isced-f/042;business, administration and law
+3;law;0421;"Law is the study of the principles and procedures for formally maintaining social order, including training for legal professions such as advocate or training for the judicial bench.
+Programmes and qualifications with the following main content are classified here:
+Commercial law
+Criminal justice studies
+History of law
+Indigenous law
+Jurisprudence
+Labour law
+Legal practice
+Notary/Notary's practise
+Paralegal studies
+
+=== Exclusions
+Court reporting programmes and legal secretary programmes are excluded from this detailed field and included in detailed field 0415 'Secretarial and office work'.
+Police studies are excluded from this detailed field and included in detailed field 1032 'Protection of persons and property'.
+nan";http://data.europa.eu/esco/isced-f/0421;law
+2;inter-disciplinary programmes and qualifications involving business, administration and law;048;"nan
+nan";http://data.europa.eu/esco/isced-f/048;business, administration and law
+3;inter-disciplinary programmes and qualifications involving business, administration and law;0488;"Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to business, administration and law are classified here.
+
+=== Inclusions
+Study of business and administration where emphasis is not given towards any of the detailed fields under 041 is included in this field.
+
+=== Exclusions
+Business programmes where emphasis is given to any of the detailed fields under 041 'Business and administration' (management, administration, marketing etc.) should be classified according to the specialisation.
+nan";http://data.europa.eu/esco/isced-f/0488;inter-disciplinary programmes and qualifications involving business, administration and law
+2;business, administration and law not elsewhere classified;049;"nan
+nan";http://data.europa.eu/esco/isced-f/049;business, administration and law
+3;business, administration and law not elsewhere classified;0499;"nan
+nan";http://data.europa.eu/esco/isced-f/0499;business, administration and law not elsewhere classified
+1;natural sciences, mathematics and statistics;05;"nan
+nan";http://data.europa.eu/esco/isced-f/05;
+2;natural sciences, mathematics and statistics not further defined;050;"nan
+nan";http://data.europa.eu/esco/isced-f/050;natural sciences, mathematics and statistics
+3;natural sciences, mathematics and statistics not further defined;0500;"nan
+nan";http://data.europa.eu/esco/isced-f/0500;natural sciences, mathematics and statistics not further defined
+2;biological and related sciences;051;"nan
+nan";http://data.europa.eu/esco/isced-f/051;natural sciences, mathematics and statistics
+3;biological and related sciences not further defined;0510;"nan
+nan";http://data.europa.eu/esco/isced-f/0510;biological and related sciences
+3;biology;0511;"Biology is the study of the structure, function, reproduction, growth, evolution and behaviour of all living organisms.
+Programmes and qualifications with the following main content are classified here:
+Biology
+Botany
+Cell biology
+Entomology
+Genetics
+Mycology
+Zoology
+
+=== Exclusions
+Study of environmental sciences, which is the study of the relation between living organisms and the environment, is excluded from this detailed field and included in detailed field 0521 'Environmental sciences'. Study of chemical processes in living organisms (biochemistry, toxicology, pharmacology etc.) is excluded from this detailed field and included in detailed field 0512 'Biochemistry'.
+nan";http://data.europa.eu/esco/isced-f/0511;biological and related sciences
+3;biochemistry;0512;"Biochemistry, sometimes called Biological chemistry, is the study of the chemistry of living organisms, including but not limited to, living matter.
+Programmes and qualifications with the following main content are classified here:
+Biological chemistry
+Cell technology
+Forensic sciences
+Genetic code (DNA, RNA) studies
+Genetic engineering
+Pharmacology
+Tissue culture technology
+Toxicology
+Virology
+
+=== Inclusions
+Biotechnology is included here.
+nan";http://data.europa.eu/esco/isced-f/0512;biological and related sciences
+3;biological and related sciences not elsewhere classified;0519;"nan
+nan";http://data.europa.eu/esco/isced-f/0519;biological and related sciences
+2;environment;052;"nan
+nan";http://data.europa.eu/esco/isced-f/052;natural sciences, mathematics and statistics
+3;environment not further defined;0520;"nan
+nan";http://data.europa.eu/esco/isced-f/0520;environment
+3;environmental sciences;0521;"Environmental sciences are the study of organisms in relation to one another and to the environment.
+Programmes and qualifications with the following main content are classified here:
+Ecology
+Environmental science
+
+=== Exclusions
+The study of biology and toxicology are excluded from this detailed field and included under narrow field 051 'Biological and related sciences'.
+nan";http://data.europa.eu/esco/isced-f/0521;environment
+3;natural environments and wildlife;0522;"Natural environments and wildlife is the study of the relationships between living organisms in natural environments in order to protect nature and wildlife. It includes the study of establishing and maintaining national parks in order to preserve their original natural state.
+Programmes and qualifications with the following main content are classified here:
+National parks and wildlife management
+Nature conservation
+Wildlife
+
+=== Exclusions
+Study of agriculture, horticulture and forestry are excluded from this detailed field and included in some of the detailed fields under 08 'Agriculture, forestry, fisheries and veterinary'.
+Study of hunting and trapping is excluded from this detailed field and included in detailed field 0821 'Forestry'.
+nan";http://data.europa.eu/esco/isced-f/0522;environment
+3;environment not elsewhere classified;0529;"nan
+nan";http://data.europa.eu/esco/isced-f/0529;environment
+2;physical sciences;053;"nan
+nan";http://data.europa.eu/esco/isced-f/053;natural sciences, mathematics and statistics
+3;physical sciences not further defined;0530;"nan
+nan";http://data.europa.eu/esco/isced-f/0530;physical sciences
+3;chemistry;0531;"Chemistry is the study of substances and their elements and how they react when combined.
+Programmes and qualifications with the following main content are classified here:
+Inorganic chemistry
+Organic chemistry
+Physical chemistry
+
+=== Exclusions
+Biochemistry is excluded from this detailed field and included in detailed field 0512 'Biochemistry'.
+nan";http://data.europa.eu/esco/isced-f/0531;physical sciences
+3;earth sciences;0532;"Earth sciences is the study of the composition and structure of earth including the hydrosphere and the atmosphere.
+Programmes and qualifications with the following main content are classified here:
+Climate research
+Earth science
+Geodesy
+Geography (physical)
+Geology
+Geomatics
+Geospatial technology
+Meteorology
+Oceanography
+Seismology
+
+=== Exclusions
+Social geography is excluded from this detailed field and included in detailed field 0314 'Sociology and cultural studies'. Soil science is excluded from this detailed field and included in detailed field 0811 'Crop and livestock production'.
+nan";http://data.europa.eu/esco/isced-f/0532;physical sciences
+3;physics;0533;"Physics is the study of properties and interactions of matter and energy. It includes the study of astronomy and space science.
+Programmes and qualifications with the following main content are classified here:
+Astronomy
+Astrophysics
+Chemical physics
+Medical physics
+Optics
+Physics
+Space science
+
+=== Exclusions
+Opticians' practice is excluded from this detailed field and included in detailed field 0914 'Medical diagnostic and treatment technology'.
+nan";http://data.europa.eu/esco/isced-f/0533;physical sciences
+3;physical sciences not elsewhere classified;0539;"nan
+nan";http://data.europa.eu/esco/isced-f/0539;physical sciences
+2;mathematics and statistics;054;"nan
+nan";http://data.europa.eu/esco/isced-f/054;natural sciences, mathematics and statistics
+3;mathematics and statistics not further defined;0540;"nan
+nan";http://data.europa.eu/esco/isced-f/0540;mathematics and statistics
+3;mathematics;0541;"Mathematics is the study of abstract deductive systems. It includes algebra, arithmetic, geometry, real and complex analysis and pure and applied mathematics.
+Programmes and qualifications with the following main content are classified here:
+Algebra
+Geometry
+Mathematics
+Numerical analysis
+Operational research
+nan";http://data.europa.eu/esco/isced-f/0541;mathematics and statistics
+3;statistics;0542;"Statistics is the study of collecting, describing, arranging and analysing numerical data. The study of probability theory and actuarial science is included.
+Programmes and qualifications with the following main content are classified here:
+Actuarial science
+Probability theory
+Statistics, applied
+Survey design
+Survey sampling
+
+=== Inclusions
+Study of mathematical (theoretical) statistics is included here.
+
+=== Exclusions
+Demography/population studies is excluded from this detailed field and included in detailed field 0314 'Sociology and cultural studies'.
+nan";http://data.europa.eu/esco/isced-f/0542;mathematics and statistics
+2;inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics;058;"nan
+nan";http://data.europa.eu/esco/isced-f/058;natural sciences, mathematics and statistics
+3;inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics;0588;"Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to natural sciences, mathematics and statistics are classified here.
+nan";http://data.europa.eu/esco/isced-f/0588;inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics
+2;natural sciences, mathematics and statistics not elsewhere classified;059;"nan
+nan";http://data.europa.eu/esco/isced-f/059;natural sciences, mathematics and statistics
+3;natural sciences, mathematics and statistics not elsewhere classified;0599;"nan
+nan";http://data.europa.eu/esco/isced-f/0599;natural sciences, mathematics and statistics not elsewhere classified
+1;information and communication technologies (icts);06;"nan
+nan";http://data.europa.eu/esco/isced-f/06;
+2;information and communication technologies (icts);061;"nan
+nan";http://data.europa.eu/esco/isced-f/061;information and communication technologies (icts)
+3;information and communication technologies (icts) not further defined;0610;"nan
+nan";http://data.europa.eu/esco/isced-f/0610;information and communication technologies (icts)
+3;computer use;0611;"Computer use is the study of using computers and computer software and applications for different purposes. These programmes are generally of short duration.
+Programmes and qualifications with the following main content are classified here:
+Computer use
+Use of software for calculating (spread sheets)
+Use of software for data processing
+Use of software for desk top publishing
+Use of software for word processing
+Use of Internet
+nan";http://data.europa.eu/esco/isced-f/0611;information and communication technologies (icts)
+3;database and network design and administration;0612;"Database and network design and administration is the study of the design, maintenance and integration of software applications. Computer media applications are included.
+Programmes and qualifications with the following main content are classified here:
+Computer administration and management
+Computer media applications
+Computer network installation and maintenance
+Database administrator studies
+Information technology administration
+Information technology security
+Network administration
+Network design
+Web design
+nan";http://data.europa.eu/esco/isced-f/0612;information and communication technologies (icts)
+3;software and applications development and analysis;0613;"Software and applications development and analysis is the study of the design and development of computer systems and computing environments.
+Programmes and qualifications with the following main content are classified here:
+Computer programming
+Computer science
+Computer systems analysis
+Computer systems design
+Informatics
+Operating systems
+Programming languages development
+Software development
+Software programming
+
+=== Exclusions
+Computer engineering (hardware) is excluded from this detailed field and included in detailed field 0714 'Electronics and automation'.
+Programmes and qualifications in using computer applications are excluded from this detailed field and included in detailed field 0611 'Computer use'. Database and network design and administration is excluded from this detailed field and included in detailed field 0612 'Database and network design and administration'.
+nan";http://data.europa.eu/esco/isced-f/0613;information and communication technologies (icts)
+3;information and communication technologies not elsewhere classified;0619;"Information technology studies not fitting in the detailed fields are classified here:
+Artificial intelligence
+nan";http://data.europa.eu/esco/isced-f/0619;information and communication technologies (icts)
+2;inter-disciplinary programmes and qualifications involving information and communication technologies (icts);068;"nan
+nan";http://data.europa.eu/esco/isced-f/068;information and communication technologies (icts)
+3;inter-disciplinary programmes and qualifications involving information and communication technologies (icts);0688;"Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to information and communication technologies (ICTs) are classified here.
+nan";http://data.europa.eu/esco/isced-f/0688;inter-disciplinary programmes and qualifications involving information and communication technologies (icts)
+1;engineering, manufacturing and construction;07;"nan
+nan";http://data.europa.eu/esco/isced-f/07;
+2;engineering, manufacturing and construction not further defined;070;"nan
+nan";http://data.europa.eu/esco/isced-f/070;engineering, manufacturing and construction
+3;engineering, manufacturing and construction not further defined;0700;"nan
+nan";http://data.europa.eu/esco/isced-f/0700;engineering, manufacturing and construction not further defined
+2;engineering and engineering trades;071;"nan
+nan";http://data.europa.eu/esco/isced-f/071;engineering, manufacturing and construction
+3;engineering and engineering trades not further defined;0710;"nan
+nan";http://data.europa.eu/esco/isced-f/0710;engineering and engineering trades
+3;chemical engineering and processes;0711;"Chemical engineering and processes is the study of planning, designing, and developing products and processes where chemical and physical changes occur. It includes designing chemical plants and control systems.
+Programmes and qualifications with the following main content are classified here:
+Chemical engineering
+Chemical process engineering
+Laboratory technology
+Oil/gas/petrochemicals processing
+Plant and machine operation (processing)
+Process technology
+
+=== Inclusions
+Laboratory technology is included here if emphasis is not given to a specific application.
+
+=== Exclusions
+Laboratory technology is excluded from this detailed field if emphasis is given to a specific application (biological, medical, etc.) and is included under the appropriate detailed field (0914 etc.). Biotechnology is excluded from this detailed field and included in detailed field 0512 'Biochemistry'.
+Programmes and qualifications with emphasis on the production of a specific material are excluded from this detailed field (e.g. studies with emphasis on paper processing should be included in detailed field 0722 'Materials (glass, paper, plastic, wood)'.
+nan";http://data.europa.eu/esco/isced-f/0711;engineering and engineering trades
+3;environmental protection technology;0712;"Environmental protection technology is the study of processes in order to minimise discharge and waste and avoid pollution. It includes programmes dealing with control of water, air, soil etc.
+Programmes and qualifications with the following main content are classified here:
+Air pollution control
+Ecological technology
+Energy efficiency
+Environmental engineering
+Industrial discharge control
+Noise pollution control
+Recycling
+Water pollution control
+
+=== Exclusions
+Programmes and qualifications dealing with hygienic standards in food, water etc. are excluded from this detailed field and included in detailed field 1021 'Community sanitation'.
+Construction related to waste and water management is excluded from this detailed field and included in detailed field 0732 'Building and civil engineering'.
+nan";http://data.europa.eu/esco/isced-f/0712;engineering and engineering trades
+3;electricity and energy;0713;"Electricity and energy is the study of installing, maintaining, repairing and diagnosing faults in electrical wiring and related equipment in domestic, commercial and industrial establishments. Installation and maintenance of overhead and underground electrical power distribution networks is included. Energy is the study of energy generation.
+Programmes and qualifications with the following main content are classified here:
+Air-conditioning trades
+Climate engineering
+Electrical appliances repairing
+Electrical engineering
+Electrical fitting
+Electrical power generation
+Electrical trades
+Energy studies
+Gas distribution
+Heating trades
+Nuclear, hydraulic and thermal energy
+Power line installation and maintenance
+Power production
+Refrigeration
+Solar power
+Wind turbines
+
+=== Inclusions
+The study of installing, diagnosing faults in and repairing heating, air-conditioning and refrigeration equipment is included here.
+
+=== Exclusions
+Study of vehicle electrical systems is excluded from this detailed field and included in detailed field 0716 'Motor vehicles, ships and aircraft'.
+nan";http://data.europa.eu/esco/isced-f/0713;engineering and engineering trades
+3;electronics and automation;0714;"Electronics and automation is the study of planning, designing, developing maintaining and monitoring electronic equipment, machinery and systems. It includes designing computers and equipment for communication.
+Programmes and qualifications with the following main content are classified here:
+Broadcasting electronics
+Communication systems
+Communications equipment installation
+Communications equipment maintenance
+Computer engineering
+Computer repairing
+Control engineering
+Data processing technology
+Digital technology
+Electronic engineering
+Electronic equipment servicing
+Network technology
+Robotics
+Telecommunications technology
+Television and radio repairing
+
+=== Exclusions
+Computer science (Software and applications development) is excluded from this detailed field and included under 0613 'Software and applications development and analysis'.
+nan";http://data.europa.eu/esco/isced-f/0714;engineering and engineering trades
+3;mechanics and metal trades;0715;"Mechanics and metal trades is the study of planning, designing, developing, producing, maintaining and monitoring machines, mechanical plants and systems and metal products. It includes designing and maintaining machines which produce goods and services. The focus of study in this detailed field is machines, mechanical systems and metal products.
+Programmes and qualifications with the following main content are classified here:
+Gunsmithing
+Hydraulics
+Locksmithing and safe repairing
+Mechanical engineering
+Mechanical trades
+Metal casting and patternmaking
+Metal fitting, turning and machining
+Metallurgical engineering
+Precision mechanics
+Sheet metal working
+Steel production
+Tool and die making
+Welding
+
+=== Exclusions
+The study of motor vehicle mechanics and engineering is excluded from this detailed field and included in detailed field 0716 'Motor vehicles, ships and aircraft'.
+nan";http://data.europa.eu/esco/isced-f/0715;engineering and engineering trades
+3;motor vehicles, ships and aircraft;0716;"Motor vehicles, ships and aircraft is the study of designing, developing, producing, maintaining, diagnosing faults in, repairing and servicing motor vehicles, including earth moving equipment and agriculture machines, ships, trains and aircraft. Typical is the combination of studies in both metal structures and motors.
+Programmes and qualifications with the following main content are classified here:
+Aerospace engineering
+Aircraft engineering
+Aircraft maintenance
+Automotive electrical systems
+Automotive engineering
+Avionics
+Coachwork
+Marine engineering
+Motorcycle engineering
+Panel beating
+Shipbuilding
+Train repair and maintenance
+Vehicle building and repairing
+Vehicle varnishing/spraying
+
+=== Inclusions
+Study of vehicle electrical systems is included here.
+
+=== Exclusions
+Study of producing and repairing non-motorised vehicles is excluded from this detailed field and included in 0715 'Mechanics and metal work' (e.g. bicycles) or 0722 'Materials (glass, paper, plastic, wood)' (e.g. non-motor boats).
+nan";http://data.europa.eu/esco/isced-f/0716;engineering and engineering trades
+3;engineering and engineering trades not elsewhere classified;0719;"Engineering studies not covered by other detailed fields are classified here:
+Nanotechnology
+nan";http://data.europa.eu/esco/isced-f/0719;engineering and engineering trades
+2;manufacturing and processing;072;"nan
+nan";http://data.europa.eu/esco/isced-f/072;engineering, manufacturing and construction
+3;manufacturing and processing not further defined;0720;"nan
+nan";http://data.europa.eu/esco/isced-f/0720;manufacturing and processing
+3;food processing;0721;"Food processing is the study of processing and packaging of food and beverages, and the equipment and procedures used in the production and distribution of foods.
+Programmes and qualifications with the following main content are classified here:
+Baking
+Beer brewing
+Butchery
+Confectionery
+Dairy foods
+Food and drink processing
+Food preservation
+Food science and technology
+Meat processing
+Pastry cooking
+Tobacco processing
+Wine production
+
+=== Inclusions
+Study of food handling and food hygiene is included here.
+
+=== Exclusions
+Restaurant and catering are excluded from this detailed field and included in detailed field 1013 'Hotel, restaurant and catering'.
+Nutrition science is excluded from this detailed field and included in narrow field 051 'Biological and related sciences'.
+0722 Materials (glass, paper, plastic and wood)
+Materials is the study of the manufacturing of products in glass, paper, plastic, wood or other materials like stone, clay, artificial materials etc. Programmes and qualifications included in this detailed field have more to do with a specific material than general technical knowledge.
+Programmes and qualifications with the following main content are classified here:
+Boat building (non-motor)
+Cabinet making
+Carpentry (furniture)
+Ceramics (industrial)
+Furniture making
+Glass working (industrial)
+Industrial diamond production
+Paper manufacturing and processing
+Plastic manufacturing
+Rubber processing
+Timber technology
+Wood machining and turning
+Woodwork trades
+
+=== Exclusions
+Study of metal work is excluded from this detailed field and included in detailed field 0715 'Mechanics and metal trades'.
+Study of building carpentry and joinery is excluded from this detailed field and included in detailed field 0732 'Building and civil engineering'.
+Study of chemical processing in general is excluded from this detailed field and included in detailed field 0711 'Chemical engineering and processes'.
+Study of printing and bookbinding is excluded from this detailed field and included in detailed field 0211 'Audio-visual techniques and media production'.
+Handicrafts programmes (glass arts and crafts, woodcarving etc) are excluded from this detailed field and included in detailed field 0214 'Handicrafts'.
+0723 Textiles (clothes, footwear and leather)
+Textiles (clothes, footwear and leather) is the study of the manufacture of textiles, textile and leather products, clothing and related items, shoes and other forms of footwear.
+Programmes and qualifications with the following main content are classified here:
+Clothing trades
+Dressmaking
+Footwear making
+Fur making
+Garment production
+Leather processing
+Saddlery
+Shoemaking
+Skins and leather production
+Spinning
+Tailoring
+Textile trades
+Upholstery
+Weaving (industrial)
+Wool science
+
+=== Exclusions
+Handicrafts studies (weaving, embroidery etc.) are excluded from this detailed field and included in detailed field 0214 'Handicrafts'.
+nan";http://data.europa.eu/esco/isced-f/0721;manufacturing and processing
+3;materials (glass, paper, plastic and wood);0722;"nan
+nan";http://data.europa.eu/esco/isced-f/0722;manufacturing and processing
+3;textiles (clothes, footwear and leather);0723;"nan
+nan";http://data.europa.eu/esco/isced-f/0723;manufacturing and processing
+3;mining and extraction;0724;"Mining and extraction is the study of assessing, planning, developing, and directing the extraction of minerals, oil and gas from the earth.
+Programmes and qualifications with the following main content are classified here:
+Coal mining
+Mineral technology
+Mining of minerals
+Oil and gas drilling
+Oil and gas extraction
+Raw material extraction
+
+=== Exclusions
+Study of metallurgical engineering is excluded from this detailed field and included in 0715 'Mechanics and metal trades'
+Study of geology is excluded from this detailed field and included in detailed field 0532 'Earth sciences'.
+nan";http://data.europa.eu/esco/isced-f/0724;manufacturing and processing
+3;manufacturing and processing not elsewhere classified;0729;"nan
+nan";http://data.europa.eu/esco/isced-f/0729;manufacturing and processing
+2;architecture and construction;073;"nan
+nan";http://data.europa.eu/esco/isced-f/073;engineering, manufacturing and construction
+3;architecture and construction not further defined;0730;"nan
+nan";http://data.europa.eu/esco/isced-f/0730;architecture and construction
+3;architecture and town planning;0731;"Architecture is the study of the art, science and techniques of building design. It encompasses both utilitarian ends - such as the soundness of the structure and the functional and economic efficiency of the building - and aesthetic considerations. Town planning is the study of the regulated growth and improvement of towns in both functional and aesthetical points of view.
+Programmes and qualifications with the following main content are classified here:
+Architectural urban design and planning
+Architecture
+Building design
+Cartography/Land surveying
+City planning
+Community development
+Landscape architecture
+Structural architecture
+Surveying
+Town and country planning
+Urban planning
+
+=== Exclusions
+Study of interior design is excluded from this detailed field and included in detailed field 0212 'Fashion, interior and industrial design'. Geomatics is excluded from this detailed field and included in detailed field 0532 'Earth science'.
+The laying out and construction of parks and gardens is excluded from this detailed field and included in detailed field 0812 'Horticulture'.
+nan";http://data.europa.eu/esco/isced-f/0731;architecture and construction
+3;building and civil engineering;0732;"Building is the study of the science, technology and techniques of assembling, erecting and maintaining public, commercial, industrial and residential structures and their fittings. Civil engineering is the study of planning, designing, testing and directing the construction of large scale buildings and structures, including systems for transport, water supply, sewage etc.
+Programmes and qualifications with the following main content are classified here:
+Bricklaying
+Bridge construction
+Building construction
+Building engineering
+Building technology
+Carpentry and joinery (building)
+Civil engineering
+Construction equipment
+Constructional metalwork (building)
+Dock and harbour engineering
+Floor and wall tiling
+Floor covering
+House building
+Industrial abseiling (commercial)
+Masonry and tile setting
+Painting and wall covering
+Plastering
+Plumbing and pipefitting
+Road building
+Water engineering and technology
+Water supply and sewerage engineering
+Ventilation
+
+=== Exclusions
+Installation of electricity is excluded from this detailed field and included in detailed field 0713 'Electricity and energy'. Similarly, installing and repairing of heating, air-conditioning and refrigeration equipment is excluded from this detailed field and included in detailed field 0713 'Electricity and energy'.
+nan";http://data.europa.eu/esco/isced-f/0732;architecture and construction
+2;inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction;078;"nan
+nan";http://data.europa.eu/esco/isced-f/078;engineering, manufacturing and construction
+3;inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction;0788;"Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to engineering, manufacturing and construction are classified here.
+nan";http://data.europa.eu/esco/isced-f/0788;inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction
+2;engineering, manufacturing and construction not elsewhere classified;079;"nan
+nan";http://data.europa.eu/esco/isced-f/079;engineering, manufacturing and construction
+3;engineering, manufacturing and construction not elsewhere classified;0799;"nan
+nan";http://data.europa.eu/esco/isced-f/0799;engineering, manufacturing and construction not elsewhere classified
+1;agriculture, forestry, fisheries and veterinary;08;"nan
+nan";http://data.europa.eu/esco/isced-f/08;
+2;agriculture, forestry, fisheries and veterinary not further defined;080;"nan
+nan";http://data.europa.eu/esco/isced-f/080;agriculture, forestry, fisheries and veterinary
+3;agriculture, forestry, fisheries and veterinary not further defined;0800;"nan
+nan";http://data.europa.eu/esco/isced-f/0800;agriculture, forestry, fisheries and veterinary not further defined
+2;agriculture;081;"nan
+nan";http://data.europa.eu/esco/isced-f/081;agriculture, forestry, fisheries and veterinary
+3;agriculture not further defined;0810;"nan
+nan";http://data.europa.eu/esco/isced-f/0810;agriculture
+3;crop and livestock production;0811;"Crop and livestock production is the study of growing, maintaining and harvesting crops and pastures, and grazing and managing animals. It includes the study of managing and maintaining farms and producing unprocessed plant and animal products.
+Programmes and qualifications with the following main content are classified here:
+Agricultural sciences
+Agronomy and crop science
+Animal husbandry
+Crop growing
+Dog breeding
+Farm and ranch management
+Farming
+Fruit growing
+Grain growing
+Horse breeding
+Pig farming
+Poultry husbandry
+Rice farming
+Rye and wheat growing
+Sheep farming
+Soil science
+Sugar cane growing
+Vegetable planting
+Wine growing
+
+=== Inclusions
+Study of soil fertility and irrigation techniques are included here.
+Study of growing intensively managed crops such as fruit and vegetables is included here.
+
+=== Exclusions
+Study of wine production is excluded from this detailed field and is included in detailed field 0721 'Food processing'.
+Jockeying is excluded from this detailed field and is included in detailed field 1014 'Sports'
+nan";http://data.europa.eu/esco/isced-f/0811;agriculture
+3;horticulture;0812;"Horticulture is the study of horticultural technology and management, floriculture, greenhouse methods, nursery management, landscape gardening etc.
+Programmes and qualifications with the following main content are classified here:
+Floriculture
+Gardening
+Green keeping
+Horticultural techniques
+Nursery management
+Turf cultivation
+
+=== Inclusions
+The laying out and construction of urban and domestic parks and gardens is included here.
+Gardening programmes combining floriculture and growing vegetables are included here.
+
+=== Exclusions
+Study of growing edible crops (such as wheat, rice, fruit, vegetables etc,) is excluded from this detailed field and included in detailed field 0811 'Crop and livestock production'.
+Study of soil science, soil fertility and irrigation techniques is excluded from this detailed field and included in detailed field 0811 'Crop and livestock production'.
+Study of National park management is excluded from this detailed field and included in detailed field 0522 'Natural environments and wildlife'.
+Study of Landscape architecture is excluded from this detailed field and included in detailed field 0731 'Architecture and town planning'.
+nan";http://data.europa.eu/esco/isced-f/0812;agriculture
+3;agriculture not elsewhere classified;0819;"nan
+nan";http://data.europa.eu/esco/isced-f/0819;agriculture
+2;forestry;082;"nan
+nan";http://data.europa.eu/esco/isced-f/082;agriculture, forestry, fisheries and veterinary
+3;forestry;0821;"Forestry is the study of establishing, cultivating, harvesting and managing forests. It includes the study of hunting and trapping.
+Programmes and qualifications with the following main content are classified here:
+Charcoal burning
+Forest keeping
+Forest product techniques
+Forestry
+Hunting and trapping
+Logging
+Tree felling
+
+=== Exclusions
+Study of National park management is excluded from this detailed field and included in detailed field 0522 'Natural environments and wildlife'.
+Timber technology (sawmill production etc) is excluded from this detailed field and included in detailed field 0722 'Materials (glass, paper, plastic and wood)'.
+nan";http://data.europa.eu/esco/isced-f/0821;forestry
+2;fisheries;083;"nan
+nan";http://data.europa.eu/esco/isced-f/083;agriculture, forestry, fisheries and veterinary
+3;fisheries;0831;"Fisheries is the study of breeding, rearing and harvesting fish and other seafood.
+Programmes and qualifications with the following main content are classified here:
+Aquaculture
+Fish breeding
+Fish farms
+Fishery science and technology
+Pearl cultivating
+Seafood farming
+Shellfish breeding
+
+=== Inclusions
+Programmes for operating fishing boats are included here.
+
+=== Exclusions
+Study of industrial processing of fish is excluded from this detailed field and included in detailed field 0721 'Food processing'.
+nan";http://data.europa.eu/esco/isced-f/0831;fisheries
+2;veterinary;084;"nan
+nan";http://data.europa.eu/esco/isced-f/084;agriculture, forestry, fisheries and veterinary
+3;veterinary;0841;"Veterinary is the study of preventing, diagnosing and treating diseases and injuries in animals, and their general care. The study of caring for sick, injured and infirm animals undergoing treatment in veterinary clinics is included. It also includes the study of providing assistance to veterinary scientists.
+Programmes and qualifications with the following main content are classified here:
+Animal health care
+Animal reproduction (science)
+Artificial insemination (of animals)
+Veterinary assisting
+Veterinary medicine
+Veterinary nursing
+Veterinary science
+
+=== Inclusions
+The science of animal reproduction is included here.
+
+=== Exclusions
+Study of animal breeding is excluded from this detailed field and included in detailed field 0811 'Crop and livestock production'.
+nan";http://data.europa.eu/esco/isced-f/0841;veterinary
+2;inter-disciplinary programmes and qualifications involving  agriculture, forestry, fisheries and veterinary;088;"nan
+nan";http://data.europa.eu/esco/isced-f/088;agriculture, forestry, fisheries and veterinary
+3;inter-disciplinary programmes and qualifications involving  agriculture, forestry, fisheries and veterinary;0888;"Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to agriculture, forestry, fisheries and veterinary are classified here.
+nan";http://data.europa.eu/esco/isced-f/0888;inter-disciplinary programmes and qualifications involving  agriculture, forestry, fisheries and veterinary
+2;agriculture, forestry, fisheries and veterinary not elsewhere classified;089;"nan
+nan";http://data.europa.eu/esco/isced-f/089;agriculture, forestry, fisheries and veterinary
+3;agriculture, forestry, fisheries and veterinary not elsewhere classified;0899;"nan
+nan";http://data.europa.eu/esco/isced-f/0899;agriculture, forestry, fisheries and veterinary not elsewhere classified
+1;health and welfare;09;"nan
+nan";http://data.europa.eu/esco/isced-f/09;
+2;health and welfare not further defined;090;"nan
+nan";http://data.europa.eu/esco/isced-f/090;health and welfare
+3;health and welfare not further defined;0900;"nan
+nan";http://data.europa.eu/esco/isced-f/0900;health and welfare not further defined
+2;health;091;"nan
+nan";http://data.europa.eu/esco/isced-f/091;health and welfare
+3;health not further defined;0910;"nan
+nan";http://data.europa.eu/esco/isced-f/0910;health
+3;dental studies;0911;"Dental studies are the study of diagnosing, treating and preventing diseases and abnormalities of the teeth and gums. It includes the study of designing, making and repairing dental prostheses and orthodontic appliances. It also includes the study of providing assistance to dentists.
+Programmes and qualifications with the following main content are classified here:
+Dental assisting
+Dental hygiene
+Dental laboratory technology
+Dental nursing
+Dental science
+Dental surgery
+Dental technology
+Odontology
+Oral surgery
+Orthodontics
+
+=== Inclusions
+Study of public dental health is included here.
+nan";http://data.europa.eu/esco/isced-f/0911;health
+3;medicine;0912;"Medicine is the study of the principles and procedures used in preventing, diagnosing, caring for and treating illness, disease and injury in humans and the maintenance of general health. Principally, this detailed field consists of training of physicians/doctors.
+Programmes and qualifications with the following main content are classified here:
+Anaesthetics
+Forensic medicine
+Forensic pathology
+General medicine
+Gerontology
+Gynaecology
+Medical science
+Medical training
+Medicine
+Paediatrics
+Psychiatry
+Surgery
+Training of physicians/doctors
+nan";http://data.europa.eu/esco/isced-f/0912;health
+3;nursing and midwifery;0913;"Nursing is the study of providing health care for the sick, disabled or infirm and assisting physicians and other medical and health professionals diagnose and treat patients. The focus of qualifications in nursing is maintaining and caring for the health of patients during illness and rehabilitation. It includes health care of old people and health care of the disabled. Midwifery is the study of providing care to childbearing women during pregnancy, labour and birth and during the postpartum period. It also includes caring for the new born and assisting the mother with breast feeding.
+Programmes and qualifications with the following main content are classified here:
+Assistant nursing
+Basic nursing
+General nursing
+Health care of old people
+Heath care of the disabled
+Health care programmes
+Infant hygiene (nursing)
+Midwifery
+Nursing aide/Orderly
+Psychiatric nursing
+Specialised nursing
+
+=== Inclusions
+Care programmes comprising both health care and social care e.g. for old people, are included here.
+
+=== Exclusions
+Veterinary nursing is excluded from this detailed field and is included in detailed field 0841 'Veterinary'.
+Dental nursing is excluded from this detailed field and is included in detailed field 0911 'Dental studies'.
+Non-medical care of children (not health care) is excluded from this detailed field and included in detailed field 0922 'Child care and youth services'.
+Non-medical care of the elderly (not health care) is excluded from this detailed field and included in detailed field 0921 'Care of the elderly and disabled adults'.
+nan";http://data.europa.eu/esco/isced-f/0913;health
+3;medical diagnostic and treatment technology;0914;"Medical diagnostic and treatment technology is the study of a wide range of technologies used for diagnosing and treating diseases and handicaps.
+Programmes and qualifications with the following main content are classified here:
+Ambulance technology
+Hearing aid technology
+Medical laboratory technology
+Optical technology
+Prosthetic technology
+Radiology technology
+Radiotherapy
+X-ray technology (medical)
+
+=== Exclusions
+Study of laboratory technology is excluded from this detailed field if emphasis is not given to medical laboratory technology. General laboratory technology is included in detailed field 0711 'Chemical engineering and processes'. Laboratory technology where emphasis is given to other specific applications (biology, chemistry, physics etc) is included in the appropriate detailed field (0511, 0531, 0533 etc.).
+Study of dental technology is excluded from this detailed field and included in detailed field 0911 'Dental studies'.
+nan";http://data.europa.eu/esco/isced-f/0914;health
+3;therapy and rehabilitation;0915;"Therapy and rehabilitation is the study of restoring normal physical conditions to those incapacitated by temporary or permanent disability.
+Programmes and qualifications with the following main content are classified here:
+Dietician programmes
+Medical massage
+Nutrition/Dietetics
+Occupational therapy
+Physiotherapy
+Rehabilitation
+Speech therapy
+
+=== Exclusions
+Study of psychotherapy is excluded from this detailed field and included in detailed field 0313 'Psychology'.
+Study of nutrition science is excluded from this detailed field and included in narrow field 051 'Biological and related sciences'.
+nan";http://data.europa.eu/esco/isced-f/0915;health
+3;pharmacy;0916;"Pharmacy is the study of drugs and their effects on humans. It includes their preparation, dispensing and administration.
+Programmes and qualifications with the following main content are classified here:
+Dispensing pharmacy
+Pharmacy
+
+=== Exclusions
+Study of pharmacology is excluded from this detailed field and included in detailed field 0511 'Biology'.
+nan";http://data.europa.eu/esco/isced-f/0916;health
+3;traditional and complementary medicine and therapy;0917;"Traditional and complementary medicine is the study of alternative medicine.
+Programmes and qualifications with the following main content are classified here:
+Acupuncture and oriental medicine
+Aromatherapy
+Ayurvedic medicine
+Herbalism
+Herbology
+Holistic medicine
+Homeopathic medicine
+Traditional medicine, for example Chinese
+nan";http://data.europa.eu/esco/isced-f/0917;health
+3;health not elsewhere classified;0919;"nan
+nan";http://data.europa.eu/esco/isced-f/0919;health
+2;welfare;092;"nan
+nan";http://data.europa.eu/esco/isced-f/092;health and welfare
+3;welfare not further defined;0920;"nan
+nan";http://data.europa.eu/esco/isced-f/0920;welfare
+3;care of the elderly and of disabled adults;0921;"Care of the elderly and of disabled adults is the study of non-medical care of the elderly and disabled.
+Programmes and qualifications with the following main content are classified here:
+Care of the elderly
+Non-medical care of disabled adults
+Personal care of adults
+
+=== Exclusions
+Study of health care of the elderly and disabled is excluded from this detailed field and included in detailed field 0913 'Nursing and midwifery'.
+nan";http://data.europa.eu/esco/isced-f/0921;welfare
+3;child care and youth services;0922;"Child care and youth services are the study of the development and non-medical care of children and youths. It includes the study of recreation and leisure activities as a social service for school children and young adults.
+Programmes and qualifications with the following main content are classified here:
+Child care
+Child recreation programmes
+Day care
+Non-medical care of disabled children
+Youth services
+Youth worker programmes
+
+=== Exclusions
+Study of early childhood education in pre-schools is excluded from this detailed field and included in detailed field 0112 'Training for pre-school teachers'.
+Study of health care of children is excluded from this detailed field and included in detailed field 0913 'Nursing and midwifery'.
+nan";http://data.europa.eu/esco/isced-f/0922;welfare
+3;social work and counselling;0923;"Social work and counselling is the study of the welfare needs of communities, specific groups and individuals and the appropriate ways of meeting these needs. The focus is on social welfare with emphasis on social policy and practice.
+Programmes and qualifications with the following main content are classified here:
+Alcohol and drug abuse counselling
+Alcohol, tobacco, drugs (knowledge about)
+Crisis support
+Family and marriage counselling
+Mobbing and maltreatment (knowledge about)
+Parole officer training
+Probation officer training
+Social policy
+Social practice
+Social theory (applied)
+Social work (welfare)
+Vocational counselling
+Vocational guidance
+
+=== Exclusions
+Study of sociology and social science is excluded from this detailed field and included in detailed field 0314 'Sociology and cultural studies'.
+Studies combining health care and social care (e.g. for old people) are excluded from this detailed field and included in detailed field 0913 'Nursing and midwifery'.
+nan";http://data.europa.eu/esco/isced-f/0923;welfare
+3;welfare not elsewhere classified;0929;"nan
+nan";http://data.europa.eu/esco/isced-f/0929;welfare
+2;inter-disciplinary programmes and qualifications involving health and welfare;098;"nan
+nan";http://data.europa.eu/esco/isced-f/098;health and welfare
+3;inter-disciplinary programmes and qualifications involving health and welfare;0988;"Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to health and welfare are classified here.
+nan";http://data.europa.eu/esco/isced-f/0988;inter-disciplinary programmes and qualifications involving health and welfare
+2;health and welfare not elsewhere classified;099;"nan
+nan";http://data.europa.eu/esco/isced-f/099;health and welfare
+3;health and welfare not elsewhere classified;0999;"nan
+nan";http://data.europa.eu/esco/isced-f/0999;health and welfare not elsewhere classified
+1;services;10;"nan
+nan";http://data.europa.eu/esco/isced-f/10;
+2;services not further defined;100;"nan
+nan";http://data.europa.eu/esco/isced-f/100;services
+3;services not further defined;1000;"nan
+nan";http://data.europa.eu/esco/isced-f/1000;services not further defined
+2;personal services;101;"nan
+nan";http://data.europa.eu/esco/isced-f/101;services
+3;personal services not further defined;1010;"nan
+nan";http://data.europa.eu/esco/isced-f/1010;personal services
+3;domestic services;1011;"Domestic services are the study of various domestic services, such as housekeeping, cleaning, laundering, sewing etc.
+Programmes and qualifications with the following main content are classified here:
+Caretaking, housekeeping and home service workers
+Chimney sweeping
+Cleaning
+Cooking (home)
+Domestic science
+Dry-cleaning
+Funeral services and mortuary science
+Home economics
+Laundry
+Needlework (home)
+Sewing (home)
+Window cleaning
+
+=== Inclusions
+Cleaning is included here even if directed towards cleaning schools, hospitals, factories etc.
+
+=== Exclusions
+Study of building maintenance is excluded from this detailed field and included in detailed field 0732 'Building and civil engineering'.
+nan";http://data.europa.eu/esco/isced-f/1011;personal services
+3;hair and beauty services;1012;"Hair and beauty services are the study of caring for the hair and the body for beautification.
+Programmes and qualifications with the following main content are classified here:
+Barbering
+Beauty therapy
+Cosmetology (make up)
+Fitness and weight control
+Hairdressing
+Manicure
+Pedicure
+nan";http://data.europa.eu/esco/isced-f/1012;personal services
+3;hotel, restaurants and catering;1013;"Hotel, restaurants and catering is the study of providing food, beverages, accommodation and related services at hotels, restaurants etc.
+Programmes and qualifications with the following main content are classified here:
+Catering
+Cooking (restaurant and hotel-type)
+Fast food preparation
+Food serving
+Hospitality services
+Hotel and restaurant studies
+Hotel receptionist training
+Hotel services
+Waiting and bar service
+
+=== Exclusions
+Study of food processing (industrial) is excluded from this detailed field and included in detailed field 0721 'Food processing'.
+Receptionist training (general) is excluded from this detailed field and included in detailed field 0415 'Secretarial and office work'.
+nan";http://data.europa.eu/esco/isced-f/1013;personal services
+3;sports;1014;"Sports is the study of techniques and skills in a chosen sport.
+Programmes and qualifications with the following main content are classified here:
+Sport trainer studies
+Techniques and skills in a chosen sport
+Training of umpires/referees and other sports officials
+
+=== Inclusions
+Jockeying is included here. Chess playing is included here.
+
+=== Exclusions
+Training of school teachers in physical education (sports teachers) is excluded from this detailed field and included in detailed field 0114 'Teacher training with subject specialisation'.
+Fitness services are excluded from this detailed field and included in detailed field 1012 'Hair and beauty services'.
+nan";http://data.europa.eu/esco/isced-f/1014;personal services
+3;travel, tourism and leisure;1015;"Travel and tourism is the study of marketing and advertising tourist destinations and events. It includes the study of ticketing and reservation practices. Leisure is the study of recreational and leisure activities for individuals and groups.
+Programmes and qualifications with the following main content are classified here:
+Abseiling (rope climbing)
+Adventure based activities
+Ground crew training (airport)
+Guiding, tour leading
+Recreation and leisure
+Tourist trades programmes
+Travel agency services
+Travel and tourism
+Travel services
+
+=== Inclusions
+Basic training in how to treat tourists is included here.
+
+=== Exclusions
+Study of recreation and leisure activities for school children is excluded from this detailed field and included in detailed field 0922 'Child care and youth services'.
+nan";http://data.europa.eu/esco/isced-f/1015;personal services
+3;personal services not elsewhere classified;1019;"nan
+nan";http://data.europa.eu/esco/isced-f/1019;personal services
+2;hygiene and occupational health services;102;"nan
+nan";http://data.europa.eu/esco/isced-f/102;services
+3;hygiene and occupational health services not further defined;1020;"nan
+nan";http://data.europa.eu/esco/isced-f/1020;hygiene and occupational health services
+3;community sanitation;1021;"Community sanitation is the study of community services dealing with items that affect public health such as hygienic standards in food, water supply, disposal of sewage and garbage and street cleaning.
+Programmes and qualifications with the following main content are classified here:
+Hygiene, community
+Hygienic standards
+Refuse collection
+Refuse/sewage disposal
+Street cleaning
+Water supply (service)
+Waste management
+nan";http://data.europa.eu/esco/isced-f/1021;hygiene and occupational health services
+3;occupational health and safety;1022;"Occupational health and safety is the study of recognising, evaluating and controlling environmental factors associated with the workplace.
+Programmes and qualifications with the following main content are classified here:
+Ergonomics (occupational health and safety)
+Health and safety in the workplace
+Industrial welfare
+Labour protection
+Labour security
+Labour welfare (safety)
+Occupational health and industrial hygiene
+Occupational safety
+Stress management
+Work environment
+
+=== Exclusions
+Study of vocational rehabilitation and occupational therapy is excluded from this detailed field and included in detailed field 0915 'Therapy and rehabilitation'.
+Study of labour law is excluded from this detailed field and included in 0421 'Law'.
+Study of ergonomics is excluded from this detailed field if emphasis is given to technical aspects and is included in the appropriate detailed field under 071 'Engineering and engineering trades'.
+nan";http://data.europa.eu/esco/isced-f/1022;hygiene and occupational health services
+3;hygiene and occupational health services not elsewhere classified;1029;"nan
+nan";http://data.europa.eu/esco/isced-f/1029;hygiene and occupational health services
+2;security services;103;"nan
+nan";http://data.europa.eu/esco/isced-f/103;services
+3;security services not further defined;1030;"nan
+nan";http://data.europa.eu/esco/isced-f/1030;security services
+3;military and defence;1031;"Military and defence is the study of services to the community connected with war and defence, designed to provide training in the principles and practice of military science.
+Programmes and qualifications with the following main content are classified here:
+Air force training
+Army training
+Defence studies
+Military science
+Navy training
+War theory
+
+=== Exclusions
+Military personnel participating in non-military programmes should be classified according to the subject content of the training programme.
+nan";http://data.europa.eu/esco/isced-f/1031;security services
+3;protection of persons and property;1032;"Protection of persons and property is the study of services to the community concerning protection of property and persons. It comprises training in police work, public security, fire protection and fire-fighting.
+Programmes and qualifications with the following main content are classified here:
+Civil security
+Customs programmes
+Fire-protection (fire-fighting)
+Fire technology
+Life guarding
+Police work
+Policing studies
+Prison work
+Public security
+Security and loss prevention services
+Security guarding
+
+=== Exclusions
+Study of law is excluded from this detailed field and included in 0421 'Law'.
+Study of criminology is excluded from this detailed field and included in detailed field 0314 'Sociology and cultural studies'.
+nan";http://data.europa.eu/esco/isced-f/1032;security services
+3;security services not elsewhere classified;1039;"nan
+nan";http://data.europa.eu/esco/isced-f/1039;security services
+2;transport services;104;"nan
+nan";http://data.europa.eu/esco/isced-f/104;services
+3;transport services;1041;"Transport is the study of operating, navigating and directing ships, train, aircraft and other forms of transportation.
+Programmes and qualifications with the following main content are classified here:
+Aircraft operation
+Air traffic control
+Air traffic safety
+Cabin crew training
+Communication (air, railway, road etc.) programmes
+Crane and truck driving
+Driving programmes
+Flying and navigation
+Navigation technologies
+Postal service
+Railway operations
+Road motor vehicle operations
+Ship operation
+Shipping
+Transport studies
+
+=== Exclusions
+Programmes in telephone network services are excluded from this detailed field and included in detailed field 0714 'Electronics and automation'. Programmes in switchboard operating are excluded from this detailed field and included in detailed field 0415 'Secretarial and office work'.
+nan";http://data.europa.eu/esco/isced-f/1041;transport services
+2;inter-disciplinary programmes and qualifications involving services;108;"nan
+nan";http://data.europa.eu/esco/isced-f/108;services
+3;inter-disciplinary programmes and qualifications involving services;1088;"Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to services are classified here.
+nan";http://data.europa.eu/esco/isced-f/1088;inter-disciplinary programmes and qualifications involving services
+2;services not elsewhere classified;109;"nan
+nan";http://data.europa.eu/esco/isced-f/109;services
+3;services not elsewhere classified;1099;"nan
+nan";http://data.europa.eu/esco/isced-f/1099;services not elsewhere classified
+1;field unknown;99;"nan
+nan";http://data.europa.eu/esco/isced-f/99;
+2;field unknown;999;"nan
+nan";http://data.europa.eu/esco/isced-f/999;field unknown
+3;field unknown;9999;"nan
+nan";http://data.europa.eu/esco/isced-f/9999;field unknown

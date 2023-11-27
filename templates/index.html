@@ -16,7 +16,7 @@
             <label for="select-framework">Select a Framework</label>
             <select id="select-framework" name="framework" onchange="create_category_selection(this.value, 1, 'None')">
                 <option value="def"> -- Select Framework -- </option>
-                <option value="ISCED-F">ISCED-F</option>
+                <!--<option value="ISCED-F">ISCED-F</option>-->
                 {% for file in files %}
                     <option value="{{ file }}">{{ file }}</option>
                 {% endfor %}

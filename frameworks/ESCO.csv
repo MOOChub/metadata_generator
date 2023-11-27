@@ -1,0 +1,2079 @@
+Level;Name;ShortCode;Description;Uri;BroaderConcept
+1;handling and moving;S6;"Sorting, arranging, moving, transforming, fabricating and cleaning goods and materials by hand or using handheld tools and equipment. Tending plants, crops and animals.
+Excludes:
+- Specific skills involving interaction with people";http://data.europa.eu/esco/skill/03e0b95b-67d1-457a-b3f7-06c407cf6bec;
+2;handling and disposing of waste and hazardous materials;S6.13;"Collecting, storing and disposing of unwanted materials or hazardous, according to established waste management procedures.
+nan";http://data.europa.eu/esco/skill/15dfca7a-5dde-4199-bad3-c00600387258;handling and moving
+3;disposing of non-hazardous waste or debris;S6.13.2;"Collecting and disposing of unwanted non-hazardous materials according to established waste management procedures.
+Examples:
+- Handle fish harvesting waste 
+- Collect domestic waste";http://data.europa.eu/esco/skill/61d1dab2-6007-4b7c-9380-cd88207fa30f;handling and disposing of waste and hazardous materials
+3;handling and disposing of hazardous materials;S6.13.1;"Handling, collecting, storing and disposing of materials that pose substantial threats to public or personal health or the environment.
+Hazardous waste is defined in accordance with the latest EU guidance on the classification of waste: https://europa.eu/!kr89QF
+
+Examples:
+- Dispose of medical waste 
+- Handle chemical cleaning agents";http://data.europa.eu/esco/skill/8bde58aa-9d5b-422b-801c-ff9186dd648e;handling and disposing of waste and hazardous materials
+3;handling and disposing of waste and hazardous materials;S6.13.0;"Collecting, storing and disposing of unwanted materials or hazardous, according to established waste management procedures.
+nan";http://data.europa.eu/esco/skill/f8c676de-c871-424f-9a65-77059d07910a;handling and disposing of waste and hazardous materials
+2;moving and lifting;S6.2;"Performing physical activities to move, load, unload or store objects, position workpieces or equipment for assembly, or to climb structures, by hand or with the aid of equipment.
+Excludes:
+- Specific skills involving lifting and moving people and animals
+- Operation of machinery other than hand-held equipment";http://data.europa.eu/esco/skill/1cc5ff0b-afaa-4993-9de7-ab0d77b6cca2;handling and moving
+3;positioning materials, tools or equipment;S6.2.4;"Placing workpieces, materials, tools or equipment in the correct position for assembly or further work.
+nan";http://data.europa.eu/esco/skill/30b280e7-2468-440b-a78f-f1e7f515d60a;moving and lifting
+3;moving and lifting;S6.2.0;"Performing physical activities to move, load, unload or store objects or to climb structures, by hand or with the aid of equipment.
+Excludes:
+- Specific skills involving lifting and moving people and animals
+- Operation of machinery other than hand-held equipment";http://data.europa.eu/esco/skill/577ce84f-0d21-4f25-8307-99c53f6f8437;moving and lifting
+3;loading and unloading goods and, materials;S6.2.1;"Loading, securing or unloading products, materials, or equipment for transportation, storage or further processing by hand or using hand-held or manually operated equipment.
+Excludes:
+- Operation of machinery other than hand-held equipment
+
+Examples:
+- Stow cargo
+- Secure cargo on ships
+- Unload supplies";http://data.europa.eu/esco/skill/682bb7ca-dbe9-4c33-9c7a-1ae56e28516e;moving and lifting
+3;moving or lifting materials, equipment, or supplies;S6.2.2;"Moving or lifting goods, materials supplies or resources, by hand or with the aid of equipment, using actions such as lifting, pushing, carrying or shovelling.
+Excludes:
+- Operation of machinery other than hand-held equipment
+
+Examples:
+- Feed concrete mixer
+- Transfer luggage
+- Lift heavy weights";http://data.europa.eu/esco/skill/e852a2ed-c32e-4a39-bc4c-65a78ffe6bf2;moving and lifting
+3;storing goods and materials;S6.2.3;"Placing goods and materials in storage by hand, or with the aid of hand-held or manually operated equipment.
+Excludes:
+- Operation of machinery other than hand-held equipment 
+- Storing hazardous material
+
+Examples:
+- Stock shelves
+- Store film reels";http://data.europa.eu/esco/skill/e963cf1f-dc3c-48b2-a0fa-274f5e7f50f6;moving and lifting
+2;making moulds, casts, models and patterns;S6.6;"Making moulds, casts and two-dimensional patterns or templates and making three-dimensional models of products.
+Excludes:
+- Operation of automated assembly equipment or machines
+- Repair of building structures and mechanical, electrical, electronic products and components";http://data.europa.eu/esco/skill/1d9e5893-d6b2-47b1-80ba-5f1cdcbf5e9a;handling and moving
+3;making patterns and templates;S6.6.2;"Creating two dimensional patterns or templates for purposes such as cutting and fabricating articles in different shapes and sizes, or placement of items.
+Examples:
+- Create floor plan template
+- Create patterns for garments";http://data.europa.eu/esco/skill/0f8f9438-8529-41b8-bb7a-4d91121e3192;making moulds, casts, models and patterns
+3;making production moulds and casts;S6.6.1;"Constructing moulds for the manufacture of objects in various materials, and making casts by filling moulds with liquid materials for solidification.
+Excludes:
+- Operation of automated assembly equipment or machines
+- Pouring of concrete for construction of buildings
+
+Examples:
+- Modify casts for prostheses
+- Mould chocolate
+- Cast jewellery metal 
+- Prevent casting adhesion";http://data.europa.eu/esco/skill/480a0b1b-aae9-4b39-9a4f-1c2b8ddcbc46;making moulds, casts, models and patterns
+3;making moulds, casts, models and patterns;S6.6.0;"Making moulds, casts and two-dimensional patterns or templates and making three-dimensional models of products.
+Excludes:
+- Operation of automated assembly equipment or machines
+- Repair of building structures and mechanical, electrical, electronic products and components";http://data.europa.eu/esco/skill/6d535249-ac7c-4e44-8ada-09305c3a3900;making moulds, casts, models and patterns
+3;making models;S6.6.3;"Constructing physical three-dimensional models of products.
+Excludes:
+- Creation of virtual or conceptual models
+
+Examples:
+- Create set models
+- Build jewellery models
+- Make architectural mock-ups";http://data.europa.eu/esco/skill/74b7938e-f667-48ff-a26d-faed294ac6c9;making moulds, casts, models and patterns
+2;positioning materials, tools or equipment;S6.8;"Placing workpieces, materials, tools or equipment in the correct position for assembly or further work.
+nan";http://data.europa.eu/esco/skill/1e924921-b7ff-4326-a698-c8275bbcf60d;handling and moving
+3;positioning materials, tools or equipment;S6.8.0;"Placing workpieces, materials, tools or equipment in the correct position for assembly or further work.
+nan";http://data.europa.eu/esco/skill/0526c9cb-c8a4-498e-8498-d0e2d14ac626;positioning materials, tools or equipment
+3;positioning tools or equipment;S6.8.1;"Placing tools or equipment in the correct position for use.
+Examples:
+- Position engraving equipment
+- Position cross slide of a lathe";http://data.europa.eu/esco/skill/ca8723d6-d9fe-42fd-ac14-ba6bb5b0f6c2;positioning materials, tools or equipment
+3;positioning workpieces or materials;S6.8.2;"Positioning workpieces, components or materials on equipment or in position for assembly.
+Examples:
+- Align components
+- Position base plates
+- Position outriggers";http://data.europa.eu/esco/skill/e747e5ec-c0be-4662-b62f-43e0ae344e50;positioning materials, tools or equipment
+2;tending plants and crops;S6.4;"Propagating, cultivating, pruning, caring for and harvesting plants and crops.
+nan";http://data.europa.eu/esco/skill/4364e0cd-66ad-4f0c-b96d-0ea6796067cb;handling and moving
+3;tending plants and crops;S6.4.0;"Propagating, cultivating, pruning, caring for and harvesting plants and crops.
+nan";http://data.europa.eu/esco/skill/762f3830-baa8-4a7e-a5de-b49037d80885;tending plants and crops
+3;planting, pruning and harvesting trees, crops and other plants;S6.4.2;"Propagating and planting trees, flowers and other plants for production of food crops and other products, enhancing the environment or for scientific research. 
+Examples:
+- Seed the ground
+- Propagate plants 
+- Plant trees";http://data.europa.eu/esco/skill/888f286e-272f-4e54-8a3b-9fa391870618;tending plants and crops
+3;cultivating land and crops;S6.4.1;"Preparing and maintaining land for agricultural or horticultural use and promoting the growth of plants.
+Examples:
+- Prepare planting area
+- Irrigate soil
+- Spread fertiliser
+- Maintain plants' growth";http://data.europa.eu/esco/skill/b7c82b1b-cff9-4641-a62f-e4e28395eade;tending plants and crops
+2;transforming and blending materials;S6.3;"Transforming materials from one form to another by mixing, blending, heating or chemical reaction, by hand or using handheld tools and equipment.
+nan";http://data.europa.eu/esco/skill/462f8805-3c0b-43c6-8bef-592b87939763;handling and moving
+3;preparing industrial materials for processing or use;S6.3.3;"Preparing various types of materials for further processing or for use, by employing techniques such as heating, skimming to remove impurities or immersing objects in cleaning or coating solutions.
+Examples:
+- Heat jewellery metals
+- Heat lacquer mixture
+- Prepare surface for coating";http://data.europa.eu/esco/skill/8066edda-60e7-4e41-966b-4be09b049ab3;transforming and blending materials
+3;preparing mixtures or solutions;S6.3.1;"Mixing and blending various types of solid or liquid materials, by hand or using handheld tools and equipment.
+Examples:
+- Mix paint
+- Mix construction grouts
+- Blend food ingredients";http://data.europa.eu/esco/skill/bf4822d3-1f66-499d-afc9-151a9ba33e58;transforming and blending materials
+3;transforming and blending materials;S6.3.0;"Transforming materials from one form to another by mixing, blending, heating or chemical reaction, by hand or using handheld tools and equipment.
+nan";http://data.europa.eu/esco/skill/c098d6c1-dfee-4b02-8ce5-c6d80c98e18b;transforming and blending materials
+3;collecting and preparing specimens or materials for testing;S6.3.6;"Taking, preparing or preserving as required samples or specimens of products, liquids chemicals or organic materials in order for them to be ready for testing and analysis.
+Examples:
+- Prepare chemical samples
+- Collect samples for analysis";http://data.europa.eu/esco/skill/f1612d7a-0338-4b0f-a2a4-86b5168e2596;transforming and blending materials
+2;washing and maintaining textiles and clothing;S6.12;"Washing or cleaning clothing and other textile products by hand or using a washing or laundry machine, maintaining textile items in good order.
+Excludes:
+- Repairing or adjusting clothes
+
+Examples:
+- Iron textiles 
+- Eliminate stains 
+- Clean household linens";http://data.europa.eu/esco/skill/56c3ea4b-7cea-44da-969c-c21b07a55030;handling and moving
+3;washing and maintaining textiles and clothing;S6.12.0;"Washing or cleaning clothing and other textile products by hand or using a washing or laundry machine, maintaining textile items in good order.
+Excludes:
+- Repairing or adjusting clothes
+
+Examples:
+- Iron textiles 
+- Eliminate stains 
+- Clean household linens";http://data.europa.eu/esco/skill/22d15a65-7262-4a6d-b981-53671b95ad29;washing and maintaining textiles and clothing
+2;cleaning;S6.11;"Cleaning buildings, work areas, equipment, machinery and vehicles.
+Excludes:
+- Cleaning, laundering and maintaining textiles
+- Cleaning live animals";http://data.europa.eu/esco/skill/821ecf8f-3c2a-4b89-a9f1-b2aa7fb0b625;handling and moving
+3;cleaning;S6.11.0;"Cleaning buildings, work areas, equipment, machinery and vehicles.
+Excludes:
+- Cleaning, laundering and maintaining textiles
+- Cleaning live animals";http://data.europa.eu/esco/skill/2bf2c727-ee42-4fc5-a4d7-2cd62b880433;cleaning
+3;cleaning outdoor spaces;S6.11.3;"Cleaning outdoor public spaces such as streets or parks.
+Examples:
+- Clean camping facilities
+- Perform street cleaning manually";http://data.europa.eu/esco/skill/3b86c15f-3f66-4e50-abf5-544f2a942a0b;cleaning
+3;cleaning tools, equipment, workpieces and vehicles;S6.11.1;"Performing cleaning routines after tools, equipment, machinery and vehicles have been used and cleaning workpieces during or after fabrication.
+Examples:
+- Clean ventilation system 
+- Clean concrete pumps
+- Sterilise fermentation tanks
+- Clean chimneys
+- Wash vehicles";http://data.europa.eu/esco/skill/7a8c9402-0550-4966-9ff6-0d65b0f6b1fb;cleaning
+3;cleaning interior and exterior of buildings;S6.11.2;"Cleaning interior spaces and furnishings and the exterior of buildings and similar structures.
+Excludes:
+- Specialised cleaning of equipment in buildings, such as sweeping chimneys
+
+Examples:
+- Clean rooms 
+- Clean train interiors
+- Maintain work area cleanliness";http://data.europa.eu/esco/skill/d69e45d3-1f3f-4e6a-8933-82e949277811;cleaning
+2;assembling and fabricating products;S6.5;"Fabricating, assembling or repairing products or work aids by hand, or using hand-held tools and equipment.
+Excludes:
+- Operation of automated assembly equipment or machines
+ -repair of building structures and mechanical, electrical, electronic products and components.
+
+Examples:
+- Assemble metal parts 
+- Apply assembly techniques";http://data.europa.eu/esco/skill/b8e142fe-e508-42b1-b037-efebcefac3a7;handling and moving
+3;fabricating precision instruments or jewellery;S6.5.1;"Assembling, fabricating or repairing precision instruments, such as optical devices, clocks and musical instruments, by hand or using hand-held tools and equipment.
+Excludes:
+- Operation of automated assembly equipment
+- Assembly of electrical and electronic products and components
+- Fabrication of decorative objects 
+- Fabrication of medical, orthotic and prosthetic devices
+
+Examples:
+- Assemble jewellery parts
+- Attach pendulums
+- Customise guns
+- Repair musical instruments
+- Centre lenses";http://data.europa.eu/esco/skill/2ad2ee1c-afc9-402f-91ab-c9c0911b209d;assembling and fabricating products
+3;fabricating medical and prosthetic devices;S6.5.2;"Fabricating, maintaining or repairing medical, dental, orthotic or prosthetic devices.
+Excludes:
+- Operation of automated assembly equipment or machines
+- Fabricating or repairing optical devices
+
+Examples:
+- Manufacture dental prostheses
+- Create lifecasts
+- Repair orthopaedic goods";http://data.europa.eu/esco/skill/37f2f637-1f54-4ea1-b677-5ca6cac24993;assembling and fabricating products
+3;fabricating tobacco products;S6.5.8;"Fabricating tobacco products by hand or using hand-held tools and equipment.
+Excludes:
+- Operation of machinery
+- Preparing and cooking food and drinks for immediate consumption
+
+Examples:
+- Cure tobacco leaves
+- Flavour tobacco leaves";http://data.europa.eu/esco/skill/3eacdaa9-fe4a-49ba-a085-c798097cf8d4;assembling and fabricating products
+3;fabricating garments and textile products;S6.5.6;"Fabricating, altering and repairing garments and textile products by hand or using hand-held tools and equipment.
+Excludes:
+- Operation of automated assembly equipment
+- Fabrication of decorative objects
+
+Examples:
+- Alter wearing apparel
+- Manufacture male suits
+- Repair shoes
+- Sew curtains";http://data.europa.eu/esco/skill/528c2f16-139f-4a5b-8880-a6f02ed33f2a;assembling and fabricating products
+3;assembling electrical and electronic products;S6.5.3;"Assembling electrical and electronic products, excluding medical or prosthetic devices, by hand or using hand-held tools and equipment.
+Excludes:
+- Operation of automated assembly equipment
+- Installation, repair and maintenance of devices
+- Fabrication of decorative objects 
+- Fabrication of medical, orthotic and prosthetic devices
+
+Examples:
+- Assemble mechatronic devices
+- Assemble electrical components";http://data.europa.eu/esco/skill/592525ab-b517-4c55-8c65-17e0f5d99205;assembling and fabricating products
+3;assembling furniture;S6.5.5;"Assembling and repairing furniture by hand or using hand-held tools and equipment.
+Excludes:
+- Operation of automated assembly equipment
+- Fabrication of decorative objects
+
+Examples:
+- Assemble prefabricated furniture
+- Repair furniture frames";http://data.europa.eu/esco/skill/62023d5b-22ea-442e-ac46-39eb83c986fb;assembling and fabricating products
+3;assembling and fabricating products;S6.5.0;"Fabricating, assembling or repairing products or work aids by hand, or using hand-held tools and equipment.
+Excludes:
+- Operation of automated assembly equipment or machines
+ -repair of building structures and mechanical, electrical, electronic products and components.
+
+Examples:
+- Assemble metal parts 
+- Apply assembly techniques";http://data.europa.eu/esco/skill/827de17d-3fc1-4ba5-b4e0-850c51e750c8;assembling and fabricating products
+3;assembling mechanical products;S6.5.4;"Assembling mechanical products by hand or using hand-held tools and equipment.
+Excludes:
+- Operation of automated assembly equipment
+- Installation, repair and maintenance of machinery
+- Fabrication of decorative objects 
+- Fabrication of medical, orthotic and prosthetic devices
+
+Examples:
+- Assemble bicycles
+- Assemble machines";http://data.europa.eu/esco/skill/bd1242ec-6dd5-4c7d-bf79-8de6be3b3815;assembling and fabricating products
+3;fabricating food and related products;S6.5.7;"Fabricating food, drink and related products by hand or using hand-held tools and equipment.
+Excludes:
+- Operation of machinery
+- Preparing and cooking food and drinks for immediate consumption
+
+Examples:
+- Prepare specialised meat products
+- Extract juices
+- Perform curd processing of cheese";http://data.europa.eu/esco/skill/f289347f-a76d-4d03-a648-74b53ed1e636;assembling and fabricating products
+2;using hand tools;S6.7;"Using the hands and tools that can be held in the hands, including power tools.
+Excludes:
+- Fabricating products by hand
+- Operating a lawn-mower";http://data.europa.eu/esco/skill/d23b21ca-2ef5-4b5e-b37e-a5311dc2e292;handling and moving
+3;shaping materials to create products;S6.7.2;"Altering the shape of various types of materials by hand or using hand tools.
+Examples:
+- Shape clay
+- Shape sheet metal objects
+- Use wood chisel";http://data.europa.eu/esco/skill/424cce4d-71c9-47d9-93d6-4068403139f0;using hand tools
+3;smoothing surfaces of objects or equipment;S6.7.3;"Creating smooth surfaces on various types of materials and employing techniques such as grinding, planing, sanding and polishing, using handheld tools.
+Examples:
+- Smooth burred surfaces
+- Polish furniture";http://data.europa.eu/esco/skill/51ffd92f-7ff4-4c38-83d4-7350fcfd6968;using hand tools
+3;using precision hand tools;S6.7.4;"Using hand-held electronic, mechanical, electric, or optical tools for precision work.
+Examples:
+- Use watchmaker's tools
+- Use jewellery equipment";http://data.europa.eu/esco/skill/57216e88-a0d3-4b8c-af6c-b8232b4f48c2;using hand tools
+3;cutting materials and drilling holes;S6.7.1;"Cutting various types of materials using handheld tools and equipment.
+Excludes:
+- Cutting or pruning trees or other live plants
+- Surgical procedures on humans and animals
+
+Examples:
+- Cut carpet
+- Drill holes in tile";http://data.europa.eu/esco/skill/72fe5d9f-4ec8-4fc4-b1d3-0dd83be0aa1a;using hand tools
+3;using hand tools;S6.7.0;"Using the hands and tools that can be held in the hands, including power tools.
+Excludes:
+- Fabricating products by hand
+- Operating a lawn-mower";http://data.europa.eu/esco/skill/74052f13-4cae-4600-a4d3-8103004683f3;using hand tools
+3;hammering, nailing and riveting;S6.7.5;"Using manual or powered hand-held hammers, chisels, nail guns and riveting equipment.
+Excludes:
+- Operating hammer drill
+
+Examples:
+- Nail floorboards
+- Operate nail gun
+- Operate handheld riveting equipment";http://data.europa.eu/esco/skill/b82b2bad-41dd-40af-8242-e7d59a2ce786;using hand tools
+2;handling animals;S6.9;"Handling, moving, feeding and caring for live animals.
+nan";http://data.europa.eu/esco/skill/e5419bb1-38c7-458a-b263-b7e73e02bc7e;handling and moving
+3;hunting, trapping and slaughtering animals;S6.9.4;"Hunting, trapping or capturing animal wildlife or birds, or slaughter captive animals, for purposes such as gaining food or animal products, pest control or wildlife management.
+Examples:
+- Hunt animals
+- Slaughter animals
+- Remove predators";http://data.europa.eu/esco/skill/3afcf547-cefc-493a-8abb-aaa8b7088e4f;handling animals
+3;feeding and grooming animals;S6.9.5;"Feeding and grooming domestic and captive animals of all types including aquatic.
+Examples:
+- Feed livestock
+- Groom animals 
+- Implement fin fish feeding regimes
+- Feed broodstock 
+- Feed pets";http://data.europa.eu/esco/skill/42f18b92-1c20-46ed-bde0-9bc64ff1e475;handling animals
+3;providing therapy or veterinary treatment for animals;S6.9.7;"Diagnosing and treating health conditions in animals and providing veterinary services such as artificial insemination and implanting microchips.
+Examples:
+- Perform surgical procedures on animals
+- Perform artificial insemination 
+- Manage care of veterinary patients in accommodation
+- Trim bovine hooves";http://data.europa.eu/esco/skill/7194cdea-bca7-4c4a-8d49-3cb54b89d5a0;handling animals
+3;training animals;S6.9.6;"Training animals to facilitate their routine husbandry, for professional purposes or as companion animals, for treatment, and/or public demonstrations.
+Examples:
+- Train horses
+- Train gun dogs";http://data.europa.eu/esco/skill/77a2918f-5969-4545-a632-d3e6a853b2c5;handling animals
+3;handling animals;S6.9.0;"Handling, moving, feeding and caring for live animals.
+nan";http://data.europa.eu/esco/skill/9d0d6866-cd91-490b-9e3a-d0914ad95a2e;handling animals
+3;tending and breeding aquatic animals;S6.9.2;"Breeding, raising and harvesting aquatic and aquaculture stock such as fin fish and shellfish.
+Examples:
+- Induce spawning of cultured aquaculture species
+- Handle broodstock
+- Manure aquaculture ponds";http://data.europa.eu/esco/skill/e52cd6e7-f8dc-4f6f-b988-5554423f53fb;handling animals
+3;tending and breeding animals;S6.9.1;"Breeding, raising and tending non-aquatic livestock such as cattle, poultry, and honeybees.
+Excludes:
+- Perform artificial insemination
+
+Examples:
+- Milk animals
+- Breed stock
+- Care for juvenile animals
+- Manage animal hygiene
+- Provide dog walking services";http://data.europa.eu/esco/skill/edcfd6ef-1a42-4e0a-97e2-2a2d61cac181;handling animals
+3;moving and herding animals;S6.9.3;"Directing, controlling or restraining the movement of live animals to move them into vehicles pens, feeding areas and other enclosed spaces, or to facilitate grooming, veterinary procedures or slaughter.
+Examples:
+- Load animals for transportation
+- Control animal movement";http://data.europa.eu/esco/skill/f0f8ceea-304e-42e8-80cf-ff1535eb7068;handling animals
+2;sorting and packaging goods and materials;S6.1;"Sorting, packaging, separating or arranging materials, according to established patterns or procedures.
+nan";http://data.europa.eu/esco/skill/f2840c73-9693-4cc0-8dc1-c44942263d5d;handling and moving
+3;marking materials or objects for identification;S6.1.2;"Marking or labelling objects or materials for identification by type or individually.
+Examples:
+- Assign codes to product items
+- Change shelf labels 
+- Label samples";http://data.europa.eu/esco/skill/35045957-e9e4-44b1-801a-9a49f6efaece;sorting and packaging goods and materials
+3;sorting materials or products;S6.1.1;"Arranging materials into predetermined categories or groups, according to established patterns of procedures.
+Examples:
+- Differentiate types of packages
+- Sort waste";http://data.europa.eu/esco/skill/485b2e3b-f883-46d8-901f-ab521d4f8e58;sorting and packaging goods and materials
+3;packaging objects;S6.1.3;"Enclosing or protecting products for distribution or storage according to a coordinated system of preparing goods for transport, warehousing, logistics, sale, and use.
+Examples:
+- Pack merchandise for gifts
+- Fill sacks
+- Package fish";http://data.europa.eu/esco/skill/8da6cd59-61e1-43c4-8dfc-bc69d283ccc7;sorting and packaging goods and materials
+3;sorting and packaging goods and materials;S6.1.0;"Sorting, packaging, separating or arranging materials, according to established patterns or procedures.
+nan";http://data.europa.eu/esco/skill/e5e3b8d7-a96d-41f4-acb6-563b0f7f2994;sorting and packaging goods and materials
+2;handling and moving;S6.0;"Sorting, arranging, moving, transforming, fabricating and cleaning goods and materials by hand or using handheld tools and equipment. Tending plants, crops and animals.
+Excludes:
+- Specific skills involving interaction with people";http://data.europa.eu/esco/skill/ff565308-8f29-4f1d-a342-9a29bd8b7446;handling and moving
+3;handling and moving;S6.0.0;"Sorting, arranging, moving, transforming, fabricating and cleaning goods and materials by hand or using handheld tools and equipment. Tending plants, crops and animals.
+Excludes:
+- Specific skills involving interaction with people";http://data.europa.eu/esco/skill/ca5b2cf4-0f3e-4c47-b496-12d812a7e5d9;handling and moving
+1;information skills;S2;"Collecting, storing, monitoring, and using information; Conducting studies, investigations and tests; maintaining records; managing, evaluating, processing, analysing and monitoring information and projecting outcomes.
+nan";http://data.europa.eu/esco/skill/0a2d70ee-d435-4965-9e96-702b2fb65740;
+2;monitoring developments in area of expertise;S2.9;"Monitoring and keeping knowledge up-to-date concerning new research, methodologies, regulations, policies technological developments and other significant changes relevant to a particular field of specialisation.
+Examples:
+- Follow trends in sporting equipment
+- Keep up to date with diagnostic innovations
+- Monitor legislation developments
+- Monitor technology trends";http://data.europa.eu/esco/skill/0101f8a4-4243-4e67-813b-3e2a6274f7e2;information skills
+3;monitoring developments in area of expertise;S2.9.0;"Monitoring and keeping knowledge up-to-date concerning new research, methodologies, regulations, policies technological developments and other significant changes relevant to a particular field of specialisation.
+Examples:
+- Follow trends in sporting equipment
+- Keep up to date with diagnostic innovations
+- Monitor legislation developments
+- Monitor technology trends";http://data.europa.eu/esco/skill/e2a5e046-3357-493e-bbdc-8d0ef82005cc;monitoring developments in area of expertise
+2;monitoring, inspecting and testing;S2.8;"Examining and investigating problems, sites or objects to assess functioning or compliance with standards, laws or regulations.
+nan";http://data.europa.eu/esco/skill/1e95cef2-9c35-4f9f-b6a9-cb458c3e5379;information skills
+3;monitoring quality of products;S2.8.10;"Monitoring the manufacturing process of products, testing their quality and investigating them for defects.
+Examples: 
+- check paper quality 
+- inspect material";http://data.europa.eu/esco/skill/0b3930a2-8a13-4932-8a09-4c72ec8af464;monitoring, inspecting and testing
+3;monitoring safety or security;S2.8.4;"Monitoring and inspecting the safety or security of work areas, facilities, or properties.
+Excludes:
+- Testing and analysing substances
+
+Examples:
+- Conduct on board safety inspections
+- Monitor building security
+- Monitor parking areas to maintain security
+- Inspect mine safety conditions";http://data.europa.eu/esco/skill/0e0a44a8-654c-4e85-986a-fb4386114838;monitoring, inspecting and testing
+3;monitoring operational activities;S2.8.2;"Monitoring the operations of a business or organisation to ensure adequate performance and compliance with regulatory requirements.
+Excludes:
+- Testing and analysing substances
+
+Examples:
+- Detect bottlenecks
+- Monitor mine production
+- Manage project metrics";http://data.europa.eu/esco/skill/15fa3879-ac0e-46e6-ae36-609bae9c19c3;monitoring, inspecting and testing
+3;inspecting food safety and quality;S2.8.9;"Performing food safety and quality checks of ingredients, raw materials and finished food products to check if they meet required standards.
+Examples: 
+- check paper quality 
+- inspect material
+
+Excludes:
+- inspect material";http://data.europa.eu/esco/skill/1893b4bc-0eb2-41de-96e3-9c8f1f1eac41;monitoring, inspecting and testing
+3;testing vehicles;S2.8.11;"Inspecting vehicles and other heavy machinery used for transport, such as cargos, cars and other vehicles.
+nan";http://data.europa.eu/esco/skill/47aa582a-3edb-45b5-9ef4-e87813ea327c;monitoring, inspecting and testing
+3;monitoring, inspecting and testing;S2.8.0;"Examining and investigating problems, sites or objects to assess functioning or compliance with standards, laws or regulations.
+nan";http://data.europa.eu/esco/skill/54f7432d-a8b6-4ed4-a50e-9ec882320595;monitoring, inspecting and testing
+3;monitoring financial and economic resources and activity;S2.8.3;"Monitor parameters to maintain awareness of levels of financial resources and expenditure, stocks, and the economic environment.
+Excludes:
+- Testing and analysing substances
+
+Examples:
+- Monitor production costs
+- Monitor financial accounts
+- Monitor bond markets";http://data.europa.eu/esco/skill/5c2d5780-23ed-4372-bb8d-c1846ee404ae;monitoring, inspecting and testing
+3;monitoring health conditions of humans and animals ;S2.8.6;"Monitoring health conditions of humans or animals throughout their lifecycle or during specific occasions, such as pregnancy or surgery.
+Excludes:
+- Testing and analysing substances
+
+Examples:
+- Monitor patient's health condition
+- Monitor pregnancy
+- Monitor fish health status";http://data.europa.eu/esco/skill/c5ff50d7-97d3-401e-90ac-e5ae756a52de;monitoring, inspecting and testing
+3;testing and analysing substances;S2.8.8;"Performing tests and analyses of gases, fluids or solid substances, such as blood samples, cell cultures and samples of food and beverages.
+Examples:
+- Analyse body fluids
+- Conduct soil sample tests
+- Test alkalinity
+- Test oxygen purity";http://data.europa.eu/esco/skill/d2e8f452-ac19-4eed-b984-8f55d2a5b763;monitoring, inspecting and testing
+3;monitoring environmental conditions;S2.8.5;"Measuring and maintaining awareness of changes in environmental conditions including the weather, air and water quality, and the impact of human activities on nature.
+Excludes:
+- Testing and analysing substances
+
+Examples:
+- Monitor radiation levels
+- Monitor forest health
+- Monitor parking areas to maintain security
+- Assess harvesting impact on wildlife
+- Inspect mine safety conditions";http://data.europa.eu/esco/skill/d519fadd-85bf-475f-bf14-c53a0290687d;monitoring, inspecting and testing
+3;testing electrical and mechanical systems or equipment ;S2.8.1;"Inspecting and monitoring functionality of electrical and mechanic systems and equipment.
+Examples:
+- Perform test run
+
+Excludes:
+- Testing and analysing substances
+- Test vehicles
+- Inspect cargo
+
+";http://data.europa.eu/esco/skill/f7fc7bf8-f41d-44af-81e3-09b88e9779e6;monitoring, inspecting and testing
+2;documenting and recording information;S2.2;"Maintaining records of information, transactions and activities in digital, paper or other forms.
+Excludes:
+- Writing reports or documents requiring drafting of original text";http://data.europa.eu/esco/skill/325a3d29-a235-4182-9128-782c0f4b2dcc;information skills
+3;maintaining operational records;S2.2.5;"Keeping records required for operational purposes such as those related to staff, clients, production and stock inventories.
+Examples:
+- keep personal records
+- keep stock records
+- prepare production reports
+
+Excludes:
+- write reports or documents requiring drafting of original text
+";http://data.europa.eu/esco/skill/06fdd94c-292d-49e3-9c78-bbcbc2088232;documenting and recording information
+3;documenting and recording information;S2.2.0;"Maintaining records of information, transactions and activities in digital, paper or other forms.
+Excludes:
+- Writing reports or documents requiring drafting of original text";http://data.europa.eu/esco/skill/1034004c-0347-4765-8794-b65d2c92b379;documenting and recording information
+3;preparing documentation for contracts, applications, or permits;S2.2.3;"Preparing applications and maintaining standardized documentation for the issuance of contracts, licences or permits.
+Examples:
+- prepare building permit applications
+- issue permits
+- arrange customs documents
+
+Excludes:
+- write reports or documents requiring drafting of original text
+
+";http://data.europa.eu/esco/skill/1bc1cf2a-a7f6-4769-a13b-cc26a2214498;documenting and recording information
+3;reporting incidents and defects;S2.2.7;"Reporting and keeping records of events, complaints, and defective equipment or materials.
+Examples:
+- report airport security incidents
+- write rail defect records
+
+Excludes:
+- write reports or documents requiring drafting of original text
+";http://data.europa.eu/esco/skill/20136935-e6a1-417b-81df-9b94d4c2c371;documenting and recording information
+3;documenting technical designs, procedures, problems or activities;S2.2.6;"Preparing and maintaining documentation and specifications of designs, equipment and operating procedures.
+Examples:
+- create documented procedures
+- maintain food specifications
+- provide manufacturing documentation
+
+Excludes:
+- write reports or documents requiring drafting of original text
+";http://data.europa.eu/esco/skill/95bf4552-6d5b-41dc-b990-53ace372f705;documenting and recording information
+3;preparing financial documents, records, reports, or budgets;S2.2.1;"Preparing and maintaining records and standardized reports on transactions, sales, financial information and budgets.
+Examples:
+- prepare financial auditing reports
+- maintain financial records
+
+Excludes:
+- write reports or documents requiring drafting of original text
+";http://data.europa.eu/esco/skill/b32ef8a5-e3f7-40ef-8b40-913c003e1f4e;documenting and recording information
+3;recording legal information;S2.2.2;"Recording information and preparing standardized documentation and reports on legal matters.
+Examples:
+- record court proceedings
+
+Excludes:
+- write reports or documents requiring drafting of original text
+";http://data.europa.eu/esco/skill/b975836b-d9b9-4724-88da-9a82b856e74b;documenting and recording information
+3;maintaining or preparing medical documentation;S2.2.4;"Maintaining health and medical records, and preparing standardized reports on health status, medical conditions, or medical test results.
+Examples:
+- maintain treatment records
+
+Excludes:
+- write reports or documents requiring drafting of original text
+";http://data.europa.eu/esco/skill/c1bd0ed6-053c-4703-981e-eaec5e57de18;documenting and recording information
+2;analysing and evaluating information and data;S2.7;"Examining data or facts to determine appropriate actions or recommendations; comparing and critically evaluating the credibility and reliability of sources of data; making and defending judgements based on internal evidence and external criteria.
+Excludes:
+- Using ICT tools to analyse and process data.";http://data.europa.eu/esco/skill/3753e796-121e-46a3-9c27-dee31ce92c80;information skills
+3;analysing and evaluating information and data;S2.7.0;"Examining data or facts to determine appropriate actions or recommendations; comparing and critically evaluating the credibility and reliability of sources of data; making and defending judgements based on internal evidence and external criteria.
+Excludes:
+- Using ICT tools to analyse and process data.";http://data.europa.eu/esco/skill/1f2950c0-ef1e-44b4-9a55-125ccd7b78af;analysing and evaluating information and data
+3;assessing land or real estate;S2.7.1;"Assessing the suitability of land or buildings for future sale, use, development or conservation and estimating their value.
+Excludes:
+- Using ICT tools to analyse and process data.
+
+Examples:
+- Conduct environmental site assessments
+- Survey sites for pipeline installation
+- Value properties";http://data.europa.eu/esco/skill/3eef7ff2-3ade-41d4-b084-2bd2a3949e1c;analysing and evaluating information and data
+3;performing risk analysis and management;S2.7.5;"Identify and assess factors that may have negative financial consequences, jeopardise the success of a project or activity, expose individuals to danger, cause damage to property and equipment or threaten an organisation's functioning. Implement procedures to avoid or minimise their impact.
+Excludes:
+- Using ICT tools to analyse and process data.
+
+Examples:
+- Draw up risk assessment
+- Apply risk management processes";http://data.europa.eu/esco/skill/7e153e1d-2b12-43ad-89f3-0cf82ebc4a30;analysing and evaluating information and data
+3;analysing scientific and medical data;S2.7.2;"Analysing data and evaluating information collected from scientific and medical tests and investigations.
+Excludes:
+- Using ICT tools to analyse and process data.
+- Analysing and testing samples
+
+Examples:
+- Interpret haematological test results
+- Analyse environmental data";http://data.europa.eu/esco/skill/ba1f6201-b206-4459-b178-706db34a851d;analysing and evaluating information and data
+3;analysing financial and economic data;S2.7.3;"Analysing and evaluating information and data on finances and on economic and market trends.
+Excludes:
+- Risk analysis
+- Using ICT tools to analyse and process data.
+
+Examples:
+- Forecast economic trends
+- Prepare financial projections
+- Consult credit scores";http://data.europa.eu/esco/skill/d94e1143-3a3a-4f6a-a881-df93bf56cf23;analysing and evaluating information and data
+3;analysing business operations;S2.7.4;"Analysing and evaluating information and data on production and business operations.
+Excludes:
+- Using ICT tools to analyse and process data.
+
+Examples:
+- Perform business analysis
+- Conduct feasibility studies";http://data.europa.eu/esco/skill/ec528c47-65f4-4187-9dc1-5a8889f84a06;analysing and evaluating information and data
+3;evaluating systems, programmes, equipment and products;S2.7.6;"Evaluating and analysing information on the performance of systems, processes, practices, programmes, equipment or products.
+Excludes:
+- Using ICT tools to analyse and process data.
+- Testing equipment and products
+
+Examples:
+- Evaluate education programmes
+- Evaluate nursing care
+- Execute ICT audits";http://data.europa.eu/esco/skill/f2cf57fe-d4cb-4b4a-831d-73171cc73909;analysing and evaluating information and data
+2;processing information;S2.4;"Inputting, recording, transcribing and updating data using electronic or manual information systems.
+Excludes:
+- Skills in the use of specific ICT tools to process data";http://data.europa.eu/esco/skill/587e1cd6-a376-4c8f-8369-187c128d72a3;information skills
+3;gathering information from physical or electronic sources;S2.4.1;"Collecting, compiling or gathering information from digital, paper or other sources.
+Examples:
+- collect customer data
+- gather reference materials
+- obtain financial information
+
+Excludes:
+- Skills in the use of specific ICT tools to process data
+";http://data.europa.eu/esco/skill/29dcc31e-a8d6-4a62-b3c1-2de81e966e39;processing information
+3;processing information;S2.4.0;"Inputting, recording, transcribing and updating data using electronic or manual information systems.
+Excludes:
+- Skills in the use of specific ICT tools to process data";http://data.europa.eu/esco/skill/70ac2c90-656a-4fa3-886c-5b9305db2087;processing information
+3;entering and transforming information;S2.4.2;"Entering and transforming information in electronic or other information systems.
+Examples:
+- format documents
+- transcribe data
+- input data into computers
+
+Excludes:
+- skills in the use of specific ICT tools to process data
+- perform mathematical calculations
+";http://data.europa.eu/esco/skill/9bdf8a77-8524-43da-bac6-d15d22e1b7ed;processing information
+2;information skills;S2.0;"Collecting, storing, monitoring, and using information; Conducting studies, investigations and tests; maintaining records; managing, evaluating, processing, analysing and monitoring information and projecting outcomes.
+nan";http://data.europa.eu/esco/skill/82c084ea-15e9-4d55-98dc-ede0f767baee;information skills
+3;information skills;S2.0.0;"Collecting, storing, monitoring, and using information; Conducting studies, investigations and tests; maintaining records; managing, evaluating, processing, analysing and monitoring information and projecting outcomes.
+nan";http://data.europa.eu/esco/skill/cd9c487e-09ad-4b82-854b-118feb01f2ed;information skills
+2;measuring physical properties;S2.5;"Measuring the dimensions, weight, density and other physical properties of objects, materials and spaces.
+nan";http://data.europa.eu/esco/skill/8a57f720-70b3-41de-877c-7d723977dc88;information skills
+3;measuring dimensions and related properties;S2.5.1;"Measuring the dimensions, density and other physical properties of objects, materials, people, and spaces.
+Examples:
+- measure interior space
+- measure the human body for wearing apparel
+- measure water depth";http://data.europa.eu/esco/skill/23d7bd85-d8d5-4455-b64d-3b0998f2425d;measuring physical properties
+3;measuring physical properties;S2.5.0;"Measuring the dimensions, weight, density and other physical properties of objects, materials and spaces.
+nan";http://data.europa.eu/esco/skill/347aa7ee-b640-41cc-ae7c-3c5eafda9fda;measuring physical properties
+3;weighing;S2.5.2;"Measuring the weight of objects and people.
+Examples:
+- weigh merchandise";http://data.europa.eu/esco/skill/5dbb69d2-9e1b-4e0f-b8c0-0bac709729cf;measuring physical properties
+2;conducting studies, investigations and examinations;S2.1;"Conducting studies, investigations, and examinations to increase knowledge and understanding, diagnose problems or identify needs and requirements.
+nan";http://data.europa.eu/esco/skill/c5b71c57-6f78-4c54-b332-ec75848f1095;information skills
+3;interpreting technical documentation and diagrams;S2.1.3;"Reading and interpreting documentation such as blueprints, electrical wiring diagrams, architectural plans.
+Examples:
+- read blueprints 
+- interpret electrical diagrams";http://data.europa.eu/esco/skill/316df5b7-31c4-4f4e-ae69-aad1b873b995;conducting studies, investigations and examinations
+3;conducting academic or market research;S2.1.1;"Conducting research studies, investigations or surveys to increase knowledge and understanding within the academic or business field.
+Examples:
+- Conduct public surveys
+- Conduct literature research
+
+Excludes:
+- Detect financial crime
+- Investigate road accidents";http://data.europa.eu/esco/skill/7eafec38-621a-4b6e-9298-bfe70ec0b253;conducting studies, investigations and examinations
+3;conducting studies, investigations and examinations;S2.1.0;"Conducting studies, investigations, and examinations to increase knowledge and understanding, diagnose problems or identify needs and requirements.
+nan";http://data.europa.eu/esco/skill/8fde007e-ea4c-48c2-84c5-752834acd31d;conducting studies, investigations and examinations
+3;carrying out forensic and police investigations;S2.1.4;"Performing police or forensic investigations to increase knowledge related to crime. 
+Examples:
+- examine crime scenes
+- perform drug investigations
+
+Excludes:
+- conduct psychological research ";http://data.europa.eu/esco/skill/c4376e35-add7-43a0-8b2e-f5741f0df8fe;conducting studies, investigations and examinations
+3;diagnosing health conditions;S2.1.2;"Examining patients, deceased persons or animals to diagnose physical and mental illnesses, injuries and medical conditions.
+Examples:
+- diagnose heart conditions
+- diagnose mental disorders 
+- interpret medical images
+- diagnose nursing care
+- assess fish health conditions
+
+Excludes:
+- analyse and interpret medical test results
+
+";http://data.europa.eu/esco/skill/d700aa7a-0ed8-4967-a32c-4cb6075ab3b9;conducting studies, investigations and examinations
+2;managing information;S2.3;"Setting up and managing manual or electronic systems for storing , selecting, organizing, retrieving, distributing and safeguarding information.
+Examples:
+- Manage digital archives
+- Oversee record management
+- Organise information";http://data.europa.eu/esco/skill/dddd229b-61e1-480d-80d6-d9d9ee9b5f54;information skills
+3;managing information;S2.3.0;"Setting up and managing manual or electronic systems for storing , selecting, organizing, retrieving, distributing and safeguarding information.
+Examples:
+- Manage digital archives
+- Oversee record management
+- Organise information";http://data.europa.eu/esco/skill/32c017fd-28ab-4051-bf68-74de952c2f77;managing information
+2;calculating and estimating;S2.6;"Performing mathematical calculations and estimating the results of an action or a series of actions.
+nan";http://data.europa.eu/esco/skill/e173eaf8-c99b-405a-b0ac-0e02ce3c268d;information skills
+3;calculating and estimating;S2.6.0;"Performing mathematical calculations and estimating the results of an action or a series of actions.
+nan";http://data.europa.eu/esco/skill/47b0d855-ea3c-45e9-8dcf-0e12e62261c4;calculating and estimating
+3;estimating resource needs;S2.6.3;"Calculating and estimating the costs and volumes of human and physical resources required to undertake projects, repairs or other tasks.
+Examples:
+- estimate restoration costs
+- forecast production quantities";http://data.europa.eu/esco/skill/b917784a-d7c9-437c-be6e-0de41067fa62;calculating and estimating
+3;determining values of goods or services;S2.6.2;"Determining or estimating values or prices of goods or services.
+Examples:
+- estimate value of used goods";http://data.europa.eu/esco/skill/f55fac09-92a2-4a88-9a96-ee9fb5b18519;calculating and estimating
+3;performing calculations;S2.6.1;"Performing mathematical calculations on financial, spatial, scientific or other data with or without the used of electronic tools.
+Examples:
+- calculate dividends
+- calculate wages
+- estimate consumption of water";http://data.europa.eu/esco/skill/f5f15f9c-6334-4728-8dc5-3a20a00dfc37;calculating and estimating
+1;working with computers;S5;"Using computers and other digital tools to develop, install and maintain ICT software and infrastructure and to browse, search, filter, organise, store, retrieve, and analyse data, to collaborate and communicate with others, to create and edit new content.
+Excludes:
+- Systems analysis
+- Installing, maintaining and repairing computer hardware";http://data.europa.eu/esco/skill/243eb885-07c7-4b77-ab9c-827551d83dc4;
+2;accessing and analysing digital data;S5.5;"Using digital tools to browse, search, filter, organise, store, retrieve, and analyse data, information and digital content, to collaborate and communicate with others, and create and edit new content.
+nan";http://data.europa.eu/esco/skill/28d2ab6c-38a2-476e-85fe-7982fd242943;working with computers
+3;browsing, searching and filtering digital data;S5.5.1;"Articulating information needs, searching for data, information and content in digital environments, accessing and navigating them. Creating and updating personal search strategies.
+Examples:
+- Use search engines 
+- Carry out internet research
+- Conduct search engine optimisation";http://data.europa.eu/esco/skill/258fea29-09db-4918-8235-0d7d529cd31c;accessing and analysing digital data
+3;accessing and analysing digital data;S5.5.0;"Using digital tools to browse, search, filter, organise, store, retrieve, and analyse data, information and digital content, to collaborate and communicate with others, and create and edit new content.
+nan";http://data.europa.eu/esco/skill/4d6a48ae-352e-4823-bc3a-3f3e9e2cae86;accessing and analysing digital data
+3;managing, gathering and storing digital data;S5.5.2;"Using digital tools to organise, gather, store, retrieve, and archive data, information and digital content.
+Examples:
+- Create digital files 
+- Digitise documents
+- Use spreadsheet software
+- Perform data cleansing";http://data.europa.eu/esco/skill/6a7fc30d-af16-4cc5-a957-29d174bdb61c;accessing and analysing digital data
+2;setting up and protecting computer systems;S5.2;"Setting up, protecting and resolving problems with computer systems, networks, or similar information systems.
+nan";http://data.europa.eu/esco/skill/75c1ab73-5b00-48a0-818e-93487ebdd7e1;working with computers
+3;resolving computer problems;S5.2.3;"Identifying technical problems with ICT systems and devices and performing actions to solve the problems.
+Excludes:
+- Installing, maintaining and repairing computer hardware
+
+Examples:
+- Troubleshoot website
+- Implement ICT recovery system";http://data.europa.eu/esco/skill/0b9968af-72de-470a-98e1-2d19577443fb;setting up and protecting computer systems
+3;protecting ict devices;S5.2.2;"Making use of tools and methods to protect and maximize security of ICT devices and information by controlling access, such as by requiring passwords, digital signatures, and biometric identification, and by protecting systems through the use of software.
+Examples:
+- Remove computer virus or malware form a computer 
+- Implement a firewall 
+- Use back-up and recovery tools";http://data.europa.eu/esco/skill/185c56ee-098f-46a1-af87-56337085da6f;setting up and protecting computer systems
+3;setting up and protecting computer systems;S5.2.0;"Setting up, protecting and resolving problems with computer systems, networks, or similar information systems.
+nan";http://data.europa.eu/esco/skill/24aa32e7-5b7c-42fd-b045-11f0c3d9b6e3;setting up and protecting computer systems
+3;setting up computer systems;S5.2.1;"Setting up computers, networks, or similar information systems. Installing computer software, and configuring computer networks.
+Excludes:
+- Installing, maintaining and repairing computer hardware
+
+Examples:
+- Align software with system architectures
+- Install software
+- Install operating system";http://data.europa.eu/esco/skill/f839b1da-78b6-4466-86f4-a5798821ea20;setting up and protecting computer systems
+2;using digital tools to control machinery;S5.7;"Issuing commands to computer controlled machines and equipment by despatching the appropriate data and input.
+Excludes:
+- Writing computer code and programmes
+- Resolving computer problems.
+
+Examples:
+- Enter commands, instructions, or specifications into CNC equipment
+- Set up the controls of a machine";http://data.europa.eu/esco/skill/842ebeb2-d252-4bde-98fe-e0463f7009db;working with computers
+3;using digital tools to control machinery;S5.7.0;"Issuing commands to computer controlled machines and equipment by despatching the appropriate data and input.
+Excludes:
+- Writing computer code and programmes
+- Resolving computer problems.
+
+Examples:
+- Enter commands, instructions, or specifications into CNC equipment
+- Set up the controls of a machine";http://data.europa.eu/esco/skill/494b8057-daf5-46a0-b33b-416e0115c30a;using digital tools to control machinery
+2;using digital tools for collaboration, content creation and problem solving;S5.6;"Using ICT software and hardware to collaborate and communicate with others, creating and editing new content (from word processing to images and video) and solving conceptual, technical and practical problems.
+Excludes:
+- Computer programming
+- Resolving computer problems";http://data.europa.eu/esco/skill/cacc62f3-2df4-4cc3-9d5d-0d014db56bd9;working with computers
+3;using word processing, publishing and presentation software;S5.6.2;"Using ICT software and hardware to develop and edit the content of documents and audio-visual and prepare them for publication.
+Excludes:
+- Computer programming
+- Resolving computer problems
+
+Examples:
+- Use word processing software
+- Use typesetting software";http://data.europa.eu/esco/skill/446a36a5-2376-439f-b46b-4a214ba0acdf;using digital tools for collaboration, content creation and problem solving
+3;using digital tools for collaboration and productivity;S5.6.1;"Using ICT software and hardware to collaborate and communicate with others and to improve productivity.
+Excludes:
+- Computer programming
+- Resolving computer problems
+
+Examples:
+- Use email software and services
+- Operate GPS systems
+- Use personal organisation software";http://data.europa.eu/esco/skill/98fb499f-9155-412d-a8a0-95ba97126fec;using digital tools for collaboration, content creation and problem solving
+3;using computer aided design and drawing tools;S5.6.3;"Using ICT software and hardware to collaborate and communicate with others, creating and editing new content (from word processing to images and video) and solving conceptual, technical and practical problems.
+Excludes:
+- Computer programming
+- Resolving computer problems
+
+Examples:
+- Use CAD software";http://data.europa.eu/esco/skill/b1115b14-fa16-4c1e-be6c-91fd49a1808b;using digital tools for collaboration, content creation and problem solving
+3;using digital tools for processing sound and images;S5.6.4;"Using ICT software and hardware to for processing sound and images.
+Excludes:
+- Computer programming
+- Resolving computer problems
+
+Examples:
+- Edit photographs
+- Use audio reproduction software
+- Synchronise sound with images";http://data.europa.eu/esco/skill/c53a55a1-8b2b-4d2c-b12d-626742a3833a;using digital tools for collaboration, content creation and problem solving
+3;using digital tools for collaboration, content creation and problem solving;S5.6.0;"Using ICT software and hardware to collaborate and communicate with others, creating and editing new content (from word processing to images and video) and solving conceptual, technical and practical problems.
+Excludes:
+- Computer programming
+- Resolving computer problems";http://data.europa.eu/esco/skill/f774131e-8f2d-43b6-8c20-7fe35fa0f0bd;using digital tools for collaboration, content creation and problem solving
+2;programming computer systems;S5.1;"Writing and submitting  instructions, specifications and programmes for computers.
+Excludes:
+- Systems analysis
+- Issuing commands to computer controlled machines and equipment
+
+Examples:
+- Write computer programming code
+- Use query languages
+- Debug software";http://data.europa.eu/esco/skill/d6e4373a-ef2c-4b64-9dc6-4140846f6609;working with computers
+3;programming computer systems;S5.1.0;"Writing and submitting  instructions, specifications and programmes for computers.
+Excludes:
+- Systems analysis
+- Issuing commands to computer controlled machines and equipment
+
+Examples:
+- Write computer programming code
+- Use query languages
+- Debug software";http://data.europa.eu/esco/skill/a8c3186b-c791-4d57-8f4f-4d12c7a5c6a7;programming computer systems
+2;working with computers;S5.0;"Using computers and other digital tools to develop, install and maintain ICT software and infrastructure and to browse, search, filter, organise, store, retrieve, and analyse data, to collaborate and communicate with others, to create and edit new content.
+Excludes:
+- Systems analysis
+- Installing, maintaining and repairing computer hardware";http://data.europa.eu/esco/skill/f5328159-dfe9-4f25-b8e7-a03fb0d3a991;working with computers
+3;working with computers;S5.0.0;"Using computers and other digital tools to develop, install and maintain ICT software and infrastructure and to browse, search, filter, organise, store, retrieve, and analyse data, to collaborate and communicate with others, to create and edit new content.
+Excludes:
+- Systems analysis
+- Installing, maintaining and repairing computer hardware";http://data.europa.eu/esco/skill/39499028-35bf-4d69-9275-fb98902ed88b;working with computers
+1;constructing;S7;"Building, repairing, installing and finishing interior and exterior structures.
+nan";http://data.europa.eu/esco/skill/2ae39fc8-0f1b-4284-9e73-3f2739471f63;
+2;building and repairing structures;S7.1;"Forming, shaping and joining materials to form structures such as buildings, bridges, or underground mines according to specifications and plans.
+nan";http://data.europa.eu/esco/skill/18da3b88-1cd5-4ef3-83d6-664e52afdaba;constructing
+3;installing wooden structural components;S7.1.3;"Installing, assembling and repairing structural timber such as beams and trusses.
+Examples:
+- Assemble truss constructions";http://data.europa.eu/esco/skill/09d763a0-cc22-4ea7-9c36-3d9dd500d050;building and repairing structures
+3;joining parts using soldering, welding or brazing techniques;S7.1.6;"Joining together pieces of metal by applying heat using soldering, welding or brazing techniques.
+Examples:
+- Apply arc welding techniques
+- Operate brazing equipment
+- Weld underwater
+- Solder components onto electronic board";http://data.europa.eu/esco/skill/24a39c1b-b8cc-4210-8b74-b388a90e8f59;building and repairing structures
+3;building and repairing structures;S7.1.0;"Forming, shaping and joining materials to form structures such as buildings, bridges, or underground mines according to specifications and plans.
+nan";http://data.europa.eu/esco/skill/58beed15-8cf0-4bea-a24a-ad595768bba6;building and repairing structures
+3;installing and assembling building fixtures;S7.1.7;"Installing, assembling or constructing building fixtures such as drywall, doors, windows and staircases.
+Examples:
+- Install handrail
+- Place drywall
+- Install drop ceilings";http://data.europa.eu/esco/skill/58edb789-d085-4e7d-8b6e-b70913bebfca;building and repairing structures
+3;installing roofing;S7.1.5;"Constructing, installing and maintaining roofs and gutters.
+Examples:
+- Install metal roofing
+- Install gutters
+- Attach roofing cover";http://data.europa.eu/esco/skill/5d1d2d04-5510-4918-a437-7f57d570483a;building and repairing structures
+3;installing wooden and metal components;S7.1.2;"Installing, assembling and repairing structural timber or metal parts.
+Examples:
+- Assemble truss constructions
+- Reinforce concrete
+
+Excludes:
+- Installing metal roofing";http://data.europa.eu/esco/skill/6d0cad66-82dd-4854-a03a-68232942c68d;building and repairing structures
+3;installing and assembling rigging equipment;S7.1.8;"Installing and assembling rigging equipment such as cables, ropes, pulleys and winches to safely secure high structures or lift heavy weights.
+Examples:
+- Install crane equipment
+- Assemble circus rigging equipment
+- Hang chain hoists";http://data.europa.eu/esco/skill/8eb65708-6a1c-4a11-8b51-ed9331962142;building and repairing structures
+3;installing structural masonry materials;S7.1.1;"Forming structures using masonry materials such as bricks, stone, blocks, and mortar.
+Excludes:
+- Pouring concrete
+- Installing roofing
+
+Examples:
+- Lay bricks
+- Place gypsum blocks";http://data.europa.eu/esco/skill/97ff8a90-ec21-4f13-9b58-22cc9fc47221;building and repairing structures
+3;installing concrete components;S7.1.4;"Setting concrete forms and pouring concrete for construction of footings, pilings, pillars and walls for buildings, bridges and other structures.
+Examples:
+- Pour concrete
+- Place concrete forms
+- Settle concrete";http://data.europa.eu/esco/skill/d9be4ab0-f7d9-4b27-bd01-6cf1d43d1865;building and repairing structures
+2;constructing;S7.0;"Building, repairing, installing and finishing interior and exterior structures.
+nan";http://data.europa.eu/esco/skill/57a45369-afc1-4f5a-b157-6f18de506bab;constructing
+3;constructing;S7.0.0;"Building, repairing, installing and finishing interior and exterior structures.
+nan";http://data.europa.eu/esco/skill/59c46f34-bffd-4859-adf4-3839c2a73821;constructing
+2;installing interior or exterior infrastructure;S7.2;"Installing, repairing and testing systems and their components in buildings and other structures such as trains and aircraft.
+Excludes:
+- Installing electrical, electronic and telecommunications equipment and wiring";http://data.europa.eu/esco/skill/9f6f5c32-2770-4257-bd66-adc29442ff20;constructing
+3;installing insulation materials;S7.2.3;"Installing materials to insulate a structure from thermic or acoustic influences and to prevent fire.
+Examples:
+- Apply spray foam insulation
+- Install insulation blocks";http://data.europa.eu/esco/skill/0edd863d-b02d-4714-a1a2-835d6dd23c55;installing interior or exterior infrastructure
+3;installing interior or exterior infrastructure;S7.2.0;"Installing, repairing and testing systems and their components in buildings and other structures such as trains and aircraft.
+Excludes:
+- Installing electrical, electronic and telecommunications equipment and wiring";http://data.europa.eu/esco/skill/2c7252b7-59b8-40eb-ac7c-17f78a94f7e7;installing interior or exterior infrastructure
+3;installing plumbing or piping equipment or systems;S7.2.2;"Installing plumbing or piping equipment or systems.
+Examples:
+- Install fire sprinklers
+- Install metal gas piping
+- Repair plumbing systems";http://data.europa.eu/esco/skill/583b1fb5-be8d-41f0-aa81-0b6bef4793c2;installing interior or exterior infrastructure
+3;installing heating, ventilation and air conditioning equipment;S7.2.1;"Installing and repairing heating, ventilation and air conditioning equipment.
+Examples:
+- Install heat pump
+- Repair ventilation equipment
+- Install heating, ventilation, air conditioning and refrigeration ducts";http://data.europa.eu/esco/skill/b85caa4a-f04b-4331-80df-11404fd71225;installing interior or exterior infrastructure
+2;finishing interior or exterior of structures;S7.3;"Applying interior and exterior finishes to buildings and other structures.
+nan";http://data.europa.eu/esco/skill/d5f302db-adff-4bae-b7d4-37293b397193;constructing
+3;applying protective or decorative solutions or coatings;S7.3.3;"Applying paint, lacquer, wallpaper or other coatings to surfaces or objects using brushes, rollers, paint spray guns or similar equipment.
+Examples:
+- Paint surfaces 
+- Hang wallpaper";http://data.europa.eu/esco/skill/5ea47148-5289-49f2-80f8-bb1f54b37de0;finishing interior or exterior of structures
+3;finishing interior or exterior of structures;S7.3.0;"Applying interior and exterior finishes to buildings and other structures.
+nan";http://data.europa.eu/esco/skill/81d95361-e7dd-4f75-a243-d646a7dd6a28;finishing interior or exterior of structures
+3;installing floor and wall coverings;S7.3.4;"Installing various types of floor and wall coverings, including tiling, carpets, linoleum and parquet.
+Examples:
+- Lay marquetry
+- Lay resilient flooring tiles";http://data.europa.eu/esco/skill/8984a92c-416e-498f-abd3-a9dd819e5c03;finishing interior or exterior of structures
+3;applying material to fill gaps in surfaces;S7.3.1;"Applying various types of material to fill or seal gaps in the surfaces of walls, floors, furnishings vehicles or other items.
+Examples:
+- Fill nail holes in wood planks
+- Install insulation blocks
+- Grout terrazzo";http://data.europa.eu/esco/skill/da230865-9d2a-42d9-a42e-37d89753109e;finishing interior or exterior of structures
+3;appyling textured or masonry coatings;S7.3.2;"Applying plaster or similar materials to a surface.
+Examples:
+- Plaster surfaces
+- Craft ornamental plastering
+- Pour terrazzo";http://data.europa.eu/esco/skill/e6e784d0-38a2-4f0c-9fe9-d985a3269fd9;finishing interior or exterior of structures
+1;management skills;S4;"Managing people, activities, resources, and organisation; developing objectives and strategies, organising work activities, allocating and controlling resources and leading, motivating, recruiting and supervising people and teams.
+nan";http://data.europa.eu/esco/skill/869fc2ce-478f-4420-8766-e1f02cec4fb2;
+2;building and developing teams;S4.6;"Encouraging team members and building a relationship of mutual trust, respect and cooperation. Stimulating teambuilding activities.
+Excludes:
+- Training
+- Recruiting and hiring
+
+Examples:
+- Facilitate teamwork between students
+- Encourage teambuilding";http://data.europa.eu/esco/skill/2d02d98c-20c4-4b46-bf44-e5f85a3f03ed;management skills
+3;building and developing teams;S4.6.0;"Encouraging team members and building a relationship of mutual trust, respect and cooperation. Stimulating teambuilding activities.
+Excludes:
+- Training
+- Recruiting and hiring
+
+Examples:
+- Facilitate teamwork between students
+- Encourage teambuilding";http://data.europa.eu/esco/skill/dfae80db-cf29-41e1-a48c-2bee901afff1;building and developing teams
+2;organising, planning and scheduling work and activities;S4.2;"Directing activities and tasks, establishing schedules and co-ordinating the activities of groups and individuals to complete objectives on time and within budget.
+nan";http://data.europa.eu/esco/skill/5c26881e-2759-4a38-b136-5e0f6071b524;management skills
+3;organising, planning and scheduling work and activities;S4.2.0;"Directing activities and tasks, establishing schedules and co-ordinating the activities of groups and individuals to complete objectives on time and within budget.
+nan";http://data.europa.eu/esco/skill/0779d482-4154-4fbb-9a22-d9fd89c39d67;organising, planning and scheduling work and activities
+3;directing, supervising and coordinating projects;S4.2.3;"Directing, supervising and coordinating workflow of projects and programmes such as research and development projects.
+Examples:
+- manage ICT project 
+- supervise advocacy work
+
+Excludes:
+- supervise site maintenance
+- translate strategy into operation";http://data.europa.eu/esco/skill/190f64e1-b7b6-4c53-b20b-80f9215ef6ca;organising, planning and scheduling work and activities
+3;directing operational activities;S4.2.1;"Directing, supervising and coordinating operational activities, projects and tasks in an organisation.
+Examples:
+- coordinate rescue missions
+- coordinate operational activities
+- oversee pre-assembly operations
+
+Excludes:
+- coordinate dock operations
+- forecast workload
+- manage ICT project";http://data.europa.eu/esco/skill/87dff904-fb74-4d59-972e-1c2387579d94;organising, planning and scheduling work and activities
+3;planning events and programmes;S4.2.2;"Planning workflow and content for projects, events or programmes.
+Examples:
+- control financial resources
+- manage revenue
+- handle external financing";http://data.europa.eu/esco/skill/cfd5ab8f-ef8a-4877-8243-ddf17ac74604;organising, planning and scheduling work and activities
+3;managing transport and logistics activities;S4.2.4;"Planning, overseeing and directing logistics or other operational activities related to transport of goods or passengers. 
+nan";http://data.europa.eu/esco/skill/d6c8dacb-b0c0-4544-b0b7-69b24df41ba1;organising, planning and scheduling work and activities
+3;planning production processes;S4.2.5;"Preparing production plan for successful manufacture of a product or service.
+nan";http://data.europa.eu/esco/skill/e6eeb84c-ad99-42e2-b883-e6ce338aef59;organising, planning and scheduling work and activities
+2;developing objectives and strategies;S4.1;"Envisioning a future state and developing strategies, goals, objectives and action plans to achieve it.
+nan";http://data.europa.eu/esco/skill/6f89dcbe-4315-4533-8801-3aadf9190b86;management skills
+3;developing contingency and emergency response plans;S4.1.7;"Composing and maintaining procedures outlining specific actions to be taken in the event of an emergency or adverse event, taking into account all the risks and dangers that could be involved, ensuring that the plans comply with safety legislation and represent the safest course of action.
+Examples:
+- manage disaster recovery plans
+- plan railway incident mitigation measures";http://data.europa.eu/esco/skill/164510d1-1216-4dc0-b9d1-a7f6af19e469;developing objectives and strategies
+3;developing financial, business or marketing plans;S4.1.2;"Envision and develop strategies and plans for companies and organisations aimed at purposes such as establishing new markets, refurbishing the equipment and machinery of a company, implementing pricing strategies, and restoring or maintaining financial viability.
+Examples:
+- Develop business case
+- Draw up marketing and sales plan
+- Create a financial plan";http://data.europa.eu/esco/skill/37272760-957a-4c34-b4f3-780ee285334d;developing objectives and strategies
+3;developing objectives and strategies;S4.1.0;"Envisioning a future state and developing strategies, goals, objectives and action plans to achieve it.
+nan";http://data.europa.eu/esco/skill/6ee936b0-4e0c-4e04-97c7-1f4ee9230d67;developing objectives and strategies
+3;developing educational programmes;S4.1.6;"Developing education and training programs, plans, or procedures for society in general, specific groups or tailored to an individual's learning needs.
+Examples:
+- develop curriculum
+- construct individual learning plans
+- develop training programmes";http://data.europa.eu/esco/skill/7e0b93e0-0de7-4607-b07f-27a6828d3ff0;developing objectives and strategies
+3;developing policies and legislation;S4.1.4;"Developing national or international policies and legislation to regulate conduct or set minimum standards in specific sectors and regulatory areas.
+Examples:
+- develop environmental policy
+- plan public housing
+
+Excludes: 
+- develop working procedures";http://data.europa.eu/esco/skill/8ed41305-4abf-4b54-9f8f-0e043d26feba;developing objectives and strategies
+3;developing operational policies and procedures;S4.1.3;"Developing organisational and operational methods, policies, procedures or standards on company level to ensure streamlining of its operational processes.
+Examples:
+- define organisational standards
+- establish an ICT customer support process
+
+Excludes: 
+- define geographic sales areas
+- develop business case 
+- develop environmental policy";http://data.europa.eu/esco/skill/c23e0a2f-f04b-45bc-b0dd-20571f6b502c;developing objectives and strategies
+3;identifying opportunities;S4.1.1;"Identifying business or organizational opportunities.
+Examples:
+- identify market niches
+- identify new business opportunities
+- identify process improvements";http://data.europa.eu/esco/skill/cbe1b24e-00f3-4b17-94e9-1fcd34a11c3e;developing objectives and strategies
+3;developing health programmes;S4.1.5;"Developing plans for the promotion and protection of public and community health and the provision of health services.
+Examples:
+- develop advanced health promotion strategies
+- promote sport activities in public health";http://data.europa.eu/esco/skill/db54693e-bcb0-4dae-8885-a43d510fb71f;developing objectives and strategies
+2;recruiting and hiring;S4.7;"Acquiring the right talent to achieve the organization's mission.
+Excludes:
+- Interviewing candidates
+
+Examples:
+- Recruit employees
+- Carry out auditions";http://data.europa.eu/esco/skill/73dba04a-7c18-439f-8757-b5f60532ba74;management skills
+3;recruiting and hiring;S4.7.0;"Acquiring the right talent to achieve the organization's mission.
+Examples:
+- recruit employees
+- carry out auditions
+
+Excludes:
+- interview candidates";http://data.europa.eu/esco/skill/77e41477-4ecf-425b-8163-b18a5a54e593;recruiting and hiring
+2;supervising people;S4.8;"Assigning responsibilities to others and directing and monitoring their performance.
+Excludes:
+- Define roles of team members
+- Supervise children";http://data.europa.eu/esco/skill/7a00c77c-4a1c-4fd6-a83f-004bda65d81a;management skills
+3;supervising a team or group;S4.8.1;"Managing, leading or supervising the activities a team or group of workers or students.
+Examples:
+- lead a team
+- manage sales teams
+- supervise crew
+
+Excludes:
+- supervise children";http://data.europa.eu/esco/skill/aab9f44d-fe0e-46d8-a470-11ce82a64846;supervising people
+3;assigning work to others;S4.8.2;"Assigning specific tasks to workers or students.
+Examples:
+- assign duties to employees
+- assign class work to students
+- delegate tasks";http://data.europa.eu/esco/skill/bffa732b-12ab-4214-a4b3-498598820b1c;supervising people
+3;monitoring and evaluating the performance of individuals;S4.8.3;"Monitoring the behaviour or performance of workers, students or oneself to ensure that work is completed satisfactorily and to evaluate performance, capabilities and training needs.
+Examples:
+- monitor the quality of work 
+- perform classroom management
+- evaluate employees work
+- perform self-assessment
+
+Excludes:
+- supervise children";http://data.europa.eu/esco/skill/c206d301-14b0-4bea-8028-a3749303a512;supervising people
+3;supervising people;S4.8.0;"Assigning responsibilities to others and directing and monitoring their performance.
+Excludes:
+- Define roles of team members
+- Supervise children";http://data.europa.eu/esco/skill/c57c0294-9940-4626-8954-08055bc242ba;supervising people
+2;allocating and controlling resources;S4.3;"Determining the distribution and availability of people, assets, materials or capital to accomplish organizational goals and putting in place financial and administrative controls.
+Excludes:
+- Delegate activities";http://data.europa.eu/esco/skill/9827c329-3492-4e8d-852c-da0894228ff6;management skills
+3;managing budgets or finances;S4.3.1;"Determining the distribution and availability financial assets and putting in place financial and administrative controls.
+Examples:
+- Control financial resources
+- Manage revenue
+- Handle external financing";http://data.europa.eu/esco/skill/193af349-b20e-4277-94bf-b184e92b8d6a;allocating and controlling resources
+3;managing and administering human resources;S4.3.2;"Performing administrative and clerical tasks concerned with human resource administration. Determining the distribution and availability of people to accomplish organizational goals.
+Examples:
+- manage personnel
+- plan shifts of employees
+
+Excludes:
+- delegate activities";http://data.europa.eu/esco/skill/2258cde2-a95b-4b2c-b105-59e84b0a364b;allocating and controlling resources
+3;allocating and controlling resources;S4.3.0;"Determining the distribution and availability of people, assets, materials or capital to accomplish organizational goals and putting in place financial and administrative controls.
+Excludes:
+- Delegate activities";http://data.europa.eu/esco/skill/92fc9726-5b5e-439e-a33c-06a8c63fbb9a;allocating and controlling resources
+3;allocating and controlling physical resources;S4.3.3;"Determining and controlling the distribution and availability of physical assets such as tools and equipment.
+Examples:
+- manage rail yard resources
+- ensure equipment availability
+- manage space utilisation";http://data.europa.eu/esco/skill/f73c2c9e-b097-4fcb-95d1-659ea0bd54a3;allocating and controlling resources
+2;making decisions;S4.9;"Making a choice from several alternative possibilities.
+Examples:
+- Decide on loan applications
+- Make legal decisions
+- Decide on products to be stocked";http://data.europa.eu/esco/skill/bb99a123-88be-42a2-8758-f5a18e06ccc6;management skills
+3;making decisions;S4.9.0;"Making a choice from several alternative possibilities.
+Examples:
+- Decide on loan applications
+- Make legal decisions
+- Decide on products to be stocked";http://data.europa.eu/esco/skill/c7f96545-46c4-451a-b284-014f4baed5ed;making decisions
+2;management skills;S4.0;"Managing people, activities, resources, and organisation; developing objectives and strategies, organising work activities, allocating and controlling resources and leading, motivating, recruiting and supervising people and teams.
+nan";http://data.europa.eu/esco/skill/c1a13ee0-b00d-4cfa-a22c-20d284e398b0;management skills
+3;management skills;S4.0.0;"Managing people, activities, resources, and organisation; developing objectives and strategies, organising work activities, allocating and controlling resources and leading, motivating, recruiting and supervising people and teams.
+nan";http://data.europa.eu/esco/skill/1d4be2e3-ac64-426f-838d-1e7cb8600927;management skills
+2;leading and motivating;S4.5;"Reinforcing an organization's vision, inspiring and enthusing others to achieve positive outcomes. The focus of this group is on skills in motivating and inspiring others, rather than on managing and supervising a team.
+Excludes:
+- Managing, leading or supervising a team or its members.
+
+Examples:
+- Motivate employees
+- Provide leadership
+- Lead board meetings";http://data.europa.eu/esco/skill/ce17a874-b476-491d-a7a7-5f05d32ad542;management skills
+3;leading and motivating;S4.5.0;"Reinforcing an organization's vision, inspiring and enthusing others to achieve positive outcomes. The focus of this group is on skills in motivating and inspiring others, rather than on managing and supervising a team.
+Excludes:
+- Managing, leading or supervising a team or its members.
+
+Examples:
+- Motivate employees
+- Provide leadership
+- Lead board meetings";http://data.europa.eu/esco/skill/b7e752ec-7b2e-46e6-ac24-8b1233609c31;leading and motivating
+2;performing administrative activities;S4.4;"Performing administrative tasks such as typing up reports, ordering supplies, maintaining mail correspondence,  and ensuring administrative systems, processes and databases are efficient.
+Excludes:
+- Record and process information";http://data.europa.eu/esco/skill/f306bf2a-271d-4059-ba7b-e83849cb8960;management skills
+3;performing general clerical and administrative tasks;S4.4.3;"Performing general clerical and administrative tasks such as collecting mail and organising documents, not involving administration of human resources, execution of financial transactions, or processing and transforming information or data.
+Examples:
+- perform clerical duties";http://data.europa.eu/esco/skill/906211b3-afed-4a2b-b5e1-33f2885fee85;performing administrative activities
+3;administering human resources;S4.4.1;"Performing administrative and clerical tasks concerned with human resource administration.
+Examples:
+- Manage payroll";http://data.europa.eu/esco/skill/966246a4-6e72-4c60-be46-7cd61ba46942;performing administrative activities
+3;performing administrative activities;S4.4.0;"Performing administrative tasks such as typing up reports, ordering supplies, maintaining mail correspondence,  and ensuring administrative systems, processes and databases are efficient.
+Excludes:
+- Record and process information";http://data.europa.eu/esco/skill/b309d4f5-56f5-41c6-b712-92d1ed85b965;performing administrative activities
+3;executing financial transactions;S4.4.2;"Executing financial or commercial transactions such as issuing invoices for sales or issuing purchase orders.
+Examples:
+- issue sales invoices
+- operate cash register
+- issue purchase order";http://data.europa.eu/esco/skill/c20ac175-3aab-4aaa-9b9e-784c2dfb59cd;performing administrative activities
+1;working with machinery and specialised equipment;S8;"Controlling, operating and monitoring vehicles, stationary and mobile machinery and precision instrumentation and equipment.
+Excludes:
+- Interacting with computers";http://data.europa.eu/esco/skill/9b8bb484-dcba-49af-8ae0-cfe8b6e9ed45;
+2;installing, maintaining and repairing mechanical equipment;S8.7;"Installing, maintaining and repairing stationary and mobile mechanical equipment, components and devices.
+Excludes:
+- Installing, maintaining and repairing mechatronic or robotic equipment and components";http://data.europa.eu/esco/skill/02208098-ee91-4df0-8581-5c1a04d8fe0a;working with machinery and specialised equipment
+3;installing, maintaining and repairing mechanical equipment;S8.7.0;"Installing, maintaining and repairing stationary and mobile mechanical equipment, components and devices.
+Excludes:
+- Installing, maintaining and repairing mechatronic or robotic equipment and components";http://data.europa.eu/esco/skill/03efa398-a1cc-4589-9c10-84bf10f8d42d;installing, maintaining and repairing mechanical equipment
+3;repairing and installing mechanical equipment;S8.7.1;"Repairing, dismantling, reassembling and installing stationary and mobile mechanical equipment, components and devices.
+Examples:
+- Repair engines
+- Repair vessel mechanical systems
+- Install mining machinery";http://data.europa.eu/esco/skill/0b8d15c9-7b4f-4163-b863-fe5b756d3e7f;installing, maintaining and repairing mechanical equipment
+3;maintaining mechanical equipment and tools;S8.7.2;"Performing maintenance of mechanical equipment, tools and devices to ensure optimal functioning.
+Examples:
+- Maintain farm equipment
+- Prevent pipeline deterioration
+";http://data.europa.eu/esco/skill/45ce91d6-574f-445e-a3d5-741f89bddb56;installing, maintaining and repairing mechanical equipment
+3;maintaining mechanical machinery;S8.7.3;"Performing maintenance of mechanical machinery and its functional components to ensure optimal functioning.
+nan";http://data.europa.eu/esco/skill/a9703c5e-7fef-40d8-8fed-e5b31cc76818;installing, maintaining and repairing mechanical equipment
+2;operating machinery for the extraction and processing of raw materials;S8.4;"Operating and monitoring various types of mechanically-controlled or computer-controlled stationary machinery for the extraction or processing of raw materials.
+Excludes:
+- Operating centralized process control equipment";http://data.europa.eu/esco/skill/2198d7a0-6eca-4795-b877-98a19064e61a;working with machinery and specialised equipment
+3;operating wood processing and papermaking machinery;S8.4.6;"Operating machinery for processing wood and timber, and for production of wood pulp and paper.
+Examples:
+- Operate wood chipper
+- Operate pulper
+- Make paper slurry";http://data.europa.eu/esco/skill/06769591-b8cf-46b2-b1d3-6602b1cf440e;operating machinery for the extraction and processing of raw materials
+3;operating metal processing and finishing machinery;S8.4.2;"Operating and tending machinery for the processing and fabrication and finishing of metals and metal stock.
+Excludes:
+- Operating furnaces and smelters
+
+Examples:
+- Tend anodising machine
+- Tend hot rolling mill
+- Tend thread rolling machine";http://data.europa.eu/esco/skill/151bd6ca-74be-47bb-9dab-9c7387114006;operating machinery for the extraction and processing of raw materials
+3;operating machinery for the extraction and processing of raw materials;S8.4.0;"Operating and monitoring various types of mechanically-controlled or computer-controlled stationary machinery for the extraction or processing of raw materials.
+Excludes:
+- Operating centralized process control equipment";http://data.europa.eu/esco/skill/3f1f77a5-9c2d-4b71-afb3-0328d8cbb05e;operating machinery for the extraction and processing of raw materials
+3;operating pumping systems or equipment;S8.4.3;"Operating machinery and equipment for pumping liquids.
+Examples:
+- Operate hydraulic pumps
+- Operate latex transfer pump";http://data.europa.eu/esco/skill/79f3d574-fcf2-445e-a087-cc774f19b861;operating machinery for the extraction and processing of raw materials
+3;operating energy production or distribution equipment;S8.4.4;"Operating turbines, generators, boilers or power plants to generate rotary motion, electricity and heat. Operating energy transmission systems.
+Examples:
+- Operate gas turbines
+- Operate ship propulsion system";http://data.europa.eu/esco/skill/8bf9699c-f964-4e4b-ac3d-55aface09cbc;operating machinery for the extraction and processing of raw materials
+3;operating mining, drilling and mineral processing machinery;S8.4.1;"Operating machinery for the extraction and processing of rocks and minerals, or for drilling and boring wells and tunnels.
+Excludes:
+- Operating mobile earthmoving and transportation equipment
+- Operating hand-held and bench drills
+
+Examples:
+- Drive tunnel boring machine
+- Operate continuous miner
+- Operate core drilling equipment
+- Tend stone splitting machine";http://data.europa.eu/esco/skill/a96b31dd-d72a-4c89-8947-524f14a16f82;operating machinery for the extraction and processing of raw materials
+3;operating kilns, furnaces and drying equipment;S8.4.7;"Operating, monitoring and adjusting the controls of equipment for heating or drying materials and products at high temperatures, such as kilns or furnaces.
+Excludes:
+- Operation of ovens for cooking food and machines for drying textiles and garments
+
+Examples:
+- Control gas-fired furnace for malt roasting
+- Operate smelter
+- Operate waste incinerator
+- Prepare kiln firebox";http://data.europa.eu/esco/skill/bdf2aa76-360d-429d-a967-bdb691f241fa;operating machinery for the extraction and processing of raw materials
+3;operating petroleum, chemical or water processing systems or equipment;S8.4.5;"Operating machinery for producing, refining or purifying petroleum, chemicals, gases or water.
+Examples:
+- Operate distillation equipment
+- Operate biogas plant
+- Operate hatchery recirculation system";http://data.europa.eu/esco/skill/d3b2c894-33fb-47c4-aff0-27935a082bf6;operating machinery for the extraction and processing of raw materials
+2;operating machinery for the manufacture of products;S8.5;"Operating and monitoring various types of mechanically-controlled or computer-controlled stationary machinery for the manufacture of goods.
+nan";http://data.europa.eu/esco/skill/2b8a86c4-d063-44d5-863f-a9659024cefe;working with machinery and specialised equipment
+3;operating machinery for the manufacture of products;S8.5.0;"Operating and monitoring various types of mechanically-controlled or computer-controlled stationary machinery for the manufacture of goods.
+nan";http://data.europa.eu/esco/skill/18f2a44e-28ef-4ae3-8ea2-347e33bd9a4b;operating machinery for the manufacture of products
+3;operating metal, plastic or rubber forming equipment;S8.5.7;"Operating and tending machinery to mould, press, or form metal, plastic, rubber or other materials into a particular shape.
+Excludes:
+- Operating metal extrusion machines
+
+Examples:
+- Tend injection moulding machine
+- Tend mouldmaking machines";http://data.europa.eu/esco/skill/39d83364-c86f-4942-96d1-e5df582face9;operating machinery for the manufacture of products
+3;operating painting or coating machinery;S8.5.1;"Operating machinery to apply paints or coatings to the surface of products or materials.
+Excludes:
+- Operating handheld tools such as handheld spray guns
+
+Examples:
+- Galvanise metal workpiece
+- Tend coating machine
+- Tend dip tank";http://data.europa.eu/esco/skill/418e58f5-c50c-4147-baa0-83aeb43b796a;operating machinery for the manufacture of products
+3;operating packaging machinery;S8.5.2;"Operating, tending and monitoring machinery for packaging or bottling products.
+Examples:
+- Tend bottle cork machine
+- Tend meat packaging machine";http://data.europa.eu/esco/skill/7ec00c15-c9bb-4b74-9b8b-681424e9ea2c;operating machinery for the manufacture of products
+3;operating mixing and separating machinery;S8.5.5;"Operating machinery for mixing, blending and separating liquid or solid materials.
+Excludes:
+- Operating handheld tools such as kitchen blenders.
+
+Examples:
+- Tend centrifuge machines
+- Operate rubber mixing machine
+- Tend tumbling barrels";http://data.europa.eu/esco/skill/8d80f33a-ab38-429b-a4ed-3b1a6f8f3b4a;operating machinery for the manufacture of products
+3;operating machinery for the manufacture and treatment of textiles, fur and leather products;S8.5.3;"Operating and tending machinery for the manufacture and treatment of textiles, fur and leather products.
+Examples:
+- Apply pre-stitching techniques
+- Manufacture woven fabrics
+- Tend knitting machine";http://data.europa.eu/esco/skill/a0ad9ea8-9620-4aba-a836-cbdd16e12880;operating machinery for the manufacture of products
+3;operating cutting, grinding and smoothing machinery;S8.5.8;"Operating and tending machinery to cut grind and smooth work pieces made of metal, wood, plastic or various other materials.
+Examples:
+- Operate drill press
+- Tend lathe
+- Operate table saw";http://data.europa.eu/esco/skill/a7956044-f468-4bc1-a83c-a8821b903a09;operating machinery for the manufacture of products
+3;operating food processing machinery;S8.5.4;"Operating and tending machinery for the processing of food and other organic materials and for the manufacture of food and related products.
+Excludes:
+- Operating handheld tools and bench top kitchen appliances
+
+Examples:
+- Operate fish processing equipment
+- Tend bakery ovens
+- Tend blanching machines";http://data.europa.eu/esco/skill/ceca8bbe-cd58-49b4-8ef4-9a34a5ac0f75;operating machinery for the manufacture of products
+3;operating print and photographic production equipment;S8.5.6;"Operating and tending machinery for printing and photographic reproduction.
+Examples:
+- Operate flexographic printing machine
+- Adjust rotogravure press
+- Operate collating machine";http://data.europa.eu/esco/skill/dcb9c446-bb08-44de-89b6-851ac2903eaf;operating machinery for the manufacture of products
+2;using precision instrumentation and equipment;S8.6;"Controlling, monitoring, and adjusting precision instrumentation and equipment for a wide range of purposes.
+Excludes:
+- Installing and setting up precision equipment";http://data.europa.eu/esco/skill/4d7fb3eb-554a-4cf1-a576-bf6e153bdba2;working with machinery and specialised equipment
+3;operating communications equipment;S8.6.4;"Controlling, monitoring, and adjusting telecommunication, navigation, radio transmission or broadcasting equipment.
+Excludes:
+- Installing and setting up precision equipment
+
+Examples:
+- Operate broadcast equipment
+- Operate radar equipment
+- Operate maritime communication equipment";http://data.europa.eu/esco/skill/0a88a13f-693a-4dde-b44c-22e6f98fabc6;using precision instrumentation and equipment
+3;using precision instrumentation and equipment;S8.6.0;"Controlling, monitoring, and adjusting precision instrumentation and equipment for a wide range of purposes.
+Excludes:
+- Installing and setting up precision equipment";http://data.europa.eu/esco/skill/57e6af87-8a6b-4ecb-88e5-7c80b582ddd7;using precision instrumentation and equipment
+3;operating scientific and laboratory equipment;S8.6.3;"Controlling, monitoring, and adjusting precision instrumentation and equipment for the conduct of scientific experiments and diagnostic tests.
+Excludes:
+- Installing and setting up precision equipment
+
+Examples:
+- Operate microscope
+- Use chemical analysis equipment
+- Operate meteorological instruments";http://data.europa.eu/esco/skill/7ca69606-5ffc-4668-ae53-713c1f1612e6;using precision instrumentation and equipment
+3;operating medical equipment;S8.6.1;"Controlling, monitoring, and adjusting precision instrumentation and equipment used for diagnosing and treatment of medical conditions.
+Excludes:
+- Installing and setting up precision equipment
+- Operating equipment used in laboratory tests, including pathology
+
+Examples:
+- Operate medical imaging equipment
+- Operate heart-lung machines";http://data.europa.eu/esco/skill/872c0ddb-f056-4f51-afac-fc3d6fae0f5b;using precision instrumentation and equipment
+3;operating audio-visual equipment;S8.6.2;"Controlling, monitoring, and adjusting precision instrumentation and equipment for recording of sound, video and images, and for use in live performances or exhibitions.
+Excludes:
+- Installing and setting up precision equipment
+
+Examples:
+- Operate an audio mixing console
+- Operate a camera
+- Operate lighting equipment";http://data.europa.eu/esco/skill/8ddcb295-707e-459c-ba6a-66ffb37835c5;using precision instrumentation and equipment
+3;operating precision industrial equipment;S8.6.5;"Controlling, monitoring, and adjusting precision instrumentation and equipment for industrial production.
+Excludes:
+- Installing and setting up precision equipment
+
+Examples:
+- Calibrate mechatronic instruments
+- Operate optical assembly equipment";http://data.europa.eu/esco/skill/bf4196e4-839c-4f5f-b13b-eeed07ede160;using precision instrumentation and equipment
+3;using precision measuring equipment;S8.6.6;"Using, reading and monitoring instruments and equipment for precise measurement.
+Excludes:
+- Installing and setting up precision equipment
+
+Examples:
+- Read electricity meter
+- Operate surveying instruments
+- Use lensometer";http://data.europa.eu/esco/skill/c8f4aad2-ea23-49a2-9708-a6049c2d28ce;using precision instrumentation and equipment
+2;driving vehicles;S8.2;"Driving vehicles on or off road, such as motorcycles, cars, vans, trucks and buses, for the transportation of goods or people by road.
+Includes driving vehicles on and off road capabilities whose purpose is the transportation of goods or people
+
+Examples:
+- Drive at high speed";http://data.europa.eu/esco/skill/663d82aa-4c0d-46bc-90f5-03770f068bb1;working with machinery and specialised equipment
+3;operating rail vehicles;S8.2.3;"Controlling the movement of rail vehicles such as trains and trams.
+Excludes:
+- Operating cable propelled vehicles such as funiculars
+
+Examples:
+- Drive trams
+- Operate railway vehicles
+- Shunt rolling stock in marshalling yards";http://data.europa.eu/esco/skill/8e77453d-3665-4d00-b887-2e9adb29cd15;driving vehicles
+3;driving heavy vehicles;S8.2.1;"Driving heavy vehicles, such as heavy trucks and buses, for the transportation of goods or people by road.
+Heavy vehicles are those with a total weight above 3,500 kg. (vehicle + load)
+
+Examples:
+- Drive ambulance under emergency conditions
+- Manoeuvre bus
+- Operate dump truck
+- Drive funicular";http://data.europa.eu/esco/skill/c54a0a94-9d45-4697-b7cb-f7eaef839031;driving vehicles
+3;driving light vehicles;S8.2.2;"Controlling the movement of light vehicles such as motorcycles cars, taxis, vans and light trucks.
+Light vehicles are those with a total weight not exceeding 3,500 kg. (vehicle + load)
+
+Examples:
+- Drive two-wheeled vehicles
+- Drive automatic car";http://data.europa.eu/esco/skill/dbbbe31a-9b8c-4459-a830-84363648f52c;driving vehicles
+3;driving vehicles;S8.2.0;"Driving vehicles on or off road, such as motorcycles, cars, vans, trucks and buses, for the transportation of goods or people by road.
+Includes driving vehicles on and off road capabilities whose purpose is the transportation of goods or people
+
+Examples:
+- Drive at high speed";http://data.europa.eu/esco/skill/f7c70392-a261-42e9-86a6-fccf3709ac81;driving vehicles
+2;installing, maintaining and repairing electrical, electronic and precision equipment;S8.8;"Installing, setting-up, maintaining and repairing electrical and electronic equipment, and control systems, scientific devices, instrumentation and precision equipment.
+Excludes:
+- Installing computer software, and configuring computer networks";http://data.europa.eu/esco/skill/7b942071-f688-4600-8d9f-ad4c0306abc7;working with machinery and specialised equipment
+3;installing, maintaining and repairing electrical, electronic and precision equipment;S8.8.0;"Installing, setting-up, maintaining and repairing electrical and electronic equipment, and control systems, scientific devices, instrumentation and precision equipment.
+Excludes:
+- Installing computer software, and configuring computer networks";http://data.europa.eu/esco/skill/a6b0802f-4c20-4123-8a84-d6c8631fedb1;installing, maintaining and repairing electrical, electronic and precision equipment
+3;installing and repairing electrical, electronic and precision equipment;S8.8.1;"Installing, setting-up, and repairing electrical, electronic, mechatronic and precision equipment, and control systems, scientific and medical devices, instrumentation and precision equipment.
+Excludes:
+- Installing computer software, and configuring computer networks
+- Setting up audio-visual equipment
+
+Examples:
+- Configure electronic equipment
+- Install electric switches
+- Install low voltage wiring
+- Repair household appliances
+- Repair vehicle electrical systems";http://data.europa.eu/esco/skill/a7065828-10aa-4aba-b7d4-f23a30df5060;installing, maintaining and repairing electrical, electronic and precision equipment
+3;maintaining electrical, electronic and precision equipment;S8.8.2;"Maintaining electrical and electronic and mechatronic equipment, control systems, scientific and medical devices, instrumentation and precision equipment to ensure continued or optimal functioning.
+Examples:
+- Adjust voltage
+- Maintain automated lighting equipment
+- Maintain medical devices";http://data.europa.eu/esco/skill/ec0401f1-f690-46be-934b-f6f5611085f5;installing, maintaining and repairing electrical, electronic and precision equipment
+2;operating watercraft;S8.3;"Operating and controlling the movement of watercraft and underwater vessels, including ships, boats and other types of vessel.
+Examples:
+- Operate mechanical equipment of ships
+- Operate small craft
+- Use fishing vessel equipment
+- Navigate European inland waterways
+- Steer vessels";http://data.europa.eu/esco/skill/8427894f-2622-4b97-9366-72234a5fab50;working with machinery and specialised equipment
+3;operating watercraft;S8.3.0;"Operating and controlling the movement of watercraft and underwater vessels, including ships, boats and other types of vessel.
+Examples:
+- Operate mechanical equipment of ships
+- Operate small craft
+- Use fishing vessel equipment
+- Navigate European inland waterways
+- Steer vessels";http://data.europa.eu/esco/skill/36c9717b-e53a-4d16-b7df-b6555eff43f8;operating watercraft
+2;working with machinery and specialised equipment;S8.0;"Controlling, operating and monitoring vehicles, stationary and mobile machinery and precision instrumentation and equipment.
+Excludes:
+- Interacting with computers";http://data.europa.eu/esco/skill/cab71b2a-4b65-4e98-a7a9-0b20c39fc248;working with machinery and specialised equipment
+3;working with machinery and specialised equipment;S8.0.0;"Controlling, operating and monitoring vehicles, stationary and mobile machinery and precision instrumentation and equipment.
+Excludes:
+- Interacting with computers";http://data.europa.eu/esco/skill/a4cf0e8a-54f6-4fd5-8650-1c82ea86cfd2;working with machinery and specialised equipment
+2;operating aircraft;S8.9;"Controlling the movement of aircraft, including fixed wing aircraft, helicopters and drones.
+Examples:
+- Perform take-off and landing
+- Drive helicopter under emergency conditions
+- Operate cockpit control panels";http://data.europa.eu/esco/skill/d9b1387a-7cad-4b77-8481-7798a3b41714;working with machinery and specialised equipment
+3;operating aircraft;S8.9.0;"Controlling the movement of aircraft, including fixed wing aircraft, helicopters and drones.
+Examples:
+- Perform take-off and landing
+- Drive helicopter under emergency conditions
+- Operate cockpit control panels";http://data.europa.eu/esco/skill/44c81158-f789-41ad-a988-e8af0884a443;operating aircraft
+2;operating mobile plant;S8.1;"Controlling the operation of machinery whose mobility is an integral part of its function, such as earthmoving, agricultural, forestry and lifting equipment.
+nan";http://data.europa.eu/esco/skill/da94d48b-5036-48e1-ad96-d85cba6ed29c;working with machinery and specialised equipment
+3;operating earthmoving equipment;S8.1.1;"Operating equipment for moving, excavating, smoothing or shaping earth
+Excludes:
+- Operating mining, drilling, tunnelling and boring machinery
+
+Examples:
+- Drive steel piles
+- Operate bulldozer
+- Operate front loader
+- Operate grader";http://data.europa.eu/esco/skill/19990cb0-e9d5-41c7-9638-88700b47271e;operating mobile plant
+3;operating agricultural or forestry equipment;S8.1.2;"Operating mobile equipment specifically designed for agricultural or forestry purposes, such as cultivating land or harvesting crops and trees.
+Examples:
+- Operate agricultural machinery
+- Operate tractor
+- Operate forestry machinery";http://data.europa.eu/esco/skill/64acded2-d944-4f85-a703-cfe9375f706a;operating mobile plant
+3;operating mobile plant;S8.1.0;"Controlling the operation of machinery whose mobility is an integral part of its function, such as earthmoving, agricultural, forestry and lifting equipment.
+nan";http://data.europa.eu/esco/skill/a5524d0d-38e5-4cfc-96c4-46c3c6df3dd1;operating mobile plant
+3;operating lifting or moving equipment;S8.1.3;"Operating equipment for lifting and moving objects, such as cranes, hoists, cable cars and lifting trucks.
+Excludes:
+- Operating earthmoving equipment
+
+Examples:
+- Operate cranes
+- Drive forklift
+- Operate chair-lift
+- Operate bottom supported cable-propelled vehicles";http://data.europa.eu/esco/skill/a60b664f-bb07-4dd1-8dfa-134a0827f8da;operating mobile plant
+1;assisting and caring;S3;"Providing assistance, nurturing, care, service and support to people, and ensuring compliance to rules, standards, guidelines or laws.
+nan";http://data.europa.eu/esco/skill/c73521be-c039-4e22-b037-3b01b3f6f9d9;
+2;protecting and enforcing;S3.3;"Responding to public and personal safety and security needs and ensuring compliance to rules, standards, guidelines or laws.
+nan";http://data.europa.eu/esco/skill/048812ba-45ff-4801-b04f-b20c03432809;assisting and caring
+3;protecting privacy and personal data;S3.3.6;"Using and sharing identifiable information about individuals or enterprises in a manner that respects data protection principles, privacy and confidentiality.
+Examples:
+- Protect personal data and privacy
+- Safeguard online privacy and identity 
+- Ensure the privacy of guests";http://data.europa.eu/esco/skill/2b6e15f5-dfa0-4e7c-9687-5665b07e56a4;protecting and enforcing
+3;ensuring compliance with legislation;S3.3.7;"Ensuring compliance with national or international laws and legislation.
+Examples:
+- apply immigration law
+- ensure customs compliance
+- meet building regulations
+
+Excludes:
+- adhere to organisational guidelines
+- protect biodiversity";http://data.europa.eu/esco/skill/35dc2a23-cdc3-4291-930f-927ba2911949;protecting and enforcing
+3;complying with health and safety procedures;S3.3.1;"Ensuring compliance to rules, standards, guidelines laws or good practices relating to the health and safety of oneself, co-workers, employees and the public.
+Examples:
+- follow hygienic work practices
+- use personal protection equipment
+- protect health and well-being while using digital technologies
+
+Excludes:
+- attend to personal hygiene";http://data.europa.eu/esco/skill/5bcec244-3efe-45ac-8891-0ab4a91e9c48;protecting and enforcing
+3;complying with operational procedures;S3.3.3;"Ensuring compliance with operational procedures, standards or guidelines at company level related to matters other than health, safety and the environment.
+Examples:
+- adhere to organisational guidelines
+- apply socially just working principles
+
+Excludes:
+- comply with legislation in social services
+- ensure compliance with gaming laws
+- follow hygienic practices in fishery operations";http://data.europa.eu/esco/skill/802deca0-b880-4d1a-b366-e13b27621baf;protecting and enforcing
+3;complying with environmental protection laws and standards;S3.3.2;"Ensuring compliance with regulations, standards, guidelines, laws or practices relating to the protection of the environment.
+Examples:
+- follow environmentally-sustainable work practices
+- implement environmental protection measures
+- protect biodiversity
+
+Excludes: 
+- ensure customs compliance";http://data.europa.eu/esco/skill/8064ae65-5d1b-44e1-9aaf-246a4285a9a6;protecting and enforcing
+3;verifying identities and documentation;S3.3.4;"Check an individuals' documentation, such as driver's licenses, official identification documents, travel documents and tickets, to ensure compliance with legal regulations, identify individuals, and assess their right to access services, areas or facilities.
+Examples:
+- check official documents
+- check passenger tickets
+- check tickets at venue entry";http://data.europa.eu/esco/skill/e67fd42d-25f1-4124-b0be-3b1e3bfdd70c;protecting and enforcing
+3;maintaining and enforcing physical security;S3.3.5;"Ensuring safety and security of persons and property through physical actions.
+Examples:
+- extinguish fires 
+- conduct security screenings
+- detain offenders
+- rescue bathers";http://data.europa.eu/esco/skill/e9eb9c23-c1f4-4ce9-83c9-2f6a211cc536;protecting and enforcing
+3;protecting and enforcing;S3.3.0;"Responding to public and personal safety and security needs and ensuring compliance to rules, standards, guidelines or laws.
+nan";http://data.europa.eu/esco/skill/fe317a4c-e4e0-45ee-8b0d-204a68014f9e;protecting and enforcing
+2;assisting and caring;S3.0;"Providing assistance, nurturing, care, service and support to people, and ensuring compliance to rules, standards, guidelines or laws.
+nan";http://data.europa.eu/esco/skill/2486154b-e3fd-4938-8316-029f62afdcb9;assisting and caring
+3;assisting and caring;S3.0.0;"Providing assistance, nurturing, care, service and support to people, and ensuring compliance to rules, standards, guidelines or laws.
+nan";http://data.europa.eu/esco/skill/b84813aa-6c44-4d58-a240-556c2060fb4e;assisting and caring
+2;counselling;S3.1;"Responding to clients' needs by interpreting their emotional and motivational states, and determining and providing appropriate support or interventions.
+nan";http://data.europa.eu/esco/skill/6107b01a-3dac-4a03-ac9c-1044e4af0307;assisting and caring
+3;counselling;S3.1.0;"Responding to clients' needs by interpreting their emotional and motivational states, and determining and providing appropriate support or interventions.
+nan";http://data.europa.eu/esco/skill/0ac31705-79ff-4409-a818-c9d0a6388e84;counselling
+3;assisting people to access services;S3.1.3;"Assist others to gain access to social, legal or other services and benefits, including making referrals to other professionals and organisations.
+Examples:
+- refer service users to community resources";http://data.europa.eu/esco/skill/29fbde52-e525-4653-96d0-acd59ccb28d8;counselling
+3;counselling on personal, family or social issues;S3.1.1;"Responding to clients' needs by interpreting their emotional and motivational states, and assisting them to understand their situation.
+Examples:
+- give advice on personal matters
+- help clients cope with grief";http://data.europa.eu/esco/skill/d6a8a2a4-4e21-4ea6-b267-b5c63e687cfd;counselling
+3;providing support to resolve problems;S3.1.2;"Providing appropriate support or interventions to others to assist them to resolve their personal, family or social problems.
+Examples:
+- assist families in crisis situations
+- provide victim assistance";http://data.europa.eu/esco/skill/f9db77be-eb63-4937-a0d0-b581733e7d2a;counselling
+2;providing health care or medical treatments;S3.2;"Treating injuries and health conditions through the provision of health care and medical treatments to people.
+Excludes:
+- Veterinary care
+- Diagnosing health conditions";http://data.europa.eu/esco/skill/7a163630-7536-4748-a259-aa820d3be44b;assisting and caring
+3;providing health care or medical treatments;S3.2.0;"Treating injuries and health conditions through the provision of health care and medical treatments to people.
+Excludes:
+- Veterinary care
+- Diagnosing health conditions";http://data.europa.eu/esco/skill/0a400212-8693-4b1f-b0ca-d1f82c321916;providing health care or medical treatments
+3;providing physical therapies;S3.2.3;"Treating injuries and health conditions through physiotherapy, massage, chiropractic and other physical therapies.
+Examples:
+- apply clinical physiotherapy skills
+- administer hydrotherapy
+- give shiatsu massages
+
+Excludes:
+- veterinary care
+- non-therapeutic massage";http://data.europa.eu/esco/skill/3926ec7d-64cd-4410-8283-493a1afdd57b;providing health care or medical treatments
+3;providing psychological and occupational therapies;S3.2.4;"Treating human health conditions through provision psychological and occupational, music or related therapies.
+Examples:
+- apply psychoanalysis
+- use psychotherapeutic interventions
+- remediate healthcare user's occupational performance
+- apply music therapy treatment methods";http://data.europa.eu/esco/skill/4bbdc5eb-b710-4b76-816d-04926f7ac4a1;providing health care or medical treatments
+3;fitting assistive devices;S3.2.6;"Fitting assistive devices such as prostheses or orthotics to patients or clients.
+Examples:
+- tailor orthopaedic footwear
+
+Excludes:
+- veterinary care";http://data.europa.eu/esco/skill/50e42de7-4a5c-4f94-b160-765f547d840c;providing health care or medical treatments
+3;providing medical, dental and nursing care;S3.2.1;"Treating injuries and health conditions among humans, through administering medication and providing other medical treatments and nursing care.
+Examples:
+- provide professional care in nursing
+- administer prescribed medication
+- carry out wound care
+- manage acute pain
+- rehabilitate worn dentition
+
+Excludes:
+- veterinary care
+- performing surgery
+- physiotherapy
+- occupational therapy
+- psychotherapy
+";http://data.europa.eu/esco/skill/73e602a0-f80f-4f56-8e21-3db4fd08709d;providing health care or medical treatments
+3;prescribing and ordering medical tests, treatments or devices;S3.2.5;"Ordering medical tests such as blood tests or medical imaging, planning courses of treatment and prescribing medication, or medical and prosthetic devices.
+Examples:
+- prescribe medication
+- prescribe psychotherapeutic treatment
+
+Excludes:
+- veterinary care";http://data.europa.eu/esco/skill/b88bddd4-210e-405f-bbdf-729bb66605a0;providing health care or medical treatments
+3;performing surgical procedures;S3.2.2;"Treating injuries and health conditions through provision of various types of surgical intervention.
+Examples:
+- dental surgery
+- administer anaesthetics
+- perform paediatric surgery
+
+Excludes:
+- veterinary surgery
+";http://data.europa.eu/esco/skill/e001ce62-78e7-4821-a7df-a08457c295ab;providing health care or medical treatments
+2;preparing and serving food and drinks;S3.5;"Providing food and beverage services.
+nan";http://data.europa.eu/esco/skill/b85711bc-32d6-42af-ae0f-e2e566d0dfca;assisting and caring
+3;serving food and drinks;S3.5.2;"Serving food and beverages to clients in restaurants, canteens, cafes, bars, transportation equipment or other locations.
+Examples:
+- serve food in table service
+- prepare service trolleys
+- serve wines";http://data.europa.eu/esco/skill/1bb32451-7ca4-4fa2-a2c0-2083c426d76c;preparing and serving food and drinks
+3;preparing food and drinks;S3.5.1;"Preparing and cooking meals and beverages.
+Examples:
+- prepare meat dishes
+- prepare dairy products for use in a dish
+- prepare garnish for drinks
+
+Excludes:
+- manufacturing food products";http://data.europa.eu/esco/skill/89f8435a-ebc1-42b6-bf5c-496999e99776;preparing and serving food and drinks
+3;preparing and serving food and drinks;S3.5.0;"Providing food and beverage services.
+nan";http://data.europa.eu/esco/skill/b593afe4-4179-4a83-9f05-21c8d32d8113;preparing and serving food and drinks
+2;providing information and support to the public and clients;S3.4;"Assisting the public by answering questions, making recommendations, and providing information or support in response to requests.
+Excludes:
+- Provide high quality client service
+- Satisfy customers";http://data.europa.eu/esco/skill/e1746275-6d4e-4b02-b526-eeebf3052b6d;assisting and caring
+3;accompanying and welcoming people;S3.4.2;"Welcoming, accompanying or supporting clients, patrons, visitors and others by helping them to feel at ease, and assisting them with activities such as finding seats, making reservations and using facilities at social events, outings, or trips.
+Examples:
+- escort students on a field trip
+- supervise special visitors
+
+Excludes:
+- assist clients with special needs
+";http://data.europa.eu/esco/skill/00d5d1d2-c521-4c58-9df5-2939c0ce9adb;providing information and support to the public and clients
+3;providing general assistance to people;S3.4.4;"Providing practical assistance and service to clients and the public in using services and facilities, such as assisting with paperwork or supporting their special needs.
+Examples:
+- guarantee customer satisfaction
+- assist pool users
+
+Excludes:
+- escort passengers
+- provide social guidance over the phone
+";http://data.europa.eu/esco/skill/119a2f5c-3c3e-4b0d-9813-06a553c8860c;providing information and support to the public and clients
+3;providing information and support to the public and clients;S3.4.0;"Assisting the public by answering questions, making recommendations, and providing information or support in response to requests.
+Excludes:
+- Provide high quality client service
+- Satisfy customers";http://data.europa.eu/esco/skill/7de7e3f6-d222-4f08-b3f0-e2deff7ef798;providing information and support to the public and clients
+3;assisting people with paperwork;S3.4.3;"Assisting others with completing forms, provision of documentation required for access to services, issuance of official documents or enrolment in programmes.
+Examples:
+- Assist in loan applications";http://data.europa.eu/esco/skill/998d0ed8-21ee-4f1d-8906-f141136db5d9;providing information and support to the public and clients
+3;providing information to the public and clients;S3.4.1;"Answering questions, making recommendations, and providing information or support in response to requests from clients, customers, guests or members of the public.
+Examples:
+- inform customers of activity changes
+- respond to enquiries
+
+Excludes:
+- presentation of information to groups";http://data.europa.eu/esco/skill/d54970ba-d9f2-41ec-a852-bbd1e5796823;providing information and support to the public and clients
+2;providing general personal care;S3.6;"Responding to the daily and occasional personal care needs of people.
+Excludes:
+- Administration of medical treatments and therapies, therapeutic massage";http://data.europa.eu/esco/skill/e7a48651-3f68-4762-bf93-57cc1af47016;assisting and caring
+3;styling hair and providing beauty treatments;S3.6.4;"Grooming, styling or removing hair, applying make-up and providing beauty treatments, to meet the appearance desired by clients or required for the purposes such as theatrical performance.
+Examples:
+- apply nail polish
+- use hair removal techniques";http://data.europa.eu/esco/skill/5f92ff3e-288b-44aa-864d-5ebb1adb7925;providing general personal care
+3;assisting with personal needs;S3.6.2;"Assisting others with personal needs and care such as bathing, dressing, feeding, relaxation and comfort.
+Excludes:
+- Administration of medical treatments and therapies
+- Therapeutic massage
+- Caring for children
+
+Examples:
+- Provide basic support to patients
+- Give non-therapeutic massages
+- Provide domestic care";http://data.europa.eu/esco/skill/77ee8fad-188f-44cf-88ba-4e495a52d604;providing general personal care
+3;assisting people with mobility;S3.6.1;"Moving or assisting movement of persons with restricted mobility due to illness, accidents, disability, or medical procedures.
+Examples:
+- transfer patients
+
+Excludes:
+- drive vehicles";http://data.europa.eu/esco/skill/8826b057-0e80-4e3d-9efc-1e179d597f40;providing general personal care
+3;caring for children;S3.6.3;"Providing care for and assistance to children.
+Examples:
+- attend to children's basic physical needs
+- play with children
+
+Excludes:
+- administration of medical treatments and therapies
+- counsel and provide support to children to resolve personal, psychological or social problems
+";http://data.europa.eu/esco/skill/969845ce-6895-44a8-a3d2-b8c2d8b5de21;providing general personal care
+3;providing personal care;S3.6.0;"Responding to the daily and occasional personal care needs of people.
+Excludes:
+- Administration of medical treatments and therapies, therapeutic massage";http://data.europa.eu/esco/skill/fbb861f7-2386-4d17-84f7-6e340a8e6cd9;providing general personal care
+1;communication, collaboration and creativity;S1;"Communicating, collaborating, liaising, and negotiating with other people, developing solutions to problems, creating plans or specifications for the design of objects and systems, composing text or music, performing to entertain an audience, and imparting knowledge to others.
+Excludes:
+- communication or interaction with animals
+";http://data.europa.eu/esco/skill/dc06de9f-dd3a-4f28-b58f-b01b5ae72ab8;
+2;designing systems and products;S1.11;"Creating a plan or specification for the construction of an object, system or structure based on aesthetic and/or functional design concepts.
+Excludes:
+- Styling hair
+- Creating artistic, visual or instructive materials";http://data.europa.eu/esco/skill/0a295163-3e17-47ad-99ac-2b507ce30adb;communication, collaboration and creativity
+3;developing recipes or menus;S1.11.3;"Combining innovative and creative ideas to come up with new recipes for food and beverage products and to create new menus.
+Examples:
+- compile cooking recipes
+- create new food products
+- develop new confectionery products";http://data.europa.eu/esco/skill/32c854c1-6f1f-4f1c-8e4c-368a68a10db3;designing systems and products
+3;designing electrical or electronic systems or equipment;S1.11.2;"Creating a plan or specification for the design and development of electrical, electronic or mechatronic systems, hardware, products, and components.
+Examples:
+- design circuit boards
+- design microelectromechanical systems
+- define firmware";http://data.europa.eu/esco/skill/39fa260c-4f85-48e3-83ce-e292e696c233;designing systems and products
+3;designing systems and products;S1.11.0;"Creating a plan or specification for the construction of an object, system or structure based on aesthetic and/or functional design concepts.
+Excludes:
+- Styling hair
+- Creating artistic, visual or instructive materials";http://data.europa.eu/esco/skill/883eab8c-d8a6-4e8b-9b11-7d9001e172ab;designing systems and products
+3;designing structures or facilities;S1.11.4;"Creating a plan or specification for the design and development of physical structures such as buildings, urban infrastructure, or open spaces.
+Examples:
+- design safety equipment
+- design pharmaceutical manufacturing systems
+- design buildings
+- create new landscape designs";http://data.europa.eu/esco/skill/b2c688b0-9106-466d-8b88-eafdfe608e7d;designing systems and products
+3;designing ict systems or applications;S1.11.1;"Creating a plan or specification for the design of information systems, computer games, databases and computer networks, systems and applications.
+Excludes:
+- style hair
+- create artistic, visual or instructive materials";http://data.europa.eu/esco/skill/b590d4e5-7c62-4b4a-abc2-c270b482e0ce;designing systems and products
+3;designing industrial materials, systems or products;S1.11.5;"Creating or executing a plan or specification for the design of industrial, materials, products, or production systems, based on aesthetic and/or functional design concepts.
+Examples:
+- design infrastructure for surface mines
+- design woven fabrics
+- create new enamels
+
+Excludes:
+- design electrical or electronic systems or equipment
+";http://data.europa.eu/esco/skill/c34b06c4-d164-4e49-a784-89d47de42ec2;designing systems and products
+2;advising and consulting;S1.5;"Providing guidance and advice to enable decision-making about tasks, situations, and processes.
+Excludes:
+- Psychological, behavioural and social counselling; see S3.1.1";http://data.europa.eu/esco/skill/24ad2ffb-dece-4704-8155-63ea9428d038;communication, collaboration and creativity
+3;advising on environmental issues;S1.5.5;"Providing information and advice on environmental protection and sustainability.
+Examples:
+- advise on environmental remediation
+- advise on pollution prevention";http://data.europa.eu/esco/skill/062a9fde-cd91-44f9-9a2f-9e2bc3b281fd;advising and consulting
+3;advising on workplace health and safety issues;S1.5.9;"Promoting and providing information and advice on health and safety in the workplace.
+Examples:
+- advise on safety improvements
+- inform on safety standards";http://data.europa.eu/esco/skill/08104c27-d4b2-4d40-ae97-dde65e71712f;advising and consulting
+3;advising and consulting;S1.5.0;"Providing guidance and advice to enable decision-making about tasks, situations, and processes.
+Excludes:
+- Psychological, behavioural and social counselling; see S3.1.1";http://data.europa.eu/esco/skill/103af23e-d56c-47ab-b991-55c94dcdef50;advising and consulting
+3;providing financial advice;S1.5.2;"Explaining financial information and providing financial advice.
+Examples:
+- advise on investment
+- explain financial technicalities to clients";http://data.europa.eu/esco/skill/34691a8a-ec8e-4eaa-b6e7-f4dbf144c644;advising and consulting
+3;advising on products and services;S1.5.3;"Advising others on products or services explaining technical details.
+Examples:
+- advise customers on new equipment
+- provide advice on travel destinations";http://data.europa.eu/esco/skill/62afcfdd-a2a6-4143-bafb-59c77e15a01c;advising and consulting
+3;advising on educational or vocational matters;S1.5.8;"Providing information, advice and guidance on educational and training courses, teaching and learning methods, careers or job search.
+Examples:
+- advise on career
+- advise lesson plans
+- advise on training 
+- provide assistance with job search
+
+Includes:
+- managing own career
+";http://data.europa.eu/esco/skill/8c298a9b-e9ea-4396-897d-9aba982df6a0;advising and consulting
+3;advising on business or operational matters;S1.5.7;"Providing information and advice to improve the efficiency of production and business operations.
+Examples:
+- advise on efficiency improvements
+- advise on personnel management
+- advise on waste management procedures";http://data.europa.eu/esco/skill/b036eb5c-6a48-45b9-b2c6-f42f9e336204;advising and consulting
+3;providing medical advice;S1.5.4;"Explaining medical and healthcare information to patients or family members and/or advising them on medical, health or wellness issues.
+Examples:
+- advise on rehabilitation exercises
+- advise on medical device features
+- offer advice on diet related concerns
+- explain the molecular basis of a disease to patients
+
+Excludes:
+- provide advice on animal health
+";http://data.europa.eu/esco/skill/c75655c3-ed29-441e-b403-4dd65bc891a5;advising and consulting
+3;advising on design or use of technologies;S1.5.6;"Providing information and advice on technological possibilities, developments and on the uses of technology.
+Examples:
+- advise client on technical possibilities
+- provide ICT consulting advice";http://data.europa.eu/esco/skill/eb6cc4ba-4bb8-4348-9a3b-dc419558f66a;advising and consulting
+3;advising on legal, regulatory or procedural matters;S1.5.1;"Discussing legal matters with clients, disputants, or legal professionals or staff. Explaining and providing advice to others on legal matters, regulations, policies or procedures.
+Examples:
+- advise on social service process
+- provide legal advice";http://data.europa.eu/esco/skill/efbb3d3b-a41c-4e0a-90a8-8e611eb1db9f;advising and consulting
+2;writing and composing;S1.13;"Writing text or composing music, creating original work with regard to format, style and content.
+Excludes:
+- general writing abilities/literacy
+- writing computer programmes/coding";http://data.europa.eu/esco/skill/2f661409-3e56-46ab-95d7-6ec7786fc1c0;communication, collaboration and creativity
+3;artistic and creative writing;S1.13.2;"Writing original text of a creative nature for artistic, journalistic, promotional or similar purposes.
+Examples:
+- write storylines
+- create script for artistic production
+- write headlines
+- perform copywriting
+
+Excludes:
+- revise translations
+- write computer programmes / coding
+
+";http://data.europa.eu/esco/skill/1072f444-8a7d-41c1-aa6f-d536f20d94bf;writing and composing
+3;technical or academic writing;S1.13.3;"Writing original text of a primarily functional, technical or academic nature; editing text.
+Examples:
+- write manuals
+- draft legislation
+- provide user documentation
+
+Excludes:
+- revise translations
+- write computer programmes / coding
+
+
+";http://data.europa.eu/esco/skill/6e62e776-fbfa-486c-a6df-58cd239c86fe;writing and composing
+3;writing and composing;S1.13.0;"Writing text or composing music, creating original work with regard to format, style and content.
+Excludes:
+- General writing abilities/literacy
+- Writing computer programmes/coding";http://data.europa.eu/esco/skill/afe3d82e-4a40-4aa4-a4e9-a6097c4a391e;writing and composing
+3;composing music;S1.13.1;"Composing and arranging music.
+Examples:
+- compose music
+- orchestrate music
+- develop original melodies
+- improvise music
+
+Excludes:
+- compose lyrics
+";http://data.europa.eu/esco/skill/d12a1be6-d916-436d-8274-ad97b5f24415;writing and composing
+2;negotiating;S1.1;"Exchanging ideas while analysing issues and interests at stake, enabling opposing sides to resolve disputes and reach agreement, or making decisions to resolve disputes or impose justice.
+nan";http://data.europa.eu/esco/skill/323b3684-86ec-40fa-81b4-bc52694ef168;communication, collaboration and creativity
+3;negotiating and managing contracts and agreements;S1.1.1;"Negotiating and managing contracts and agreements with others concerning matters such as prices, terms of service, employment conditions, access to land and facilities.
+Examples include: 
+- conclude business agreements
+- manage contracts
+- negotiate price";http://data.europa.eu/esco/skill/0d80a782-99ff-4f49-abbe-c72524c6f390;negotiating
+3;negotiating;S1.1.0;"Exchanging ideas while analysing issues and interests at stake, enabling opposing sides to resolve disputes and reach agreement, or making decisions to resolve disputes or impose justice.
+nan";http://data.europa.eu/esco/skill/0f804e14-001d-4ec0-b3f7-eb6a23ad43cb;negotiating
+3;responding to complaints;S1.1.3;"Handling and responding to complaints from clients or staff.
+Examples:
+- handle customer complaints
+- manage employee complaints";http://data.europa.eu/esco/skill/81f29457-6d0d-4f46-9e0a-7295c7c6f090;negotiating
+3;mediating and resolving disputes;S1.1.2;"Working with two or more separate people or groups involved in a disagreement or dispute to bring about an agreement, settlement or compromise.
+Excludes:
+- making decisions
+
+Examples include: 
+- moderate in negotiations  
+- handle financial disputes";http://data.europa.eu/esco/skill/9c17f73f-345c-4c55-8b59-47b445941b7b;negotiating
+2;presenting information;S1.4;"Presenting oral or visual material to an audience in order to provide or interpret information.
+nan";http://data.europa.eu/esco/skill/3f641516-9846-4a7f-a7f4-e1274eef6688;communication, collaboration and creativity
+3;presenting research or technical information;S1.4.2;"Presenting information of a technical or academic nature to an audience, including presenting the results of research.
+Examples:
+- present legislation proposal
+- present detailed design proposal
+- perform lectures
+- deliver visual presentation of data";http://data.europa.eu/esco/skill/8f9f8b20-ff26-4392-b04f-695dcde5b90a;presenting information
+3;presenting information in legal proceedings;S1.4.3;"Testifying, presenting evidence or representing clients during legal proceedings.
+Examples:
+- Present evidence
+- Represent clients in court";http://data.europa.eu/esco/skill/ad326fa7-f2e9-4421-8426-bc0c2e167143;presenting information
+3;presenting general information;S1.4.1;"Presenting information of a non-technical nature to an audience.
+Examples:
+- give live presentation
+- deliver presentations on tourism 
+- present reports
+
+Excludes:
+- present information in legal proceedings
+- present research or technical information
+";http://data.europa.eu/esco/skill/cdb2aecd-9dca-48fd-8d56-f0aace3ab5a9;presenting information
+3;presenting information;S1.4.0;"Presenting oral or visual material to an audience in order to provide or interpret information.
+nan";http://data.europa.eu/esco/skill/de884168-32e7-4500-a227-3f0966f962b6;presenting information
+2;working with others;S1.8;"Working with other people, understanding and respecting the roles and competencies of others.
+Excludes:
+- Management, supervision and coordination of teams";http://data.europa.eu/esco/skill/548c3fbe-9eb1-4035-bc54-027fd5bc5315;communication, collaboration and creativity
+3;assisting and supporting co-workers;S1.8.6;"Assisting and supporting colleagues, managers, volunteers and other co-workers in the performance of their tasks or in the operations of a business unit.
+Examples:
+- support managers
+- support colleagues
+- assist forestry service crew
+- assist emergency services";http://data.europa.eu/esco/skill/173fbafb-d2e0-4b89-be1c-548b1cc47160;working with others
+3;giving feedback;S1.8.3;"Providing founded feedback on the performance of subordinates, co-workers and students through both criticism and praise in a respectful, clear, and consistent manner. Highlighting achievements as well as mistakes and set up methods of formative assessment.
+Examples:
+- provide feedback on job performance
+- give constructive feedback";http://data.europa.eu/esco/skill/23cfb269-eec1-4011-8e57-c86203ce9fd7;working with others
+3;following instructions and procedures;S1.8.5;"Following instructions given verbally or in writing and following standard or agreed procedures.
+Examples:
+- follow a brief
+- follow signalling instructions
+- read job ticket instructions";http://data.europa.eu/esco/skill/58bd927f-e4cc-4b61-a679-cb91b3f8075a;working with others
+3;accepting feedback;S1.8.4;"React to valid and well-reasoned opinions and directions about one's work in a positive manner.
+Examples:
+- accept constructive criticism";http://data.europa.eu/esco/skill/8369011d-de43-4800-bcce-be12e19828a5;working with others
+3;working with others;S1.8.0;"Working with other people, understanding and respecting the roles and competencies of others.
+Excludes:
+- Management, supervision and coordination of teams";http://data.europa.eu/esco/skill/91b0b918-942e-4661-b88c-70b9396529e5;working with others
+3;giving instructions;S1.8.2;"Giving instructions and directions to co-workers, subordinates or students or members of the public by employing various communication techniques. Adjusting communication style to the target audience in order to convey instructions as intended.
+Examples:
+- give instructions to staff
+- direct airport subcontractors
+
+Excludes:
+- direct and coordinate operational activities
+";http://data.europa.eu/esco/skill/9a540c0f-81c0-4687-a14b-e9196d9af6c0;working with others
+3;working in teams;S1.8.1;"Working confidently within a group with each doing their part in the service of the whole. Understanding and respecting the roles and competencies of other team members.
+Examples:
+- work in multidisciplinary teams 
+- work in assembly line teams
+- collaborate with designers
+- cooperate with colleagues
+- work in a forestry team
+- work in shifts
+
+Excludes:
+- management, supervision and coordination of teams
+";http://data.europa.eu/esco/skill/e4da156d-a6c4-4b29-935b-eff9c9553cf1;working with others
+2;teaching and training;S1.3;"Facilitating the acquisition of new knowledge and skills. Leading and guiding individuals and groups through a process in which they are taught the necessary skills and knowledge for life, future learning or for a particular job or set of jobs.
+Excludes:
+- Training animals";http://data.europa.eu/esco/skill/5770f630-9b25-49f3-9d37-e93ec1799749;communication, collaboration and creativity
+3;teaching academic or vocational subjects;S1.3.1;"Instruct students in the theory and practice of academic or vocational subjects.
+Examples:
+- give theory lessons to pilots
+- teach biology
+- teach basic numeracy skills
+- teach industrial arts principles";http://data.europa.eu/esco/skill/335be43a-3267-400e-b5cb-c9e234dc7544;teaching and training
+3;teaching safety procedures;S1.3.2;"Teaching safety procedures or standards to other people.
+Examples:
+- educate employees on occupational hazards
+- provide on-board safety training
+- train staff in safety procedures
+- educate public on fire safety";http://data.europa.eu/esco/skill/3374fb57-056f-49e0-9fc5-000465e13794;teaching and training
+3;training on operational procedures;S1.3.3;"Training employees, students or clients on operational procedures in the work place or and demonstrating the use of equipment or products.
+Examples:
+- teach air cabin crew procedures
+- train operators in using mine machinery
+- demonstrate functionality of software products
+
+Excludes:
+- teaching vocational subjects as part of formal learning
+- teaching safety procedures and standards
+- coaching
+";http://data.europa.eu/esco/skill/6c4fa8c8-e9e1-49b5-897f-6b61fe649488;teaching and training
+3;teaching and training;S1.3.0;"Facilitating the acquisition of new knowledge and skills. Leading and guiding individuals and groups through a process in which they are taught the necessary skills and knowledge for life, future learning or for a particular job or set of jobs.
+Examples:
+- provide teacher support
+
+Excludes:
+- training animals";http://data.europa.eu/esco/skill/caede8f1-6658-4d78-9eb4-2ad2c7ebf09b;teaching and training
+3;coaching and mentoring;S1.3.5;"Actively helping individuals or groups to improve their strengths, life skills, performance, learning skills and confidence and to optimise specific methods, skills or abilities.
+Examples:
+- Coach during a sports competition
+- Assist clients with personal development
+- Mentor individual employees";http://data.europa.eu/esco/skill/e2bdf081-333a-414f-b8ac-93c76290f167;teaching and training
+3;training on health or medical topics;S1.3.4;"Training patients, health providers, or carers on health or hygiene practices, medical procedures or physcial fitness.
+Examples:
+- teach first aid principles
+- train medical staff on nutrition
+- educate patient's relations on care
+
+Excludes:
+- teaching medicine or nursing as part of a formal education programme
+";http://data.europa.eu/esco/skill/ee2576c0-1af5-44b5-8c0c-2002541d1ccc;teaching and training
+2;obtaining information verbally;S1.7;"Asking questions and listening to others to obtain information.
+nan";http://data.europa.eu/esco/skill/6889a21c-837b-49a2-be61-bb6010ab63f4;communication, collaboration and creativity
+3;interviewing;S1.7.1;"Interacting verbally in a formal way, usually using structured questioning, to collect information, determine opinions, or determine suitability of individuals for jobs, roles or tasks.
+Examples:
+- adhere to questionnaires
+- interview insurance claimants
+- interrogate individuals";http://data.europa.eu/esco/skill/07f47dea-587c-40c0-990a-6c092cc3e6a4;obtaining information verbally
+3;obtaining information verbally;S1.7.0;"Asking questions and listening to others to obtain information.
+nan";http://data.europa.eu/esco/skill/31397e38-43b9-43ba-943f-192b834e6b54;obtaining information verbally
+3;engaging with others to identify needs;S1.7.2;"Engaging in discussions in order to identify expectations, requirements, desires, needs and problems of clients, co-workers, students and others.
+Examples:
+- identify customer objectives
+- interact with users to gather requirements";http://data.europa.eu/esco/skill/d46193e0-be7d-4a90-91cc-4caba78e19d0;obtaining information verbally
+3;listening and asking questions;S1.7.3;"Listen carefully to what other people say, patiently understanding points being made, formulating and asking appropriate questions, without interrupting at inappropriate times.
+Examples:
+- use questioning techniques
+- listen actively";http://data.europa.eu/esco/skill/d7d2a468-587b-4a03-a305-e0a399ba69e6;obtaining information verbally
+2;communication, collaboration and creativity;S1.0;"Communicating, collaborating, liaising, and negotiating with other people, developing solutions to problems, creating plans or specifications for the design of objects and systems, composing text or music, performing to entertain an audience, and imparting knowledge to others.
+Excludes:
+- Communication or interaction with animals";http://data.europa.eu/esco/skill/85b379e7-e0b7-48b8-baa7-631f50a7cdd5;communication, collaboration and creativity
+3;communication, collaboration and creativity;S1.0.0;"Communicating, collaborating, liaising, and negotiating with other people, developing solutions to problems, creating plans or specifications for the design of objects and systems, composing text or music, performing to entertain an audience, and imparting knowledge to others.
+Excludes:
+- Communication or interaction with animals";http://data.europa.eu/esco/skill/ab877a24-335d-4676-b366-c5c06651481a;communication, collaboration and creativity
+2;using more than one language;S1.15;"Using more than one language or dialect to communicate verbally or in written form, or to translate from one language to another.
+Excludes:
+- skills and knowledge related to a specific language or dialect.";http://data.europa.eu/esco/skill/8bbdf1f1-e943-45fc-af2f-1446cbd88245;communication, collaboration and creativity
+3;using foreign languages;S1.15.1;"Communicating with others in one or more foreign languages or dialects, in spoken or written forms.
+Examples:
+- employ foreign languages in care
+- communicate commercial and technical issues in foreign languages
+- speak dialect
+
+Excludes:
+- skills and knowledge related to a specific language or dialect.
+
+";http://data.europa.eu/esco/skill/03961960-e729-4768-ab0a-49886132f17a;using more than one language
+3;using more than one language;S1.15.0;"Using more than one language or dialect to communicate verbally or in written form, or to translate from one language to another.
+Excludes:
+- Skills and knowledge related to a specific language or dialect.";http://data.europa.eu/esco/skill/0c92c33c-2859-4705-87ae-4fdd71d0f8f6;using more than one language
+3;translating and interpreting;S1.15.2;"Translate one language into another language in written or spoken form. Match words and expressions with their corresponding brothers in other languages, while making sure that the message and nuances of the original text are preserved.
+Examples:
+- translate spoken language
+- translate texts
+- interpret languages in conferences
+
+Excludes:
+- skills and knowledge related to a specific language or dialect.
+";http://data.europa.eu/esco/skill/64aeee4d-3791-4448-8ed8-9b49ad04f2fb;using more than one language
+2;performing and entertaining;S1.14;"Undertaking activities to entertain an audience or improve personal abilities.
+nan";http://data.europa.eu/esco/skill/ac88053e-c9b5-43cf-ace1-f506bcfdc8cb;communication, collaboration and creativity
+3;performing artistic or cultural activities;S1.14.2;"Performing, practising or rehearsing music, dance, drama, ceremonies or other types of performance (excluding athletic performance) for a live audience, or as part of a recording session.
+Examples:
+- perform dance or music
+- tell stories
+- perform music in a recording studio 
+- perform religious ceremonies
+- rehearse performances
+
+Excludes:
+- participate in sports performances
+- perform stunts
+
+";http://data.europa.eu/esco/skill/395e42b8-f637-4e7e-96d8-9c1976c05d92;performing and entertaining
+3;performing and entertaining;S1.14.0;"Undertaking activities to entertain an audience or improve personal abilities.
+nan";http://data.europa.eu/esco/skill/3bf93195-5239-4f73-94a6-349be598d462;performing and entertaining
+3;conducting gaming activities;S1.14.3;"Carrying out gaming operations in gambling establishments and participating in gambling games.
+Examples:
+- conduct gambling games";http://data.europa.eu/esco/skill/4781b6b1-07bc-44be-8c2d-de0fa5db4250;performing and entertaining
+3;practising sports;S1.14.1;"Performing and practising athletic activities for fitness, competition, or artistic purposes.
+Examples:
+- participate in athletic events
+- perform stunts
+- participate in physical training";http://data.europa.eu/esco/skill/f4346da3-f6b2-4389-8a67-7c443b7e1609;performing and entertaining
+2;liaising and networking;S1.2;"Developing alliances, contacts or partnerships, and exchanging information with others.
+nan";http://data.europa.eu/esco/skill/b76cd1e5-d5e7-464a-b7bb-4164d3616452;communication, collaboration and creativity
+3;advocating for individual or community needs;S1.2.4;"Delivering arguments in favour of something, such as a cause, idea, or policy, to benefit another person or a community.
+Excludes:
+- Promoting goods and services
+- Representing clients in legal proceeding
+
+Examples:
+- Advocate for healthcare users' needs
+- Promote service users' rights
+- Influence legislators";http://data.europa.eu/esco/skill/0a4c5823-8b09-4e6b-95b4-8036ef3b9c4c;liaising and networking
+3;liaising and networking;S1.2.0;"Developing alliances, contacts or partnerships, and exchanging information with others.
+nan";http://data.europa.eu/esco/skill/848c0306-8cbe-4693-a275-d99807c0173c;liaising and networking
+3;developing professional relationships or networks;S1.2.3;"Developing alliances, contacts or partnerships with colleagues, clients and stakeholders.
+Examples: 
+- develop communication networks with shipping sites
+- develop professional network
+- maintain relationship with suppliers";http://data.europa.eu/esco/skill/8a3b45dc-8299-4b67-99db-6542daf79ac3;liaising and networking
+3;communicating with colleagues and clients;S1.2.1;"Communicating with colleagues, clients and other outside groups to disseminate information on operational matters, problems and activities. 
+Examples:
+- Brainstorm ideas
+- Contact customers
+
+Excludes:
+- Cooperate with professionals
+- Liaise with politicians";http://data.europa.eu/esco/skill/a19c5139-1250-4a60-9c31-a3243cca06cc;liaising and networking
+3;collaborating and liaising;S1.2.5;"Reaching out to outside agencies, clients and other organisational units to facilitate exchange of information. Collaborating and engaging with external and internal agencies and departments to adapt the timing and nature of the activities.
+Examples: 
+- contact event speakers
+- liaise with auditors";http://data.europa.eu/esco/skill/af84405b-896d-4ed3-9462-077ea9a2a188;liaising and networking
+2;promoting, selling and purchasing;S1.6;"Using communication strategies or techniques to encourage acceptance of goods, services, or ideas, and to sell or buy and goods or services.
+Excludes:
+- Trading and other skills involving buying and selling";http://data.europa.eu/esco/skill/b99283cd-b908-4100-baa5-112692ac22b8;communication, collaboration and creativity
+3;purchasing goods or services;S1.6.3;"Buying and ordering goods, services and supplies.
+Excludes:
+- Performing financial transactions
+
+Examples:
+- Buy advertising space
+- Order construction supplies
+- Procure electrical machinery
+- Purchase fruits and vegetables";http://data.europa.eu/esco/skill/663e753c-2fc4-4bf6-9a06-a6ab2d705238;promoting, selling and purchasing
+3;selling products or services;S1.6.1;"Taking orders for and selling goods or services to individuals, households or enterprises.
+Examples:
+- sell office equipment
+- take room service orders
+- deliver a sales pitch
+- sell products
+
+Excludes:
+- perform financial transactions
+";http://data.europa.eu/esco/skill/e06f2d35-a160-46c2-89f1-9cae9c93c8b8;promoting, selling and purchasing
+3;promoting products, services, or programs;S1.6.2;"Promoting, advertising and marketing goods, services, programs or policies.
+Examples:
+- perform public relations
+- advertise new book releases
+- conduct mobile marketing
+- offer free samples
+- promote education programmes";http://data.europa.eu/esco/skill/efb60300-0d55-4b2c-8038-8409587a4727;promoting, selling and purchasing
+3;promoting, selling and purchasing;S1.6.0;"Using communication strategies or techniques to encourage acceptance of goods, services, or ideas, and to sell or buy and goods or services.
+Excludes:
+- Trading and other skills involving buying and selling";http://data.europa.eu/esco/skill/fb01d224-882a-4346-99e2-bfd56f52d09c;promoting, selling and purchasing
+2;solving problems;S1.9;"Developing and implementing solutions to practical, operational or conceptual problems which arise in the execution of work in a wide range of contexts.
+Excludes:
+- Repairing and resolving technical problems with machinery and equipment
+- Using ICT tools for problem solving";http://data.europa.eu/esco/skill/be7443ff-0747-43b8-8720-8e87fd34e692;communication, collaboration and creativity
+3;solving problems;S1.9.0;"Developing and implementing solutions to practical, operational or conceptual problems which arise in the execution of work in a wide range of contexts.
+Excludes:
+- Repairing and resolving technical problems with machinery and equipment
+- Using ICT tools for problem solving";http://data.europa.eu/esco/skill/4feed491-dc09-4218-814a-0146e13ef4fe;solving problems
+3;implementing new procedures or processes;S1.9.2;"Implementing new business procedures or processes to resolve practical, operational or conceptual problems which arise in the execution of work in a wide range of contexts.
+Examples:
+- implement transport strategy
+- apply crisis intervention
+
+Excludes:
+- repair and resolve technical problems with machinery and equipment
+- use ICT tools for problem solving
+";http://data.europa.eu/esco/skill/a6c3bda0-c759-495e-b2c5-062b3abe2097;solving problems
+3;developing solutions;S1.9.1;"Developing solutions to practical, operational or conceptual problems which arise in the execution of work in a wide range of contexts.
+Examples:
+- troubleshoot
+- identify improvement actions
+- create solutions to problems
+
+Excludes:
+- repair and resolve technical problems with machinery and equipment
+- use ICT tools for problem solving
+";http://data.europa.eu/esco/skill/aca5081a-ceb0-4028-9cc5-1daafd4f86f9;solving problems
+2;creating artistic, visual or instructive materials;S1.12;"Creating and developing visual representations and displays, instructional or promotional materials, or artistic designs or performances.
+nan";http://data.europa.eu/esco/skill/c85f95ae-34fb-487b-b3d5-10803eee619d;communication, collaboration and creativity
+3;creating artistic, visual or instructive materials;S1.12.0;"Creating and developing visual representations and displays, instructional or promotional materials, or artistic designs or performances.
+nan";http://data.europa.eu/esco/skill/775be776-b6ce-4322-a96f-11b2df84ce07;creating artistic, visual or instructive materials
+3;creating visual displays and decorations;S1.12.1;"Creating, designing and arranging graphics, visual representations, displays, exhibits or decorations.
+Examples:
+- create flower arrangements
+- set up merchandise displays
+- decorate indoor or outdoor spaces
+- display merchandise
+- design customised maps
+
+Excludes:
+- create artistic designs
+";http://data.europa.eu/esco/skill/a556a3db-cd48-42a5-825c-f95f6f5ccbfe;creating artistic, visual or instructive materials
+3;creating artistic designs or performances;S1.12.3;"Creating original works of art such as pictures and sculptures, or creating artistic performances such as dance and drama for live or recorded performance.
+Examples:
+- devise choreography
+- create sculptures
+- design a music show";http://data.europa.eu/esco/skill/ab99d9a7-62eb-407b-92f2-bf7992a82004;creating artistic, visual or instructive materials
+3;developing instructive or promotional materials;S1.12.2;"Creating and developing materials for instructional, educational, advertising or promotional purposes
+Examples:
+- design materials for multimedia campaigns
+- prepare lesson content
+- prepare presentation material";http://data.europa.eu/esco/skill/d1815c8a-7755-4fe3-bacf-68bb0b6a0b55;creating artistic, visual or instructive materials
