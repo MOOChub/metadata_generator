@@ -144,7 +144,7 @@ function remove_field(framework, field_to_remove, field_category) {
         })
         .catch(error => {
             console.error('Fetched error: ' + error);
-        })
+        });
 }
 
 function show_all_selected_fields() {
@@ -205,9 +205,21 @@ function add_list_entry(list, value, forgoing_value) {
 }
 
 function write_json() {
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', '/write_json', true);
-    xhr.send();
+    const url = '/write_json';
+
+    fetch(url)
+        .then(response => {
+            if(!response.ok){
+                throw new Error('Error');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Fetched error:', error);
+        });
 
     const link_for_download = document.createElement('a');
     link_for_download.id = "a1";
@@ -259,5 +271,5 @@ function get_config_processor(framework) {
         })
         .catch(error => {
             console.error('Fetched error: ' + error);
-        })
+        });
 }
