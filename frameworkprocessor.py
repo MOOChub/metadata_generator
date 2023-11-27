@@ -23,77 +23,24 @@ class FrameworkProcessor:
         return list(map(FrameworkProcessor.remove_file_ending, files))
 
     @staticmethod
-    def find_fos_fields(path, config, level, value):
-        code_length = 0
-        for i in config.CHARACTERS_PER_LEVEL[:level]:
-            code_length += i
-
-        data = pd.read_csv(path, sep=config.SEPARATOR, dtype=str)
-        temp = data.copy()
-
-        data = data[data[config.COLUMN_CODE].str.len() == code_length]
-
-        if value is not None:
-            temp = temp[(temp[config.COLUMN_NAME] == value) &
-                        (temp[config.COLUMN_LEVEL] == str(level - 1))][config.COLUMN_CODE].item()
-            data = data[data[config.COLUMN_CODE].str.startswith(temp)]
-
-        data = data[config.COLUMN_NAME].unique()
-
-        fields = list(data)
-
-        return fields
-
-    @staticmethod
-    def find_skill_fields(path, config, level, value):
-        fields = []
-
-        framework_data = pd.read_csv(path)
-
-        framework_type = config.FRAMEWORK_LABEL
-
-        if config.__name__ == "ConfigEscoSkills":
-            data = framework_data.loc[framework_data["Level 0 preferred term"] == framework_type]
-        else:
-            data = list(framework_data[config.COLUMN_NAME])
-
-        if value is not None:
-            data = data.loc[data["Level " + str(level - 1) + " preferred term"] == value]
-
-        if config.__name__ == "ConfigEscoSkills":
-            data = data["Level " + str(level) + " preferred term"].unique()
-
-        for i in data:
-            if type(i) == str:
-                fields.append(i)
-
-        fields.sort()
-
-        return fields
-
-    @staticmethod
     def find_fields(input_params):
         framework = input_params.get('framework')
         value = input_params.get('value')
         level = int(input_params.get('level'))
 
-        if value == "None":
-            value = None
-
         path = FrameworkProcessor.find_framework_folder()
+        path = os.path.join(path, framework + ".csv")
 
-        if framework == "ISCED-F":
-            path = os.path.join(path, "ESCO 1.1.1.csv")
+        data = pd.read_csv(path, sep=";", header=0)
+
+        if value == "None":
+            data = data.loc[data["Level"] == level]
         else:
-            path = os.path.join(path, framework + ".csv")
+            data = data.loc[(data["Level"] == level) & (data["BroaderConcept"] == value)]
+        fields = list(data["Name"])
 
-        config_framework = config_handler.get_config_processor_by_framework(framework)
-        framework_type = config_framework.FRAMEWORK_PURPOSE
-
-        if framework_type == "ESCO":
-            return FrameworkProcessor.find_skill_fields(path, config_framework, level, value)
-        elif framework_type == "FoS":
-            return FrameworkProcessor.find_fos_fields(path, config_framework, level, value)
+        fields.sort()
+        return fields
 
     @staticmethod
     def write_json(stored_values):
@@ -184,63 +131,28 @@ class Entry:
     def generate_entry(self, framework, value, forgoing_value):
 
         config = config_handler.get_config_processor_by_framework(framework)
-        level = config.NUMBER_OF_LEVELS
 
         path = FrameworkProcessor.find_framework_folder()
+        path = os.path.join(path, framework + ".csv")
 
-        if framework == "ISCED-F":
-            path = os.path.join(path, "ESCO 1.1.1.csv")
-        else:
-            path = os.path.join(path, framework + ".csv")
-
-        data = pd.read_csv(path, sep=config.SEPARATOR, dtype=str)
-
-        if config.FRAMEWORK_PURPOSE == "ESCO" and config.NUMBER_OF_LEVELS > 1:
-            data = data.loc[(data["Level " + str(level) + " preferred term"] == value) &
-                            (data["Level " + str(level - 1) + " preferred term"] == forgoing_value)]
-        elif config.FRAMEWORK_PURPOSE == "ESCO":
-            data = data.loc[data[config.COLUMN_NAME] == value]
-        else:
-            temp = data.copy()
-            temp = temp[(temp[config.COLUMN_NAME] == forgoing_value) &
-                        (temp[config.COLUMN_LEVEL] == str(level - 1))][config.COLUMN_CODE].item()
-            data = data.loc[(data[config.COLUMN_NAME] == value) &
-                            (data[config.COLUMN_CODE].str.startswith(temp)) &
-                            (data[config.COLUMN_LEVEL] == str(level))].iloc[[-1]]
-
-        if framework == "ISCED-F":
-            short_code = data['Level ' + str(level) + ' URI'].iloc[0].split("/")[-1]
-        elif config.FRAMEWORK_PURPOSE == "ESCO" and config.NUMBER_OF_LEVELS > 1:
-            short_code = data['Level ' + str(level) + ' code'].iloc[0]
-        elif config.FRAMEWORK_PURPOSE == "ESCO":
-            short_code = None
-        else:
-            short_code = data[config.COLUMN_CODE].item()
-
-        if config.FRAMEWORK_PURPOSE == "ESCO" and config.NUMBER_OF_LEVELS > 1:
-            target_url = data['Level ' + str(level) + ' URI'].iloc[0]
-            description = str(data['Description'].iloc[0]) + "\n" + str(data['Scope note'].iloc[0])
-        elif config.FRAMEWORK_PURPOSE == "ESCO":
-            target_url = data['conceptUri'].iloc[0]
-            description = str(data['description'].iloc[0])
-        else:
-            target_url = None
-            description = None
+        data = pd.read_csv(path, sep=";", dtype=str)
+        data = data[(data["Name"] == value) & (data["BroaderConcept"] == forgoing_value)].iloc[-1]  # This guarantees
+        # that only one row is selected. It is always the last one. Otherwise, problems could occur if three or more
+        # nodes in the path share the same name. In this case, the combination Name - BroaderConcept is ambiguous like
+        # in ESCO Construction - construction - construction.
 
         data_block = {
             "educationalFramework": framework,
             "url": config.URL,
             "name": self.generate_names_of(value),
             "alternativeName": None,
-            "shortCode": short_code,
-            "targetUrl": target_url,
-            "description": description,
-        }
+            "shortCode": data["ShortCode"],
+            "targetUrl": data["Uri"],
+            "description": data["Description"],
+            "type": config.FRAMEWORK_PURPOSE,
+            }
 
-        if config.FRAMEWORK_LABEL == "skills":
-            data_block["type"] = "Skill"
-        else:
-            data_block["type"] = "EducationalAlignment"
+        if config.FRAMEWORK_PURPOSE == "EducationalAlignment":
             data_block["alignmentType"] = "educationalSubject"
 
         return data_block

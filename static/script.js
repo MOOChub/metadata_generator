@@ -220,18 +220,12 @@ function write_json() {
 }
 
 function reset(){
-    if (document.getElementById("ESCO 1.1.1") != null){
-        document.getElementById("ESCO 1.1.1").remove();
-    }
-    if (document.getElementById("ISCED-F") != null){
-        document.getElementById("ISCED-F").remove();
-    }
-    if (document.getElementById("oefos") != null){
-        document.getElementById("oefos").remove();
-    }
-    if (document.getElementById("a1") != null){
-        document.getElementById("a1").remove();
-    }
+
+    const container = document.getElementById('list-selected-values-container').children;
+    const entries = Array.from(container);
+    entries.forEach(child => {
+        child.parentNode.removeChild(child);
+    });
 
     const url = '/reset';
 
