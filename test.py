@@ -25,7 +25,7 @@ for file in os.listdir("frameworks"):
     for index, row in data.iterrows():
         input_data = {
             "framework": framework,
-            "value": row["Name"],
+            "field": row["Name"],
             "forgoing": row["BroaderConcept"],
         }
 
