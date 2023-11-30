@@ -218,8 +218,6 @@ async function find_all_selected(){
 function add_list_entry(list, value) {
 
     const list_entry = document.createElement('li');
-    const delete_button = document.createElement('button');
-    delete_button.className = "DelButton";
     list_entry.className = "liEl";
     list_entry.textContent = value;
 

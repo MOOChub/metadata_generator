@@ -11,10 +11,10 @@ stored_values = DataStorage()
 def index():
     files = FrameworkProcessor.find_framework_files()
     docs = []
-    with open("documentation/documentation.html", "r") as file:
-        data = file.read().split("<p>")
-        for i in range(1, len(data)):
-            docs.append(Markup(data[i].split("</p>")[0]))
+    with open("documentation/documentation.txt", "r") as file:
+        data = file.read().split("\n")
+        for i in range(3, len(data)):
+            docs.append(Markup(data[i]))
             
     return render_template('index.html', files=files, documentation=docs)
            

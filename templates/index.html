@@ -8,14 +8,14 @@
 <body>
 
     <header class="header">
-        <!--<img id="logo" src="..\images\moochub-logo.png" alt="MOOChub logo">-->
+        <img id="logo" src="..\images\moochub-logo.png" alt="MOOChub logo">
         <h1>Metadata Tool</h1>
     </header>
 
     <div id="main-container">
         <nav class="navigation">
             {% for line in documentation %}
-                <p>{{ line }}</p>
+                {{ line }}
             {% endfor %}
         </nav>
 
@@ -38,12 +38,11 @@
             </div>
             <div class="columns" id="column2">
                 <div class="row-1">
-                    <!--<button id="add_field_button" onclick="add_field()">Add Entry</button>-->
                     <button id="write_json_button" onclick="write_json()">Write JSON</button>
                     <button id="reset_button" onclick="reset()">Reset</button>
                 </div>
                 <div class="row-2">
-                    <h2>Selected fields</h2>
+                    <h2>Selected Entries</h2>
                 </div>
                 <div id="list-selected-values-container">
                 </div>

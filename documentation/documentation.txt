@@ -5,31 +5,45 @@ user how to use the tool.-->
   <p>This tool was developed to support course creators and admins to generate metadata for their courses. It generates
   data fragments according to the MOOChub metadata format.</p>
 
-  <p>The user can choose a framework and selects the desired field of study of skill via the dropdown menus.</p>
+  <p>The user can choose a framework via the dropdown menu. The user can select the desired field of study or skill
+  by expending the framework tree and pick the entries by checking the respective checkboxes.</p>
 
-  <p>By clicking the "Add Entry" button will add the selected field of study or skill to the list which will be used for
-  the generation of the metadata fragment(s).</p>
+  <p>The selected entries appear directly in the "Selected Entries" section on the right side. Unselecting the
+  respective checkbox directly removes the entry. The list in the "Selected Entries" section will be used for the
+  generation of the metadata fragment(s).</p>
 
   <p>By clicking the "Write JSON" button the metadata fragment(s) will be generated and can be downloaded. Important:
   fields of study and skills are saved in separate JSON files.</p>
 
-  <p>Single entries from the list can be deleted by pressing the "Delete Entry" button. The list can be completely
-  cleared by pressing the "Reset" button.</p>
+  <p>The list can be completely cleared by pressing the "Reset" button.</p>
 
 <h2>Credits</h2>
   <p>This tool uses the following frameworks:</p>
 
   <ul>
     <li>
-        ISCED-F<br>
-        ISCED-F is published by the UNESCO under the Attribution-ShareAlike 3.0 IGO (CC-BY-SA 3.0 IGO) license.
+        DigComp<br>
+        <span class="small-text">The DigComp is published by the European Commission under the Creative Commons
+        Attribution 4.0 International (CC BY 4.0) licence.</span>
     </li>
     <li>
         ESCO<br>
-        ESCO is published by the European Commission. DISCLAIMER: This service uses the ESCO classification of the European Commission.
+        <span class="small-text">ESCO is published by the European Commission. DISCLAIMER: This service uses the ESCO
+        classification of the European Commission.</span>
+    </li>
+    <li>
+        GRETA<br>
+        <span class="small-text">The GRETA framework was developed and published by the German Institute for Adult
+        Education under the  Creative Commons Attribution 4.0 International (CC BY 4.0) licence.</span>
+    </li>
+    <li>
+        ISCED-F<br>
+        <span class="small-text">ISCED-F is published by the UNESCO under the Attribution-ShareAlike 3.0 IGO
+        (CC-BY-SA 3.0 IGO) license.</span>
     </li>
     <li>
         OEFOS<br>
-        OEFOS is published by Statistik Austria under the Attribution 4.0 International (CC BY 4.0) license.
+        <span class="small-text">OEFOS is published by Statistik Austria under the Attribution 4.0 International
+        (CC BY 4.0) license.</span>
     </li>
   </ul>

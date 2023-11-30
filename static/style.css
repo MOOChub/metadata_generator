@@ -1,6 +1,20 @@
+* {
+    font-family: Arial;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
+}
+
+nav ul {
+    list-style-type: square;
+    margin: 5px;
+    text-align: justify;
+}
+
+nav p {
+    text-align: justify;
 }
 
 .navigation {
@@ -11,6 +25,10 @@ ul {
     border-color: lightgray;
     border-style: solid;
     border-radius: 15px;
+}
+
+.small-text {
+    font-size: small;
 }
 
 .columns {
