@@ -43,6 +43,24 @@ class FrameworkProcessor:
         return fields
 
     @staticmethod
+    def get_all_fields(framework):
+        path = FrameworkProcessor.find_framework_folder()
+        path = os.path.join(path, framework + ".csv")
+
+        data = pd.read_csv(path, sep=";", header=0)
+
+        all_fields = []
+
+        for index, row in data.iterrows():
+            name = row["Name"]
+            level = row["Level"]
+            bc = row["BroaderConcept"]
+
+            all_fields.append({"Name": name, "Level": level, "BroaderConcept": bc,})
+
+        return all_fields
+
+    @staticmethod
     def write_json(stored_values):
 
         all_data_fos = []

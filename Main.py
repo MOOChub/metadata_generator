@@ -33,6 +33,7 @@ def add_field():
 
 @app.route('/get_all_stored_values')
 def get_all_stored_values():
+    print(stored_values.get_stored_values())
     return jsonify(stored_values.get_stored_values())
 
 
@@ -64,6 +65,14 @@ def write_json():
 def get_config():
     framework = request.args.get('framework')
     return jsonify(config_handler.get_config_processor_by_framework_as_json(framework))
+
+
+@app.route('/get_whole_framework')
+def get_whole_framework():
+    framework = request.args.get('framework')
+    all_fields = FrameworkProcessor.get_all_fields(framework)
+
+    return jsonify({"data": str(all_fields)})
 
 
 app.run()

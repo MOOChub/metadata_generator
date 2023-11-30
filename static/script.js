@@ -1,6 +1,8 @@
 let config = null;
+let all_data = null;
+let retrievedData = null;
 
-async function create_category_selection (framework, level, value){
+async function create_category_selection (framework){
 
     if (document.getElementById("a1") != null){
         document.getElementById("a1").remove();
@@ -8,91 +10,114 @@ async function create_category_selection (framework, level, value){
 
     if(framework !== "def"){
 
-        await  get_config_processor(framework);
+        await get_config_processor(framework);
 
-        remove_unneeded_selections(level);
+        document.getElementById('headline-framework').textContent = framework;
 
-        const div_id = framework + "-level" + level + "-container";
+        await build_expendable_tree();
 
-        const div = document.createElement('div');
-        div.id = div_id;
-        div.className = "category_selection";
-
-        const dropdown = document.createElement('select');
-        dropdown.id = framework + "-level" + level;
-        dropdown.name = framework + "-level" + level;
-        dropdown.className = "category_dropdown";
-
-        build_dropdown(dropdown.id, framework, level, value);
-
-        div.appendChild(dropdown);
-
-        const divF = document.getElementById("SelectBox");
-        divF.appendChild(div);
-        dropdown.onchange = function (){
-            if(level < config["NUMBER_OF_LEVELS"]){
-                create_category_selection(framework, level + 1, dropdown.value);
-            }
-        }
     }
 }
 
-function build_dropdown(id_dropdown, framework, level, value){
-    const url = "load_fields?framework=" + encodeURIComponent(framework) +
-        "&level=" + encodeURIComponent(level) +
-        "&value=" + encodeURIComponent(value);
+async function build_expendable_tree(){
+    const framework = document.getElementById('select-framework').value;
+    const framework_list = document.getElementById('framework-structure');
 
-    fetch(url)
+    remove_framework_list(framework_list);
+    await ask_for_framework_entries(framework);
+
+    let read_data = all_data.data;
+
+    read_data = read_data.replace(/'/g, '"');
+    read_data = read_data.replace(/ nan/g, null);
+
+    read_data = JSON.parse(read_data);
+
+    read_data.forEach(entry => {
+        let name = entry["Name"];
+        let level = entry["Level"];
+        let bc = entry["BroaderConcept"];
+
+        let list_element = document.createElement('li');
+        list_element.className = "Level" + level + "-" + bc;
+        list_element.id = name + "-" + level;
+
+        if(level === config["NUMBER_OF_LEVELS"]){
+            const checkBox = document.createElement("input");
+            checkBox.type = 'checkbox';
+
+            checkBox.onclick = function (){
+                if(checkBox.checked){
+                    add_field(framework, name, bc);
+                } else {
+                    remove_field(framework, name, bc);
+                }
+            }
+
+            const label = document.createElement("label");
+            label.textContent = name;
+
+            list_element.appendChild(checkBox);
+            list_element.appendChild(label);
+
+        } else {
+            const button = document.createElement('button');
+            button.textContent = '+ ' + name;
+            button.className = "append-button"
+            button.onclick = function (){
+                toggle_visibility_list(list_element);
+            }
+            list_element.appendChild(button);
+        }
+
+        if(level === 1){
+            framework_list.appendChild(list_element);
+        } else {
+            let sub_list = document.getElementById('ul-' + bc + '-' + (level -1));
+            if(!sub_list){
+                sub_list = document.createElement('ul');
+                sub_list.id = 'ul-' + bc + '-' + (level - 1);
+            }
+            sub_list.appendChild(list_element);
+            document.getElementById(bc + '-' + (level -1)).appendChild(sub_list);
+        }
+    });
+}
+
+async function ask_for_framework_entries(framework){
+    const url = '/get_whole_framework?framework=' + framework;
+
+    await fetch(url)
         .then(response => {
-            if (!response.ok){
-                throw new Error("Error");
+            if(!response.ok){
+                throw new Error('Error');
             }
             return response.json();
         })
         .then(data => {
-            const def_opt = document.createElement('option');
-            def_opt.text = " -- Select a value -- ";
-            def_opt.value = "def";
-            document.getElementById(id_dropdown).add(def_opt);
-
-            data.forEach(function (entry) {
-                add_option(id_dropdown, entry);
-            });
+            all_data = data;
         })
-}
-
-function add_option(id_dropdown, value){
-    const option = document.createElement('option');
-    option.text = value;
-    option.value = value;
-
-    document.getElementById(id_dropdown).add(option);
-}
-
-function remove_unneeded_selections (level){
-    const all_divs = document.querySelectorAll("div.category_selection");
-    if(all_divs){
-        all_divs.forEach(function(one_selection){
-            const check_level = parseInt(one_selection.id.split("level")[1]);
-            if (check_level >= level){
-                one_selection.remove();
-            }
+        .catch(error => {
+           console.error('Fetched error:', error);
         });
-    }
 }
 
-async function add_field(){
-    const framework = document.getElementById("select-framework").value;
+function toggle_visibility_list(node){
+    const list = document.getElementById("ul-" + node.id);
 
-    await get_config_processor(framework);
-    const level = config["NUMBER_OF_LEVELS"];
+    list.style.display = (!(list.style.display === 'block')) ? 'block' : 'none';
 
-    const field = document.getElementById(framework + "-level" + level).value;
+}
 
-    let forgoing = null;
-    if(level > 1) {
-        forgoing = document.getElementById(framework + "-level" + (level - 1)).value;
-    }
+function remove_framework_list(framework_list){
+    const elements = Array.from(framework_list.children);
+
+    elements.forEach(element => {
+       element.parentNode.removeChild(element);
+    });
+}
+
+async function add_field(framework, field, forgoing){
 
     const value = {
         "framework": framework,
@@ -100,7 +125,6 @@ async function add_field(){
         "foregoing": forgoing,
     };
 
-    console.log(JSON.stringify(value));
     const url = "/add_field";
     const value_str = JSON.stringify(value);
 
@@ -119,7 +143,7 @@ async function add_field(){
         })
         .then(data => {
             console.log(data);
-            show_all_selected_fields();
+            find_all_selected();
         })
         .catch(error => {
             console.error('Fetched error: ' + error);
@@ -140,7 +164,7 @@ function remove_field(framework, field_to_remove, field_category) {
         })
         .then(data => {
             console.log(data);
-            show_all_selected_fields();
+            find_all_selected();
         })
         .catch(error => {
             console.error('Fetched error: ' + error);
@@ -156,6 +180,25 @@ function show_all_selected_fields() {
         });
     }
 
+    const keys = Object.keys(retrievedData);
+    keys.sort();
+    keys.forEach(function (key) {
+        const list = document.createElement('ol');
+        list.id = key;
+        const list_title = document.createElement('h2');
+        list_title.textContent = key;
+        list.appendChild(list_title);
+
+        const values = retrievedData[key];
+        values.sort();
+        values.forEach(function(entry){
+            add_list_entry(list, entry);
+        });
+        div.appendChild(list);
+    });
+}
+
+async function find_all_selected(){
     const url = '/get_all_stored_values';
 
     fetch(url)
@@ -166,41 +209,23 @@ function show_all_selected_fields() {
             return response.json();
         })
         .then(data => {
-            const keys = Object.keys(data);
-            keys.sort();
-            keys.forEach(function (key) {
-                const list = document.createElement('ol');
-                list.id = key;
-                const list_title = document.createElement('h2');
-                list_title.textContent = key;
-                list.appendChild(list_title);
-
-                const values = data[key];
-                values.sort();
-                values.forEach(function(entry){
-                    add_list_entry(list, entry);
-                });
-                div.appendChild(list);
-            });
+            retrievedData = data;
+            console.log(retrievedData);
+            show_all_selected_fields();
         })
         .catch(error => {
             console.error('Fetched error: ' + error);
         });
 }
 
-function add_list_entry(list, value, forgoing_value) {
+function add_list_entry(list, value) {
 
     const list_entry = document.createElement('li');
     const delete_button = document.createElement('button');
     delete_button.className = "DelButton";
     list_entry.className = "liEl";
     list_entry.textContent = value;
-    delete_button.textContent = "Delete Entry";
-    delete_button.onclick = function () {
-        remove_field(list.id, value, forgoing_value);
-    };
 
-    list_entry.appendChild(delete_button);
     list.appendChild(list_entry);
 }
 
