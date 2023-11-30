@@ -50,7 +50,7 @@ async function build_expendable_tree(){
                 if(checkBox.checked){
                     add_field(framework, name, bc);
                 } else {
-                    remove_field(framework, name, bc);
+                    remove_field(framework, name);
                 }
             }
 
@@ -106,7 +106,6 @@ function toggle_visibility_list(node){
     const list = document.getElementById("ul-" + node.id);
 
     list.style.display = (!(list.style.display === 'block')) ? 'block' : 'none';
-
 }
 
 function remove_framework_list(framework_list){
@@ -150,10 +149,9 @@ async function add_field(framework, field, forgoing){
         });
 }
 
-function remove_field(framework, field_to_remove, field_category) {
+function remove_field(framework, field_to_remove) {
     const url = "/delete_field?framework=" + encodeURIComponent(framework) +
-        "&value=" + encodeURIComponent(field_to_remove) +
-        "&value_category=" + encodeURIComponent(field_category);
+        "&value=" + encodeURIComponent(field_to_remove);
 
     fetch(url)
         .then(response => {
@@ -210,7 +208,6 @@ async function find_all_selected(){
         })
         .then(data => {
             retrievedData = data;
-            console.log(retrievedData);
             show_all_selected_fields();
         })
         .catch(error => {

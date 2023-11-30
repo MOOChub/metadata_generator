@@ -1,0 +1,56 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.navigation {
+    height: 100%;
+    width: 20%;
+    margin: 1%;
+    padding: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.columns {
+    width: 40%;
+    padding: 10px;
+}
+
+.row-1 {
+    height: 25px;
+    padding: 15px;
+}
+
+.append-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.append-button:hover {
+    background-color: lightgray;
+}
+
+#framework-structure ul {
+    display: none;
+
+}
+
+#main-container {
+    display: flex;
+    height: 100%;
+}
+
+#sub-main-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#column1 {
+    width: 60%;
+}

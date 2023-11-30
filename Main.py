@@ -33,7 +33,6 @@ def add_field():
 
 @app.route('/get_all_stored_values')
 def get_all_stored_values():
-    print(stored_values.get_stored_values())
     return jsonify(stored_values.get_stored_values())
 
 
