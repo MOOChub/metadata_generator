@@ -47,10 +47,8 @@ nav p {
     background-color: transparent;
     border: none;
     transition: background-color 0.3s ease;
-}
 
-.append-button:hover {
-    background-color: lightgray;
+    font-size: 16px;
 }
 
 #framework-structure ul {
