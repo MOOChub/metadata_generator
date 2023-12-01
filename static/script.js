@@ -1,6 +1,7 @@
 let config = null;
 let all_data = null;
 let retrievedData = null;
+const separator = '--';
 
 async function create_category_selection (framework){
 
@@ -15,6 +16,8 @@ async function create_category_selection (framework){
         document.getElementById('headline-framework').textContent = framework;
 
         await build_expendable_tree();
+
+        show_all_selected_fields();
 
     }
 }
@@ -39,8 +42,8 @@ async function build_expendable_tree(){
         let bc = entry["BroaderConcept"];
 
         let list_element = document.createElement('li');
-        list_element.className = "Level" + level + "-" + bc;
-        list_element.id = name + "-" + level;
+        list_element.className = "Level" + level + separator + bc;
+        list_element.id = name + separator + level;
 
         if(level === config["NUMBER_OF_LEVELS"]){
             const checkBox = document.createElement("input");
@@ -73,13 +76,13 @@ async function build_expendable_tree(){
         if(level === 1){
             framework_list.appendChild(list_element);
         } else {
-            let sub_list = document.getElementById('ul-' + bc + '-' + (level -1));
+            let sub_list = document.getElementById('ul' + separator + bc + separator + (level -1));
             if(!sub_list){
                 sub_list = document.createElement('ul');
-                sub_list.id = 'ul-' + bc + '-' + (level - 1);
+                sub_list.id = 'ul' + separator + bc + separator + (level - 1);
             }
             sub_list.appendChild(list_element);
-            document.getElementById(bc + '-' + (level -1)).appendChild(sub_list);
+            document.getElementById(bc + separator + (level -1)).appendChild(sub_list);
         }
     });
 }
@@ -103,7 +106,7 @@ async function ask_for_framework_entries(framework){
 }
 
 function toggle_visibility_list(node){
-    const list = document.getElementById("ul-" + node.id);
+    const list = document.getElementById("ul" + separator + node.id);
 
     list.style.display = (!(list.style.display === 'block')) ? 'block' : 'none';
 }
@@ -178,22 +181,60 @@ function show_all_selected_fields() {
         });
     }
 
-    const keys = Object.keys(retrievedData);
-    keys.sort();
-    keys.forEach(function (key) {
-        const list = document.createElement('ol');
-        list.id = key;
-        const list_title = document.createElement('h2');
-        list_title.textContent = key;
-        list.appendChild(list_title);
-
-        const values = retrievedData[key];
-        values.sort();
-        values.forEach(function(entry){
-            add_list_entry(list, entry);
+    const buttons = document.getElementById('framework-structure').querySelectorAll('button');
+    if(buttons){
+        buttons.forEach(function (button){
+           button.style.background = 'transparent';
         });
-        div.appendChild(list);
-    });
+    }
+
+    if(retrievedData) {
+        const keys = Object.keys(retrievedData);
+        keys.sort();
+        keys.forEach(function (key) {
+            const list = document.createElement('ol');
+            list.id = key;
+            const list_title = document.createElement('h2');
+            list_title.textContent = key;
+            list.appendChild(list_title);
+
+            const values = retrievedData[key];
+            values.sort();
+            values.forEach(function (entry) {
+                add_list_entry(list, entry);
+
+                mark_selected_chbox(entry);
+                mark_selected_broader_concepts(entry);
+            });
+            div.appendChild(list);
+        });
+    }
+}
+
+function mark_selected_chbox(entry){
+
+    const level = config["NUMBER_OF_LEVELS"];
+    const entry_element = document.getElementById(entry + separator + level);
+
+    if(entry_element){
+        Array.from(entry_element.children)[0].checked = true;
+    }
+}
+
+function mark_selected_broader_concepts(entry){
+
+    let level = config["NUMBER_OF_LEVELS"];
+
+    while (level > 1){
+        let entry_element = document.getElementById(entry + separator + level);
+        if(entry_element) {
+            const bcName = entry_element.className.split(separator)[1];
+            const bcElement = document.getElementById(bcName + separator + (level - 1));
+            Array.from(bcElement.children)[0].style.background = 'lightgray';
+            entry = bcName;
+        }
+        level--;
+    }
 }
 
 async function find_all_selected(){
