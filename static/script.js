@@ -174,10 +174,10 @@ function remove_field(framework, field_to_remove) {
 
 function show_all_selected_fields() {
     const div = document.getElementById('list-selected-values-container');
-    const all_ols = div.querySelectorAll('ol');
-    if(all_ols) {
-        all_ols.forEach(function(ol){
-           ol.remove();
+    const elements_to_remove = div.querySelectorAll('ol');
+    if(elements_to_remove) {
+        elements_to_remove.forEach(function(element){
+           element.parentNode.removeChild(element);
         });
     }
 

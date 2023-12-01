@@ -127,7 +127,11 @@ class DataStorage:
 
         entries = {entry for entry in entries if entry.get_name() != value}
 
-        self._stored_values[framework] = entries
+        if len(entries) != 0:
+            self._stored_values[framework] = entries
+        else:
+            del self._stored_values[framework]
+
         
     def reset_dict(self):
         self._stored_values = dict()
