@@ -207,6 +207,8 @@ function show_all_selected_fields() {
 
     if(retrievedData) {
         const keys = Object.keys(retrievedData);
+        document.getElementById('write_json_button').disabled = keys.length === 0;
+
         keys.sort();
         keys.forEach(function (key) {
             const list = document.createElement('ol');
@@ -225,6 +227,8 @@ function show_all_selected_fields() {
             });
             div.appendChild(list);
         });
+    } else {
+        document.getElementById('write_json_button').disabled = true;
     }
 }
 
