@@ -205,6 +205,11 @@ function show_all_selected_fields() {
         });
     }
 
+    const link = document.getElementById('a1');
+    if(link){
+        link.remove();
+    }
+
     if(retrievedData) {
         const keys = Object.keys(retrievedData);
         document.getElementById('write_json_button').disabled = keys.length === 0;
@@ -313,7 +318,8 @@ function write_json() {
     if (document.getElementById("a1") != null){
         document.getElementById("a1").remove();
     }
-    document.body.appendChild(link_for_download);
+    //document.body.appendChild(link_for_download);
+    document.getElementById('row-1').appendChild(link_for_download);
 }
 
 function reset(){
