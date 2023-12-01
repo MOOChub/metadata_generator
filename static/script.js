@@ -3,6 +3,14 @@ let all_data = null;
 let retrievedData = null;
 const separator = '--';
 
+function mouseoverFunc(){
+    this.style.background = 'lightgrey';
+}
+
+function mouseleaveFunc (){
+    this.style.background = 'transparent';
+}
+
 async function create_category_selection (framework){
 
     if (document.getElementById("a1") != null){
@@ -185,6 +193,8 @@ function show_all_selected_fields() {
     if(buttons){
         buttons.forEach(function (button){
            button.style.background = 'transparent';
+           button.addEventListener('mouseover', mouseoverFunc);
+           button.addEventListener('mouseleave', mouseleaveFunc);
         });
     }
 
@@ -230,7 +240,10 @@ function mark_selected_broader_concepts(entry){
         if(entry_element) {
             const bcName = entry_element.className.split(separator)[1];
             const bcElement = document.getElementById(bcName + separator + (level - 1));
-            Array.from(bcElement.children)[0].style.background = 'lightgray';
+            const button = Array.from(bcElement.children)[0];
+            button.style.background = 'lightgray';
+            button.removeEventListener('mouseover', mouseoverFunc);
+            button.removeEventListener('mouseleave', mouseleaveFunc);
             entry = bcName;
         }
         level--;
