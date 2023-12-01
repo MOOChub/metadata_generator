@@ -198,6 +198,13 @@ function show_all_selected_fields() {
         });
     }
 
+    const cboxes = document.getElementById('framework-structure').querySelectorAll('input');
+    if (cboxes){
+        cboxes.forEach(function (cbox){
+            cbox.checked = false;
+        });
+    }
+
     if(retrievedData) {
         const keys = Object.keys(retrievedData);
         keys.sort();
@@ -324,6 +331,7 @@ function reset(){
         })
         .then(data => {
             console.log(data);
+            find_all_selected();
         })
         .catch(error => {
             console.error('Fetched error: ' + error);
