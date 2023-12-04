@@ -23,15 +23,18 @@ class FrameworkProcessor:
         return list(map(FrameworkProcessor.remove_file_ending, files))
 
     @staticmethod
+    def find_all_data(framework):
+        path = FrameworkProcessor.find_framework_folder()
+        path = os.path.join(path, framework + ".csv")
+        return pd.read_csv(path, sep=";", header=0)
+
+    @staticmethod
     def find_fields(input_params):
         framework = input_params.get('framework')
         value = input_params.get('value')
         level = int(input_params.get('level'))
 
-        path = FrameworkProcessor.find_framework_folder()
-        path = os.path.join(path, framework + ".csv")
-
-        data = pd.read_csv(path, sep=";", header=0)
+        data = FrameworkProcessor.find_all_data(framework)
 
         if value == "None":
             data = data.loc[data["Level"] == level]
@@ -44,10 +47,7 @@ class FrameworkProcessor:
 
     @staticmethod
     def get_all_fields(framework):
-        path = FrameworkProcessor.find_framework_folder()
-        path = os.path.join(path, framework + ".csv")
-
-        data = pd.read_csv(path, sep=";", header=0)
+        data = FrameworkProcessor.find_all_data(framework)
 
         all_fields = []
 
@@ -56,9 +56,32 @@ class FrameworkProcessor:
             level = row["Level"]
             bc = row["BroaderConcept"]
 
-            all_fields.append({"Name": name, "Level": level, "BroaderConcept": bc,})
+            all_fields.append({"Name": name, "Level": level, "BroaderConcept": bc})
 
         return all_fields
+
+    @staticmethod
+    def find_title_description(framework):
+        level = config_handler.get_config_processor_by_framework(framework).NUMBER_OF_LEVELS
+        data = FrameworkProcessor.find_all_data(framework)
+        data = data[data["Level"] == level]
+
+        to_return = []
+
+        for index, row in data.iterrows():
+            to_return.append({"framework": framework, "title": row["Name"], "description": row["Description"], "bc": row["BroaderConcept"]})
+
+        return to_return
+
+    @staticmethod
+    def find_all_title_description():
+        frameworks = FrameworkProcessor.find_framework_files()
+
+        all_title_descriptions = []
+        for framework in frameworks:
+            all_title_descriptions = all_title_descriptions + FrameworkProcessor.find_title_description(framework)
+
+        return all_title_descriptions
 
     @staticmethod
     def write_json(stored_values):
@@ -132,7 +155,6 @@ class DataStorage:
         else:
             del self._stored_values[framework]
 
-        
     def reset_dict(self):
         self._stored_values = dict()
 

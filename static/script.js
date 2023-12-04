@@ -3,6 +3,13 @@ let all_data = null;
 let retrievedData = null;
 const separator = '--';
 
+const search_field = document.getElementById('search_text');
+search_field.addEventListener('keydown' , function (event){
+    if(event.key === 'Enter'){
+        search_start();
+    }
+})
+
 function mouseoverFunc(){
     this.style.background = 'lightgrey';
 }
@@ -181,34 +188,8 @@ function remove_field(framework, field_to_remove) {
 }
 
 function show_all_selected_fields() {
+    clean_up();
     const div = document.getElementById('list-selected-values-container');
-    const elements_to_remove = div.querySelectorAll('ol');
-    if(elements_to_remove) {
-        elements_to_remove.forEach(function(element){
-           element.parentNode.removeChild(element);
-        });
-    }
-
-    const buttons = document.getElementById('framework-structure').querySelectorAll('button');
-    if(buttons){
-        buttons.forEach(function (button){
-           button.style.background = 'transparent';
-           button.addEventListener('mouseover', mouseoverFunc);
-           button.addEventListener('mouseleave', mouseleaveFunc);
-        });
-    }
-
-    const cboxes = document.getElementById('framework-structure').querySelectorAll('input');
-    if (cboxes){
-        cboxes.forEach(function (cbox){
-            cbox.checked = false;
-        });
-    }
-
-    const link = document.getElementById('a1');
-    if(link){
-        link.remove();
-    }
 
     if(retrievedData) {
         const keys = Object.keys(retrievedData);
@@ -237,6 +218,37 @@ function show_all_selected_fields() {
     }
 }
 
+function clean_up(){
+    const div = document.getElementById('list-selected-values-container');
+    const elements_to_remove = div.querySelectorAll('ol');
+    if(elements_to_remove) {
+        elements_to_remove.forEach(function(element){
+           element.parentNode.removeChild(element);
+        });
+    }
+
+    const buttons = document.getElementById('framework-structure').querySelectorAll('button');
+    if(buttons){
+        buttons.forEach(function (button){
+           button.style.background = 'transparent';
+           button.addEventListener('mouseover', mouseoverFunc);
+           button.addEventListener('mouseleave', mouseleaveFunc);
+        });
+    }
+
+    const cboxes = document.getElementById('framework-structure').querySelectorAll('input');
+    if (cboxes){
+        cboxes.forEach(function (cbox){
+            cbox.checked = false;
+        });
+    }
+
+    const link = document.getElementById('a1');
+    if(link){
+        link.remove();
+    }
+}
+
 function mark_selected_chbox(entry){
 
     const level = config["NUMBER_OF_LEVELS"];
@@ -256,10 +268,12 @@ function mark_selected_broader_concepts(entry){
         if(entry_element) {
             const bcName = entry_element.className.split(separator)[1];
             const bcElement = document.getElementById(bcName + separator + (level - 1));
-            const button = Array.from(bcElement.children)[0];
-            button.style.background = 'lightgray';
-            button.removeEventListener('mouseover', mouseoverFunc);
-            button.removeEventListener('mouseleave', mouseleaveFunc);
+            if(bcElement){
+                const button = Array.from(bcElement.children)[0];
+                button.style.background = 'lightgray';
+                button.removeEventListener('mouseover', mouseoverFunc);
+                button.removeEventListener('mouseleave', mouseleaveFunc);
+            }
             entry = bcName;
         }
         level--;
@@ -318,7 +332,6 @@ function write_json() {
     if (document.getElementById("a1") != null){
         document.getElementById("a1").remove();
     }
-    //document.body.appendChild(link_for_download);
     document.getElementById('row-1').appendChild(link_for_download);
 }
 
@@ -364,4 +377,82 @@ function get_config_processor(framework) {
         .catch(error => {
             console.error('Fetched error: ' + error);
         });
+}
+
+function search_start(){
+    conduct_search(search_field.value);
+}
+
+function conduct_search(query){
+    const url = '/conduct_search?query=' + query;
+
+    fetch(url)
+        .then(response => {
+            if(!response.ok){
+                throw new Error('Error');
+            }
+            return response.json();
+        })
+        .then(data => {
+            let temp = data;
+            temp = temp["data"];
+            temp = temp.replace("[",'').replace("]",'');
+            temp = temp.replace(/},/g,"}+++");
+            temp = temp.replace(/'/g, '"');
+            temp = temp.split("+++");
+            return temp;
+        })
+        .then(temp =>{
+            show_search_results(temp);
+        })
+        .catch(error => {
+            console.error('Fetched error: ' + error);
+        })
+}
+
+function show_search_results(data){
+    document.getElementById('headline-framework').textContent = 'Search results';
+
+    const framework_list = document.getElementById('framework-structure');
+    remove_framework_list(framework_list);
+
+    if(data[0] !== ""){
+        data.forEach(entry => {
+            let temp = JSON.parse(entry);
+            let name = temp["title"];
+            let framework = temp["framework"];
+            let bc = temp["bc"];
+            let level = temp["level"];
+
+            let list_element = document.createElement('li');
+            list_element.className = 'Level' + level + separator + bc;
+            list_element.id = name + separator + level;
+
+            const checkBox = document.createElement("input");
+            checkBox.type = 'checkbox';
+
+            checkBox.onclick = function (){
+                get_config_processor(framework);
+                if(checkBox.checked){
+                    add_field(framework, name, bc);
+                } else {
+                    remove_field(framework, name);
+                }
+            }
+
+            const label = document.createElement("label");
+            label.textContent = name;
+
+            list_element.appendChild(checkBox);
+            list_element.appendChild(label);
+            framework_list.appendChild(list_element);
+        });
+    } else {
+        const label = document.createElement('label');
+        label.textContent = 'No results for this search.';
+        const list_element = document.createElement('li');
+
+        list_element.appendChild(label);
+        framework_list.appendChild(list_element);
+    }
 }

@@ -8,8 +8,15 @@
 <body>
 
     <header class="header">
-        <img id="logo" src="..\images\moochub-logo.png" alt="MOOChub logo">
-        <h1>Metadata Tool</h1>
+        <div id="header-left">
+            <img id="logo" src="\images\moochub-logo.png" alt="MOOChub logo">
+            <h1>Metadata Tool</h1>
+        </div>
+        <div id="header-right">
+            <label for="search_text">Search:</label>
+            <input type="text" id="search_text" placeholder="Search for...">
+            <button onclick="search_start()">Submit</button>
+        </div>
     </header>
 
     <div id="main-container">
@@ -38,7 +45,7 @@
             </div>
             <div class="columns" id="column2">
                 <div id="row-1" class="row-1">
-                    <button id="write_json_button" disabled="true" onclick="write_json()">Write JSON</button>
+                    <button id="write_json_button" disabled="disabled" onclick="write_json()">Write JSON</button>
                     <button id="reset_button" onclick="reset()">Reset</button>
                 </div>
                 <div class="row-2">

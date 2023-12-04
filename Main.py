@@ -1,6 +1,7 @@
 from flask import Flask, request, send_file, render_template, jsonify, Markup
 from frameworkprocessor import FrameworkProcessor, DataStorage
 import config_handler
+import search_engine
 
 app = Flask(__name__)
 
@@ -72,6 +73,14 @@ def get_whole_framework():
     all_fields = FrameworkProcessor.get_all_fields(framework)
 
     return jsonify({"data": str(all_fields)})
+
+
+@app.route('/conduct_search')
+def conduct_search():
+    query = request.args.get('query')
+    results = search_engine.search(query)
+
+    return jsonify({"data": str(results)})
 
 
 app.run()
