@@ -55,21 +55,38 @@ nav p {
     font-size: 16px;
 }
 
+#logo {
+    height: 30px;
+    padding: 20px;
+}
+
 #header-left {
+    display: flex;
     width: 50%;
 }
 
 #header-right {
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #search_text {
     height: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+#search_button {
+    display: inline-block;
+    height: 20px;
+    width: 70px !important;
+    max-height: 30px !important;
+    padding: 0;
 }
 
 #framework-structure ul {
     display: none;
-
 }
 
 #main-container {
