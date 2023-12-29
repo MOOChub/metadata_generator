@@ -418,6 +418,7 @@ function show_search_results(data){
 
     if(data[0] !== ""){
         data.forEach(entry => {
+            console.log(entry);
             let temp = JSON.parse(entry);
             let name = temp["title"];
             let framework = temp["framework"];

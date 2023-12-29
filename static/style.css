@@ -55,6 +55,12 @@ nav p {
     font-size: 16px;
 }
 
+/*
+.append-button :hover {
+    background-color: lightgray;
+}
+*/
+
 #logo {
     height: 30px;
     padding: 20px;
@@ -86,7 +92,7 @@ nav p {
 }
 
 #framework-structure ul {
-    display: none;
+    /*display: none;*/
 }
 
 #main-container {

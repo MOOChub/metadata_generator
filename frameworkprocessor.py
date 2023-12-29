@@ -55,10 +55,21 @@ class FrameworkProcessor:
             name = row["Name"]
             level = row["Level"]
             bc = row["BroaderConcept"]
+            description = row["Description"]
 
-            all_fields.append({"Name": name, "Level": level, "BroaderConcept": bc})
+            all_fields.append({"Name": name, "Level": level, "BroaderConcept": bc, "Description": description})
 
         return all_fields
+
+    @staticmethod
+    def get_all_frameworks():
+
+        all_frameworks = {}
+
+        for framework in FrameworkProcessor.find_framework_files():
+            all_frameworks[framework] = FrameworkProcessor.get_all_fields(framework)
+
+        return all_frameworks
 
     @staticmethod
     def find_title_description(framework):
@@ -84,7 +95,25 @@ class FrameworkProcessor:
         return all_title_descriptions
 
     @staticmethod
-    def write_json(stored_values):
+    def write_json(data):
+        stored_values = DataStorage()
+
+        data = data["data"]
+        data = data.replace('], ', '&&&')
+        data = data.split('&&&')
+
+        for framework_data in data:
+            framework_data = framework_data.replace(': [', '&&&')
+            framework_data = framework_data.split('&&&')
+            framework = framework_data[0].replace('"', '')
+
+            elements = framework_data[1].replace('}, {', '&&&')
+            elements = elements.replace('{', '').replace('}]', '')
+            elements = elements.split('&&&')
+            for element in elements:
+                name = element.split('", "')[0].replace('"Name": "', '')
+                bc = element.split('", "')[1].replace('BroaderConcept": "', '')[:-1]
+                stored_values.add_field({'framework': framework, 'field': name, 'foregoing': bc})
 
         all_data_fos = []
         all_data_skills = []
