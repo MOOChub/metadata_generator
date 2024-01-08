@@ -1,14 +1,273 @@
-let config = null;
-let all_data = null;
-let retrievedData = null;
-const separator = '--';
-
+const frameworks_complete = new Map();
+const all_selected = new Map();
+const sep = '--';
+let found = null;
 const search_field = document.getElementById('search_text');
+
 search_field.addEventListener('keydown' , function (event){
     if(event.key === 'Enter'){
-        search_start();
+        start_search();
     }
-})
+});
+download_all_frameworks();
+
+
+class Entry {
+
+    _sub_entries = [];
+    constructor(framework, name, level, bc, description) {
+        this._framework = framework;
+        this._name = name;
+        this._level = level;
+        this._bc = bc;
+        this._description = description;
+
+        this._checked = false;
+    }
+
+    get framework(){
+        return this._framework;
+    }
+
+    get name(){
+        return this._name;
+    }
+
+    get level(){
+        return this._level;
+    }
+
+    get description(){
+        return this._description;
+    }
+
+    get bc(){
+        return this._bc;
+    }
+
+    set bc(bc){
+        this._bc = bc;
+    }
+
+
+    get checked(){
+        return this._checked;
+    }
+
+    setChecked(isChecked){
+        this._checked = isChecked;
+    }
+
+    get sub_entries(){
+        return this._sub_entries;
+    }
+
+    add_sub_entry(entry){
+        this._sub_entries.push(entry);
+    }
+
+    printAllData(){
+        //let data = `{"Name": "${this._name}", "BroaderConcept": "${this._bc.name}", "Level": ${this._level}, "Description": "${this._description}"}`;
+        return `{"Name": "${this._name}", "BroaderConcept": "${this._bc.name}"}`;
+
+    }
+}
+
+class Framework {
+
+    _top_level_entries = [];
+
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name(){
+        return this._name;
+    }
+
+    get top_level_entries(){
+        return this._top_level_entries;
+    }
+
+    add_entry(entry){
+        this._top_level_entries.push(entry);
+    }
+}
+
+function download_all_frameworks(){
+    const url = '/get_all_frameworks';
+
+    fetch(url)
+        .then(response => {
+            if(!response.ok){
+                throw new Error('Error');
+            }
+            return response.json();
+        })
+        .then(data => {
+            process_all_fetched_frameworks(data);
+        })
+        .catch(error => {
+           console.error('Fetched error: ' + error);
+        });
+}
+
+function process_all_fetched_frameworks(all_fetched_data){
+    let processed_data = all_fetched_data['data'];
+
+    try {
+        processed_data = processed_data.replace(/'(?!\s)/g, '"');
+        processed_data = processed_data.replace(/([a-zA-Z])"([a-zA-Z])/g, "'");
+        processed_data = processed_data.replace(/\("/g, "('");
+        processed_data = processed_data.replace(/"\)/g, "')");
+        processed_data = processed_data.replace(/ nan,/g, ' null,');
+        processed_data = processed_data.replace(/ nan}/g, ' null}');
+        processed_data = processed_data.replace(/[\s|]\\r\\n/g, ' ');
+        processed_data = processed_data.replace(/\\xa0/g, "");
+        processed_data = processed_data.replace(/\\x9d/g, "");
+        processed_data = processed_data.replace(/([0-9a-zA-Z]\s)"([a-zA-Z])/g, "'");
+        processed_data = processed_data.replace(/([0-9a-zA-Z])"(,\s[0-9a-z-A-Z]|\s[a-zA-Z]|\.|\\)/g, "'");
+        processed_data = processed_data.replace(/\\'/g, "'");
+        processed_data = processed_data.replace(/(\))"(\.)/g, "'");
+
+        processed_data = JSON.parse(processed_data);
+    } catch (e){
+        console.error(e)
+
+        const column = parseInt(e.message.match(/column (\d+)/)[1]);
+
+        let start = 0;
+        let end = 0;
+        let range = 20
+        if(column < range){
+            start = 0;
+        }else if(processed_data.length < column + range){
+            end = processed_data.length;
+        }else {
+            start = column - range;
+            end = column + range;
+        }
+
+        const substring = processed_data.slice(start, end);
+        console.log(substring);
+    }
+
+    Array.from(Object.keys(processed_data)).sort().forEach(framework => {
+        frameworks_complete.set(framework, create_entries(framework, processed_data[framework]));
+    });
+}
+
+function create_entries(framework_name, framework_data){
+    const frameworkInstance = new Framework(framework_name);
+
+    framework_data.forEach(element => {
+        let entry = new Entry(framework_name, element['Name'], element['Level'], element['BroaderConcept'], element['Description']);
+
+        if(entry.level === 1){
+            frameworkInstance.add_entry(entry);
+        } else{
+            iterate_through_framework(entry, frameworkInstance.top_level_entries);
+        }
+    });
+
+    return frameworkInstance;
+}
+
+function iterate_through_framework(entry, forgoing_entries){
+    forgoing_entries.forEach(forgoing => {
+        if(entry.bc === forgoing.name && entry.level === (forgoing.level + 1)){
+            entry.bc = forgoing;
+            forgoing.add_sub_entry(entry);
+        } else {
+            iterate_through_framework(entry, forgoing.sub_entries);
+        }
+    });
+}
+
+function clean_up(element){
+    Array.from(element.children).forEach(e => {
+       e.parentElement.removeChild(e);
+    });
+}
+
+function build_expendable_tree(framework_name, showsSearch){
+    const framework_to_show = frameworks_complete.get(framework_name).top_level_entries;
+    const container = document.getElementById('framework-structure');
+
+    clean_up(container);
+
+    const framework_headline = document.getElementById('headline-framework');
+    framework_headline.textContent = framework_name;
+
+    create_tree(container, framework_to_show, showsSearch);
+}
+
+function create_tree(container, entries, showsSearch){
+    const unordered_list = document.createElement('ul');
+    container.appendChild(unordered_list);
+
+    entries.forEach(entry => {
+        if(entry.level > 1 && !showsSearch){  // Only top-level categories shown at the beginning
+            unordered_list.style.display = 'none';
+        }
+
+        if(entry.bc){
+            unordered_list.id = 'ul' + sep + entry.bc.name + sep + entry.level;
+        }else{
+            unordered_list.id = 'ul' + sep + 'null' + sep + entry.level;
+        }
+
+        const list_element = document.createElement('li');
+        list_element.id = 'list' + sep + entry.name + sep + entry.level;
+
+        if(entry.sub_entries.length > 0){ // only create buttons if there are sub-entries -> otherwise create checkboxes
+            const button = document.createElement('button');
+            button.id = 'c-element' + sep + entry.name + sep + entry.level;
+            button.className = 'append-button';
+            button.textContent = entry.name;
+            set_up_button(button);
+
+            if(entry.checked){
+                show_is_checked(button);
+            }else{
+                show_is_not_checked(button);
+            }
+
+            list_element.appendChild(button);
+            unordered_list.appendChild(list_element);
+
+            create_tree(unordered_list, entry.sub_entries, showsSearch);
+        } else {
+            const cbox = document.createElement('input');
+            cbox.type = 'checkbox';
+            cbox.id = 'c-element' + sep + entry.name + sep + entry.level;
+
+            cbox.checked = entry.checked;
+
+            cbox.onclick = function (){
+                set_checked_path(entry);
+            };
+
+            const label = document.createElement('label');
+            label.textContent = entry.name;
+
+            list_element.appendChild(cbox);
+            list_element.appendChild(label);
+            unordered_list.appendChild(list_element);
+        }
+    });
+}
+
+function set_up_button(button){
+    const nameparts = button.id.split(sep);
+    const name = nameparts[1];
+    const level = parseInt(nameparts[2]);
+
+    button.onclick = function (){
+        const list = document.getElementById('ul' + sep + name + sep + (level + 1));
+        list.style.display = (list.style.display === 'none') ? 'block': 'none';
+    }
+}
 
 function mouseoverFunc(){
     this.style.background = 'lightgrey';
@@ -18,368 +277,187 @@ function mouseleaveFunc (){
     this.style.background = 'transparent';
 }
 
-async function create_category_selection (framework){
+function set_checked_path(entry) {
+    const element = document.getElementById('c-element' + sep + entry.name + sep + entry.level);
+    let isChecked = false;
 
-    if (document.getElementById("a1") != null){
-        document.getElementById("a1").remove();
-    }
-
-    if(framework !== "def"){
-
-        await get_config_processor(framework);
-
-        document.getElementById('headline-framework').textContent = framework;
-
-        await build_expendable_tree();
-
-        show_all_selected_fields();
-
-    }
-}
-
-async function build_expendable_tree(){
-    const framework = document.getElementById('select-framework').value;
-    const framework_list = document.getElementById('framework-structure');
-
-    remove_framework_list(framework_list);
-    await ask_for_framework_entries(framework);
-
-    let read_data = all_data.data;
-
-    read_data = read_data.replace(/'/g, '"');
-    read_data = read_data.replace(/ nan/g, null);
-
-    read_data = JSON.parse(read_data);
-
-    read_data.forEach(entry => {
-        let name = entry["Name"];
-        let level = entry["Level"];
-        let bc = entry["BroaderConcept"];
-
-        let list_element = document.createElement('li');
-        list_element.className = "Level" + level + separator + bc;
-        list_element.id = name + separator + level;
-
-        if(level === config["NUMBER_OF_LEVELS"]){
-            const checkBox = document.createElement("input");
-            checkBox.type = 'checkbox';
-
-            checkBox.onclick = function (){
-                if(checkBox.checked){
-                    add_field(framework, name, bc);
-                } else {
-                    remove_field(framework, name);
-                }
+    if(!element){
+        entry.sub_entries.forEach(e => {
+            if(e.checked){
+                isChecked = true;
             }
-
-            const label = document.createElement("label");
-            label.textContent = name;
-
-            list_element.appendChild(checkBox);
-            list_element.appendChild(label);
-
-        } else {
-            const button = document.createElement('button');
-            button.textContent = '+ ' + name;
-            button.className = "append-button"
-            button.onclick = function (){
-                toggle_visibility_list(list_element);
-            }
-            list_element.appendChild(button);
-        }
-
-        if(level === 1){
-            framework_list.appendChild(list_element);
-        } else {
-            let sub_list = document.getElementById('ul' + separator + bc + separator + (level -1));
-            if(!sub_list){
-                sub_list = document.createElement('ul');
-                sub_list.id = 'ul' + separator + bc + separator + (level - 1);
-            }
-            sub_list.appendChild(list_element);
-            document.getElementById(bc + separator + (level -1)).appendChild(sub_list);
-        }
-    });
-}
-
-async function ask_for_framework_entries(framework){
-    const url = '/get_whole_framework?framework=' + framework;
-
-    await fetch(url)
-        .then(response => {
-            if(!response.ok){
-                throw new Error('Error');
-            }
-            return response.json();
-        })
-        .then(data => {
-            all_data = data;
-        })
-        .catch(error => {
-           console.error('Fetched error:', error);
         });
+        entry.setChecked(isChecked);
+
+    }else if(element.tagName.toLowerCase() === 'input') {
+        isChecked = element.checked;
+        entry.setChecked(isChecked);
+
+        list_selected_entries(entry);
+    }else{
+        entry.sub_entries.forEach(e => {
+            if(e.checked){
+                isChecked = true;
+            }
+        });
+        entry.setChecked(isChecked);
+
+        if(entry.checked){
+            show_is_checked(element);
+        }else{
+            show_is_not_checked(element);
+        }
+    }
+
+    if(entry.bc){
+        set_checked_path(entry.bc);
+    }
 }
 
-function toggle_visibility_list(node){
-    const list = document.getElementById("ul" + separator + node.id);
-
-    list.style.display = (!(list.style.display === 'block')) ? 'block' : 'none';
+function show_is_checked(element){
+    element.removeEventListener('mouseleave', mouseleaveFunc);
+    element.removeEventListener('mouseover', mouseoverFunc);
+    element.style.background = 'lightgrey';
 }
 
-function remove_framework_list(framework_list){
-    const elements = Array.from(framework_list.children);
+function show_is_not_checked(element){
+    element.addEventListener('mouseover', mouseoverFunc);
+    element.addEventListener('mouseleave', mouseleaveFunc);
+    element.style.background = 'transparent';
+}
 
-    elements.forEach(element => {
-       element.parentNode.removeChild(element);
+function list_selected_entries(entry){
+    const framework_name = entry.framework;
+
+    if(entry.checked){
+        if(!all_selected.get(framework_name)){
+            all_selected.set(framework_name, []);
+        }
+
+        all_selected.get(framework_name).push(entry);
+    }else {
+        const index_to_remove = all_selected.get(framework_name).indexOf(entry);
+        all_selected.get(framework_name).splice(index_to_remove, 1);
+
+        if(all_selected.get(framework_name).length === 0){ // otherwise the name of the framework does not disappear in the selected entries section
+            all_selected.delete(framework_name);
+        }
+    }
+    show_all_selected();
+}
+
+function show_all_selected(){
+    const container = document.getElementById('list-selected-values-container');
+
+    clean_up(container);
+
+    Array.from(all_selected.keys()).sort().forEach(framework => {
+        const framework_title = document.createElement('h2');
+        framework_title.textContent = framework;
+
+        container.appendChild(framework_title);
+
+        const list = document.createElement('ol');
+        all_selected.get(framework).sort(compare_entries_by_name).forEach(entry => {
+            const list_element = document.createElement('li');
+            list_element.textContent = entry.name;
+
+            list.appendChild(list_element);
+        });
+        container.appendChild(list);
     });
+
+    document.getElementById('write_json_button').disabled = (container.children.length === 0);
 }
 
-async function add_field(framework, field, forgoing){
+function compare_entries_by_name(entry1, entry2){
+    const name1 = entry1.name.toUpperCase();
+    const name2 = entry2.name.toUpperCase();
 
-    const value = {
-        "framework": framework,
-        "field": field,
-        "foregoing": forgoing,
-    };
+    if(name1 < name2){
+        return -1;
+    }
+    if(name1 > name2){
+        return 1;
+    }
+    return 0;
+}
 
-    const url = "/add_field";
-    const value_str = JSON.stringify(value);
+function reset_selection(){
+    Array.from(all_selected.keys()).forEach(f => {
+        all_selected.get(f).forEach(e => {
+            uncheck_path(e);
+        });
+    });
+
+    all_selected.clear();
+    const framework = document.getElementById('select-framework').value;
+    build_expendable_tree(framework, false);
+    show_all_selected();
+}
+
+function uncheck_path(entry){
+    entry.setChecked(false);
+    if(entry.bc){
+        uncheck_path(entry.bc);
+    }
+}
+
+function write_json(){
+    const url = '/write_json';
+
+    let data_to_send = '';
+
+    for(const [key, value] of all_selected){
+        let temp = '[';
+        for(const e of value){
+            temp += e.printAllData() + ', ';
+        }
+
+        temp = temp.slice(0,-2);
+        temp += ']';
+
+        data_to_send += `"${key}": ${temp}, `;
+    }
+    data_to_send = data_to_send.slice(0,-2);
+    console.log(data_to_send);
+
+    data_to_send = {"data": data_to_send}; // not possible to directly stringify the map -> possibly because array in JSON
+    // returned data needs to be in JSON format before stringify
+    // current solution: map converted to string, string added to a JSON file with attribute data
 
     fetch(url, {
-        method: "POST",
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: value_str,
+        body: JSON.stringify(data_to_send),
     })
         .then(response => {
-            if (!response.ok) {
+            if(!response.ok){
                 throw new Error('Error: ' + response.status);
             }
-            return response.json();
+            return response.blob();
         })
         .then(data => {
-            console.log(data);
-            find_all_selected();
+            const link_for_download = document.createElement('a');
+            link_for_download.id = "a1";
+            link_for_download.textContent = "If download does not start automatically, click this link.";
+            link_for_download.href = URL.createObjectURL(data);
+            link_for_download.download = 'download.zip';
+
+            if (document.getElementById("a1")){
+                document.getElementById("a1").remove();
+            }
+            link_for_download.click();
+            document.getElementById('row-1').appendChild(link_for_download);
         })
         .catch(error => {
-            console.error('Fetched error: ' + error);
+           console.error(error);
         });
 }
 
-function remove_field(framework, field_to_remove) {
-    const url = "/delete_field?framework=" + encodeURIComponent(framework) +
-        "&value=" + encodeURIComponent(field_to_remove);
-
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Error');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);
-            find_all_selected();
-        })
-        .catch(error => {
-            console.error('Fetched error: ' + error);
-        });
-}
-
-function show_all_selected_fields() {
-    clean_up();
-    const div = document.getElementById('list-selected-values-container');
-
-    if(retrievedData) {
-        const keys = Object.keys(retrievedData);
-        document.getElementById('write_json_button').disabled = keys.length === 0;
-
-        keys.sort();
-        keys.forEach(function (key) {
-            const list = document.createElement('ol');
-            list.id = key;
-            const list_title = document.createElement('h2');
-            list_title.textContent = key;
-            list.appendChild(list_title);
-
-            const values = retrievedData[key];
-            values.sort();
-            values.forEach(function (entry) {
-                add_list_entry(list, entry);
-
-                mark_selected_chbox(entry);
-                mark_selected_broader_concepts(entry);
-            });
-            div.appendChild(list);
-        });
-    } else {
-        document.getElementById('write_json_button').disabled = true;
-    }
-}
-
-function clean_up(){
-    const div = document.getElementById('list-selected-values-container');
-    const elements_to_remove = div.querySelectorAll('ol');
-    if(elements_to_remove) {
-        elements_to_remove.forEach(function(element){
-           element.parentNode.removeChild(element);
-        });
-    }
-
-    const buttons = document.getElementById('framework-structure').querySelectorAll('button');
-    if(buttons){
-        buttons.forEach(function (button){
-           button.style.background = 'transparent';
-           button.addEventListener('mouseover', mouseoverFunc);
-           button.addEventListener('mouseleave', mouseleaveFunc);
-        });
-    }
-
-    const cboxes = document.getElementById('framework-structure').querySelectorAll('input');
-    if (cboxes){
-        cboxes.forEach(function (cbox){
-            cbox.checked = false;
-        });
-    }
-
-    const link = document.getElementById('a1');
-    if(link){
-        link.remove();
-    }
-}
-
-function mark_selected_chbox(entry){
-
-    const level = config["NUMBER_OF_LEVELS"];
-    const entry_element = document.getElementById(entry + separator + level);
-
-    if(entry_element){
-        Array.from(entry_element.children)[0].checked = true;
-    }
-}
-
-function mark_selected_broader_concepts(entry){
-
-    let level = config["NUMBER_OF_LEVELS"];
-
-    while (level > 1){
-        let entry_element = document.getElementById(entry + separator + level);
-        if(entry_element) {
-            const bcName = entry_element.className.split(separator)[1];
-            const bcElement = document.getElementById(bcName + separator + (level - 1));
-            if(bcElement){
-                const button = Array.from(bcElement.children)[0];
-                button.style.background = 'lightgray';
-                button.removeEventListener('mouseover', mouseoverFunc);
-                button.removeEventListener('mouseleave', mouseleaveFunc);
-            }
-            entry = bcName;
-        }
-        level--;
-    }
-}
-
-async function find_all_selected(){
-    const url = '/get_all_stored_values';
-
-    fetch(url)
-        .then(response => {
-            if (!response.ok){
-                throw new Error('Error');
-            }
-            return response.json();
-        })
-        .then(data => {
-            retrievedData = data;
-            show_all_selected_fields();
-        })
-        .catch(error => {
-            console.error('Fetched error: ' + error);
-        });
-}
-
-function add_list_entry(list, value) {
-
-    const list_entry = document.createElement('li');
-    list_entry.className = "liEl";
-    list_entry.textContent = value;
-
-    list.appendChild(list_entry);
-}
-
-function write_json() {
-    const url = '/write_json';
-
-    fetch(url)
-        .then(response => {
-            if(!response.ok){
-                throw new Error('Error');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('Fetched error:', error);
-        });
-
-    const link_for_download = document.createElement('a');
-    link_for_download.id = "a1";
-    link_for_download.textContent = "If download does not start automatically, click this link.";
-    link_for_download.href = "http://localhost:5000/write_json";
-    if (document.getElementById("a1") != null){
-        document.getElementById("a1").remove();
-    }
-    document.getElementById('row-1').appendChild(link_for_download);
-}
-
-function reset(){
-
-    const container = document.getElementById('list-selected-values-container').children;
-    const entries = Array.from(container);
-    entries.forEach(child => {
-        child.parentNode.removeChild(child);
-    });
-
-    const url = '/reset';
-
-    fetch(url)
-        .then(response => {
-            if (!response.ok){
-                throw new Error('Error');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);
-            find_all_selected();
-        })
-        .catch(error => {
-            console.error('Fetched error: ' + error);
-        });
-}
-
-function get_config_processor(framework) {
-    const url = '/get_config?framework=' + encodeURIComponent(framework);
-
-    fetch(url)
-        .then(response => {
-            if (!response.ok){
-                throw new Error('Error');
-            }
-            return response.json();
-        })
-        .then(data => {
-            config = data;
-        })
-        .catch(error => {
-            console.error('Fetched error: ' + error);
-        });
-}
-
-function search_start(){
+function start_search(){
     conduct_search(search_field.value);
 }
 
@@ -388,72 +466,82 @@ function conduct_search(query){
 
     fetch(url)
         .then(response => {
-            if(!response.ok){
+            if (!response.ok){
                 throw new Error('Error');
             }
             return response.json();
         })
         .then(data => {
-            let temp = data;
-            temp = temp["data"];
-            temp = temp.replace("[",'').replace("]",'');
-            temp = temp.replace(/},/g,"}+++");
-            temp = temp.replace(/'/g, '"');
-            temp = temp.split("+++");
-            return temp;
+            return process_returned_search_results(data);
         })
-        .then(temp =>{
-            show_search_results(temp);
+        .then(data => {
+            add_results(data);
         })
         .catch(error => {
             console.error('Fetched error: ' + error);
-        })
+        });
 }
 
-function show_search_results(data){
-    document.getElementById('headline-framework').textContent = 'Search results';
+function process_returned_search_results(raw_data){
+    let temp = raw_data["data"];
 
-    const framework_list = document.getElementById('framework-structure');
-    remove_framework_list(framework_list);
-
-    if(data[0] !== ""){
-        data.forEach(entry => {
-            console.log(entry);
-            let temp = JSON.parse(entry);
-            let name = temp["title"];
-            let framework = temp["framework"];
-            let bc = temp["bc"];
-            let level = temp["level"];
-
-            let list_element = document.createElement('li');
-            list_element.className = 'Level' + level + separator + bc;
-            list_element.id = name + separator + level;
-
-            const checkBox = document.createElement("input");
-            checkBox.type = 'checkbox';
-
-            checkBox.onclick = function (){
-                get_config_processor(framework);
-                if(checkBox.checked){
-                    add_field(framework, name, bc);
-                } else {
-                    remove_field(framework, name);
-                }
-            }
-
-            const label = document.createElement("label");
-            label.textContent = name;
-
-            list_element.appendChild(checkBox);
-            list_element.appendChild(label);
-            framework_list.appendChild(list_element);
-        });
-    } else {
-        const label = document.createElement('label');
-        label.textContent = 'No results for this search.';
-        const list_element = document.createElement('li');
-
-        list_element.appendChild(label);
-        framework_list.appendChild(list_element);
+    if (temp === "None"){
+        return [null];
     }
+    temp = temp.replace("[",'').replace("]",'');
+    temp = temp.replace(/},\s/g,"}+++");
+    temp = temp.replace(/'/g, '"');
+
+    return temp.split("+++");
+}
+
+function add_results(results_array){
+    const results_name = 'Search results';
+
+    frameworks_complete.set(results_name, new Framework(results_name));
+
+    results_array.forEach(result => {
+        if(result){
+            result = JSON.parse(result);
+            const framework = result["framework"];
+            const name = result["title"];
+
+            const entry = find_entry_by_name(name, frameworks_complete.get(framework).top_level_entries);
+            found = null;
+            frameworks_complete.get(results_name).top_level_entries.push(entry);
+        }
+    });
+
+    if(results_array[0] != null){
+        build_expendable_tree(results_name, true);
+    } else {
+        show_no_search_results();
+    }
+
+}
+
+function find_entry_by_name(name, entries){
+    for(const entry of entries){
+        if(name === entry.name && entry.sub_entries.length === 0){
+            found = entry;
+        }else {
+            find_entry_by_name(name, entry.sub_entries);
+        }
+    }
+
+    return found;
+}
+
+function show_no_search_results(){
+
+    const container = document.getElementById('framework-structure');
+    clean_up(container);
+
+    const text = document.createElement('p');
+    text.textContent = "Sorry! Your search did not return any results. Please, try another query.";
+
+    container.appendChild(text);
+
+    const framework_headline = document.getElementById('headline-framework');
+    framework_headline.textContent = "Search results";
 }

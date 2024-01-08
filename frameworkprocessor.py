@@ -209,6 +209,10 @@ class Entry:
         path = os.path.join(path, framework + ".csv")
 
         data = pd.read_csv(path, sep=";", dtype=str)
+        print(framework)
+        print(value)
+        print(forgoing_value)
+        print(data[(data["Name"] == value) & (data["BroaderConcept"] == forgoing_value)])
         data = data[(data["Name"] == value) & (data["BroaderConcept"] == forgoing_value)].iloc[-1]  # This guarantees
         # that only one row is selected. It is always the last one. Otherwise, problems could occur if three or more
         # nodes in the path share the same name. In this case, the combination Name - BroaderConcept is ambiguous like

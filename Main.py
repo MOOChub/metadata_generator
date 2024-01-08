@@ -19,7 +19,7 @@ def index():
             
     return render_template('index.html', files=files, documentation=docs)
            
-
+'''
 @app.route('/load_fields')
 def load_fields():
     args = request.args
@@ -51,7 +51,7 @@ def reset():
     stored_values.reset_dict()
     return jsonify({"reset": "true"})
 
-'''
+
 @app.route('/write_json')
 def write_json():
     buffer = FrameworkProcessor.write_json(stored_values)
@@ -59,7 +59,7 @@ def write_json():
     response.headers['Content-Disposition'] = 'attachment; filename=download.zip'
 
     return response
-'''
+
 
 @app.route('/get_config')
 def get_config():
@@ -73,7 +73,7 @@ def get_whole_framework():
     all_fields = FrameworkProcessor.get_all_fields(framework)
 
     return jsonify({"data": str(all_fields)})
-
+'''
 
 @app.route('/get_all_frameworks')
 def get_all_frameworks():
