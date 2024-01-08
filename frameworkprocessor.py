@@ -98,21 +98,10 @@ class FrameworkProcessor:
     def write_json(data):
         stored_values = DataStorage()
 
-        data = data["data"]
-        data = data.replace('], ', '&&&')
-        data = data.split('&&&')
-
-        for framework_data in data:
-            framework_data = framework_data.replace(': [', '&&&')
-            framework_data = framework_data.split('&&&')
-            framework = framework_data[0].replace('"', '')
-
-            elements = framework_data[1].replace('}, {', '&&&')
-            elements = elements.replace('{', '').replace('}]', '')
-            elements = elements.split('&&&')
-            for element in elements:
-                name = element.split('", "')[0].replace('"Name": "', '')
-                bc = element.split('", "')[1].replace('BroaderConcept": "', '')[:-1]
+        for framework in data.keys():
+            for element in data[framework]:
+                name = element["Name"]
+                bc = element["BroaderConcept"]
                 stored_values.add_field({'framework': framework, 'field': name, 'foregoing': bc})
 
         all_data_fos = []
@@ -209,10 +198,6 @@ class Entry:
         path = os.path.join(path, framework + ".csv")
 
         data = pd.read_csv(path, sep=";", dtype=str)
-        print(framework)
-        print(value)
-        print(forgoing_value)
-        print(data[(data["Name"] == value) & (data["BroaderConcept"] == forgoing_value)])
         data = data[(data["Name"] == value) & (data["BroaderConcept"] == forgoing_value)].iloc[-1]  # This guarantees
         # that only one row is selected. It is always the last one. Otherwise, problems could occur if three or more
         # nodes in the path share the same name. In this case, the combination Name - BroaderConcept is ambiguous like

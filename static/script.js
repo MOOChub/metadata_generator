@@ -408,7 +408,7 @@ function write_json(){
 
     let data_to_send = '';
 
-    for(const [key, value] of all_selected){
+    for(const [key, value] of all_selected){ // converting the map with the array of entries (objects!) into a JSON-like string.
         let temp = '[';
         for(const e of value){
             temp += e.printAllData() + ', ';
@@ -420,11 +420,8 @@ function write_json(){
         data_to_send += `"${key}": ${temp}, `;
     }
     data_to_send = data_to_send.slice(0,-2);
-    console.log(data_to_send);
-
-    data_to_send = {"data": data_to_send}; // not possible to directly stringify the map -> possibly because array in JSON
-    // returned data needs to be in JSON format before stringify
-    // current solution: map converted to string, string added to a JSON file with attribute data
+    data_to_send = data_to_send.replace(/'/g, '"');
+    data_to_send = JSON.parse(`{${data_to_send}}`); // parsing the JSON-like string into a JSON object for sending
 
     fetch(url, {
         method: 'POST',
