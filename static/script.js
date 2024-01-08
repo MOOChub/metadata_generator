@@ -384,6 +384,11 @@ function compare_entries_by_name(entry1, entry2){
 }
 
 function reset_selection(){
+    const link = document.getElementById('a1');
+    if(link){
+        link.remove();
+    }
+
     Array.from(all_selected.keys()).forEach(f => {
         all_selected.get(f).forEach(e => {
             uncheck_path(e);
