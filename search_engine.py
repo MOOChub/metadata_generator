@@ -29,4 +29,7 @@ def search(query):
                 "level": level,
             })
 
+    if len(results) == 0:
+        results = "None"
+
     return results

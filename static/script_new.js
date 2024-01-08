@@ -184,11 +184,6 @@ function iterate_through_framework(entry, forgoing_entries){
     });
 }
 
-function inspect(){
-    console.log(all_selected);
-
-}
-
 function clean_up(element){
     Array.from(element.children).forEach(e => {
        e.parentElement.removeChild(e);
@@ -204,7 +199,6 @@ function build_expendable_tree(framework_name, showsSearch){
     const framework_headline = document.getElementById('headline-framework');
     framework_headline.textContent = framework_name;
 
-    //console.log(framework_to_show);
     create_tree(container, framework_to_show, showsSearch);
 }
 
@@ -244,7 +238,6 @@ function create_tree(container, entries, showsSearch){
 
             create_tree(unordered_list, entry.sub_entries, showsSearch);
         } else {
-            //console.log(entry);
             const cbox = document.createElement('input');
             cbox.type = 'checkbox';
             cbox.id = 'c-element' + sep + entry.name + sep + entry.level;
@@ -261,7 +254,6 @@ function create_tree(container, entries, showsSearch){
             list_element.appendChild(cbox);
             list_element.appendChild(label);
             unordered_list.appendChild(list_element);
-            console.log(unordered_list);
         }
     });
 }
@@ -288,7 +280,6 @@ function mouseleaveFunc (){
 function set_checked_path(entry) {
     const element = document.getElementById('c-element' + sep + entry.name + sep + entry.level);
     let isChecked = false;
-    //console.log(entry);
 
     if(!element){
         entry.sub_entries.forEach(e => {
@@ -304,8 +295,6 @@ function set_checked_path(entry) {
 
         list_selected_entries(entry);
     }else{
-        //isChecked = false;
-
         entry.sub_entries.forEach(e => {
             if(e.checked){
                 isChecked = true;
@@ -479,7 +468,6 @@ function conduct_search(query){
             if (!response.ok){
                 throw new Error('Error');
             }
-            console.log(response);
             return response.json();
         })
         .then(data => {
@@ -495,6 +483,10 @@ function conduct_search(query){
 
 function process_returned_search_results(raw_data){
     let temp = raw_data["data"];
+
+    if (temp === "None"){
+        return [null];
+    }
     temp = temp.replace("[",'').replace("]",'');
     temp = temp.replace(/},\s/g,"}+++");
     temp = temp.replace(/'/g, '"');
@@ -505,23 +497,26 @@ function process_returned_search_results(raw_data){
 function add_results(results_array){
     const results_name = 'Search results';
 
-    if(results_array.length === 0){
-
-    }else {
-        frameworks_complete.set(results_name, new Framework(results_name));
-    }
+    frameworks_complete.set(results_name, new Framework(results_name));
 
     results_array.forEach(result => {
-        result = JSON.parse(result);
-        const framework = result["framework"];
-        const name = result["title"];
+        if(result){
+            result = JSON.parse(result);
+            const framework = result["framework"];
+            const name = result["title"];
 
-        const entry = find_entry_by_name(name, frameworks_complete.get(framework).top_level_entries);
-        found = null;
-        frameworks_complete.get(results_name).top_level_entries.push(entry);
+            const entry = find_entry_by_name(name, frameworks_complete.get(framework).top_level_entries);
+            found = null;
+            frameworks_complete.get(results_name).top_level_entries.push(entry);
+        }
     });
 
-    build_expendable_tree(results_name, true);
+    if(results_array[0] != null){
+        build_expendable_tree(results_name, true);
+    } else {
+        show_no_search_results();
+    }
+
 }
 
 function find_entry_by_name(name, entries){
@@ -534,4 +529,18 @@ function find_entry_by_name(name, entries){
     }
 
     return found;
+}
+
+function show_no_search_results(){
+
+    const container = document.getElementById('framework-structure');
+    clean_up(container);
+
+    const text = document.createElement('p');
+    text.textContent = "Sorry! Your search did not return any results. Please, try another query.";
+
+    container.appendChild(text);
+
+    const framework_headline = document.getElementById('headline-framework');
+    framework_headline.textContent = "Search results";
 }
