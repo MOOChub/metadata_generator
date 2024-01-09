@@ -1,3 +1,37 @@
+"""
+The frameworkprocessor.py is a collection of methods for handling the received data from a client.
+
+It can find the related framework files, extract data from them and convert the into properly formatted data
+fragments for the transfer to the client.
+
+Methods:
+    remove_file_ending(file_name): Remove the .csv at the end of a csv file.
+
+    find_framework_folder(): Find the folder the framework files are in.
+
+    find_framework_files(): Find teh names of the frameworks of the files in the designated folder by removing the file
+    ending.
+
+    find_all_data(framework): Retrieve all data from a single framework without further processing.
+
+    get_all_fields(framework): Get the relevant data from a single framework for the presentation on the clientside.
+
+    get_all_frameworks(): Find all relevant data for the presentation on the clientside.
+
+    find_title_description(framework): Find the relevant data of a single, defined framework for the search.
+
+    find_all_title_description(): Find all relevant data from all the frameworks for further processing in the fuzzy
+    search.
+
+    write_json(data): Write the JSON files for the competencies and fields of studies and return them as a zip file.
+
+    generate_entry(framework, name, bc): Generate a metadata fragment according to the MOOChub API v3.0 for a single
+    competency or field of study (FoS).
+
+    generate_names_of(language, name): Generate a list of sub-fragments containing the name of a competency of field of
+    study (FoS) together with the language decoded in compliance with BCP47 according to the MOOChub API v3.0.
+"""
+
 import os
 import io
 import zipfile
@@ -8,46 +42,58 @@ import pandas as pd
 
 
 class FrameworkProcessor:
+    """
+    The FrameworkProcessor is a collection of static methods for handling the received data from a client.
+
+    It can find the related framework files, extract data from them and convert the into properly formatted data
+    fragments for the transfer to the client.
+    """
 
     @staticmethod
     def remove_file_ending(file_name):
-        return file_name.replace('.csv', '')
+        """Remove the .csv at the end of a csv file.
+
+        :param file_name: the complete file name including the filename extension
+        :return: the name of the file without the filename extension
+        """
+        return file_name.replace('.csv', '')  # only works for csv so far, could be extended with another logic...
 
     @staticmethod
     def find_framework_folder():
+        """Find the folder the framework files are in.
+
+        :return: the properly formatted path to the framework folder
+        """
         return os.path.join(os.path.dirname(__file__), 'frameworks')
 
     @staticmethod
     def find_framework_files():
+        """Find teh names of the frameworks of the files in the designated folder by removing the file ending.
+
+        :return: a list of framework names based on the filenames of the frameworks (file ending removed)
+        """
         folder_path = FrameworkProcessor.find_framework_folder()
         files = os.listdir(folder_path)
         return list(map(FrameworkProcessor.remove_file_ending, files))
 
     @staticmethod
     def find_all_data(framework):
+        """Retrieve all data from a single framework without further processing.
+
+        :param framework: the name of the framework to gather the data from
+        :return: a pandas DataFrame object containing all data from the framework
+        """
         path = FrameworkProcessor.find_framework_folder()
         path = os.path.join(path, framework + ".csv")
         return pd.read_csv(path, sep=";", header=0)
 
     @staticmethod
-    def find_fields(input_params):
-        framework = input_params.get('framework')
-        value = input_params.get('value')
-        level = int(input_params.get('level'))
-
-        data = FrameworkProcessor.find_all_data(framework)
-
-        if value == "None":
-            data = data.loc[data["Level"] == level]
-        else:
-            data = data.loc[(data["Level"] == level) & (data["BroaderConcept"] == value)]
-        fields = list(data["Name"])
-
-        fields.sort()
-        return fields
-
-    @staticmethod
     def get_all_fields(framework):
+        """Get the relevant data from a single framework for the presentation on the clientside.
+
+        :param framework: the name of the framework to gather the relevant data for the presentation on the clientside
+        :return: a list of dictionaries containing the relevant data for presentation of a single framework
+        """
         data = FrameworkProcessor.find_all_data(framework)
         data.replace({np.nan: None}, inplace=True)
 
@@ -65,7 +111,10 @@ class FrameworkProcessor:
 
     @staticmethod
     def get_all_frameworks():
+        """Find all relevant data for the presentation on the clientside.
 
+        :return: a dictionary with the framework name as key and the relevant data for presentation as values as a list
+        """
         all_frameworks = {}
 
         for framework in FrameworkProcessor.find_framework_files():
@@ -75,18 +124,28 @@ class FrameworkProcessor:
 
     @staticmethod
     def find_title_description(framework):
+        """Find the relevant data of a single, defined framework for the search.
+
+        :param framework: the name of the framework to gather the relevant data for the search
+        :return: a list of dictionaries containing the relevant data for the search from a single framework
+        """
         data = FrameworkProcessor.find_all_data(framework)
         data = data[data["Level"] == data["Level"].max()]
 
         to_return = []
 
         for index, row in data.iterrows():
-            to_return.append({"framework": framework, "title": row["Name"], "description": row["Description"], "bc": row["BroaderConcept"]})
+            to_return.append({"framework": framework, "title": row["Name"], "description": row["Description"],
+                              "bc": row["BroaderConcept"]})
 
         return to_return
 
     @staticmethod
     def find_all_title_description():
+        """Find all relevant data from all the frameworks for further processing in the fuzzy search.
+
+        :return: A list of dictionaries of all relevant data from all frameworks for the fuzzy search
+        """
         frameworks = FrameworkProcessor.find_framework_files()
 
         all_title_descriptions = []
@@ -97,6 +156,11 @@ class FrameworkProcessor:
 
     @staticmethod
     def write_json(data):
+        """Write the JSON files for the competencies and fields of studies and return them as a zip file.
+
+        :param data: the JSON file received from the client with the competencies and FoS as a dictionary
+        :return: a zip file for downloading via the browser
+        """
         all_data_fos = []
         all_data_skills = []
 
@@ -118,7 +182,7 @@ class FrameworkProcessor:
         data_file = io.BytesIO()
 
         with zipfile.ZipFile(data_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
-            if len(all_data_skills) > 2:
+            if len(all_data_skills) > 2:  # the JSON string should not be empty e.g. len = 2 -> '{}', empty dictionary
                 zipf.writestr('skills.json', all_data_skills)
             if len(all_data_fos) > 2:
                 zipf.writestr('fos.json', all_data_fos)
@@ -129,6 +193,14 @@ class FrameworkProcessor:
 
     @staticmethod
     def generate_entry(framework, name, bc):
+        """Generate a metadata fragment according to the MOOChub API v3.0 for a single competency or field of study
+        (FoS).
+
+        :param framework: framework of the competency or FoS
+        :param name: name of the competency or FoS
+        :param bc: the broader concept of the competency or FoS, Can be None
+        :return: a dictionary containing the metadata for the competency or FoS, ready to be converted into a JSON file
+        """
         config = config_handler.get_config_processor_by_framework(framework)
 
         path = FrameworkProcessor.find_framework_folder()
@@ -142,10 +214,12 @@ class FrameworkProcessor:
 
         data.replace({np.nan: None}, inplace=True)
 
+        language = 'en'
+
         data_block = {
             "educationalFramework": framework,
             "url": config.URL,
-            "name": FrameworkProcessor.generate_names_of(name),
+            "name": FrameworkProcessor.generate_names_of(language, name),
             "alternativeName": None,
             "shortCode": data["ShortCode"],
             "targetUrl": data["Uri"],
@@ -159,12 +233,19 @@ class FrameworkProcessor:
         return data_block
 
     @staticmethod
-    def generate_names_of(value):
+    def generate_names_of(language, name):
+        """Generate a list of sub-fragments containing the name of a competency of field of study (FoS) together with
+        the language decoded in compliance with BCP47 according to the MOOChub API v3.0.
+
+        :param name: the name of the competency or FoS in the respective language
+        :param language: the language the competency or FoS name is given in
+        :return: a list containing the metadata fragments as dictionaries
+        """
         all_names = list()
 
         all_names.append({
-            "inLanguage": "en",
-            "name": value,
+            "inLanguage": language,
+            "name": name,
         })
 
         return all_names
