@@ -1,7 +1,7 @@
 import json
 
 from flask import Flask, request, send_file, render_template, jsonify, Markup
-from frameworkprocessor import FrameworkProcessor
+import frameworkprocessor as fp
 import search_engine
 
 app = Flask(__name__)
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    files = FrameworkProcessor.find_framework_files()
+    files = fp.find_framework_files()
     docs = []
     with open("documentation/documentation.txt", "r") as file:
         data = file.read().split("\n")
@@ -21,7 +21,7 @@ def index():
 
 @app.route('/get_all_frameworks')
 def get_all_frameworks():
-    all_frameworks = FrameworkProcessor.get_all_frameworks()
+    all_frameworks = fp.get_all_frameworks()
     all_frameworks = json.dumps(all_frameworks)
 
     return jsonify(all_frameworks)
@@ -30,7 +30,7 @@ def get_all_frameworks():
 @app.route('/write_json', methods=['POST'])
 def write_json():
     received_fields = request.get_json()
-    buffer = FrameworkProcessor.write_json(received_fields)
+    buffer = fp.write_json(received_fields)
     response = send_file(buffer, mimetype='application/zip')
     response.headers['Content-Disposition'] = 'attachment; filename=download.zip'
 

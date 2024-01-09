@@ -1,10 +1,10 @@
 from fuzzywuzzy import fuzz
-from frameworkprocessor import FrameworkProcessor
+import frameworkprocessor as fp
 import config_handler
 
 
 def search(query):
-    all_title_descriptions = FrameworkProcessor.find_all_title_description()
+    all_title_descriptions = fp.find_all_title_description()
 
     results = []
 
