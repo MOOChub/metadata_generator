@@ -471,10 +471,8 @@ function conduct_search(query){
             if (!response.ok){
                 throw new Error('Error');
             }
+            //console.log(response);
             return response.json();
-        })
-        .then(data => {
-            return process_returned_search_results(data);
         })
         .then(data => {
             add_results(data);
@@ -484,42 +482,26 @@ function conduct_search(query){
         });
 }
 
-function process_returned_search_results(raw_data){
-    let temp = raw_data["data"];
-
-    if (temp === "None"){
-        return [null];
-    }
-    temp = temp.replace("[",'').replace("]",'');
-    temp = temp.replace(/},\s/g,"}+++");
-    temp = temp.replace(/'/g, '"');
-
-    return temp.split("+++");
-}
-
-function add_results(results_array){
+function add_results(results){
     const results_name = 'Search results';
 
     frameworks_complete.set(results_name, new Framework(results_name));
 
-    results_array.forEach(result => {
-        if(result){
-            result = JSON.parse(result);
+    results = JSON.parse(results);
+
+    if(results["results"]){
+        results["results"].forEach(result => {
             const framework = result["framework"];
             const name = result["title"];
 
             const entry = find_entry_by_name(name, frameworks_complete.get(framework).top_level_entries);
             found = null;
             frameworks_complete.get(results_name).top_level_entries.push(entry);
-        }
-    });
-
-    if(results_array[0] != null){
+        });
         build_expendable_tree(results_name, true);
     } else {
         show_no_search_results();
     }
-
 }
 
 function find_entry_by_name(name, entries){

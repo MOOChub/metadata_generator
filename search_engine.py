@@ -30,6 +30,6 @@ def search(query):
             })
 
     if len(results) == 0:
-        results = "None"
+        results = None
 
-    return results
+    return {"results": results}
