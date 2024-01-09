@@ -113,47 +113,10 @@ function download_all_frameworks(){
 }
 
 function process_all_fetched_frameworks(all_fetched_data){
-    let processed_data = all_fetched_data['data'];
+    all_fetched_data = JSON.parse(all_fetched_data);
 
-    try {
-        processed_data = processed_data.replace(/'(?!\s)/g, '"');
-        processed_data = processed_data.replace(/([a-zA-Z])"([a-zA-Z])/g, "'");
-        processed_data = processed_data.replace(/\("/g, "('");
-        processed_data = processed_data.replace(/"\)/g, "')");
-        processed_data = processed_data.replace(/ nan,/g, ' null,');
-        processed_data = processed_data.replace(/ nan}/g, ' null}');
-        processed_data = processed_data.replace(/[\s|]\\r\\n/g, ' ');
-        processed_data = processed_data.replace(/\\xa0/g, "");
-        processed_data = processed_data.replace(/\\x9d/g, "");
-        processed_data = processed_data.replace(/([0-9a-zA-Z]\s)"([a-zA-Z])/g, "'");
-        processed_data = processed_data.replace(/([0-9a-zA-Z])"(,\s[0-9a-z-A-Z]|\s[a-zA-Z]|\.|\\)/g, "'");
-        processed_data = processed_data.replace(/\\'/g, "'");
-        processed_data = processed_data.replace(/(\))"(\.)/g, "'");
-
-        processed_data = JSON.parse(processed_data);
-    } catch (e){
-        console.error(e)
-
-        const column = parseInt(e.message.match(/column (\d+)/)[1]);
-
-        let start = 0;
-        let end = 0;
-        let range = 20
-        if(column < range){
-            start = 0;
-        }else if(processed_data.length < column + range){
-            end = processed_data.length;
-        }else {
-            start = column - range;
-            end = column + range;
-        }
-
-        const substring = processed_data.slice(start, end);
-        console.log(substring);
-    }
-
-    Array.from(Object.keys(processed_data)).sort().forEach(framework => {
-        frameworks_complete.set(framework, create_entries(framework, processed_data[framework]));
+    Array.from(Object.keys(all_fetched_data)).sort().forEach(framework => {
+        frameworks_complete.set(framework, create_entries(framework, all_fetched_data[framework]));
     });
 }
 
@@ -471,7 +434,6 @@ function conduct_search(query){
             if (!response.ok){
                 throw new Error('Error');
             }
-            //console.log(response);
             return response.json();
         })
         .then(data => {

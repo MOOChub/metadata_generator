@@ -3,6 +3,7 @@ import io
 import zipfile
 import config_handler
 import json
+import numpy as np
 import pandas as pd
 
 
@@ -48,6 +49,7 @@ class FrameworkProcessor:
     @staticmethod
     def get_all_fields(framework):
         data = FrameworkProcessor.find_all_data(framework)
+        data.replace({np.nan: None}, inplace=True)
 
         all_fields = []
 

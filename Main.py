@@ -23,7 +23,10 @@ def index():
 
 @app.route('/get_all_frameworks')
 def get_all_frameworks():
-    return jsonify({"data": str(FrameworkProcessor.get_all_frameworks())})
+    all_frameworks = FrameworkProcessor.get_all_frameworks()
+    all_frameworks = json.dumps(all_frameworks)
+
+    return jsonify(all_frameworks)
 
 
 @app.route('/write_json', methods=['POST'])
