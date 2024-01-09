@@ -1,12 +1,10 @@
 import json
 
 from flask import Flask, request, send_file, render_template, jsonify, Markup
-from frameworkprocessor import FrameworkProcessor, DataStorage
+from frameworkprocessor import FrameworkProcessor
 import search_engine
 
 app = Flask(__name__)
-
-stored_values = DataStorage()
 
 
 @app.route('/')

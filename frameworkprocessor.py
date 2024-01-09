@@ -75,9 +75,8 @@ class FrameworkProcessor:
 
     @staticmethod
     def find_title_description(framework):
-        level = config_handler.get_config_processor_by_framework(framework).NUMBER_OF_LEVELS
         data = FrameworkProcessor.find_all_data(framework)
-        data = data[data["Level"] == level]
+        data = data[data["Level"] == data["Level"].max()]
 
         to_return = []
 
@@ -98,25 +97,20 @@ class FrameworkProcessor:
 
     @staticmethod
     def write_json(data):
-        stored_values = DataStorage()
+        all_data_fos = []
+        all_data_skills = []
 
         for framework in data.keys():
             for element in data[framework]:
                 name = element["Name"]
                 bc = element["BroaderConcept"]
-                stored_values.add_field({'framework': framework, 'field': name, 'foregoing': bc})
 
-        all_data_fos = []
-        all_data_skills = []
+                entry = FrameworkProcessor.generate_entry(framework, name, bc)
 
-        for value in stored_values.get_stored_values_full().values():
-            for data in value:
-                data = data.get_all_data()
-
-                if data['type'] == 'EducationalAlignment':
-                    all_data_fos.append(data)
+                if entry['type'] == 'EducationalAlignment':
+                    all_data_fos.append(entry)
                 else:
-                    all_data_skills.append(data)
+                    all_data_skills.append(entry)
 
         all_data_skills = json.dumps(all_data_skills).encode()
         all_data_fos = json.dumps(all_data_fos).encode()
@@ -133,74 +127,15 @@ class FrameworkProcessor:
 
         return data_file
 
-
-class DataStorage:
-
-    def __init__(self):
-        self._stored_values = dict()
-
-    def add_field(self, value):
-        framework = value['framework']
-        field = value['field']
-        forgoing = value['foregoing']
-
-        entry = Entry(framework, field, forgoing)
-
-        if framework in self._stored_values.keys():
-            self._stored_values[framework].add(entry)
-        else:
-            self._stored_values[framework] = {entry}
-
-    def get_stored_values(self):
-        stored_values = dict()
-
-        for key in self._stored_values.keys():
-            listed_values = []
-            for entry in self._stored_values[key]:
-                listed_values.append(entry.get_name())
-            stored_values[key] = listed_values
-
-        return stored_values
-
-    def get_stored_values_full(self):
-        return self._stored_values
-
-    def delete_value(self, framework, value):
-        entries = self._stored_values[framework]
-
-        entries = {entry for entry in entries if entry.get_name() != value}
-
-        if len(entries) != 0:
-            self._stored_values[framework] = entries
-        else:
-            del self._stored_values[framework]
-
-    def reset_dict(self):
-        self._stored_values = dict()
-
-
-class Entry:
-
-    def __init__(self, framework, value, forgoing_value):
-        self._entry_values = self.generate_entry(framework, value, forgoing_value)
-
-    def __hash__(self):
-        return hash(self.get_name())
-
-    def __eq__(self, other):
-        if not isinstance(other, Entry):
-            return False
-        return self.get_name() == other.get_name()
-
-    def generate_entry(self, framework, value, forgoing_value):
-
+    @staticmethod
+    def generate_entry(framework, name, bc):
         config = config_handler.get_config_processor_by_framework(framework)
 
         path = FrameworkProcessor.find_framework_folder()
         path = os.path.join(path, framework + ".csv")
 
         data = pd.read_csv(path, sep=";", dtype=str)
-        data = data[(data["Name"] == value) & (data["BroaderConcept"] == forgoing_value)].iloc[-1]  # This guarantees
+        data = data[(data["Name"] == name) & (data["BroaderConcept"] == bc)].iloc[-1]  # This guarantees
         # that only one row is selected. It is always the last one. Otherwise, problems could occur if three or more
         # nodes in the path share the same name. In this case, the combination Name - BroaderConcept is ambiguous like
         # in ESCO Construction - construction - construction.
@@ -210,7 +145,7 @@ class Entry:
         data_block = {
             "educationalFramework": framework,
             "url": config.URL,
-            "name": self.generate_names_of(value),
+            "name": FrameworkProcessor.generate_names_of(name),
             "alternativeName": None,
             "shortCode": data["ShortCode"],
             "targetUrl": data["Uri"],
@@ -233,9 +168,3 @@ class Entry:
         })
 
         return all_names
-
-    def get_name(self):
-        return self._entry_values['name'][0]['name']
-
-    def get_all_data(self):
-        return self._entry_values
