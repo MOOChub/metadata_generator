@@ -205,6 +205,8 @@ class Entry:
         # nodes in the path share the same name. In this case, the combination Name - BroaderConcept is ambiguous like
         # in ESCO Construction - construction - construction.
 
+        data.replace({np.nan: None}, inplace=True)
+
         data_block = {
             "educationalFramework": framework,
             "url": config.URL,
