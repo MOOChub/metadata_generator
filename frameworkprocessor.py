@@ -121,13 +121,14 @@ def find_title_description(framework):
     :return: a list of dictionaries containing the relevant data for the search from a single framework
     """
     data = find_all_data(framework)
-    data = data[data["Level"] == data["Level"].max()]
+    level = int(data["Level"].max())
+    data = data[data["Level"] == level]
 
     to_return = []
 
     for index, row in data.iterrows():
         to_return.append({"framework": framework, "title": row["Name"], "description": row["Description"],
-                          "bc": row["BroaderConcept"]})
+                          "bc": row["BroaderConcept"], "level": level})
 
     return to_return
 
@@ -205,7 +206,7 @@ def generate_entry(framework, name, bc):
 
     data.replace({np.nan: None}, inplace=True)
 
-    language = 'en'
+    language = config.LANGUAGE
 
     data_block = {
         "educationalFramework": framework,
