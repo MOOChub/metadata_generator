@@ -1,6 +1,5 @@
 from fuzzywuzzy import fuzz
 import frameworkprocessor as fp
-import config_handler
 
 
 def search(query):

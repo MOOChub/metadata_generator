@@ -5,11 +5,13 @@ It can find the related framework files, extract data from them and convert the 
 fragments for the transfer to the client.
 
 Methods:
+    get_config_of(framework): Return the configuration data of a defined framework as an object.
+
     remove_file_ending(file_name): Remove the .csv at the end of a csv file.
 
     find_framework_folder(): Find the folder the framework files are in.
 
-    find_framework_files(): Find teh names of the frameworks of the files in the designated folder by removing the file
+    find_framework_files(): Find the names of the frameworks of the files in the designated folder by removing the file
     ending.
 
     find_all_data(framework): Retrieve all data from a single framework without further processing.
@@ -35,10 +37,28 @@ Methods:
 import os
 import io
 import zipfile
-import config_handler
+import config
 import json
 import numpy as np
 import pandas as pd
+
+
+def get_config_of(framework):
+    """Return the configuration data of a defined framework as an object.
+
+    :param framework: the name of the framework for which the configuration data will be returned
+    :return: an object with the framework's configuration data
+    """
+    if framework == "OEFOS":
+        return config.OEFOS
+    elif framework == "ESCO":
+        return config.ESCO
+    elif framework == "ISCED-F":
+        return config.ISCEDF
+    elif framework == "DigComp":
+        return config.DigComp
+    elif framework == "GRETA":
+        return config.GRETA
 
 
 def remove_file_ending(file_name):
@@ -193,7 +213,7 @@ def generate_entry(framework, name, bc):
     :param bc: the broader concept of the competency or FoS, Can be None
     :return: a dictionary containing the metadata for the competency or FoS, ready to be converted into a JSON file
     """
-    config = config_handler.get_config_processor_by_framework(framework)
+    config_data = get_config_of(framework)
 
     path = find_framework_folder()
     path = os.path.join(path, framework + ".csv")
@@ -206,20 +226,20 @@ def generate_entry(framework, name, bc):
 
     data.replace({np.nan: None}, inplace=True)
 
-    language = config.LANGUAGE
+    language = config_data.LANGUAGE
 
     data_block = {
         "educationalFramework": framework,
-        "url": config.URL,
+        "url": config_data.URL,
         "name": generate_names_of(language, name),
         "alternativeName": None,
         "shortCode": data["ShortCode"],
         "targetUrl": data["Uri"],
         "description": data["Description"],
-        "type": config.FRAMEWORK_PURPOSE,
+        "type": config_data.FRAMEWORK_PURPOSE,
         }
 
-    if config.FRAMEWORK_PURPOSE == "EducationalAlignment":
+    if config_data.FRAMEWORK_PURPOSE == "EducationalAlignment":
         data_block["alignmentType"] = "educationalSubject"
 
     return data_block
@@ -230,7 +250,7 @@ def generate_names_of(language, name):
     the language decoded in compliance with BCP47 according to the MOOChub API v3.0.
 
     :param name: the name of the competency or FoS in the respective language
-    :param language: the language the competency or FoS name is given in
+    :param language: the language in which the competency or FoS name is given
     :return: a list containing the metadata fragments as dictionaries
     """
     all_names = list()
