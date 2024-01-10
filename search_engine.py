@@ -1,8 +1,22 @@
+"""
+The search_engine.py modul contains the method for a search via the search bar.
+
+It uses the library fuzzywuzzy for a Levenshtein distance calculation.
+
+Methods:
+    search(query): Search and return the best fitting competencies or fields of study (FoS) according to the query.
+"""
+
 from fuzzywuzzy import fuzz
 import frameworkprocessor as fp
 
 
 def search(query):
+    """Search and return the best fitting competencies or fields of study (FoS) according to the query.
+
+    :param query: the input string of which the search will look for similarities
+    :return: a list of dictionaries with the relevant data for presenting the search results on the client side
+    """
     all_title_descriptions = fp.find_all_title_description()
 
     results = []
@@ -24,7 +38,7 @@ def search(query):
                 "level": title_description["level"],
             })
 
-    if len(results) == 0:
+    if len(results) == 0:  # if the query results in an empty result list, None is returned
         results = None
 
     return {"results": results}
