@@ -4,6 +4,7 @@ class OEFOS:
     FRAMEWORK_PURPOSE = "EducationalAlignment"
     FRAMEWORK_LABEL = "OEFOS"
     LANGUAGE = "EN"
+    VERSION = "2012"
 
 
 class ESCO:
@@ -12,6 +13,7 @@ class ESCO:
     FRAMEWORK_PURPOSE = "Skill"
     FRAMEWORK_LABEL = 'ESCO Skills'
     LANGUAGE = "EN"
+    VERSION = "1.1.1"
 
 
 class ISCEDF:
@@ -20,6 +22,7 @@ class ISCEDF:
     FRAMEWORK_PURPOSE = "EducationalAlignment"
     FRAMEWORK_LABEL = 'ISCED-F'
     LANGUAGE = "EN"
+    VERSION = "2013"
 
 
 class DigComp:
@@ -28,6 +31,7 @@ class DigComp:
     FRAMEWORK_PURPOSE = "Skill"
     FRAMEWORK_LABEL = 'DigComp'
     LANGUAGE = "EN"
+    VERSION = "2.2"
 
 
 class GRETA:
@@ -36,3 +40,4 @@ class GRETA:
     FRAMEWORK_PURPOSE = "Skill"
     FRAMEWORK_LABEL = 'GRETA'
     LANGUAGE = "DE"
+    VERSION = "2.0"

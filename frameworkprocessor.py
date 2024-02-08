@@ -238,6 +238,7 @@ def generate_entry(framework, name, bc):
         "targetUrl": data["Uri"],
         "description": data["Description"],
         "type": config_data.FRAMEWORK_PURPOSE,
+        "educationalFramework_version": config_data.VERSION,
         }
 
     if config_data.FRAMEWORK_PURPOSE == "EducationalAlignment":
