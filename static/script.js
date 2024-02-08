@@ -568,8 +568,7 @@ function show_search_results(results){
 }
 
 function show_no_search_results(){
-
-    const container = document.getElementById('framework-structure');
+    const container = document.getElementById('search_results');
     clean_up(container);
 
     const text = document.createElement('p');
