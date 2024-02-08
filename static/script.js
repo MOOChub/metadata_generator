@@ -167,10 +167,9 @@ function clean_panels(){ // Needed to avoid confusion with the checkboxes -> bot
 
     const framework = document.getElementById('select-framework').value;
     build_expendable_tree(framework);
-
 }
 
-function build_expendable_tree(framework_name, showsSearch){
+function build_expendable_tree(framework_name){
     const framework_to_show = frameworks_complete.get(framework_name).top_level_entries;
     const container = document.getElementById('framework-structure');
 
@@ -179,10 +178,10 @@ function build_expendable_tree(framework_name, showsSearch){
     const framework_headline = document.getElementById('headline-framework');
     framework_headline.textContent = mapping_full_names.get(framework_name);
 
-    create_tree(container, framework_to_show, 0, showsSearch);
+    create_tree(container, framework_to_show, 0);
 }
 
-function create_tree(container, entries, counter, showSearch){
+function create_tree(container, entries, counter){
     const sub_container = document.createElement('div');
     sub_container.id = `sub_container${sep}${counter}`;
     sub_container.className = 'accordion';
@@ -225,7 +224,7 @@ function create_tree(container, entries, counter, showSearch){
 
             const body = document.createElement('div');
             body.className = "accordion-body";
-            create_tree(body, entry.sub_entries, counter, showSearch);
+            create_tree(body, entry.sub_entries, counter);
 
             collapse.appendChild(body);
             item.appendChild(collapse);
@@ -397,7 +396,7 @@ function reset_selection(){
 
     all_selected.clear();
     const framework = document.getElementById('select-framework').value;
-    build_expendable_tree(framework, false);
+    build_expendable_tree(framework);
     show_all_selected();
 }
 
