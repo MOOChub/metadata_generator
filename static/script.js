@@ -95,6 +95,10 @@ class Framework {
     }
 }
 
+function unify_name_style(name){
+    return name[0].toUpperCase() + name.slice(1,name.length).toLowerCase();
+}
+
 function download_all_frameworks(){
     const url = '/get_all_frameworks';
 
@@ -119,9 +123,7 @@ function process_all_fetched_frameworks(all_fetched_data){
     Array.from(Object.keys(all_fetched_data)).sort().forEach(framework => {
         frameworks_complete.set(framework, create_entries(framework, all_fetched_data[framework]["fields"]));
         mapping_full_names.set(framework, all_fetched_data[framework]["full_name"]);
-        //console.log(all_fetched_data[framework]["full_name"]);
     });
-    //console.log(mapping_full_names);
 }
 
 function create_entries(framework_name, framework_data){
@@ -201,7 +203,7 @@ function create_tree(container, entries, counter, showSearch){
             const btn = document.createElement('button');
             btn.className = "accordion-button collapsed";
             btn.type = "button";
-            btn.textContent = entry.name;
+            btn.textContent = unify_name_style(entry.name);
 
             btn.setAttribute("data-bs-toggle", "collapse");
             btn.setAttribute("data-bs-target", `#collapse-${name}${sep}${entry.level}`);
@@ -242,12 +244,23 @@ function create_tree(container, entries, counter, showSearch){
             };
 
             const label = document.createElement('label');
-            label.textContent = entry.name;
+            label.textContent = unify_name_style(entry.name);
 
-            const cbox_and_label = document.createElement('div');
-            cbox_and_label.appendChild(cbox);
-            cbox_and_label.appendChild(label);
-            sub_container.appendChild(cbox_and_label);
+            const c_box_col = document.createElement('div');
+            c_box_col.className = "col-1";
+            c_box_col.appendChild(cbox);
+
+            const label_col = document.createElement('div');
+            label_col.className = "col-11";
+            label_col.appendChild(label);
+
+            const cbox_label_row = document.createElement('div');
+            cbox_label_row.className = "row mb-3";
+
+            cbox_label_row.appendChild(c_box_col);
+            cbox_label_row.appendChild(label_col);
+
+            sub_container.appendChild(cbox_label_row);
         }
 
     });
@@ -347,7 +360,7 @@ function show_all_selected(){
         const list = document.createElement('ol');
         all_selected.get(framework).sort(compare_entries_by_name).forEach(entry => {
             const list_element = document.createElement('li');
-            list_element.textContent = entry.name;
+            list_element.textContent = unify_name_style(entry.name);
 
             list.appendChild(list_element);
         });
@@ -486,7 +499,6 @@ function add_results(results){
             frameworks_complete.get(results_name).top_level_entries.push(entry);
             temp.push(entry);
         });
-        //build_expendable_tree(results_name, true);
         show_search_results(temp);
     } else {
         show_no_search_results();
@@ -532,19 +544,27 @@ function show_search_results(results){
             set_checked_path(entry);
         }
 
+        const res_row = document.createElement('div');
+        res_row.className = "row mb-3";
+
+        const res_c_box_col = document.createElement('div');
+        res_c_box_col.className = "col-1";
+        res_c_box_col.appendChild(res_c_box);
+
         const res_text = document.createElement('label')
-        res_text.textContent = entry.name;
+        res_text.textContent = unify_name_style(entry.name);
 
-        const res_text_c_box = document.createElement('div');
-        res_text_c_box.appendChild(res_c_box);
-        res_text_c_box.appendChild(res_text);
+        const res_text_col = document.createElement('div');
+        res_text_col.className = "col-11";
+        res_text_col.appendChild(res_text);
 
-        result_text.appendChild(res_text_c_box);
+        res_row.appendChild(res_c_box_col);
+        res_row.appendChild(res_text_col);
 
+        result_text.appendChild(res_row);
 
         results_text.appendChild(result_text);
     });
-
 }
 
 function show_no_search_results(){
