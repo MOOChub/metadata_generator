@@ -460,11 +460,7 @@ function write_json(){
 }
 
 function start_search(){
-    conduct_search(search_field.value);
-}
-
-function conduct_search(query){
-    const url = '/conduct_search?query=' + query;
+    const url = '/conduct_search?query=' + search_field.value;
 
     fetch(url)
         .then(response => {
