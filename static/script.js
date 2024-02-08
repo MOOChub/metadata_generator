@@ -482,12 +482,8 @@ function conduct_search(query){
 }
 
 function add_results(results){
-    const results_name = 'Search results';
-
-    frameworks_complete.set(results_name, new Framework(results_name));
-
     results = JSON.parse(results);
-    const temp= [];
+    const entries = [];
 
     if(results["results"]){
         results["results"].forEach(result => {
@@ -496,10 +492,9 @@ function add_results(results){
 
             const entry = find_entry_by_name(name, frameworks_complete.get(framework).top_level_entries);
             found = null;
-            frameworks_complete.get(results_name).top_level_entries.push(entry);
-            temp.push(entry);
+            entries.push(entry);
         });
-        show_search_results(temp);
+        show_search_results(entries);
     } else {
         show_no_search_results();
     }
