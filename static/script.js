@@ -1,5 +1,6 @@
 const frameworks_complete = new Map();
 const all_selected = new Map();
+const mapping_full_names = new Map();
 const sep = '--';
 let found = null;
 const search_field = document.getElementById('search_bar');
@@ -116,8 +117,11 @@ function process_all_fetched_frameworks(all_fetched_data){
     all_fetched_data = JSON.parse(all_fetched_data);
 
     Array.from(Object.keys(all_fetched_data)).sort().forEach(framework => {
-        frameworks_complete.set(framework, create_entries(framework, all_fetched_data[framework]));
+        frameworks_complete.set(framework, create_entries(framework, all_fetched_data[framework]["fields"]));
+        mapping_full_names.set(framework, all_fetched_data[framework]["full_name"]);
+        //console.log(all_fetched_data[framework]["full_name"]);
     });
+    //console.log(mapping_full_names);
 }
 
 function create_entries(framework_name, framework_data){
@@ -171,7 +175,7 @@ function build_expendable_tree(framework_name, showsSearch){
     clean_up(container);
 
     const framework_headline = document.getElementById('headline-framework');
-    framework_headline.textContent = framework_name;
+    framework_headline.textContent = mapping_full_names.get(framework_name);
 
     create_tree(container, framework_to_show, 0, showsSearch);
 }

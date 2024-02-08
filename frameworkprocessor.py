@@ -129,7 +129,8 @@ def get_all_frameworks():
     all_frameworks = {}
 
     for framework in find_framework_files():
-        all_frameworks[framework] = get_all_fields(framework)
+        all_frameworks[framework] = {"fields": get_all_fields(framework),
+                                     "full_name": get_config_of(framework).FULL_NAME}
 
     return all_frameworks
 
