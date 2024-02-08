@@ -2,7 +2,7 @@ const frameworks_complete = new Map();
 const all_selected = new Map();
 const sep = '--';
 let found = null;
-const search_field = document.getElementById('search_text');
+const search_field = document.getElementById('search_bar');
 
 search_field.addEventListener('keydown' , function (event){
     if(event.key === 'Enter'){
@@ -153,6 +153,17 @@ function clean_up(element){
     });
 }
 
+function clean_panels(){ // Needed to avoid confusion with the checkboxes -> both, search and explor frameworks run on the same id -> seems to be the best solution, just to regenerate checkboxes everytime
+    const panel_search = document.getElementById('search_results');
+    clean_up(panel_search);
+    const panel_frameworks = document.getElementById('framework-structure');
+    clean_up(panel_frameworks);
+
+    const framework = document.getElementById('select-framework').value;
+    build_expendable_tree(framework);
+
+}
+
 function build_expendable_tree(framework_name, showsSearch){
     const framework_to_show = frameworks_complete.get(framework_name).top_level_entries;
     const container = document.getElementById('framework-structure');
@@ -162,44 +173,59 @@ function build_expendable_tree(framework_name, showsSearch){
     const framework_headline = document.getElementById('headline-framework');
     framework_headline.textContent = framework_name;
 
-    create_tree(container, framework_to_show, showsSearch);
+    create_tree(container, framework_to_show, 0, showsSearch);
 }
 
-function create_tree(container, entries, showsSearch){
-    const unordered_list = document.createElement('ul');
-    container.appendChild(unordered_list);
+function create_tree(container, entries, counter, showSearch){
+    const sub_container = document.createElement('div');
+    sub_container.id = `sub_container${sep}${counter}`;
+    sub_container.className = 'accordion';
 
     entries.forEach(entry => {
-        if(entry.level > 1 && !showsSearch){  // Only top-level categories shown at the beginning
-            unordered_list.style.display = 'none';
-        }
+        let name = entry.name.replace(/(\s|\(|\)|\/|;|,)/g, '_'); // spaces and special characters in the name crashes the collapse/de-collapse functionality!
 
-        if(entry.bc){
-            unordered_list.id = 'ul' + sep + entry.bc.name + sep + entry.level;
-        }else{
-            unordered_list.id = 'ul' + sep + 'null' + sep + entry.level;
-        }
+        if(entry.sub_entries.length > 0){
+            counter++;
 
-        const list_element = document.createElement('li');
-        list_element.id = 'list' + sep + entry.name + sep + entry.level;
+            const item = document.createElement('div');
+            item.className = "accordion-item";
 
-        if(entry.sub_entries.length > 0){ // only create buttons if there are sub-entries -> otherwise create checkboxes
-            const button = document.createElement('button');
-            button.id = 'c-element' + sep + entry.name + sep + entry.level;
-            button.className = 'append-button';
-            button.textContent = entry.name;
-            set_up_button(button);
+            const header = document.createElement('h2');
+            header.id = 'c-element' + sep + entry.name + sep + entry.level;
+            header.className = "accordion-header";
+
+            const btn = document.createElement('button');
+            btn.className = "accordion-button collapsed";
+            btn.type = "button";
+            btn.textContent = entry.name;
+
+            btn.setAttribute("data-bs-toggle", "collapse");
+            btn.setAttribute("data-bs-target", `#collapse-${name}${sep}${entry.level}`);
+            btn.setAttribute("aria-expanded", "false");
+            btn.setAttribute("aria-controls", `collapse-${name}${sep}${entry.level}`);
 
             if(entry.checked){
-                show_is_checked(button);
-            }else{
-                show_is_not_checked(button);
+                show_is_checked(header);
             }
 
-            list_element.appendChild(button);
-            unordered_list.appendChild(list_element);
+            header.appendChild(btn);
+            item.appendChild(header);
 
-            create_tree(unordered_list, entry.sub_entries, showsSearch);
+            const collapse = document.createElement('div');
+            collapse.id = `collapse-${name}${sep}${entry.level}`;
+            collapse.className = "accordion-collapse collapse";
+            collapse.setAttribute("aria-labelledby", `collapse-${name}${sep}${entry.level}`);
+            collapse.setAttribute("data-bs-parent", sub_container.id);
+
+            const body = document.createElement('div');
+            body.className = "accordion-body";
+            create_tree(body, entry.sub_entries, counter, showSearch);
+
+            collapse.appendChild(body);
+            item.appendChild(collapse);
+
+            sub_container.appendChild(item);
+
         } else {
             const cbox = document.createElement('input');
             cbox.type = 'checkbox';
@@ -214,22 +240,16 @@ function create_tree(container, entries, showsSearch){
             const label = document.createElement('label');
             label.textContent = entry.name;
 
-            list_element.appendChild(cbox);
-            list_element.appendChild(label);
-            unordered_list.appendChild(list_element);
+            const cbox_and_label = document.createElement('div');
+            cbox_and_label.appendChild(cbox);
+            cbox_and_label.appendChild(label);
+            sub_container.appendChild(cbox_and_label);
         }
+
     });
-}
 
-function set_up_button(button){
-    const nameparts = button.id.split(sep);
-    const name = nameparts[1];
-    const level = parseInt(nameparts[2]);
+    container.appendChild(sub_container);
 
-    button.onclick = function (){
-        const list = document.getElementById('ul' + sep + name + sep + (level + 1));
-        list.style.display = (list.style.display === 'none') ? 'block': 'none';
-    }
 }
 
 function mouseoverFunc(){
@@ -302,7 +322,7 @@ function list_selected_entries(entry){
         const index_to_remove = all_selected.get(framework_name).indexOf(entry);
         all_selected.get(framework_name).splice(index_to_remove, 1);
 
-        if(all_selected.get(framework_name).length === 0){ // otherwise the name of the framework does not disappear in the selected entries section
+        if(all_selected.get(framework_name).length === 0){ // otherwise the name of the framework does not disappear in the selected entries section upon deselecting the last remaining entry of that framework
             all_selected.delete(framework_name);
         }
     }
@@ -415,7 +435,7 @@ function write_json(){
                 document.getElementById("a1").remove();
             }
             link_for_download.click();
-            document.getElementById('row-1').appendChild(link_for_download);
+            document.getElementById('control-panel').appendChild(link_for_download);
         })
         .catch(error => {
            console.error(error);
@@ -450,6 +470,7 @@ function add_results(results){
     frameworks_complete.set(results_name, new Framework(results_name));
 
     results = JSON.parse(results);
+    const temp= [];
 
     if(results["results"]){
         results["results"].forEach(result => {
@@ -459,8 +480,10 @@ function add_results(results){
             const entry = find_entry_by_name(name, frameworks_complete.get(framework).top_level_entries);
             found = null;
             frameworks_complete.get(results_name).top_level_entries.push(entry);
+            temp.push(entry);
         });
-        build_expendable_tree(results_name, true);
+        //build_expendable_tree(results_name, true);
+        show_search_results(temp);
     } else {
         show_no_search_results();
     }
@@ -476,6 +499,48 @@ function find_entry_by_name(name, entries){
     }
 
     return found;
+}
+
+function show_search_results(results){
+    const results_text = document.getElementById('search_results');
+
+    clean_up(results_text);
+
+    results.forEach(entry => {
+        let result_text = document.getElementById(`result_text-${entry.framework}`);
+
+        if(!result_text) {
+            result_text = document.createElement('div');
+            result_text.id = `result_text-${entry.framework}`;
+
+            const headline = document.createElement('h2');
+            headline.textContent = entry.framework;
+
+            result_text.appendChild(headline);
+        }
+
+        const res_c_box = document.createElement('input');
+        res_c_box.id = 'c-element' + sep + entry.name + sep + entry.level
+        res_c_box.type = 'checkbox';
+        res_c_box.checked = entry.checked;
+
+        res_c_box.onclick = function () {
+            set_checked_path(entry);
+        }
+
+        const res_text = document.createElement('label')
+        res_text.textContent = entry.name;
+
+        const res_text_c_box = document.createElement('div');
+        res_text_c_box.appendChild(res_c_box);
+        res_text_c_box.appendChild(res_text);
+
+        result_text.appendChild(res_text_c_box);
+
+
+        results_text.appendChild(result_text);
+    });
+
 }
 
 function show_no_search_results(){
