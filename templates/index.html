@@ -33,6 +33,14 @@
                     <div class="tab-pane show active" id="search" role="tabpanel" aria-labelledby="search" aria-label="search">
                         <h3 class="my-2">Search for a competency of field of study:</h3>
                         <input id="search_bar" class="form-control me-2" type="search" placeholder="Search for ..." >
+                        <div class="form-check" id="search_domain">
+                            <div class="row" id="search_domain_row">
+                                <div class="col-3">
+                                    <input class="form-check-input active" type="radio" id="search_all" name="select_search" value="all" onchange="present_all_search_results()">
+                                    <label for="search_all" class="me-2">All frameworks</label>
+                                </div>
+                            </div>
+                        </div>
                         <div id="search_results">
 
                         </div>

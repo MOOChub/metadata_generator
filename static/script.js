@@ -111,6 +111,7 @@ function download_all_frameworks(){
         })
         .then(data => {
             process_all_fetched_frameworks(data);
+            build_search_limiter();
         })
         .catch(error => {
            console.error('Fetched error: ' + error);
@@ -555,6 +556,14 @@ function show_search_results(results){
 
         results_text.appendChild(result_text);
     });
+
+    const selected_button = document.querySelector('input[name="select_search"]:checked');
+
+    if(!selected_button || selected_button.value === "all"){
+        present_all_search_results();
+    }else{
+        present_selected_search_results(selected_button.value);
+    }
 }
 
 function show_no_search_results(){
@@ -610,4 +619,61 @@ function write_footer(){
     write_credits_footer();
     write_creator_footer();
     write_funding_footer();
+}
+
+function build_search_limiter(){
+    const div = document.getElementById('search_domain_row');
+
+    const frameworks = [...frameworks_complete.keys()];
+
+    frameworks.forEach(f => {
+        const radio_btn = document.createElement('input');
+        radio_btn.className = 'form-check-input';
+        radio_btn.type = 'radio';
+        radio_btn.id = `radio_btn-${f}`;
+        radio_btn.setAttribute('name', 'select_search');
+        radio_btn.setAttribute('value', `select_${f}`);
+        radio_btn.onchange = function (){
+            present_selected_search_results(f);
+        }
+
+        const radio_label = document.createElement('label');
+        radio_label.textContent = f;
+        radio_label.className = 'me-2';
+        radio_label.setAttribute('for', radio_btn.id);
+
+        const col = document.createElement('div');
+        col.className = "col-3";
+
+        col.appendChild(radio_btn);
+        col.appendChild(radio_label);
+
+        div.appendChild(col);
+    });
+}
+
+function present_all_search_results(){
+    const frameworks = [...frameworks_complete.keys()];
+
+    frameworks.forEach(f => {
+        const text = document.getElementById(`result_text-${f}`);
+        if(text){
+            text.style.display = 'block';
+        }
+    });
+}
+
+function present_selected_search_results(framework){
+    const frameworks = [...frameworks_complete.keys()];
+
+    frameworks.forEach(f => {
+        const text = document.getElementById(`result_text-${f}`);
+        if(text){
+            if(f === framework){
+                text.style.display = 'block';
+            }else{
+                text.style.display = 'none';
+            }
+        }
+    });
 }
