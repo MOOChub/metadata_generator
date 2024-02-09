@@ -11,7 +11,7 @@ search_field.addEventListener('keydown' , function (event){
     }
 });
 download_all_frameworks();
-
+write_footer();
 
 class Entry {
 
@@ -568,4 +568,46 @@ function show_no_search_results(){
 
     const framework_headline = document.getElementById('headline-framework');
     framework_headline.textContent = "Search results";
+}
+
+function write_credits_footer(){
+    fetch('/get_credits')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const credits_html = parser.parseFromString(data, 'text/html');
+
+            document.getElementById('credits').innerHTML = credits_html.getElementById('credits').innerHTML;
+
+    });
+}
+
+function write_funding_footer(){
+    fetch('/get_funding')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const funding_html = parser.parseFromString(data, 'text/html');
+
+            document.getElementById('funding').innerHTML = funding_html.getElementById('funding').innerHTML;
+
+    });
+}
+
+function write_creator_footer(){
+    fetch('/get_creators')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const creators_html = parser.parseFromString(data, 'text/html');
+
+            document.getElementById('creators').innerHTML = creators_html.getElementById('creators').innerHTML;
+
+    });
+}
+
+function write_footer(){
+    write_credits_footer();
+    write_creator_footer();
+    write_funding_footer();
 }

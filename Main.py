@@ -29,7 +29,7 @@ def index():
     """
     files = fp.find_framework_files()  # the names of the frameworks to be included in the initial dropdown menu
     docs = []
-    with open("documentation/documentation.txt", "r") as file:  # prepare the documentation file for the html
+    with open("documentation/documentation.html", "r") as file:  # prepare the documentation file for the html
         data = file.read().split("\n")
         for i in range(3, len(data)):
             docs.append(Markup(data[i]))
@@ -75,6 +75,27 @@ def conduct_search():
     results = json.dumps(results)  # Important! search method returns a list of dictionaries!
 
     return jsonify(results)
+
+
+@app.route('/get_credits')
+def get_credits():
+    with open('documentation/credits.html') as f:
+        credits_footer = f.read()
+    return credits_footer
+
+
+@app.route('/get_funding')
+def get_funding():
+    with open('documentation/funding.html') as f:
+        funding_footer = f.read()
+    return funding_footer
+
+
+@app.route('/get_creators')
+def get_creators():
+    with open('documentation/creators.html') as f:
+        creators_footer = f.read()
+    return creators_footer
 
 
 app.run()

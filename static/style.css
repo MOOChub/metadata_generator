@@ -1,3 +1,7 @@
+p, ul {
+    text-align: justify;
+}
+
 .accordion-button {
     transition: background-color 0.3s ease;
     background-color: transparent;
@@ -26,6 +30,11 @@
 
 .nav-link:hover {
     color: black;
+}
+
+.footer {
+    font-size: small;
+    background-color: lightgray;
 }
 
 #search_bar:focus {
