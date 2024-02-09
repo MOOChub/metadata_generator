@@ -513,7 +513,7 @@ function show_search_results(results){
 
     clean_up(results_text);
 
-    results.forEach(entry => {
+    results.sort(compare_entries_by_name).forEach(entry => {
         let result_text = document.getElementById(`result_text-${entry.framework}`);
 
         if(!result_text) {
