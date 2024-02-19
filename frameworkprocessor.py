@@ -37,7 +37,7 @@ Methods:
 import os
 import io
 import zipfile
-import config
+import config.development as config
 import json
 import numpy as np
 import pandas as pd
