@@ -10,6 +10,7 @@ search_field.addEventListener('keydown' , function (event){
         start_search();
     }
 });
+
 download_all_frameworks();
 write_footer();
 
@@ -50,7 +51,6 @@ class Entry {
         this._bc = bc;
     }
 
-
     get checked(){
         return this._checked;
     }
@@ -70,7 +70,6 @@ class Entry {
     printAllData(){
         //let data = `{"Name": "${this._name}", "BroaderConcept": "${this._bc.name}", "Level": ${this._level}, "Description": "${this._description}"}`;
         return `{"Name": "${this._name}", "BroaderConcept": "${this._bc.name}"}`;
-
     }
 }
 
@@ -266,7 +265,6 @@ function create_tree(container, entries, counter){
     });
 
     container.appendChild(sub_container);
-
 }
 
 function mouseoverFunc(){
@@ -587,7 +585,6 @@ function write_credits_footer(){
             const credits_html = parser.parseFromString(data, 'text/html');
 
             document.getElementById('credits').innerHTML = credits_html.getElementById('credits').innerHTML;
-
     });
 }
 
@@ -599,7 +596,6 @@ function write_funding_footer(){
             const funding_html = parser.parseFromString(data, 'text/html');
 
             document.getElementById('funding').innerHTML = funding_html.getElementById('funding').innerHTML;
-
     });
 }
 
@@ -611,7 +607,6 @@ function write_creator_footer(){
             const creators_html = parser.parseFromString(data, 'text/html');
 
             document.getElementById('creators').innerHTML = creators_html.getElementById('creators').innerHTML;
-
     });
 }
 

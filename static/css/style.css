@@ -2,6 +2,10 @@ p, ul {
     text-align: justify;
 }
 
+.btn{
+    background-color: lightgray;
+}
+
 .accordion-button {
     transition: background-color 0.3s ease;
     background-color: transparent;
