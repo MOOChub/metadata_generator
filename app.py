@@ -11,14 +11,10 @@ Methods:
 
     conduct_search(): Ask the query to the search engine and return the results to the client.
 """
-
-import json
-
-from flask import Flask, request, render_template, jsonify
-from utils import helper_build_webpage
+from flask import Flask, render_template
+from utils import helper_build_webpage, search_engine
 from controller.framework_controller import FrameworkController
 from controller.entry_controller import EntryController
-import search_engine
 
 app = Flask(__name__)
 
@@ -59,11 +55,7 @@ def conduct_search():
 
     :return: a JSON file with the search results
     """
-    query = request.args.get('query')
-    results = search_engine.search(query)
-    results = json.dumps(results)  # Important! search method returns a list of dictionaries!
-
-    return jsonify(results)
+    return search_engine.search()
 
 
 @app.route('/get_credits')

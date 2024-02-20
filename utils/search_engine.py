@@ -9,14 +9,18 @@ Methods:
 
 from fuzzywuzzy import fuzz
 import frameworkprocessor as fp
+from flask import request, jsonify
+import json
 
 
-def search(query):
+def search():
     """Search and return the best fitting competencies or fields of study (FoS) according to the query.
 
     :param query: the input string of which the search will look for similarities
     :return: a list of dictionaries with the relevant data for presenting the search results on the client side
     """
+    query = request.args.get('query')
+
     all_title_descriptions = fp.find_all_title_description()
 
     results = []
@@ -41,4 +45,4 @@ def search(query):
     if len(results) == 0:  # if the query results in an empty result list, None is returned
         results = None
 
-    return {"results": results}
+    return jsonify(json.dumps({"results": results}))
