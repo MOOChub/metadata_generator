@@ -16,9 +16,12 @@ import json
 
 from flask import Flask, request, send_file, render_template, jsonify, Markup
 import frameworkprocessor as fp
+from controller.framework_controller import FrameworkController
 import search_engine
 
 app = Flask(__name__)
+
+framework_controller = FrameworkController()
 
 
 @app.route('/')
@@ -43,10 +46,7 @@ def get_all_frameworks():
 
     :return: a JSON file containing the data of all frameworks
     """
-    all_frameworks = fp.get_all_frameworks()
-    all_frameworks = json.dumps(all_frameworks)
-
-    return jsonify(all_frameworks)
+    return framework_controller.get_all_frameworks()
 
 
 @app.route('/write_json', methods=['POST'])
