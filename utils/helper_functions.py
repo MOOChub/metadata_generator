@@ -127,3 +127,26 @@ def find_all_title_description():
         all_title_descriptions = all_title_descriptions + find_title_description(framework)
 
     return all_title_descriptions
+
+
+def extract_row(framework, name, bc):
+    data = framework[(framework["Name"] == name) & (framework["BroaderConcept"] == bc)].iloc[-1]
+    return data.replace({np.nan: None})
+
+
+def generate_names_of(language, name):
+    """Generate a list of sub-fragments containing the name of a competency of field of study (FoS) together with
+    the language decoded in compliance with BCP47 according to the MOOChub API v3.0.
+
+    :param name: the name of the competency or FoS in the respective language
+    :param language: the language in which the competency or FoS name is given
+    :return: a list containing the metadata fragments as dictionaries
+    """
+    all_names = list()
+
+    all_names.append({
+        "inLanguage": language,
+        "name": name,
+    })
+
+    return all_names

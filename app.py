@@ -14,9 +14,10 @@ Methods:
 
 import json
 
-from flask import Flask, request, send_file, render_template, jsonify, Markup
+from flask import Flask, request, render_template, jsonify, Markup
 import frameworkprocessor as fp
 from controller.framework_controller import FrameworkController
+from controller.entry_controller import EntryController
 import search_engine
 
 app = Flask(__name__)
@@ -56,12 +57,7 @@ def write_json():
 
     :return: a zip file with the respective metadata fragments
     """
-    received_fields = request.get_json()
-    buffer = fp.write_json(received_fields)
-    response = send_file(buffer, mimetype='application/zip')
-    response.headers['Content-Disposition'] = 'attachment; filename=download.zip'
-
-    return response
+    return EntryController().write_json()
 
 
 @app.route('/conduct_search')
