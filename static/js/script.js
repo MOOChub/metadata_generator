@@ -610,10 +610,38 @@ function write_creator_footer(){
     });
 }
 
+function write_howto(){
+    fetch('/get_howto')
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const howto_html = parser.parseFromString(data, 'text/html');
+
+            document.getElementById('howto').innerHTML = howto_html.getElementById('howto').innerHTML;
+    });
+}
+
+function build_select_bar(){
+    const select_bar = document.getElementById('select-framework');
+
+    fetch('get_framework_names')
+        .then(response => response.json())
+        .then(data => {
+            [...data["data"]].forEach(name => {
+                const opt = document.createElement('option');
+                opt.textContent = name;
+                opt.value = name;
+                select_bar.appendChild(opt);
+            });
+        });
+}
+
 function write_footer(){
     write_credits_footer();
     write_creator_footer();
     write_funding_footer();
+    write_howto();
+    build_select_bar();
 }
 
 function build_search_limiter(){

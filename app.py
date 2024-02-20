@@ -14,8 +14,7 @@ Methods:
 
 import json
 
-from flask import Flask, request, render_template, jsonify, Markup
-import frameworkprocessor as fp
+from flask import Flask, request, render_template, jsonify
 from utils import helper_build_webpage
 from controller.framework_controller import FrameworkController
 from controller.entry_controller import EntryController
@@ -32,14 +31,7 @@ def index():
 
     :return: the rendered starting page
     """
-    files = fp.find_framework_files()  # the names of the frameworks to be included in the initial dropdown menu
-    docs = []
-    with open("documentation/documentation.html", "r") as file:  # prepare the documentation file for the html
-        data = file.read().split("\n")
-        for i in range(3, len(data)):
-            docs.append(Markup(data[i]))
-            
-    return render_template('index.html', files=files, documentation=docs)
+    return render_template('index.html')
 
 
 @app.route('/get_all_frameworks')
@@ -87,6 +79,16 @@ def get_funding():
 @app.route('/get_creators')
 def get_creators():
     return helper_build_webpage.get_web_page_info('creators')
+
+
+@app.route('/get_howto')
+def get_howto():
+    return helper_build_webpage.get_web_page_info('howto')
+
+
+@app.route('/get_framework_names')
+def get_framework_names():
+    return helper_build_webpage.get_framework_names()
 
 
 app.run()
