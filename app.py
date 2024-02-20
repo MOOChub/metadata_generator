@@ -16,6 +16,7 @@ import json
 
 from flask import Flask, request, render_template, jsonify, Markup
 import frameworkprocessor as fp
+from utils import helper_build_webpage
 from controller.framework_controller import FrameworkController
 from controller.entry_controller import EntryController
 import search_engine
@@ -75,23 +76,17 @@ def conduct_search():
 
 @app.route('/get_credits')
 def get_credits():
-    with open('documentation/credits.html') as f:
-        credits_footer = f.read()
-    return credits_footer
+    return helper_build_webpage.get_web_page_info('credits')
 
 
 @app.route('/get_funding')
 def get_funding():
-    with open('documentation/funding.html') as f:
-        funding_footer = f.read()
-    return funding_footer
+    return helper_build_webpage.get_web_page_info('funding')
 
 
 @app.route('/get_creators')
 def get_creators():
-    with open('documentation/creators.html') as f:
-        creators_footer = f.read()
-    return creators_footer
+    return helper_build_webpage.get_web_page_info('creators')
 
 
 app.run()
