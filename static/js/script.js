@@ -12,7 +12,7 @@ search_field.addEventListener('keydown' , function (event){
 });
 
 download_all_frameworks();
-write_footer();
+build_web_interface();
 
 class Entry {
 
@@ -577,71 +577,36 @@ function show_no_search_results(){
     framework_headline.textContent = "Search results";
 }
 
-function write_credits_footer(){
-    fetch('/get_credits')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const credits_html = parser.parseFromString(data, 'text/html');
-
-            document.getElementById('credits').innerHTML = credits_html.getElementById('credits').innerHTML;
-    });
-}
-
-function write_funding_footer(){
-    fetch('/get_funding')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const funding_html = parser.parseFromString(data, 'text/html');
-
-            document.getElementById('funding').innerHTML = funding_html.getElementById('funding').innerHTML;
-    });
-}
-
-function write_creator_footer(){
-    fetch('/get_creators')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const creators_html = parser.parseFromString(data, 'text/html');
-
-            document.getElementById('creators').innerHTML = creators_html.getElementById('creators').innerHTML;
-    });
-}
-
-function write_howto(){
-    fetch('/get_howto')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const howto_html = parser.parseFromString(data, 'text/html');
-
-            document.getElementById('howto').innerHTML = howto_html.getElementById('howto').innerHTML;
-    });
-}
-
-function build_select_bar(){
+function build_select_bar_new(names){
     const select_bar = document.getElementById('select-framework');
 
-    fetch('get_framework_names')
-        .then(response => response.json())
-        .then(data => {
-            [...data["data"]].forEach(name => {
-                const opt = document.createElement('option');
-                opt.textContent = name;
-                opt.value = name;
-                select_bar.appendChild(opt);
-            });
-        });
+    names.forEach(name => {
+        const opt = document.createElement('option');
+        opt.textContent = name;
+        opt.value = name;
+        select_bar.appendChild(opt);
+    });
 }
 
-function write_footer(){
-    write_credits_footer();
-    write_creator_footer();
-    write_funding_footer();
-    write_howto();
-    build_select_bar();
+function build_parts(name, content){
+    const parser = new DOMParser();
+    const part_html = parser.parseFromString(content, 'text/html');
+    console.log(name);
+    document.getElementById(name).innerHTML = part_html.getElementById(name).innerHTML;
+}
+
+function build_web_interface(){
+    fetch('get_all_webpage_infos')
+        .then(response => response.json())
+        .then(data => {
+            for (const [key, value] of Object.entries(data)){
+                if(key === 'names'){
+                    build_select_bar_new(value);
+                }else {
+                    build_parts(key, value);
+                }
+            }
+        });
 }
 
 function build_search_limiter(){

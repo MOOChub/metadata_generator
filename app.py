@@ -58,29 +58,9 @@ def conduct_search():
     return search_engine.search()
 
 
-@app.route('/get_credits')
-def get_credits():
-    return helper_build_webpage.get_web_page_info('credits')
-
-
-@app.route('/get_funding')
-def get_funding():
-    return helper_build_webpage.get_web_page_info('funding')
-
-
-@app.route('/get_creators')
-def get_creators():
-    return helper_build_webpage.get_web_page_info('creators')
-
-
-@app.route('/get_howto')
-def get_howto():
-    return helper_build_webpage.get_web_page_info('howto')
-
-
-@app.route('/get_framework_names')
-def get_framework_names():
-    return helper_build_webpage.get_framework_names()
+@app.route('/get_all_webpage_infos')
+def get_all_webpage_infos():
+    return helper_build_webpage.get_all_infos_webpage()
 
 
 app.run()
