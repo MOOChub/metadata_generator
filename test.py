@@ -3,8 +3,7 @@ import os
 import requests
 import pandas as pd
 import config_handler
-import frameworkprocessor
-
+from utils import helper_functions
 error_log = []
 
 url = "http://localhost:5000/add_field"
@@ -15,7 +14,7 @@ for file in os.listdir("frameworks"):
     path = os.path.join("frameworks", file)
     data = pd.read_csv(path, sep=";", header=0)
 
-    framework = frameworkprocessor.FrameworkProcessor.remove_file_ending(file)
+    framework = helper_functions.remove_file_ending(file)
     config = config_handler.get_config_processor_by_framework(framework)
 
     level = config.NUMBER_OF_LEVELS

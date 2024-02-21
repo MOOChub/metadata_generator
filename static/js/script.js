@@ -591,7 +591,6 @@ function build_select_bar_new(names){
 function build_parts(name, content){
     const parser = new DOMParser();
     const part_html = parser.parseFromString(content, 'text/html');
-    console.log(name);
     document.getElementById(name).innerHTML = part_html.getElementById(name).innerHTML;
 }
 
