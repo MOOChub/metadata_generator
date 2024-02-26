@@ -23,7 +23,7 @@
                         <a class="nav-link active" id="search_tab" data-bs-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="true">Search Frameworks</a>
                     </li>
                     <li>
-                        <a class="nav-link" id="frameworks_tab" data-bs-toggle="tab" href="#frameworks" role="tab" aria-controls="frameworks" aria-selected="false" onclick="clean_panels()">Explore Frameworks</a>
+                        <a class="nav-link" id="frameworks_tab" data-bs-toggle="tab" href="#frameworks" role="tab" aria-controls="frameworks" aria-selected="false">Explore Frameworks</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="all_tab_content">
@@ -33,7 +33,7 @@
                         <div class="form-check" id="search_domain">
                             <div class="row" id="search_domain_row">
                                 <div class="col-3">
-                                    <input class="form-check-input active" type="radio" id="search_all" name="select_search" value="all" onchange="present_all_search_results()">
+                                    <input class="form-check-input active" type="radio" id="search_all" name="select_search" value="all">
                                     <label for="search_all" class="me-2">All frameworks</label>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                                 <label for="select-framework">Select a Framework</label>
                             </div>
                             <div class="col-4">
-                                <select id="select-framework" name="framework" onchange="build_expendable_tree(this.value)">
+                                <select id="select-framework" name="framework">
                                 </select>
                             </div>
                         </div>
@@ -62,10 +62,10 @@
             <div class="col-3">
                 <div class="row" id="control-panel">
                     <div class="col-5">
-                        <button id="write_json_button" class="btn" disabled="disabled" onclick="write_json()">Write JSON</button>
+                        <button id="write_json_button" class="btn" disabled="disabled">Write JSON</button>
                     </div>
                     <div class="col-4">
-                        <button id="reset_button" class="btn" onclick="reset_selection()">Reset</button>
+                        <button id="reset_button" class="btn">Reset</button>
                     </div>
                 </div>
                 <div class="row">
@@ -91,6 +91,6 @@
         </div>
     </footer>
 <script src="/static/js/bootstrap.js"></script>
-<script src="/static/js/script.js"></script>
+<script src="/static/js/script.js" type="module"></script>
 </body>
 </html>
