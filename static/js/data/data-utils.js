@@ -1,5 +1,5 @@
 import {all_selected, frameworks_complete, mapping_full_names} from "../utils/helper.js";
-import {show_all_selected} from "../ui/ui-handler.js";
+import {show_all_selected, show_no_search_results, show_search_results} from "../ui/ui-handler.js";
 import {build_expendable_tree} from "../ui/ui-utils.js";
 import {Entry, Framework} from "./data-models.js";
 
@@ -93,4 +93,40 @@ function iterate_through_framework(entry, forgoing_entries){
             iterate_through_framework(entry, forgoing.sub_entries);
         }
     });
+}
+
+export function prepare_data_to_send(){
+        let data_to_send = '';
+
+    for(const [key, value] of all_selected){ // converting the map with the array of entries (objects!) into a JSON-like string.
+        let temp = '[';
+        for(const e of value){
+            temp += e.printAllData() + ', ';
+        }
+
+        temp = temp.slice(0,-2);
+        temp += ']';
+
+        data_to_send += `"${key}": ${temp}, `;
+    }
+    data_to_send = data_to_send.slice(0,-2);
+    data_to_send = data_to_send.replace(/'/g, '"');
+    return JSON.parse(`{${data_to_send}}`); // parsing the JSON-like string into a JSON object for sending
+}
+
+export function add_results(results){
+    results = JSON.parse(results);
+    const entries = [];
+
+    if(results["results"]){
+        results["results"].forEach(result => {
+            const framework = result["framework"];
+            const name = result["title"];
+
+            find_entry_by_name(name, frameworks_complete.get(framework).top_level_entries, entries);
+        });
+        show_search_results(entries);
+    } else {
+        show_no_search_results();
+    }
 }

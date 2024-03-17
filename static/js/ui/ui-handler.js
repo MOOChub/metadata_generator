@@ -198,17 +198,14 @@ export function show_all_selected(){
     document.getElementById('write_json_button').disabled = (container.children.length === 0);
 }
 
-export function create_tree(container, entries, counter){
+export function create_tree(container, entries){
     const sub_container = document.createElement('div');
-    sub_container.id = `sub_container${sep}${counter}`;
     sub_container.className = 'accordion';
 
     entries.forEach(entry => {
         let name = entry.name.replace(/(\s|\(|\)|\/|;|,)/g, '_'); // spaces and special characters in the name crashes the collapse/de-collapse functionality!
 
         if(entry.sub_entries.length > 0){
-            counter++;
-
             const item = document.createElement('div');
             item.className = "accordion-item";
 
@@ -241,7 +238,7 @@ export function create_tree(container, entries, counter){
 
             const body = document.createElement('div');
             body.className = "accordion-body";
-            create_tree(body, entry.sub_entries, counter);
+            create_tree(body, entry.sub_entries);
 
             collapse.appendChild(body);
             item.appendChild(collapse);
@@ -278,7 +275,6 @@ export function create_tree(container, entries, counter){
 
             sub_container.appendChild(cbox_label_row);
         }
-
     });
 
     container.appendChild(sub_container);
@@ -298,4 +294,18 @@ function setup_select_framework(){
     select.onchange = function (){
         build_expendable_tree(select.value);
     }
+}
+
+export function build_download_link(data){
+    const link_for_download = document.createElement('a');
+    link_for_download.id = "a1";
+    link_for_download.textContent = "If download does not start automatically, click this link.";
+    link_for_download.href = URL.createObjectURL(data);
+    link_for_download.download = 'download.zip';
+
+    if (document.getElementById("a1")){
+        document.getElementById("a1").remove();
+    }
+    link_for_download.click();
+    document.getElementById('control-panel').appendChild(link_for_download);
 }
