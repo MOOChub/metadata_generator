@@ -1,25 +1,37 @@
+"""
+The helper_functions.py modul contains the helper method for different purposes.
+
+They are mainly intended for processing the framework data.
+
+Methods:
+    remove_file_ending(file_name): Remove the .csv at the end of a csv file.
+
+   find_framework_folder(): Find the folder the framework files are in.
+
+   find_framework_files(): Find teh names of the frameworks of the files in the designated folder by removing the file
+   ending.
+
+   find_all_data(framework): Retrieve all data from a single framework without further processing.
+
+   get_all_fields(framework): Get the relevant data from a single framework for the presentation on the clientside.
+
+   get_all_frameworks(): Find all relevant data for the presentation on the clientside.
+
+   find_title_description(framework): Find the relevant data of a single, defined framework for the search.
+
+   find_all_title_description(): Find all relevant data from all the frameworks for further processing in the fuzzy
+   search.
+
+   extract_row(framework, name, bc): Extract a by name and broader concept defied row of the defined framework.
+
+   generate_names_of(language, name): Generate a list of sub-fragments containing the name of a competency of field of
+   study (FoS) together with the language decoded in compliance with BCP47 according to the MOOChub API v3.0.
+"""
+
 import os
 import pandas as pd
 import numpy as np
-import config.development as config
-
-
-def get_config_of(framework):
-    """Return the configuration data of a defined framework as an object.
-
-    :param framework: the name of the framework for which the configuration data will be returned
-    :return: an object with the framework's configuration data
-    """
-    if framework == "OEFOS":
-        return config.OEFOS
-    elif framework == "ESCO":
-        return config.ESCO
-    elif framework == "ISCED-F":
-        return config.ISCEDF
-    elif framework == "DigComp":
-        return config.DigComp
-    elif framework == "GRETA":
-        return config.GRETA
+from utils import config_helper
 
 
 def remove_file_ending(file_name):
@@ -28,7 +40,7 @@ def remove_file_ending(file_name):
     :param file_name: the complete file name including the filename extension
     :return: the name of the file without the filename extension
     """
-    return file_name.replace('.csv', '')  # only works for csv so far, could be extended with another logic...
+    return file_name.replace('.csv', '')  # only works for csv so far, could be extended with another logic if needed...
 
 
 def find_framework_folder():
@@ -36,7 +48,7 @@ def find_framework_folder():
 
     :return: the properly formatted path to the framework folder
     """
-    return os.path.join(os.path.dirname(__file__), '../frameworks')  # TODO: path could be moved to a general config
+    return os.path.join(os.path.dirname(__file__), '../frameworks')  # path could be moved to a general config
 
 
 def find_framework_files():
@@ -77,7 +89,8 @@ def get_all_fields(framework):
         bc = row["BroaderConcept"]
         description = row["Description"]
 
-        all_fields.append({"Name": name, "Level": level, "BroaderConcept": bc, "Description": description})
+        all_fields.append({"Name": name, "Level": level, "BroaderConcept": bc, "Description": description, 'id': None})
+        # id is currently introduced to get a solution with APIs
 
     return all_fields
 
@@ -91,7 +104,7 @@ def get_all_frameworks():
 
     for framework in find_framework_files():
         all_frameworks[framework] = {"fields": get_all_fields(framework),
-                                     "full_name": get_config_of(framework).FULL_NAME}
+                                     "full_name": config_helper.get_config_by_name(framework)['FULL_NAME']}
 
     return all_frameworks
 
@@ -124,12 +137,20 @@ def find_all_title_description():
 
     all_title_descriptions = []
     for framework in frameworks:
-        all_title_descriptions = all_title_descriptions + find_title_description(framework)
+        if framework != 'CoKoMo':
+            all_title_descriptions = all_title_descriptions + find_title_description(framework)
 
     return all_title_descriptions
 
 
 def extract_row(framework, name, bc):
+    """Extract a by name and broader concept defied row of the defined framework.
+
+    :param framework: The framework from which the row is extracted
+    :param name: The name of the entry
+    :param bc: The broader concept of the entry
+    :return: The row as specified by framework, name and broader concept
+    """
     data = framework[(framework["Name"] == name) & (framework["BroaderConcept"] == bc)].iloc[-1]
     return data.replace({np.nan: None})
 

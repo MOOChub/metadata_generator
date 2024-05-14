@@ -1,52 +1,49 @@
 """
-The app.py module with the Flask application to organize the communication from the server side.
+The app.py contains initial Flask app. This is the entry point for all further interaction.
+
+Here, all routes are listed.
 
 Methods:
-    index(): Show the initial web page.
+    find_path_to_folder(): Find the path to the folder where the documentation information is stored.
 
-    get_all_frameworks(): Gather all frameworks data and return them to the client.
+    get_web_page_info(about): Get the information of a specific part of the documentation.
 
-    write_json(): Take all received competencies and fields of study (FoS) and generate a zip file containing the
-    respective metadata fragments according to the MOOChub API v3.0.
-
-    conduct_search(): Ask the query to the search engine and return the results to the client.
+    get_all_infos_webpage(): Get the documentation information of all parts of the website.
 """
-from flask import Flask, render_template
-from utils import helper_build_webpage, search_engine
-from controller.framework_controller import FrameworkController
+
+from flask import Flask, jsonify, render_template, request
+from utils import config_helper, webpage_helper, search_engine, helper_functions
 from controller.entry_controller import EntryController
 
-app = Flask(__name__)
 
-framework_controller = FrameworkController()
+app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    """Show the initial web page.
+    """Render the website.
 
-    :return: the rendered starting page
+    :return:
     """
     return render_template('index.html')
 
 
-@app.route('/get_all_frameworks')
-def get_all_frameworks():
-    """Gather all frameworks data and return them to the client.
+@app.route('/get_all_configs')
+def get_all_configs():
+    """Get all configuration information and return it to the website.
 
-    :return: a JSON file containing the data of all frameworks
+    :return: A JSON that contains all configuration data
     """
-    return framework_controller.get_all_frameworks()
+    return jsonify(config_helper.get_all_configs())
 
 
-@app.route('/write_json', methods=['POST'])
-def write_json():
-    """Take all received competencies and fields of study (FoS) and generate a zip file containing the respective
-    metadata fragments according to the MOOChub API v3.0.
+@app.route('/get_all_webpage_infos')
+def get_all_webpage_infos():
+    """Get all information for the website like a How-To text, imprint, credits, ... etc.
 
-    :return: a zip file with the respective metadata fragments
+    :return: A JSON containing all information for the website
     """
-    return EntryController().write_json()
+    return jsonify(webpage_helper.get_all_infos_webpage())
 
 
 @app.route('/conduct_search')
@@ -55,12 +52,26 @@ def conduct_search():
 
     :return: a JSON file with the search results
     """
-    return search_engine.search()
+    return jsonify(search_engine.search(request.args.get('query')))
 
 
-@app.route('/get_all_webpage_infos')
-def get_all_webpage_infos():
-    return helper_build_webpage.get_all_infos_webpage()
+@app.route('/get_framework')
+def get_framework():
+    """Get all entries of specified framework and return them to the website.
+
+    :return: A JSON containing all entries of a framework
+    """
+    return jsonify(helper_functions.get_all_fields(request.args.get('framework')))
+
+
+@app.route('/write_json', methods=['POST'])
+def write_json():
+    """Write the JSON file containing all selected entries, pack it into a ZIP file and return it to the website for
+    download by the user.
+
+    :return: A ZIP file containing the JSON file(s) with the selected entries
+    """
+    return EntryController().write_json()
 
 
 app.run()

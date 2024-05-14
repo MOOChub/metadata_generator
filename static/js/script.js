@@ -1,48 +1,7 @@
-import {download_all_frameworks} from "./data/data-service.js";
+import {get_all_configs} from "./initialization/config_handler.js";
 
 function initialize(){
-    download_all_frameworks();
+    get_all_configs();
 }
 
-document.addEventListener('DOMContentLoaded', initialize)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.addEventListener('DOMContentLoaded', initialize);

@@ -1,3 +1,7 @@
+/**
+ * This is the internal, client-side Entry object for internal storage of
+ * data regarding the entry.
+ */
 export class Entry {
 
     _sub_entries = [];
@@ -54,26 +58,5 @@ export class Entry {
     printAllData(){
         //let data = `{"Name": "${this._name}", "BroaderConcept": "${this._bc.name}", "Level": ${this._level}, "Description": "${this._description}"}`;
         return `{"Name": "${this._name}", "BroaderConcept": "${this._bc.name}"}`;
-    }
-}
-
-export class Framework {
-
-    _top_level_entries = [];
-
-    constructor(name) {
-        this._name = name;
-    }
-
-    get name(){
-        return this._name;
-    }
-
-    get top_level_entries(){
-        return this._top_level_entries;
-    }
-
-    add_entry(entry){
-        this._top_level_entries.push(entry);
     }
 }

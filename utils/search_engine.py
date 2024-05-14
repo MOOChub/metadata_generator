@@ -9,17 +9,13 @@ Methods:
 
 from fuzzywuzzy import fuzz
 from utils import helper_functions
-from flask import request, jsonify
-import json
 
 
-def search():
+def search(query):
     """Search and return the best fitting competencies or fields of study (FoS) according to the query.
 
     :return: a list of dictionaries with the relevant data for presenting the search results on the client side
     """
-    query = request.args.get('query')
-
     all_title_descriptions = helper_functions.find_all_title_description()
 
     results = []
@@ -44,4 +40,4 @@ def search():
     if len(results) == 0:  # if the query results in an empty result list, None is returned
         results = None
 
-    return jsonify(json.dumps({"results": results}))
+    return results
