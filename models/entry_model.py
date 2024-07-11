@@ -34,8 +34,10 @@ class EntryModel:
     the provided framework data.
     """
     def __init__(self, framework_name):
-        self.framework_name = framework_name
+
         self.config = config_helper.get_config_by_name(framework_name, 'config.development')
+        self.framework_name = self.config['FRAMEWORK_LABEL'] # The internal framework name is sometimes different to the
+        # label! But the label
         self.framework = None
 
         if not self.config['API_SEARCH']:  # The following part only works with local frameworks, not APIs!
