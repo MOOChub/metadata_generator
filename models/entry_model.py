@@ -20,7 +20,7 @@ class Entry:
         self.educationalFramework = educational_framework
         self.url = url
         self.shortCode = str(short_code)
-        self.alternativeName = alternative_names_list
+        self.alternateName = alternative_names_list
         self.targetUrl = target_url
         self.description = description
         self.type = entry_type
