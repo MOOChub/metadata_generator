@@ -6,10 +6,10 @@ import {build_download_link} from "../ui/ui_handler_selected.js";
  * This function contacts the endpoint to create the ZIP file containing the JSON file(s) with the selected entries.
  */
 export function write_json(){
-    const url = '/write_json';
+    const url = '/write_zip_file';
 
     const data_to_send = prepare_data_to_send();
-
+    console.log(data_to_send)
     fetch(url,{
         method: 'POST',
         headers: {

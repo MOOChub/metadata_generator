@@ -7,7 +7,8 @@ import json
 
 class EntryController:
     """The EntryController prepares all from the client passed entries and returns the
-    zip file. The header of the response is set accordingly.
+    selected entries as a JSON-like string or zip file. The header of the response is
+    set accordingly.
     """
     def __init__(self):
         self.all_data_fos = list()
@@ -18,8 +19,8 @@ class EntryController:
         as a dictionary with the keys representing the framework and the values are lists
         of the entries selected per framework.
 
-        :return: a zip file containing the JSON fragments for the attributes 'teaches' and
-        'educationalAlignment' as defined by the MOOChub format V3
+        :return: two JSON-like strings containing the JSON fragments for the attributes
+        'teaches' and 'educationalAlignment' as defined by the MOOChub format V3
         """
         data = request.get_json()  # received data via a POST as JSON containing all selected entries
 
@@ -37,8 +38,19 @@ class EntryController:
                 else:
                     self.all_data_skills.append(entry)
 
-        all_data_skills = json.dumps(self.all_data_skills).encode()
-        all_data_fos = json.dumps(self.all_data_fos).encode()
+        return json.dumps({"Skills": self.all_data_skills, "FOS": self.all_data_fos})
+
+    def write_zip_file(self):
+        """This function returns the selected entries as a zip file. The selected
+        entries are caught from a POST. The write_json function will be called
+        first. This functions will write the JSON-like strings into a zip file.
+
+        :return: a zip file containing the JSON fragments for the attributes
+        'teaches' and 'educationalAlignment' as defined by the MOOChub format V3
+        """
+        all_data = json.loads(self.write_json())
+        all_data_skills, all_data_fos = json.dumps(all_data["Skills"]), json.dumps(all_data["FOS"])
+        all_data_skills, all_data_fos = all_data_skills.encode(), all_data_fos.encode()
 
         data_file = io.BytesIO()
 

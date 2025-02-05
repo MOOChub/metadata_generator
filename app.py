@@ -64,12 +64,21 @@ def get_framework():
     return jsonify(helper_functions.get_all_fields(request.args.get('framework')))
 
 
-@app.route('/write_json', methods=['POST'])
-def write_json():
+@app.route('/write_zip_file', methods=['POST'])
+def write_zip_file():
     """Write the JSON file containing all selected entries, pack it into a ZIP file and return it to the website for
     download by the user.
 
     :return: A ZIP file containing the JSON file(s) with the selected entries
+    """
+    return EntryController().write_zip_file()
+
+
+@app.route('/write_json', methods=['POST'])
+def write_json():
+    """Write the JSON file containing all selected entries and return it to the user.
+
+    :return: two JSON-like strings file containing the JSON file(s) with the selected entries
     """
     return EntryController().write_json()
 
