@@ -70,8 +70,9 @@ def find_all_data(framework):
     path = find_framework_folder()
     path = os.path.join(path, framework + ".csv")
 
-    return pd.read_csv(path, sep=";", header=0)  # TODO: change dtype to string! This will lead to some problems! Fix needed!
-    # TODO: If not fixed leading zeros in e.g ISCED-F short codes will be lost!
+    data = pd.read_csv(path, sep=";", usecols=["Name", "ShortCode", "Description", "Uri", "BroaderConcept"], dtype=str)
+    data["Level"] = pd.read_csv(path, sep=";", usecols=["Level"])
+    return data
 
 
 def get_all_fields(framework):
