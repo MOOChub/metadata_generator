@@ -1,0 +1,490 @@
+competence,level,level_name,description
+1.1,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify my information needs, find data, information and content through a simple search in digital environments, 
+ find how to access these data, information and content and navigate between them,
+ identify simple personal search strategies.
+"
+1.1,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify my information needs, 
+ find data, information and content through a simple search in digital environments, 
+ find how to access these data, information and content and navigate between them.
+ identify simple personal search strategies."
+1.1,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  explain my information needs, 
+ perform well-defined and routine searches to find data, information and content in digital environments, 
+ explain how to access them and navigate between them,
+ explain well-defined and routine personal search strategies.
+"
+1.1,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  illustrate information needs, 
+ organise the searches of data, information and content in digital environments,
+ describe how to access these data, information and content, and navigate between them,
+ organise personal search strategies."
+1.1,5,ADVANCED,"As well as guiding others, I can:  respond to information needs, 
+ apply searches to obtain data, information and content in digital environments, 
+ show how to access these data, information and content and navigate between them.
+ propose personal search strategies.
+"
+1.1,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  assess information needs, 
+ adapt my searching strategy to find the most appropriate data, information and content in digital environments, 
+ explain how to access these most appropriate data, information and content and navigate among them,
+ vary personal search strategies."
+1.1,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to browsing, searching and filtering of data, information and digital content,
+
+ integrate my knowledge to contribute to professional practice and knowledge  and guide others in browsing, searching and filtering data, information and digital content.
+"
+1.1,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to browsing, searching and filtering data, information and digital content.
+ propose new ideas and processes to the field."
+1.2,1,FOUNDATION,"At basic level and with 
+guidance, I can:  detect the credibility and reliability of common sources of data, information and their digital content.
+"
+1.2,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  detect the credibility and reliability of common sources of data, information and their digital content."
+1.2,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  perform the analysis, comparison and evaluation of the credibility and reliability of well-defined sources of data, information and digital content.
+ perform the analysis, interpretation and evaluation of well-defined data, information and digital content
+"
+1.2,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  perform the analysis, comparison and evaluation of sources of data, information and digital content.
+ perform the analysis, interpretation and evaluation of data, information and digital content."
+1.2,5,ADVANCED,"As well as guiding others, I can:  carry out an evaluation of the credibility and reliability of different sources of data, information and digital content.
+ carry out an evaluation of different data, information and digital content.
+"
+1.2,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  critically assess the credibility and reliability of sources of data, information and digital content.
+ critically assess data, information and digital content."
+1.2,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to analysing and evaluating credible and reliable sources of data, information and content in digital environments.
+ integrate my knowledge to contribute to professional practices and knowledge and to guide others in the analysis and evaluation of the credibility and reliability of data, information and digital content and their sources.
+"
+1.2,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to analysing and evaluating credible and reliable sources of data, information and content in digital environments.
+ propose new ideas and processes to the field."
+1.3,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify how to organise, store and retrieve data, information and content in a simple way in digital environments.
+ recognise where to organise them in a simple way in a structured environment.
+"
+1.3,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify how to organise, store and retrieve data, information and content in a simple way in digital environments.
+ recognise where to organise them in a simple way in a structured environment."
+1.3,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  select data, information and content in order to organise, store and retrieve them in a routine way in digital environments.
+ organise them in a routine way in a structured environment.
+"
+1.3,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can: 
+ organise information, data and content to be easily stored and retrieved.
+ organise information, data and content in a structured environment."
+1.3,5,ADVANCED,"As well as guiding others, I can:  manipulate information, data and content for their easier organisation, storage and retrieval.
+ carry out their organisation and processing in a structured environment.
+"
+1.3,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  adapt the management of information, data and content for the most appropriate easy retrieval and storage.
+ adapt them to be organised and processed in the most appropriate structured environment."
+1.3,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to managing data, information, and content for their organisation, storage and retrieval in a structured digital environment.
+ integrate my knowledge to contribute to professional practices and knowledge and to guide others in managing data, information and digital content in a structured digital environment.
+"
+1.3,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to managing data, information, and content for their organisation, storage and retrieval in a structured digital environment.
+ propose new ideas and processes to the field."
+2.1,1,FOUNDATION,"At basic level and with 
+guidance, I can:  select simple digital technologies to interact, and
+ identify appropriate simple communication means for a given context.
+"
+2.1,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  select simple digital technologies to interact, and
+ identify appropriate simple communication means for a given context."
+2.1,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  perform well-defined and routine interactions with digital technologies, and
+ select well-defined and routine appropriate digital communication means for a given context.
+"
+2.1,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can: 
+ select a variety of digital technologies to interact, and
+ select a variety of appropriate digital communication means for a given context."
+2.1,5,ADVANCED,"As well as guiding others, I can:  use a variety of digital technologies in order to interact,
+ show others the most appropriate digital communication means for a given context
+"
+2.1,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can: 
+ adapt a variety of digital technologies for the most appropriate interaction, and
+ adapt the most appropriate communication means for a given context."
+2.1,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to interacting through digital technologies and digital communication means.
+ integrate my knowledge to contribute to professional practices and knowledge and to guide others in the interaction through digital technologies.
+"
+2.1,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to interacting through digital technologies and digital communication means
+ propose new ideas and processes to the field."
+2.2,1,FOUNDATION,"At basic level and with 
+guidance, I can:  recognise simple appropriate digital technologies to share data, information and digital content.
+ identify simple referencing and attribution practices.
+"
+2.2,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  recognise simple appropriate digital technologies to share data, information and digital content.
+ identify simple referencing and attribution practices."
+2.2,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  select well-defined and routine appropriate digital technologies to share data, information and digital content.
+ explain how to act as an intermediary for sharing information and content through well-defined and routine digital technologies,
+ illustrate well-defined and routine referencing and attribution practices.
+"
+2.2,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  manipulate appropriate digital technologies to share data, information and digital content.
+ explain how to act as an intermediary for sharing information and content through digital technologies,
+ illustrate referencing and attribution practices."
+2.2,5,ADVANCED,"As well as guiding others, I can:  share data, information and digital content through a variety of appropriate digital tools,
+ show others how to act as an intermediary for sharing information and content through digital technologies.
+ apply a variety of referencing and attribution practices.
+"
+2.2,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  assess the most appropriate digital technologies to share information and content.
+ adapt my intermediation role,
+ vary the use of the more appropriate referencing and attribution practices."
+2.2,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to sharing through digital technologies.
+ integrate my knowledge to contribute to professional practices and knowledge and guide others in sharing through digital technologies.
+"
+2.2,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to sharing through digital technologies.
+ propose new ideas and processes to the field."
+2.3,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify simple digital services in order to participate in society.
+ recognise simple appropriate digital technologies to empower myself and to participate in society as a citizen.
+"
+2.3,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify simple digital services in order to participate in society.
+ recognise simple appropriate digital technologies to empower myself and to participate in society as a citizen."
+2.3,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  select well-defined and routine digital services in order to participate in society.
+ indicate well-defined and routine appropriate digital technologies to empower myself and to participate in society as a citizen.
+"
+2.3,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  select digital services in order to participate in society.
+ discuss appropriate digital technologies to empower myself and to participate in society as a citizen."
+2.3,5,ADVANCED,"As well as guiding others, I can:  propose different digital services to participate in society.
+ use appropriate digital technologies to empower myself and to participate in society as a citizen.
+"
+2.3,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  vary the use of the most appropriate digital services in order to participate in society.
+ vary the use of the most appropriate digital technologies to empower myself and to participate in society as a citizen."
+2.3,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to engaging in citizenship through digital technologies.
+ integrate my knowledge to contribute to professional practices and knowledge and guide others in engaging in citizenship through digital technologies.
+"
+2.3,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to engaging in citizenship through digital technologies.
+ propose new ideas and processes to the field."
+2.4,1,FOUNDATION,"At basic level and with 
+guidance, I can:  choose simple digital tools and technologies for collaborative processes.
+"
+2.4,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can: 
+ choose simple digital tools and technologies for collaborative processes."
+2.4,3,INTERMEDIATE,"On my own and solving straightforward problems, I can: 
+ select well-defined and routine digital tools and technologies for collaborative processes.
+"
+2.4,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can: 
+ select digital tools and technologies for collaborative processes."
+2.4,5,ADVANCED,"As well as guiding others, I can:  propose different digital tools and technologies for collaborative processes.
+"
+2.4,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  vary the use of the most appropriate digital tools and technologies for collaborative processes.
+ choose the most appropriate digital tools and technologies for co-constructing and co-creating data, resources and knowledge."
+2.4,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   vary the use of the most appropriate digital tools and technologies for collaborative processes.
+ choose the most appropriate digital tools and technologies for co-constructing and co-creating data, resources and knowledge.
+"
+2.4,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to using collaborative processes and co-construction and co-creation of data, resources and knowledge through digital tools and technologies.
+ propose new ideas and processes to the field."
+2.5,1,FOUNDATION,"At basic level and with 
+guidance, I can:  differentiate simple behavioural norms and know-how while using digital technologies and interacting in digital environments.
+ choose simple communication modes and strategies adapted to an audience and
+ differentiate simple cultural and generational diversity aspects to consider in digital environments.
+"
+2.5,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  differentiate simple behavioural norms and know-how while using digital technologies and interacting in digital environments.
+ choose simple communication modes and strategies adapted to an audience and
+ differentiate simple cultural and generational diversity aspects to consider in digital environments."
+2.5,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  clarify well-defined and routine behavioural norms and know-how while using digital technologies and interacting in digital environments.
+ express well-defined and routine communication strategies adapted to an audience.
+ describe well-defined and routine cultural and generational diversity aspects to consider in digital environments.
+"
+2.5,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  discuss behavioural norms and know-how while using digital technologies and interacting in digital environments.
+ discuss communication strategies adapted to an audience and
+ discuss cultural and generational diversity aspects to consider in digital environments."
+2.5,5,ADVANCED,"As well as guiding others, I can:  apply different behavioural norms and know-how while using digital technologies and interacting in digital environments.
+ apply different communication strategies in digital environments adapted to an audience and
+ apply different cultural and generational diversity aspects to consider in digital environments.
+"
+2.5,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  adapt the most appropriate behavioural norms and know-how while using digital technologies and interacting in digital environments.
+ adapt the most appropriate communication strategies in digital environments to an audience.
+ apply different cultural and generational diversity aspects in digital environments."
+2.5,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to digital etiquettes respectful of different audiences and cultural and generational diversity.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in digital etiquette
+"
+2.5,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to digital etiquettes respectful to different audiences and cultural and generational diversity.
+ propose new ideas and processes to the field."
+2.6,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify a digital identity,
+ describe simple ways to protect my reputation online,
+ recognise simple data I produce through digital tools, environments or services.
+"
+2.6,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify a digital identity,
+ describe simple ways to protect my reputation online,
+ recognise simple data I produce through digital tools, environments or services."
+2.6,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  discriminate a range of well-defined and routine digital identities,
+ explain well-defined and routine ways to protect my reputation online,
+ describe well-defined data I routinely produce through digital tools, environments or services.
+"
+2.6,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  display a variety of specific digital identities,
+ discuss specific ways to protect my reputation online,
+ manipulate data I produce through digital tools, environments or services."
+2.6,5,ADVANCED,"As well as guiding others, I can:  use a variety of digital identities,
+ apply different ways to protect my reputation online,
+ use data I produce through several digital tools environment and services.
+"
+2.6,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  discriminate multiple digital identities,
+ explain the more appropriate ways to protect one’s own reputation,
+ change the data produced through several tools, environments and services."
+2.6,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to managing digital identities and protection of people’s online reputation.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in managing digital identity.
+"
+2.6,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to managing digital identities and protection of people’s online reputation.
+ propose new ideas and processes to the field."
+3.1,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify ways to create and edit simple content in simple formats,
+ choose how I express myself through the creation of simple digital means.
+"
+3.1,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify ways to create and edit simple content in simple formats,
+ choose how I express myself through the creation of simple digital means."
+3.1,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  indicate ways to create and edit well-defined and routine content in well-defined and routine formats,
+ express myself through the creation of well-defined and routine digital means.
+"
+3.1,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can: 
+ indicate ways to create and edit content in different formats,
+ express myself through the creation of digital means."
+3.1,5,ADVANCED,"As well as guiding others, I can:  apply ways to create and edit content in different formats,
+ show ways to express myself through the creation of digital means.
+"
+3.1,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can: 
+ change content using the most appropriate formats,
+ adapt the expression of myself through the creation of the most appropriate digital means."
+3.1,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to content creation and edition in different formats, and self-expression through digital means.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in developing content.
+"
+3.1,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to content creation and edition in different formats, and self-expression through digital means.
+ propose new ideas and processes to the field."
+3.2,1,FOUNDATION,"At basic level and with 
+guidance, I can:  select ways to modify, refine, improve and integrate simple items of new content and information to create new and original ones.
+"
+3.2,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  select ways to modify, refine, improve and integrate simple items of new content and information to create new and original ones."
+3.2,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  explain ways to modify, refine, improve and integrate well-defined items of new content and information to create new and original ones.
+"
+3.2,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can: 
+ discuss ways to modify, refine, improve and integrate new content and information to create new and original ones."
+3.2,5,ADVANCED,"As well as guiding others, I can:  operate with new different items of content and information, modifying, refining, improving and integrating them in order to create new and original ones.
+"
+3.2,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can: 
+ assess the most appropriate ways to modify, refine, improve and integrate specific new items of content and information to create new and original ones."
+3.2,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to modifying, refining, improving and integrating new content and information into existing knowledge to create new and original ones.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in integrating and re-elaborating content.
+"
+3.2,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to modifying, refining, improving and integrating new content and information into existing knowledge to create new and original ones.
+ propose new ideas and processes to the field."
+3.3,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify simple rules of copyright and licenses that apply to data, digital information and content.
+"
+3.3,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify simple rules of copyright and licenses that apply to data, digital information and content."
+3.3,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  indicate well-defined and routine rules of copyright and licenses that apply to data, digital information and content.
+"
+3.3,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can: 
+ discuss rules of copyright and licenses that apply to digital information and content."
+3.3,5,ADVANCED,"As well as guiding others, I can:  apply different rules of copyright and licenses that apply to data, digital information and content.
+"
+3.3,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can: 
+ choose the most appropriate rules that apply copyright and licences to data, digital information and content."
+3.3,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to applying copyright and licenses to data, digital information and content.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in applying copyright and licenses.
+"
+3.3,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to applying copyright and licenses to data, digital information and content.
+ propose new ideas and processes to the field."
+3.4,1,FOUNDATION,"At basic level and with 
+guidance, I can:  list simple instructions for a computing system to solve a simple problem or perform a simple task.
+"
+3.4,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  list simple instructions for a computing system to solve a simple problem or perform a simple task."
+3.4,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  list well-defined and routine instructions for a computing system to solve routine problems or perform routine tasks.
+"
+3.4,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can: 
+ list instructions for a computing system to solve a given problem or perform a specific task."
+3.4,5,ADVANCED,"As well as guiding others, I can:  operate with instructions for a computing system to solve a different problem or perform different tasks.
+"
+3.4,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can: 
+ determine the most appropriate instructions for a computing system to solve a given problem and perform specific tasks."
+3.4,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to planning and developing instructions for a computing system and performing a task using a computing system.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in programming.
+"
+3.4,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to planning and developing instructions for a computing system and performing a task using a computing system.
+ propose new ideas and processes to the field."
+4.1,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify simple ways to protect my devices and digital content, and
+ differentiate simple risks and threats in digital environments.
+ choose simple safety and security measures, and
+ identify simple ways to have due regard to reliability and privacy.
+"
+4.1,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify simple ways to protect my devices and digital content, and
+differentiate simple risks and threats in digital environments.
+follow simple safety and security measures.
+identify simple ways to have due regard to reliability and privacy ."
+4.1,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  indicate well-defined and routine ways to protect my devices and digital content, and
+ differentiate well-defined and routine risks and threats in digital environments, and
+ select well-defined and routine safety and security measures.
+ indicate well-defined and routine ways to have due regard to reliability and privacy
+"
+4.1,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  organise ways to protect my devices and digital content, and
+ differentiate risks and threats in digital environments.
+ select safety and security measures.
+ explain ways to have due regard to reliability and privacy."
+4.1,5,ADVANCED,"As well as guiding others, I can:  apply different ways to protect devices and digital content, and
+ differentiate a variety of risks and threats in digital environments.
+ apply safety and security measures.
+ employ different ways to have due regard to reliability and privacy.
+"
+4.1,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complexcontexts, I can:  choose the most appropriate protection for devices and digital content, and
+ discriminate risks and threats in digital environments.
+ choose the most appropriate safety and security measures.
+ assess the most appropriate ways to have due regard to reliability and privacy."
+4.1,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to protecting devices and digital content, managing risks and threats, applying safety and security measures, and reliability and privacy in digital environments.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in protecting devices.
+"
+4.1,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to protecting devices and digital content, managing risks and threats, applying safety and security measures, and reliability and privacy in digital environments.
+ propose new ideas and processes to the field."
+4.2,1,FOUNDATION,"At basic level and with 
+guidance, I can:  select simple ways to protect my personal data and privacy in digital environments, 
+ identify simple ways to use and share personally identifiable information while protecting myself and others from damages.
+ identify simple privacy policy statements of how personal data is used in digital services.
+"
+4.2,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  select simple ways to protect my personal data and privacy in digital environments, 
+ identify simple ways to use and share personally identifiable information while protecting myself and others from damages.
+ identify simple privacy policy statements of how personal data is used in digital services."
+4.2,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  explain well-defined and routine ways to protect my personal data and privacy in digital environments, and
+ explain well-defined and routine ways to use and share personally identifiable information while protecting myself and others from damages.
+ indicate well-defined and routine privacy policy statements of how personal data is used in digital services.
+"
+4.2,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  discuss ways to protect my personal data and privacy in digital environments, and
+ discuss ways to use and share personally identifiable information while protecting myself and others from damages.
+ indicate privacy policy statements of how personal data is used in digital services."
+4.2,5,ADVANCED,"As well as guiding others, I can:  apply different ways to protect my personal data and privacy in digital environments,
+ apply different specific ways to share my data while protecting myself and others from dangers.
+ explain privacy policy statements of how personal data is used in digital services.
+"
+4.2,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  choose the more appropriate ways to protect personal data and privacy in digital environments, and
+ evaluate the most appropriate ways of using and sharing personally identifiable information while protecting myself and others from damages.
+ evaluate the appropriateness of privacy policy statements on how personal data are used."
+4.2,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to protecting personal data and privacy in digital environments, using and sharing personally identifiable information protecting self and others from dangers, and privacy policies to use my personal data.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in protecting personal data and privacy
+"
+4.2,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to protecting personal data and privacy in digital environments, using and sharing personally identifiable information protecting self and others from dangers, and privacy policies to use my personal data.
+ propose new ideas and processes to the field."
+4.3,1,FOUNDATION,"At basic level and with 
+guidance, I can:  differentiate simple ways to avoid health  risks and threats to physical and psychological well-being while using digital technologies.
+ select simple ways to protect myself from possible dangers in digital environments.
+ identify simple digital technologies for social well-being and social inclusion.
+"
+4.3,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  differentiate simple ways to avoid health risks and threats to physical and psychological well-being while using digital technologies.
+ select simple ways to protect myself from possible dangers in digital environments.
+ identify simple digital technologies for social well-being and social inclusion."
+4.3,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  explain well-defined and routine ways to how to avoid health risks and threats to physical and psychological well-being while using digital technologies.
+ select well-defined and routine ways to protect myself from dangers in digital environments.
+ indicate well-defined and routine digital technologies for social well-being and social inclusion.
+"
+4.3,4,INTERMEDIATE,"Independently, accordingto my own needs, and solving well-defined and non-routine problems, I can:   explain ways to how to avoid threats to my physical and psychological health related with the use of technology.
+ select ways to protect self and others from dangers in digital environments.
+ discuss on digital technologies for social well-being and inclusion."
+4.3,5,ADVANCED,"As well as guiding others, I can:  show different ways to avoid health -risks and threats to physical and psychological well-being while using digital technologies.
+ apply different ways to protect myself and others from dangers in digital environmen
+ show different digital technologies for social well-being and social inclusion.ts.
+"
+4.3,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  discriminate the most appropriate ways to avoid health risks and threats to physical and psychological well-being while using digital technologies.
+ adapt the most appropriate ways to protect myself and others from dangers in digital environments.
+ vary the use of digital technologies for social well-being and social inclusion."
+4.3,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to avoiding health -risks and threats to well-being while using digital technologies, to protect self and others from dangers in digital environments, and to the use of digital technologies for social well-being and social inclusion.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in protecting health.
+"
+4.3,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to avoiding health risks and threats to well-being while using digital technologies, to protect self and others from dangers in digital environments, and to the use of digital technologies for social well-being and social inclusion.
+ propose new ideas and processes to the field."
+4.4,1,FOUNDATION,"At basic level and with 
+guidance, I can:  recognise simple environmental impacts of digital technologies and their use.
+"
+4.4,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  recognise simple environmental impacts of digital technologies and their use."
+4.4,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  indicate well-defined and routine environmental impacts of digital technologies and their use.
+"
+4.4,4,INTERMEDIATE,"Independently, accordingto my own needs, and solving well-defined and non-routine problems, I can:  
+ discuss ways to protect the environment from the impact of digital technologies and their use."
+4.4,5,ADVANCED,"As well as guiding others, I can:  show different ways to protect the environment from the impact of digital technologies and their use.
+"
+4.4,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can: 
+ choose the most appropriate solutions to protect the environment from the impact of digital technologies and their use."
+4.4,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to protecting the environment from the impact of digital technologies and their use.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in protecting the environment.
+"
+4.4,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to protecting the environment from the impact of digital technologies and their use.
+ propose new ideas and processes to the field."
+5.1,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify simple technical problems when operating devices and using digital environments.
+ identify simple solutions to solve them.
+"
+5.1,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify simple technical problems when operating devices and using digital environments.
+ identify simple solutions to solve them."
+5.1,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  indicate well-defined and routine technical problems when operating devices and using digital environments.
+ select well-defined and routine solutions to them.
+"
+5.1,4,INTERMEDIATE,"Independently, accordingto my own needs, and solving well-defined andnon-routine problems, I can:  
+  differentiate technical problems when operating devices and using digital environments.
+ select solutions to them."
+5.1,5,ADVANCED,"As well as guiding others, I can:  assess technical problems when using digital environments and operating digital devices.
+ apply different solutions to them.
+"
+5.1,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can: 
+ appraise technical problems when operating devices and using digital environments, 
+ resolve them with the most appropriate solutions."
+5.1,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to technical problems when operating devices and using digital environments.
+ integrate my knowledge to contribute to professional practice and knowledge and to guide others in solving technical problems.
+"
+5.1,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to technical problems when operating devices and using digital environments.
+ propose new ideas and processes to the field."
+5.2,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify needs, and
+ recognise simple digital tools and possible technological responses to solve those needs.
+ choose simple ways to adjust and customise digital environments to personal needs.
+"
+5.2,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify needs, and
+ recognise simple digital tools and possible technological responses to solve those needs.
+ choose simple ways to adjust and customise digital environments to personal needs."
+5.2,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  indicate well-defined and routine needs, and
+ select well-define and routine digital tools and possible technological responses to solve those needs.
+ select well-defined and routine ways to adjust and customise digital environments to personal needs.
+"
+5.2,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  explain needs, and
+ select digital tools and possible technological responses to solve those needs.
+ select ways to adjust and customise digital environments to personal needs."
+5.2,5,ADVANCED,"As well as guiding others, I can:  assess needs, 
+ apply different digital tools and possible technological responses to solve those needs.
+ use different ways to adjust and customise digital environments to personal needs.
+"
+5.2,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  assess needs,
+ choose the most appropriate digital tools and possible technological responses to solve those needs.
+ decide the most appropriate ways to adjust and customise digital environments to personal needs"
+5.2,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition using digital tools and possible technological responses, and to adapt and customise digital environments to personal needs.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in identifying needs and technological responses.
+"
+5.2,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors using digital tools and possible technological responses, and to adapt and customise digital environments to personal needs.
+ I can propose new ideas and processes to the field."
+5.3,1,FOUNDATION,"At basic level and with 
+guidance, I can:  identify simple digital tools and technologies that can be used to create knowledge and to innovate processes and products.
+ show interest individually and collectively in simple cognitive processing to understand and resolve simple conceptual problems and problem situations in digital environments.
+"
+5.3,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  identify simple digital tools and technologies that can be used to create knowledge and to innovate processes and products.
+ follow individually and collectively simple cognitive processing to understand and resolve simple conceptual problems and problem situations in digital environments."
+5.3,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  select digital tools and technologies that can be used to create well-defined knowledge and well-defined innovative processes and products.
+ engage individually and collectively in some cognitive processing to understand and resolve well-defined and routine conceptual problems and problem situations in digital environments.
+"
+5.3,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  differentiate digital tools and technologies that can be used to create knowledge and to innovate processes and products.
+ engage individually and collectively in cognitive processing to understand and resolve conceptual problems and problem situations in digital environments."
+5.3,5,ADVANCED,"As well as guiding others, I can:  apply different digital tools and technologies to create knowledge and innovative processes and products.
+ apply individually and collectively cognitive processing to resolve different conceptual problems and problem situations in digital environments.
+"
+5.3,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  adapt the most appropriate digital tools and technologies to create knowledge and to innovate processes and products.
+ resolve individually and collectively conceptual problems and problem situations in digital environments."
+5.3,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition using digital tools and technologies.
+ integrate my knowledge to contribute to professional practice and knowledge and guide others in creatively using digital technologies.
+"
+5.3,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors using digital tools and technologies.
+ propose new ideas and processes to the field."
+5.4,1,FOUNDATION,"At basic level and with 
+guidance, I can:  recognise where my own digital competence needs to be improved or updated.
+ identify where to seek opportunities for self-developments and to keep up-to-date with the digital evolution.
+"
+5.4,2,FOUNDATION,"At basic level and with autonomy and appropriate guidance where needed, I can:  recognise where my own digital competence needs to be improved or updated,
+ identify where to seek opportunities for self-developments and to keep up-to-date with the digital evolution."
+5.4,3,INTERMEDIATE,"On my own and solving straightforward problems, I can:  explain where my digital competence needs to be improved or updated,
+ indicate where to seek well-defined opportunities for self-developments and to keep up-to-date with the digital evolution.
+"
+5.4,4,INTERMEDIATE,"Independently, according to my own needs, and solving well-defined and non-routine problems, I can:  discuss on where my digital competence needs to be improved or updated,
+ indicate how to support others to develop their digital competence.
+ indicate where to seek opportunities for self-developments and to keep up-to-date with the digital evolution."
+5.4,5,ADVANCED,"As well as guiding others, I can:  demonstrate where my own digital competence needs to be improved or updated,
+ illustrate different ways to support others in the development of their digital competence.
+ propose different opportunities found for self-development and to keep up-to-date with the digital evolution.
+"
+5.4,6,ADVANCED,"At advanced level, according to my own needs and those of others, and in complex contexts, I can:  decide which are the most appropriate ways to improve or update one’s own digital competence needs,
+ assess the development of others’ digital competence.
+ choose the most appropriate opportunities for self-development and to keep up-to date with new developments."
+5.4,7,HIGHLY SPECIALISED,"At highly specialised level, I can:   create solutions to complex problems with limited definition that are related to improving digital competence, and to find opportunities for self-development and to keep up-to-date with new developments.
+ integrate my knowledge to contribute to professional practice and knowledge and to guide others in identifying digital competence gaps.
+"
+5.4,8,HIGHLY SPECIALISED,"At the most advanced and specialised level, I can:  create solutions to solve complex problems with many interacting factors that are related to improving digital competence, and to find opportunities for self-development and to keep up-to-date with the digital evolution.
+ propose new ideas and processes to the field."

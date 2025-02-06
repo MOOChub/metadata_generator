@@ -69,7 +69,9 @@ def find_all_data(framework):
     """
     path = find_framework_folder()
     path = os.path.join(path, framework + ".csv")
-    return pd.read_csv(path, sep=";", header=0)
+
+    return pd.read_csv(path, sep=";", header=0)  # TODO: change dtype to string! This will lead to some problems! Fix needed!
+    # TODO: If not fixed leading zeros in e.g ISCED-F short codes will be lost!
 
 
 def get_all_fields(framework):
@@ -171,3 +173,18 @@ def generate_names_of(language, name):
     })
 
     return all_names
+
+
+################################################################################################################
+# the following part is for interacting with DigCompLevel_full.csv only
+
+def get_data_for_level(level, competence_short_code):
+    path = os.path.join(os.path.dirname(__file__) + "/../frameworks/DigCompLevel_full.csv")
+    data = pd.read_csv(path, dtype=str)
+
+    data = data[(data["competence"] == str(competence_short_code)) & (data["level"] == str(level))]
+
+    return data["level_name"].item(), data["description"].item()
+
+
+

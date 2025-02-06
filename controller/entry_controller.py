@@ -31,7 +31,11 @@ class EntryController:
                 name = element["Name"]
                 bc = element["BroaderConcept"]
 
-                entry = vars(entry_model.get_entry(name, bc))
+                level = None
+                if "Level" in element.keys():
+                    level = element["Level"]
+
+                entry = vars(entry_model.get_entry(name, bc, level))
 
                 if entry['type'] == 'EducationalAlignment':
                     self.all_data_fos.append(entry)

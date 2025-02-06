@@ -8,6 +8,7 @@ Classes:
     from the configuration file and the entry-specific data is extracted from the provided framework data.
 """
 
+from models import educational_level_model
 from utils import helper_functions, config_helper
 
 
@@ -15,7 +16,7 @@ class Entry:
     """The Entry object stores all relevant data of an entry according to the MOOCub format V3.
     """
     def __init__(self, names_list, educational_framework, url, short_code, alternative_names_list, target_url,
-                 description, entry_type, educational_framework_version, educational_alignment):
+                 description, entry_type, educational_framework_version, educational_alignment, *educational_level):
         self.name = names_list
         self.educationalFramework = educational_framework
         self.url = url
@@ -26,6 +27,8 @@ class Entry:
         self.type = entry_type
         self.educationalFrameworkVersion = educational_framework_version
         self.educationalAlignment = educational_alignment
+        if len(educational_level) == 1:
+            self.educationalLevel = educational_level[0]
 
 
 class EntryModel:
@@ -43,10 +46,11 @@ class EntryModel:
         if not self.config['API_SEARCH']:  # The following part only works with local frameworks, not APIs!
             self.framework = helper_functions.find_all_data(framework_name)
 
-    def get_entry(self, name, bc):
+    def get_entry(self, name, bc, level=None):
         """Create an entry by name and broader concept (bc). Also consider the framework
         specified during the initialization of the EntryModel.
 
+        :param level: the level of a DigComp competency. Is 'None' by default (entries other than  DigComp)
         :param name: the name of the entry as a string
         :param bc: the broader concept (bc) of the entry as a string
         :return: an Entry object containing all relevant data according to the MOOChub format V3
@@ -59,6 +63,15 @@ class EntryModel:
 
         names = helper_functions.generate_names_of(self.config['LANGUAGE'], name)
 
-        return Entry(names, self.framework_name, self.config['URL'], data['ShortCode'], None, data["Uri"],
-                     data["Description"], self.config['FRAMEWORK_PURPOSE'], self.config['VERSION'],
-                     self.config['ALIGNMENT_TYPE'])
+        if self.framework_name == "DigComp" and level:
+            educational_level = educational_level_model.EducationalLevelModel(self.config["ID"]).\
+                get_educational_level(name, bc, level)
+            educational_level = vars(educational_level)
+
+            return Entry(names, self.framework_name, self.config['URL'], data['ShortCode'], None, data["Uri"],
+                         data["Description"], self.config['FRAMEWORK_PURPOSE'], self.config['VERSION'],
+                         self.config['ALIGNMENT_TYPE'], educational_level)
+        else:
+            return Entry(names, self.framework_name, self.config['URL'], data['ShortCode'], None, data["Uri"],
+                         data["Description"], self.config['FRAMEWORK_PURPOSE'], self.config['VERSION'],
+                         self.config['ALIGNMENT_TYPE'])
