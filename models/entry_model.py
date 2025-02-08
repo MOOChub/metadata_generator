@@ -16,7 +16,8 @@ class Entry:
     """The Entry object stores all relevant data of an entry according to the MOOCub format V3.
     """
     def __init__(self, names_list, educational_framework, url, short_code, alternative_names_list, target_url,
-                 description, entry_type, educational_framework_version, educational_alignment, *educational_level):
+                 description, entry_type, educational_framework_version, educational_alignment=None,
+                 educational_level=None):
         self.name = names_list
         self.educationalFramework = educational_framework
         self.url = url
@@ -26,9 +27,11 @@ class Entry:
         self.description = description
         self.type = entry_type
         self.educationalFrameworkVersion = educational_framework_version
-        self.educationalAlignment = educational_alignment
-        if len(educational_level) == 1:
-            self.educationalLevel = educational_level[0]
+
+        if educational_level:
+            self.educationalLevel = educational_level
+        if educational_alignment:
+            self.educationalAlignment = educational_alignment
 
 
 class EntryModel:
